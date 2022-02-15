@@ -4,11 +4,11 @@
 <a href= "https://www.inteli.edu.br/"><img src="https://www.inteli.edu.br/wp-content/uploads/2021/08/20172028/marca_1-2.png" alt="Inteli - Instituto de Tecnologia e Liderança" border="0"></a>
 </p>
 
-# Nome do Projeto
+# Projeto 1 - Tamagotchi Financeiro
 
-## Nome do Grupo
+## EduFin Dev Team
 
-## Integrantes: <a href="https://www.linkedin.com/in/victorbarq/">Goku Sayajin</a>, <a href="https://www.linkedin.com/in/victorbarq/">Saitama One</a>, <a href="https://www.linkedin.com/in/victorbarq/">Ikki de Fenix</a>, <a href="https://www.linkedin.com/in/victorbarq/">Yusuke Urameshi</a>, <a href="https://www.linkedin.com/in/victorbarq/">Roronoa Zoro</a>
+## Integrantes: <a href="https://www.linkedin.com/in/victorbarq/">Alan Schipper</a>, <a href="https://www.linkedin.com/in/victorbarq/">Ana Clara Zaidan</a>, <a href="https://www.linkedin.com/in/victorbarq/">Bruno Meira</a>, <a href="https://www.linkedin.com/in/filipi-enzo-siqueira-kikuchi-1811a9213/">Filipi Kikuchi</a>, <a href="https://www.linkedin.com/in/victorbarq/">Giovanna Torres</a>, <a href="https://www.linkedin.com/in/patrick-miranda-7ab911231/">Patrick Miranda</a> e <a href="https://www.linkedin.com/in/victorbarq/">Rodrigo Guimarães</a>
 
 ## Descrição
 
