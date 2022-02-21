@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://assets/moneyIcon.png" type="Texture" id=1]
+
+[node name="Money" type="HBoxContainer"]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 3.47571, 12.8988 )
+scale = Vector2( 0.837793, 0.791955 )
+texture = ExtResource( 1 )

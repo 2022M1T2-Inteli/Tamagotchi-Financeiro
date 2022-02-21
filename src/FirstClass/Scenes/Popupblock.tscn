@@ -1,0 +1,96 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Script/Popupblock.gd" type="Script" id=1]
+[ext_resource path="res://assets/lock_in.png" type="Texture" id=2]
+
+[sub_resource type="Animation" id=1]
+resource_name = "popup"
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rect_size")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 421, 123 ) ]
+}
+
+[node name="Control" type="Control"]
+anchor_left = 0.134
+anchor_top = 0.353
+anchor_right = 0.421
+anchor_bottom = 0.657
+margin_left = -166.52
+margin_top = -251.16
+margin_right = 735.12
+margin_bottom = 247.96
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="."]
+visible = false
+anchor_left = 0.318
+anchor_top = 0.343
+anchor_right = 0.647
+anchor_bottom = 0.512
+margin_left = 0.323975
+margin_top = -0.361023
+margin_right = -419.151
+margin_bottom = -121.703
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Panel"]
+anchor_left = 0.116
+anchor_top = 0.171
+anchor_right = 0.881
+anchor_bottom = 0.894
+margin_left = 0.163998
+margin_top = -0.0330009
+margin_right = 0.0989685
+margin_bottom = 0.0379944
+text = "Essa função está bloqueada.
+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Panel"]
+anims/popup = SubResource( 1 )
+
+[node name="question_button" type="Button" parent="."]
+anchor_left = 0.842
+anchor_top = 0.35
+anchor_right = 0.958
+anchor_bottom = 0.636
+margin_left = -29.498
+margin_top = -0.300018
+margin_right = 0.297974
+margin_bottom = 0.351959
+mouse_filter = 1
+icon = ExtResource( 2 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="close_button2" type="Button" parent="."]
+visible = false
+anchor_left = 0.457
+anchor_top = 0.53
+anchor_right = 0.51
+anchor_bottom = 0.568
+margin_left = 0.125977
+margin_top = -0.310028
+margin_right = 0.179932
+margin_bottom = 0.0639954
+text = "X"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="question_button" to="." method="_on_question_button_pressed"]
+[connection signal="pressed" from="close_button2" to="." method="_on_close_button_pressed"]

@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://assets/happyBra.png" type="Texture" id=1]
+
+[node name="HBoxContainer" type="HBoxContainer"]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( -10.75, -0.874996 )
+scale = Vector2( 0.606481, 0.569797 )
+texture = ExtResource( 1 )
