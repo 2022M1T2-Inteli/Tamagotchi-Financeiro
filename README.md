@@ -8,7 +8,7 @@
 
 ## EduFin Dev Team
 
-## Integrantes: <a href="https://www.linkedin.com/in/alan-rozensztajn-schipper-0563701ba/">Alan Schipper</a>, <a href="https://www.linkedin.com/in/ana-clara-l-m-zaidan-254376232/">Ana Clara Zaidan</a>, <a href="https://www.linkedin.com/in/bruno-meira-75419918b/">Bruno Meira</a>, <a href="https://www.linkedin.com/in/filipi-enzo-siqueira-kikuchi-1811a9213/">Filipi Kikuchi</a>, <a href="https://www.linkedin.com/in/giovanna-furlan-torres-378316182/">Giovanna Torres</a> e <a href="https://www.linkedin.com/in/patrick-miranda-7ab911231/">Patrick Miranda</a>
+## Integrantes: <a href="https://github.com/MrSchipRozen">Alan Schipper</a>, <a href="https://github.com/anaclaralmz">Ana Clara Zaidan</a>, <a href="https://github.com/brun0meira">Bruno Meira</a>, <a href="https://github.com/HallZero">Filipi Kikuchi</a>, <a href="https://github.com/furlan2803">Giovanna Torres</a>, <a href="https://github.com/patrickvicto">Patrick Miranda</a> e <a href="https://github.com/lucasconti888">Lucas Pereira</a>.
 
 ## Descrição
 
