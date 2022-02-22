@@ -8,10 +8,10 @@
 
 ## EduFin Dev Team
 
-## Integrantes: <a href="https://www.linkedin.com/in/victorbarq/">Alan Schipper</a>, <a href="https://www.linkedin.com/in/victorbarq/">Ana Clara Zaidan</a>, <a href="https://www.linkedin.com/in/victorbarq/">Bruno Meira</a>, <a href="https://www.linkedin.com/in/filipi-enzo-siqueira-kikuchi-1811a9213/">Filipi Kikuchi</a>, <a href="https://www.linkedin.com/in/victorbarq/">Giovanna Torres</a>, <a href="https://www.linkedin.com/in/patrick-miranda-7ab911231/">Patrick Miranda</a> e <a href="https://www.linkedin.com/in/victorbarq/">Rodrigo Guimarães</a>
+## Integrantes: <a href="https://www.linkedin.com/in/alan-rozensztajn-schipper-0563701ba/">Alan Schipper</a>, <a href="https://www.linkedin.com/in/ana-clara-l-m-zaidan-254376232/">Ana Clara Zaidan</a>, <a href="https://www.linkedin.com/in/bruno-meira-75419918b/">Bruno Meira</a>, <a href="https://www.linkedin.com/in/filipi-enzo-siqueira-kikuchi-1811a9213/">Filipi Kikuchi</a>, <a href="https://www.linkedin.com/in/giovanna-furlan-torres-378316182/">Giovanna Torres</a> e <a href="https://www.linkedin.com/in/patrick-miranda-7ab911231/">Patrick Miranda</a>
 
 ## Descrição
-<br><br>
+
 📜 O jogo terá como objetivo promover uma conscientização sobre educação financeira, contribuindo para a inserção de pessoas antes analfabetas financeiramente na sociedade. Esse objetivo será atingido através de um jogo que equilibra o didatismo e a diversão, em que o foco estará mais na aprendizagem prática, mesmo que contenha situações de aprendizagem mais teórica. Nesse sentido, conceitos de finanças reais serão abordados através da representação de situações cotidianas, focadas na evolução do personagem ao cuidar de sua saúde financeira. Portanto, esse é um projeto de faculdade que visa gerar um produto final eficiente e jogável para a empresa parceira, BTG Pactual, impactando o nível de educação financeira da sociedade.
 <br><br>
 <p align="center">
