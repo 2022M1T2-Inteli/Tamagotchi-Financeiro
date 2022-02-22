@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://Scenes/Transition_in.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/Player_certo.tscn" type="PackedScene" id=2]
@@ -13,7 +13,20 @@
 [ext_resource path="res://Scenes/phone.tscn" type="PackedScene" id=11]
 [ext_resource path="res://Scenes/HappyBar.tscn" type="PackedScene" id=12]
 
-[node name="Node2D" type="Node2D"]
+[sub_resource type="GDScript" id=1]
+
+[node name="Tela_Inicio" type="Node2D"]
+position = Vector2( 3, 0 )
+script = SubResource( 1 )
+
+[node name="HBoxContainer" parent="." instance=ExtResource( 12 )]
+margin_left = 176.0
+margin_top = 84.0
+margin_right = 216.0
+margin_bottom = 124.0
+
+[node name="Funcao_block2" parent="." instance=ExtResource( 9 )]
+position = Vector2( 1308, 414 )
 
 [node name="newEmail" parent="." instance=ExtResource( 4 )]
 margin_top = 1.0
@@ -45,15 +58,6 @@ margin_bottom = 88.0
 
 [node name="Funcao_block" parent="." instance=ExtResource( 6 )]
 position = Vector2( 1075, 410 )
-
-[node name="Funcao_block2" parent="." instance=ExtResource( 9 )]
-position = Vector2( 1308, 414 )
-
-[node name="HBoxContainer" parent="." instance=ExtResource( 12 )]
-margin_left = 176.0
-margin_top = 84.0
-margin_right = 216.0
-margin_bottom = 124.0
 
 [node name="Money" parent="." instance=ExtResource( 5 )]
 margin_left = 76.0
