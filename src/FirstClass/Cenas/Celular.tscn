@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Imagens/Celular.png" type="Texture" id=1]
 [ext_resource path="res://Celular.gd" type="Script" id=2]
 [ext_resource path="res://Imagens/fundo preto.png" type="Texture" id=3]
+[ext_resource path="res://assets/tela_quintal.png" type="Texture" id=4]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 2 )
@@ -107,6 +108,11 @@ __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": false
 }
+
+[node name="TelaQuintal" type="Sprite" parent="Button_Sair"]
+position = Vector2( -32.75, -163.25 )
+scale = Vector2( 0.676163, 0.825028 )
+texture = ExtResource( 4 )
 
 [connection signal="pressed" from="Button_Mapa" to="." method="_on_Button_Mapa_pressed"]
 [connection signal="pressed" from="Button_Banco" to="." method="_on_Button_Banco_pressed"]

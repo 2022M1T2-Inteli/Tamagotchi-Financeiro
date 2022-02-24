@@ -1,11 +1,17 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Imagens/fundo preto.png" type="Texture" id=1]
 [ext_resource path="res://Imagens/Saúde.png" type="Texture" id=2]
 [ext_resource path="res://Cenas/Saúde.gd" type="Script" id=3]
+[ext_resource path="res://assets/tela_quintal.png" type="Texture" id=4]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 3 )
+
+[node name="TelaQuintal" type="Sprite" parent="."]
+position = Vector2( 641.25, 359.25 )
+scale = Vector2( 0.680345, 0.832956 )
+texture = ExtResource( 4 )
 
 [node name="FundoPreto" type="Sprite" parent="."]
 position = Vector2( 642, 358.5 )

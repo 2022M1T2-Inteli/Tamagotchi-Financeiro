@@ -1,11 +1,17 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Imagens/Status.png" type="Texture" id=1]
 [ext_resource path="res://Imagens/fundo preto.png" type="Texture" id=2]
 [ext_resource path="res://Cenas/Status.gd" type="Script" id=3]
+[ext_resource path="res://assets/tela_quintal.png" type="Texture" id=4]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 3 )
+
+[node name="TelaQuintal" type="Sprite" parent="."]
+position = Vector2( 639.75, 359.75 )
+scale = Vector2( 0.676686, 0.838618 )
+texture = ExtResource( 4 )
 
 [node name="FundoPreto" type="Sprite" parent="."]
 position = Vector2( 640, 361 )

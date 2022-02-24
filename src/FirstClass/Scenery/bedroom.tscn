@@ -14,24 +14,32 @@
 [ext_resource path="res://Scenes/HappyBar.tscn" type="PackedScene" id=12]
 
 [sub_resource type="GDScript" id=1]
+script/source = "extends Node2D
+
+func _ready():
+	pass
+
+func _on_Button_felicidade_page_pressed():
+	get_tree().change_scene(\"res://Cenas/Felicidade.tscn\")
+"
 
 [node name="Tela_Inicio" type="Node2D"]
 position = Vector2( 3, 0 )
 script = SubResource( 1 )
 
 [node name="HBoxContainer" parent="." instance=ExtResource( 12 )]
-margin_left = 176.0
-margin_top = 84.0
-margin_right = 216.0
-margin_bottom = 124.0
+margin_left = 163.0
+margin_top = 33.0
+margin_right = 203.0
+margin_bottom = 73.0
 
 [node name="Funcao_block2" parent="." instance=ExtResource( 9 )]
 position = Vector2( 1308, 414 )
 
 [node name="newEmail" parent="." instance=ExtResource( 4 )]
-margin_top = 1.0
-margin_right = 1277.0
-margin_bottom = 717.0
+margin_left = 210.0
+margin_right = 1276.0
+margin_bottom = 719.0
 
 [node name="Player_certo" parent="." instance=ExtResource( 2 )]
 position = Vector2( 89, 705 )
@@ -47,20 +55,20 @@ position = Vector2( 2, 1 )
 [node name="Transition_in" parent="." instance=ExtResource( 1 )]
 
 [node name="bedroomToStreet" parent="." instance=ExtResource( 10 )]
-position = Vector2( 1221, 663 )
+position = Vector2( 1256, 676 )
 path = "res://Scenery/streetHouse.tscn"
 
 [node name="phone" parent="." instance=ExtResource( 11 )]
-margin_left = 1206.0
-margin_top = 68.0
-margin_right = 1218.0
-margin_bottom = 88.0
+margin_left = 1217.0
+margin_top = 56.0
+margin_right = 1229.0
+margin_bottom = 76.0
 
 [node name="Funcao_block" parent="." instance=ExtResource( 6 )]
 position = Vector2( 1075, 410 )
 
 [node name="Money" parent="." instance=ExtResource( 5 )]
-margin_left = 76.0
-margin_top = 131.0
-margin_right = 116.0
-margin_bottom = 171.0
+margin_left = 75.0
+margin_top = 30.0
+margin_right = 97.0
+margin_bottom = 69.0
