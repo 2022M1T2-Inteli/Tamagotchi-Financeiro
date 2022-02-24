@@ -41,9 +41,6 @@ margin_left = 210.0
 margin_right = 1276.0
 margin_bottom = 719.0
 
-[node name="Player_certo" parent="." instance=ExtResource( 2 )]
-position = Vector2( 89, 705 )
-
 [node name="StaticBody2D2" parent="." instance=ExtResource( 8 )]
 position = Vector2( -4, 3 )
 
@@ -72,3 +69,6 @@ margin_left = 75.0
 margin_top = 30.0
 margin_right = 97.0
 margin_bottom = 69.0
+
+[node name="Player_certo" parent="." instance=ExtResource( 2 )]
+position = Vector2( 82, 719 )

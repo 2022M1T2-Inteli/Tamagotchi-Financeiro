@@ -1,0 +1,48 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Scenes/ChampionSelectFemaleButton.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/ChampionSelectMaleButton.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/tela_quintal.png" type="Texture" id=3]
+[ext_resource path="res://Script/ChampionSelectFemaleButton.gd" type="Script" id=4]
+[ext_resource path="res://Script/ChampionSelectMaleButton.gd" type="Script" id=5]
+[ext_resource path="res://assets/selection.png" type="Texture" id=6]
+[ext_resource path="res://Imagens/fundo preto.png" type="Texture" id=7]
+[ext_resource path="res://Scenery/ChampionSelect.gd" type="Script" id=8]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 8 )
+
+[node name="TelaQuintal" type="Sprite" parent="."]
+position = Vector2( 641.75, 358.25 )
+scale = Vector2( 0.668322, 0.826161 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="FundoPreto" type="Sprite" parent="."]
+position = Vector2( 640.5, 356.5 )
+scale = Vector2( 2.01094, 2.04722 )
+texture = ExtResource( 7 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Selection" type="Sprite" parent="."]
+position = Vector2( 646, 186 )
+scale = Vector2( 0.647396, 0.776852 )
+texture = ExtResource( 6 )
+
+[node name="mnuMale" parent="." instance=ExtResource( 2 )]
+margin_left = 310.0
+margin_top = 269.0
+margin_right = 597.0
+margin_bottom = 646.0
+script = ExtResource( 5 )
+
+[node name="mnuFemale" parent="." instance=ExtResource( 1 )]
+margin_left = 689.0
+margin_top = 265.0
+margin_right = 972.0
+margin_bottom = 641.0
+script = ExtResource( 4 )

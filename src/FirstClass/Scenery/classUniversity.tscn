@@ -10,15 +10,17 @@
 [ext_resource path="res://Scenes/HappyBar.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Scenes/Popupnoemail.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Scenes/Teacher.tscn" type="PackedScene" id=10]
-[ext_resource path="res://Scenes/dialogBoxTest.tscn" type="PackedScene" id=11]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 646.5, 10 )
 
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 86.75, 10 )
+
 [node name="Node2D" type="Node2D"]
 
-[node name="KinematicBody2D" parent="." instance=ExtResource( 10 )]
-position = Vector2( 683, 462 )
+[node name="RigidBody2D" parent="." instance=ExtResource( 10 )]
+position = Vector2( 680, 442 )
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
@@ -31,7 +33,6 @@ __meta__ = {
 }
 
 [node name="Borda_scene3" parent="." instance=ExtResource( 2 )]
-visible = false
 position = Vector2( -7, -6 )
 
 [node name="Goalscene2" parent="." instance=ExtResource( 4 )]
@@ -75,15 +76,9 @@ margin_right = 1184.0
 margin_bottom = 713.0
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
-position = Vector2( 684, 487 )
 collision_layer = 17
 collision_mask = 17
 
-[node name="Control2" parent="." instance=ExtResource( 11 )]
-visible = false
-margin_left = -3.0
-margin_top = -5.0
-margin_right = -3.0
-margin_bottom = -5.0
-
-[connection signal="body_exited" from="Goalscene2" to="Goalscene2" method="_on_Goalscene2_body_exited"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 705.25, 537 )
+shape = SubResource( 2 )
