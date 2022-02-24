@@ -1,0 +1,118 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Imagens/Celular.png" type="Texture" id=1]
+[ext_resource path="res://Celular.gd" type="Script" id=2]
+[ext_resource path="res://Imagens/fundo preto.png" type="Texture" id=3]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="FundoPreto" type="Sprite" parent="."]
+position = Vector2( 642, 361.628 )
+scale = Vector2( 2.025, 2.0354 )
+texture = ExtResource( 3 )
+
+[node name="Celular" type="Sprite" parent="."]
+position = Vector2( 640, 360 )
+scale = Vector2( 0.252182, 0.259687 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Button_Mapa" type="Button" parent="."]
+show_behind_parent = true
+margin_left = 536.0
+margin_top = 125.0
+margin_right = 628.0
+margin_bottom = 221.0
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Button_Banco" type="Button" parent="."]
+show_behind_parent = true
+margin_left = 644.0
+margin_top = 123.0
+margin_right = 743.0
+margin_bottom = 222.0
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Button_Status" type="Button" parent="."]
+show_behind_parent = true
+margin_left = 535.0
+margin_top = 255.0
+margin_right = 630.0
+margin_bottom = 353.0
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Button_Task" type="Button" parent="."]
+show_behind_parent = true
+margin_left = 642.0
+margin_top = 255.0
+margin_right = 739.0
+margin_bottom = 352.0
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Button_Créditos" type="Button" parent="."]
+show_behind_parent = true
+margin_left = 531.0
+margin_top = 384.0
+margin_right = 629.0
+margin_bottom = 480.0
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Button_EduFin" type="Button" parent="."]
+show_behind_parent = true
+margin_left = 644.0
+margin_top = 383.0
+margin_right = 741.0
+margin_bottom = 478.0
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Button_Volume" type="Button" parent="."]
+show_behind_parent = true
+margin_left = 564.0
+margin_top = 522.0
+margin_right = 603.0
+margin_bottom = 559.0
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Button_Sair" type="Button" parent="."]
+show_behind_parent = true
+margin_left = 674.0
+margin_top = 522.0
+margin_right = 709.0
+margin_bottom = 562.0
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="Button_Mapa" to="." method="_on_Button_Mapa_pressed"]
+[connection signal="pressed" from="Button_Banco" to="." method="_on_Button_Banco_pressed"]
+[connection signal="pressed" from="Button_Status" to="." method="_on_Button_Status_pressed"]
+[connection signal="pressed" from="Button_Task" to="." method="_on_Button_Task_pressed"]
+[connection signal="pressed" from="Button_Créditos" to="." method="_on_Button_Crditos_pressed"]
+[connection signal="pressed" from="Button_EduFin" to="." method="_on_Button_EduFin_pressed"]
+[connection signal="pressed" from="Button_Volume" to="." method="_on_Button_Volume_pressed"]
+[connection signal="pressed" from="Button_Sair" to="." method="_on_Button_Sair_pressed"]
