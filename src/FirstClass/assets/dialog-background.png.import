@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Tails.png-5b98397e74f1fedca89bacf48f1c55dc.stex"
+path="res://.import/dialog-background.png-e91085b7ea1496c741fb8f6650ffa41d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Imagens/Tails.png"
-dest_files=[ "res://.import/Tails.png-5b98397e74f1fedca89bacf48f1c55dc.stex" ]
+source_file="res://assets/dialog-background.png"
+dest_files=[ "res://.import/dialog-background.png-e91085b7ea1496c741fb8f6650ffa41d.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
