@@ -1,15 +1,32 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://assets/happyBra.png" type="Texture" id=1]
+[ext_resource path="res://assets/Happy_bar.png" type="Texture" id=1]
+[ext_resource path="res://Scenes/HappyBar.gd" type="Script" id=2]
 
 [node name="HBoxContainer" type="HBoxContainer"]
-margin_right = 40.0
-margin_bottom = 40.0
+margin_left = 1.0
+margin_top = -1.0
+margin_right = 41.0
+margin_bottom = 39.0
+script = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Sprite" type="Sprite" parent="."]
-position = Vector2( -10.75, -0.874996 )
-scale = Vector2( 0.606481, 0.569797 )
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="Button_happy" type="Button" parent="Node2D"]
+show_behind_parent = true
+margin_left = -17.0
+margin_right = 28.0
+margin_bottom = 37.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HappyBar" type="Sprite" parent="Node2D"]
+position = Vector2( 5.00001, 18 )
+scale = Vector2( 0.8325, 0.751562 )
 texture = ExtResource( 1 )
+
+[connection signal="pressed" from="Node2D/Button_happy" to="." method="_on_Button_happy_pressed"]

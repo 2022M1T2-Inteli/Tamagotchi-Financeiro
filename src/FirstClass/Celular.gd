@@ -32,4 +32,4 @@ func _on_Button_Volume_pressed():
 
 
 func _on_Button_Sair_pressed():
-	pass # Replace with function body.
+	get_tree().change_scene("res://Scenery/bedroom.tscn")
