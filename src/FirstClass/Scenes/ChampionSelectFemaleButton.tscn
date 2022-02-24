@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Imagens/Niko.png" type="Texture" id=1]
+
+[node name="Button" type="Button"]
+margin_left = -125.0
+margin_top = -125.0
+margin_right = 125.0
+margin_bottom = 125.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 124, 126 )
+scale = Vector2( 0.596096, 0.568702 )
+texture = ExtResource( 1 )
