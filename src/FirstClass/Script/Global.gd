@@ -4,6 +4,7 @@ extends Node
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
+#variables that will define character sprite and name
 var gender : bool = true
 var player_name : String = "Mr. Fox"
 
