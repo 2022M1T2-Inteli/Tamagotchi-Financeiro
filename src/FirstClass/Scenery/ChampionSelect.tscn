@@ -1,0 +1,40 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Scenes/ChampionSelectFemaleButton.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/ChampionSelectMaleButton.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Imagens/css-gradient.png" type="Texture" id=3]
+[ext_resource path="res://Script/ChampionSelectFemaleButton.gd" type="Script" id=4]
+[ext_resource path="res://Script/ChampionSelectMaleButton.gd" type="Script" id=5]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 644, 359 )
+scale = Vector2( 1.075, 1.22667 )
+texture = ExtResource( 3 )
+
+[node name="mnuMale" parent="." instance=ExtResource( 2 )]
+margin_left = 287.0
+margin_top = 242.0
+margin_right = 537.0
+margin_bottom = 492.0
+script = ExtResource( 5 )
+
+[node name="mnuFemale" parent="." instance=ExtResource( 1 )]
+margin_left = 740.0
+margin_top = 242.0
+margin_right = 990.0
+margin_bottom = 492.0
+script = ExtResource( 4 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 398.0
+margin_top = 100.0
+margin_right = 898.0
+margin_bottom = 200.0
+text = "Please, select your character!"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}

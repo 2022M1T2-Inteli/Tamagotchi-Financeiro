@@ -11,7 +11,12 @@ config_version=4
 [application]
 
 config/name="Tela de menu"
+run/main_scene="res://Scenes/Tela_inicio.tscn"
 config/icon="res://icon.png"
+
+[autoload]
+
+Global="*res://Script/Global.gd"
 
 [display]
 
