@@ -8,15 +8,15 @@
 
 ## EduFin Dev Team
 
-## Integrantes: <a href="https://www.linkedin.com/in/alan-rozensztajn-schipper-0563701ba/">Alan Schipper</a>, <a href="https://www.linkedin.com/in/ana-clara-l-m-zaidan-254376232/">Ana Clara Zaidan</a>, <a href="https://www.linkedin.com/in/bruno-meira-75419918b/">Bruno Meira</a>, <a href="https://www.linkedin.com/in/filipi-enzo-siqueira-kikuchi-1811a9213/">Filipi Kikuchi</a>, <a href="https://www.linkedin.com/in/giovanna-furlan-torres-378316182/">Giovanna Torres</a>, <a href="https://www.linkedin.com/in/patrick-miranda-7ab911231/">Patrick Miranda</a> e <a href="https://github.com/lucasconti888">Lucas Pereira</a>.
+## Integrantes: <a href="https://www.linkedin.com/in/alan-rozensztajn-schipper-0563701ba/">Alan Schipper</a>, <a href="https://www.linkedin.com/in/ana-clara-l-m-zaidan-254376232/">Ana Clara Zaidan</a>, <a href="https://www.linkedin.com/in/bruno-meira-75419918b/">Bruno Meira</a>, <a href="https://www.linkedin.com/in/filipi-enzo-siqueira-kikuchi-1811a9213/">Filipi Kikuchi</a>, <a href="https://www.linkedin.com/in/giovanna-furlan-torres-378316182/">Giovanna Torres</a>, <a href="https://www.linkedin.com/in/patrick-miranda-7ab911231/">Patrick Miranda</a> e <a href="https://www.linkedin.com/in/lucas-pereira-3410b1233">Lucas Pereira</a>.
 
 ## Descrição
 
 📜 O jogo terá como objetivo promover uma conscientização sobre educação financeira, contribuindo para a inserção de pessoas antes analfabetas financeiramente na sociedade. Esse objetivo será atingido através de um jogo que equilibra o didatismo e a diversão, em que o foco estará mais na aprendizagem prática, mesmo que contenha situações de aprendizagem mais teórica. Nesse sentido, conceitos de finanças reais serão abordados através da representação de situações cotidianas, focadas na evolução do personagem ao cuidar de sua saúde financeira. Portanto, esse é um projeto de faculdade que visa gerar um produto final eficiente e jogável para a empresa parceira, BTG Pactual, impactando o nível de educação financeira da sociedade.
 <br><br>
 <p align="center">
-<img src="https://pix4free.org/assets/library/2021-01-20/originals/game.jpg" alt="EduFin App" border="0">
-  Game by <a href="http://www.nyphotographic.com/">Nick Youngson</a> <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> <a href="http://pix4free.org/">Pix4free</a>
+<img src="https://img.itch.zone/aW1nLzgyNTIxNzUucG5n/original/m4Ozoz.png" alt="EduFin App" border="0">
+  Game by <a href="http://www.nyphotographic.com/">EduFin Dev Team</a> <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> <a href="http://pix4free.org/">Pix4free</a>
 </p>
 
 
