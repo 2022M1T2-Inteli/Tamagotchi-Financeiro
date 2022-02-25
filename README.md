@@ -20,9 +20,8 @@
 </p>
 
 
-💡 De um a dois parágrafos sobre o que é seu projeto e o que ele faz.
-<br><br>
-Meu projeto ajuda estudantes inteli a configurarem seus githubs.
+<p align="justify"> 💡 A proposta principal gira em torno de um personagem que passa na faculdade e acaba por mudar de cidade. Dessa forma,  agora que reside sozinho, ele terá que fazer a própria gestão financeira. Logo, por meio de escolhas interativas, o usuário terá de ajudar seu personagem a se adaptar e gerir seu dinheiro, tendo a possibilidade de mudar o andamento do jogo. Inicialmente, a única fonte de renda do personagem será uma mesada mensal fornecida por sua avó, mas no decorrer do jogo o usuário poderá desbloquear novos meios de conseguir dinheiro, utilizando dos conhecimentos de gestão financeira adquiridos para lidar com ele. A princípio, existe uma linearidade no jogo, com fases,  conquistas e desafios, e a situação mais extrema que pode acontecer ao personagem é a falência, em que o dinheiro todo do personagem acaba. O game contará com capítulos que, por mini jogos, abordarão temas sobre educação financeira de forma dinâmica. A progressão nesses capítulos ocorre por ações que mantêm o bem-estar financeiro do personagem, que requisitará atributos mínimos do avatar do jogador para avançar na campanha.
+
 <br><br>
 May the force be with you!
 <br><br>
