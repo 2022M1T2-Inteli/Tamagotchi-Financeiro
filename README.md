@@ -12,7 +12,7 @@
 
 ## Descrição
 
-📜 <p align="justify"> O jogo terá como objetivo promover uma conscientização sobre educação financeira, contribuindo para a inserção de pessoas antes analfabetas financeiramente na sociedade. Esse objetivo será atingido através de um jogo que equilibra o didatismo e a diversão, em que o foco estará mais na aprendizagem prática, mesmo que contenha situações de aprendizagem mais teórica. Nesse sentido, conceitos de finanças reais serão abordados através da representação de situações cotidianas, focadas na evolução do personagem ao cuidar de sua saúde financeira. Portanto, esse é um projeto de faculdade que visa gerar um produto final eficiente e jogável para a empresa parceira, BTG Pactual, impactando o nível de educação financeira da sociedade.</p>
+<p align="justify"> 📜 O jogo terá como objetivo promover uma conscientização sobre educação financeira, contribuindo para a inserção de pessoas antes analfabetas financeiramente na sociedade. Esse objetivo será atingido através de um jogo que equilibra o didatismo e a diversão, em que o foco estará mais na aprendizagem prática, mesmo que contenha situações de aprendizagem mais teórica. Nesse sentido, conceitos de finanças reais serão abordados através da representação de situações cotidianas, focadas na evolução do personagem ao cuidar de sua saúde financeira. Portanto, esse é um projeto de faculdade que visa gerar um produto final eficiente e jogável para a empresa parceira, BTG Pactual, impactando o nível de educação financeira da sociedade.
 <br><br>
 <p align="center">
 <img src="https://img.itch.zone/aW1nLzgyNTIxNzUucG5n/original/m4Ozoz.png" alt="EduFin App" border="0">
