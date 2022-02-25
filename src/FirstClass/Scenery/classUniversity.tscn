@@ -9,18 +9,16 @@
 [ext_resource path="res://Scenes/phone.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Scenes/HappyBar.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Scenes/Popupnoemail.tscn" type="PackedScene" id=9]
-[ext_resource path="res://Scenes/Teacher.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Scenes/npcTeacher.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Scenes/dialogBoxTest.tscn" type="PackedScene" id=11]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 646.5, 10 )
 
-[sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 86.75, 10 )
-
 [node name="Node2D" type="Node2D"]
 
-[node name="RigidBody2D" parent="." instance=ExtResource( 10 )]
-position = Vector2( 680, 442 )
+[node name="KinematicBody2D" parent="." instance=ExtResource( 10 )]
+position = Vector2( 1179, 614 )
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
@@ -43,7 +41,7 @@ path = "res://Scenery/streetHouse.tscn"
 [node name="Transition_in" parent="." instance=ExtResource( 3 )]
 
 [node name="Player_certo" parent="." instance=ExtResource( 5 )]
-position = Vector2( 1145, 678 )
+position = Vector2( 177, 674 )
 
 [node name="Colission_1" type="StaticBody2D" parent="."]
 
@@ -70,15 +68,18 @@ margin_right = 578.0
 margin_bottom = -249.0
 
 [node name="Control" parent="." instance=ExtResource( 9 )]
-margin_left = 189.0
-margin_top = 9.0
-margin_right = 1184.0
-margin_bottom = 713.0
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 999.0
+margin_top = 44.0
+margin_right = 1051.0
+margin_bottom = 102.0
 
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
-collision_layer = 17
-collision_mask = 17
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2( 705.25, 537 )
-shape = SubResource( 2 )
+[node name="Control2" parent="." instance=ExtResource( 11 )]
+visible = false
+margin_left = -17.0
+margin_top = -6.0
+margin_right = -17.0
+margin_bottom = -6.0
