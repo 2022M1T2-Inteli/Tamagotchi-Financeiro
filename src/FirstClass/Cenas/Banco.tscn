@@ -37,4 +37,25 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Button_banco_voltar_left" type="Button" parent="."]
+show_behind_parent = true
+margin_left = -8.0
+margin_right = 476.0
+margin_bottom = 716.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="button_banco_voltar_right" type="Button" parent="."]
+show_behind_parent = true
+margin_left = 802.0
+margin_top = -4.0
+margin_right = 1286.0
+margin_bottom = 712.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [connection signal="pressed" from="Button_banco_voltar" to="." method="_on_Button_banco_voltar_pressed"]
+[connection signal="pressed" from="Button_banco_voltar_left" to="." method="_on_Button_banco_voltar_left_pressed"]
+[connection signal="pressed" from="button_banco_voltar_right" to="." method="_on_button_banco_voltar_right_pressed"]
