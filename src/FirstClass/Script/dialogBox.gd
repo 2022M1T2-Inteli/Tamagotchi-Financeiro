@@ -1,10 +1,10 @@
 extends Control
 
 var dialog = [
-	'Olá, este é um teste de dialogo, vou fazer uma breve explicação e depois fazer uma pergunta pra vc',
-	'Historicamente definido como instrumento de troca, medida de valor e preservação parcial do valor de compra, o dinheiro é amplamente utilizado no mundo todo e seu nome/valor pode variar de lugar para lugar.',
-	'Grande parcela da sociedade o vê somente como instrumento de troca, tendendo a gastar até o último centavo sempre que conseguem mais.',
-	'O que você entende por gastos essenciais e a diferença de necessidade e desejo?'
+	'Poupança é um investimento de renda fixa, simples e acessível.',
+	'Neste caso as cobranças de taxas de abertura ou de manutenção, taxas de administração ou de performance é considerada proibida, sendo um ponto favorável.',
+	'Um de seus principais atrativos é a facilidade que acontece o resgate de suas aplicações.',
+	'Quando surge o desejo de retirar o investimento, pode ser físico, em um caixa eletrônico do banco ao qual a conta foi aberta ou de forma simples os recursos caem na conta corrente em instantes.'
 ]
 
 var dialog_index = 0
@@ -33,7 +33,7 @@ func load_dialog():
 	else:
 
 		queue_free()
-		get_tree().change_scene("res://Scenery/classUniversity.tscn")
+		get_tree().change_scene("res://Scenes/Quizbutton.tscn")
 	dialog_index += 1
 
 

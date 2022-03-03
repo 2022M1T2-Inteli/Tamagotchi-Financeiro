@@ -1,13 +1,14 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://assets/dialog-background.png" type="Texture" id=1]
 [ext_resource path="res://Script/dialogBox.gd" type="Script" id=2]
 [ext_resource path="res://assets/Button.png" type="Texture" id=3]
-[ext_resource path="res://Fonts/GaramondPremrPro-Smbd.otf" type="DynamicFontData" id=4]
+[ext_resource path="res://Fonts/Minecraftia-Regular.ttf" type="DynamicFontData" id=4]
 [ext_resource path="res://assets/fundoUniversity.png" type="Texture" id=5]
+[ext_resource path="res://newFundoSchool.png" type="Texture" id=6]
 
 [sub_resource type="DynamicFont" id=4]
-size = 45
+size = 23
 font_data = ExtResource( 4 )
 
 [sub_resource type="Animation" id=2]
@@ -23,7 +24,7 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 0.5 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ Vector2( 1159, 627 ), Vector2( 1168, 627 ) ]
+"values": [ Vector2( 1145.84, 627 ), Vector2( 1130.84, 627 ) ]
 }
 
 [sub_resource type="Animation" id=3]
@@ -56,7 +57,16 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Sprite2" type="Sprite" parent="dialogBox"]
+position = Vector2( 640, 360.25 )
+scale = Vector2( 0.6625, 0.658796 )
+texture = ExtResource( 6 )
+__meta__ = {
+"_edit_lock_": true
+}
+
 [node name="Sprite" type="Sprite" parent="dialogBox"]
+visible = false
 position = Vector2( 647.5, 366.5 )
 scale = Vector2( 1.00859, 1.00417 )
 texture = ExtResource( 5 )
@@ -64,6 +74,7 @@ texture = ExtResource( 5 )
 [node name="Tween" type="Tween" parent="dialogBox"]
 
 [node name="TextureRect" type="TextureRect" parent="dialogBox"]
+visible = false
 anchor_left = 1.1
 anchor_top = 10.55
 anchor_right = 30.775
@@ -79,10 +90,10 @@ __meta__ = {
 [node name="RichTextLabel" type="RichTextLabel" parent="dialogBox"]
 anchor_right = 32.0
 anchor_bottom = 18.0
-margin_left = 66.0
-margin_top = 439.0
-margin_right = -80.0
-margin_bottom = -78.0
+margin_left = 351.0
+margin_top = 506.0
+margin_right = -168.0
+margin_bottom = -66.0
 custom_colors/default_color = Color( 0, 0, 0, 1 )
 custom_fonts/normal_font = SubResource( 4 )
 __meta__ = {

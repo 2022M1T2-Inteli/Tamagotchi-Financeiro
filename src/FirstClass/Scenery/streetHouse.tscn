@@ -103,7 +103,7 @@ position = Vector2( 317, 448 )
 path = "res://Scenery/bedroom.tscn"
 
 [node name="Player_certo" parent="." instance=ExtResource( 2 )]
-position = Vector2( 109, 677 )
+position = Vector2( 318, 546 )
 scale = Vector2( 0.75, 0.75 )
 
 [node name="Transition_in" parent="." instance=ExtResource( 5 )]
