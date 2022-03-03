@@ -127,5 +127,7 @@ A cada atualização os detalhes devem ser lançados aqui.
 
 Aqui estão as referências usadas no projeto.
 
+(As referências foram utilizadas somente como inspiração, não utilizando links diretos no projeto)
+
 1. <https://atlus.com/p5r/lang/en/>
 2. <https://www.greenheartgames.com/app/game-dev-tycoon/> 
