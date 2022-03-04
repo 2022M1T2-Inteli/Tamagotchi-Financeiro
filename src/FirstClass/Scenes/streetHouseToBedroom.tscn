@@ -8,7 +8,6 @@ extents = Vector2( 41.4375, 40.125 )
 
 [node name="Goalscene2" type="Area2D"]
 script = ExtResource( 2 )
-path = "res://Scene1.tscn"
 
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( -1.90735e-06, 0 )

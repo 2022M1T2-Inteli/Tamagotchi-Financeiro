@@ -32,12 +32,20 @@ func _on_Button_Volume_pressed():
 
 
 func _on_Button_Sair_pressed():
-	get_tree().change_scene("res://Scenery/bedroom.tscn")
+	get_tree().change_scene(Global.current_scene)
 
 
 func _on_Button_exit_left_side_pressed():
-	get_tree().change_scene("res://Scenery/bedroom.tscn")
+	get_tree().change_scene(Global.current_scene)
 
 
 func _on_Button_exit_right_pressed():
-	get_tree().change_scene("res://Scenery/bedroom.tscn")
+	get_tree().change_scene(Global.current_scene)
+
+
+func _on_Button_botao1_pressed():
+	get_tree().change_scene(Global.current_scene)
+
+
+func _on_Button_botO2_pressed():
+	get_tree().change_scene(Global.current_scene)

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Buttonquiz.png-59d847cc6f7d38e2fba91b00f2ec054c.stex"
+path="res://.import/Barra.png-e7e90ea3cab0d317153c445393551407.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Buttonquiz.png"
-dest_files=[ "res://.import/Buttonquiz.png-59d847cc6f7d38e2fba91b00f2ec054c.stex" ]
+source_file="res://assets/Barra.png"
+dest_files=[ "res://.import/Barra.png-e7e90ea3cab0d317153c445393551407.stex" ]
 
 [params]
 

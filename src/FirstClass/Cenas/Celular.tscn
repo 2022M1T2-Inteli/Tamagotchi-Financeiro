@@ -133,6 +133,27 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Button_botao1" type="Button" parent="."]
+show_behind_parent = true
+margin_left = 484.0
+margin_top = 586.0
+margin_right = 794.0
+margin_bottom = 723.0
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Button_botO2" type="Button" parent="."]
+show_behind_parent = true
+margin_left = 454.0
+margin_top = -3.0
+margin_right = 823.0
+margin_bottom = 109.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [connection signal="pressed" from="Button_Mapa" to="." method="_on_Button_Mapa_pressed"]
 [connection signal="pressed" from="Button_Banco" to="." method="_on_Button_Banco_pressed"]
 [connection signal="pressed" from="Button_Status" to="." method="_on_Button_Status_pressed"]
@@ -143,3 +164,5 @@ __meta__ = {
 [connection signal="pressed" from="Button_Sair" to="." method="_on_Button_Sair_pressed"]
 [connection signal="pressed" from="Button_Sair/Button_exit_left_side" to="." method="_on_Button_exit_left_side_pressed"]
 [connection signal="pressed" from="Button_Sair/Button_exit_right" to="." method="_on_Button_exit_right_pressed"]
+[connection signal="pressed" from="Button_botao1" to="." method="_on_Button_botao1_pressed"]
+[connection signal="pressed" from="Button_botO2" to="." method="_on_Button_botO2_pressed"]

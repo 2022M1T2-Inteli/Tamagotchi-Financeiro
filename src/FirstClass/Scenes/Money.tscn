@@ -4,6 +4,7 @@
 [ext_resource path="res://Scenes/Money.gd" type="Script" id=2]
 
 [node name="Money" type="HBoxContainer"]
+visible = false
 margin_right = 40.0
 margin_bottom = 47.0
 script = ExtResource( 2 )

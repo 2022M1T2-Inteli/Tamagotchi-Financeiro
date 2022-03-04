@@ -37,4 +37,37 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Button_mercado" type="Button" parent="."]
+show_behind_parent = true
+margin_left = 513.0
+margin_top = 338.0
+margin_right = 557.0
+margin_bottom = 386.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button_faculdade" type="Button" parent="."]
+show_behind_parent = true
+margin_left = 724.0
+margin_top = 202.0
+margin_right = 769.0
+margin_bottom = 253.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button_quarto" type="Button" parent="."]
+show_behind_parent = true
+margin_left = 731.0
+margin_top = 94.0
+margin_right = 777.0
+margin_bottom = 138.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [connection signal="pressed" from="Button_mapa_voltar" to="." method="_on_Button_mapa_voltar_pressed"]
+[connection signal="pressed" from="Button_mercado" to="." method="_on_Button_mercado_pressed"]
+[connection signal="pressed" from="Button_faculdade" to="." method="_on_Button_faculdade_pressed"]
+[connection signal="pressed" from="Button_quarto" to="." method="_on_Button_quarto_pressed"]

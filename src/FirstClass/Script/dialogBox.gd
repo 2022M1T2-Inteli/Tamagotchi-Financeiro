@@ -1,11 +1,17 @@
 extends Control
 
 var dialog = [
-	'Poupança é um investimento de renda fixa, simples e acessível.',
-	'Neste caso as cobranças de taxas de abertura ou de manutenção, taxas de administração ou de performance é considerada proibida, sendo um ponto favorável.',
-	'Um de seus principais atrativos é a facilidade que acontece o resgate de suas aplicações.',
-	'Quando surge o desejo de retirar o investimento, pode ser físico, em um caixa eletrônico do banco ao qual a conta foi aberta ou de forma simples os recursos caem na conta corrente em instantes.'
-]
+	'Poupança é um investimento de renda fixa, simples e acessível, mas, afinal, o que é renda fixa? É um investimento em que o cálculo da remuneração é previamente definido, tornando-o mais seguro, mesmo que não seja 100%',
+	'A poupança é isenta de custos. A cobrança de taxas de abertura, de manutenção, de administração ou de performance é considerada proibida. Inclusive, os rendimentos da poupança não pagam Imposto de Renda, mesmo que tenham que ser declarados anualmente.',
+	'Um de seus principais atrativos é sua liquidez diária: Os resgates de suas aplicações podem ser realizados a qualquer momento, com muita facilidade.',
+	'A retirada do dinheiro do investimento pode ser: 1) física, por um caixa eletrônico do banco em que a conta foi aberta; 2) eletrônica, em que, de forma simples, os recursos caem na conta corrente em instantes.',
+	'Aniversário da poupança: Embora tenha liquidez diária, a remuneração da caderneta é creditada mensalmente apenas na sua data de “aniversário”, que é o dia do mês em que o depósito foi feito.',
+	'Assim, uma aplicação realizada no dia 10 de um determinado mês só fará jus à remuneração exatamente no dia 10 do mês seguinte. Se resgatar o dinheiro no dia 9, perde-se todo o retorno do período.',
+	'Destino dos recursos aplicados: 65% dos recursos aplicados na caderneta são obrigatoriamente destinados ao mercado imobiliário (para os bancos concederem financiamentos a quem quer comprar um imóvel próprio).',
+	'O rendimento altera conforme o patamar em que se encontra a Selic (a taxa básica de juros da economia brasileira). Na renda fixa, uma Selic alta leva a rendimentos mais altos, e vice-versa.',
+	'OBSERVAÇÃO: Adotaremos 5% de rendimento mensal fixo + a variação da TR (taxa referencial) = 0 no jogo.   FÓRMULA RENDIMENTO MENSAL - M = 105 % * C  --> M = Montante --> C = Capital inicial'
+	]
+
 
 var dialog_index = 0
 var finished = false

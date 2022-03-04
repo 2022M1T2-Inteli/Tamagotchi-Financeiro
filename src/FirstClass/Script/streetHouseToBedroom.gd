@@ -6,4 +6,5 @@ export var path : String
 
 func _on_Goalscene2_body_entered(body):
 	if body.name == "Player_certo":
-		changer.change_scene(path)
+		Global.current_scene = "res://Scenery/bedroom.tscn"
+		changer.change_scene(Global.current_scene)
