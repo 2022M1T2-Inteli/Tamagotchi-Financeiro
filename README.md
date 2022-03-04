@@ -90,16 +90,14 @@ Através da cópia/clone/ download do repositório, altere os dados do readme.md
 
 ## 💻 Configuração para Desenvolvimento
 
-Descreva como instalar todas as dependências para desenvolvimento e como rodar um test-suite automatizado de algum tipo. Se necessário, faça isso para múltiplas plataformas.
-
 Para abrir este projeto você necessita da seguinte ferramenta:
 
 -<a href="https://godotengine.org/download">GODOT</a>
 
 ```sh
-make install
-npm test
-Coloque código do prompt de comnando se for necessário
+execute godot engine
+selecione import (projeto 1 --> src --> First class --> project.godot) para ter acesso ao projeto
+selecione (project --> export --> add) para criar um executavel para plataforma em que deseja testar o jogo
 ```
 
 ## 🗃 Histórico de lançamentos
