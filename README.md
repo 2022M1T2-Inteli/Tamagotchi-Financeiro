@@ -38,45 +38,46 @@
 |-->src<br>
 |readme.md<br>
 
-A pasta raiz contem dois arquivos que devem ser alterados:
+A pasta raiz contém um arquivo principal:
 
-<b>README.MD</b>: Arquivo que serve como guia e explicação geral sobre seu projeto. O mesmo que você está lendo agora.
+<b>README.MD</b>: Consiste em um guia geral sobre todos os aspectos do projeto.
 
 Há também 4 pastas que seguem da seguinte forma:
 
-<b>documentos</b>: Aqui estarão todos os documentos do projeto, mas principalmente o <b>GDD (Game Design Document)/Documentação do Sistema</b>. Há uma pasta <b>antigos</b> onde estarão todas as versões antigas da documentação.
+<b>documentos</b>: Onde encontra-se todos os documentos relacionados ao projeto, mas principalmente o <b>GDD (Game Design Document)/Documentação do Sistema</b>. Há uma subpasta denominada <b>antigos</b> onde estarão todas as versões antigas da documentação.
 
-<b>executáveis</b>: Aqui estarão todos os executáveis do jogo, prontos para rodar. Há no mínimo 3 pastas, uma para binários <b>Windows</b>, uma para binários <b>android</b> e uma para a <b>Web/HTML</b>
+<b>executáveis</b>: Onde encontra-se todos os executáveis do jogo, prontos para rodar, com, no mínimo, 3 pastas: Uma para binários <b>Windows</b>, uma para binários <b>android</b> e uma para a <b>Web/HTML</b>.
 
-<b>imagens</b>: Algumas imagens do jogo/sistema e logos prontos para serem utilizados e visualizados.
+<b>imagens</b>: Onde encontra-se imagens relacionadas ao jogo/sistema e logos prontos para serem utilizados e visualizados.
 
-<b>src</b>: Nesta pasta irá todo o código fonte do jogo/sistema, pronto para para ser baixado e modificado.
+<b>src</b>: Onde encontra-se todo o código fonte do jogo/sistema, pronto para para ser baixado e modificado.
 
 ## 🛠 Instalação
 
-<b>Android:</b>
+<b>Android (Não disponível):</b>
 
-Faça o Download do JOGO.apk no seu celular.
-Execute o APK e siga as instruções de seu telefone.
+Faça o Download do arquivo EduFin.apk no seu celular, execute o arquivo "APK" e siga as instruções do seu telefone.
 
 ```sh
-Coloque código do prompt de comnando se for necessário
+Assim que disponível, os binários serão disponibilizados nesse mesmo repositório.
 ```
 
 <b>Windows:</b>
 
-Não há instalação! Apenas executável!
-Encontre o JOGO.exe na pasta executáveis e execute-o como qualquer outro programa.
+Não há instalação, apenas executável! Baixe os arquivos disponíveis em: <a href="https://www.linkedin.com/in/ana-clara-l-m-zaidan-254376232/">COLOCAR O LINK</a>, e execute "EduFin.exe" como qualquer outro programa.
 
 ```sh
-Coloque código do prompt de comnando se for necessário
+Observe que é necessário que o arquivo "EduFin.pck" esteja no mesmo diretório que "EduFin.exe".
 ```
 
 <b>HTML:</b>
 
-Não há instalação!
-Encontre o index.html na pasta executáveis e execute-o como uma página WEB (através de algum browser).
+Não há instalação! Baixe os arquivos disponíveis em <a href="https://www.linkedin.com/in/ana-clara-l-m-zaidan-254376232/">COLOCAR O LINK</a>, e execute-o como uma página da web (através de algum navegador).
 
+  ```sh
+Dependendo de suas configurações de firewall, talvez seja necessário instaurar um web service como xampp ou wampp para que o jogo rode localmente.
+```
+  
 ## 📈 Exemplo de uso
 
 Alguns exemplos interessantes e úteis sobre como seu projeto pode ser utilizado.
@@ -89,44 +90,42 @@ Através da cópia/clone/ download do repositório, altere os dados do readme.md
 
 ## 💻 Configuração para Desenvolvimento
 
-Descreva como instalar todas as dependências para desenvolvimento e como rodar um test-suite automatizado de algum tipo. Se necessário, faça isso para múltiplas plataformas.
-
-Para abrir este projeto você necessita das seguintes ferramentas:
+Para abrir este projeto você necessita da seguinte ferramenta:
 
 -<a href="https://godotengine.org/download">GODOT</a>
 
 ```sh
-make install
-npm test
-Coloque código do prompt de comnando se for necessário
+execute godot engine
+selecione import (projeto 1 --> src --> First class --> project.godot) para ter acesso ao projeto
+selecione (project --> export --> add) para criar um executavel para plataforma em que deseja testar o jogo
 ```
 
 ## 🗃 Histórico de lançamentos
 
 A cada atualização os detalhes devem ser lançados aqui.
 
-* 0.2.1 - 25/01/2022
-    * MUDANÇA: Atualização de docs (código do módulo permanece inalterado)
-* 0.2.0 - 15/01/2022
-    * MUDANÇA: Remove `setDefaultXYZ()`
-    * ADD: Adiciona `init()`
-* 0.1.1 - 11/01/2022
-    * CONSERTADO: Crash quando chama `baz()` (Obrigado @NomeDoContribuidorGeneroso!)
-* 0.1.0 - 10/01/2022
-    * O primeiro lançamento adequado
-    * MUDANÇA: Renomeia `foo()` para `bar()`
-* 0.0.1 - 01/01/2022
-    * Trabalho em andamento
+* 0.0.1 - 18/02/2022
+    * Lançamento da primeira versão do jogo.
+  
+* 0.0.2 - 25/02/2022
+    * Trabalho em andamento.
+    * MUDANÇA: Alteração dos cenários.
+  
+* 0.0.3 - 03/03/2022
+    * ADD: Implementação das aulas teóricas, menu e quiz.
+  
+* 0.1.0 - 04/03/2022
+    * Lançamento da segunda versão do jogo.
 
 ## 📋 Licença/License
-<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/2022M1T2/Projeto1.git">EduFin Dev Team</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/MrSchipRozen">Alan Schipper</a> , <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/anaclaralmz">Ana Clara Zaidan</a> , <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/brun0meira">Bruno Meira</a> , <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/HallZero">Filipi Kikuchi</a> , <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/furlan2803">Giovanna Torres</a> , <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/lucasconti888">Lucas Pereira</a> , <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/patrickvicto">Patrick Miranda</a> e Rodrigo Guimarães. is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p>
+
+<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/2022M1T2/Projeto1">EduFin App</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/2022M1T2/Projeto1">Inteli, Alan Schipper, Ana Clara Zaidan, Bruno Meira, Filipi Kikuchi, Giovanna Torres, Patrick Miranda e Lucas Pereira.</a> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p>
 
 ## 🎓 Referências
 
 Aqui estão as referências usadas no projeto.
 
-1. <https://github.com/iuricode/readme-template>
-2. <https://github.com/gabrieldejesus/readme-model>
-3. <https://creativecommons.org/share-your-work/>
-4. <https://freesound.org/>
-5. Músicas por: <a href="https://freesound.org/people/DaveJf/sounds/616544/"> DaveJf </a> e <a href="https://freesound.org/people/DRFX/sounds/338986/"> DRFX </a> ambas com Licença CC 0.
+(As referências foram utilizadas somente como inspiração, não utilizando links diretos no projeto)
+
+1. <https://atlus.com/p5r/lang/en/>
+2. <https://www.greenheartgames.com/app/game-dev-tycoon/> 
