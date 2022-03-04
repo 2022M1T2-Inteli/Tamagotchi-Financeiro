@@ -9,6 +9,7 @@ var gender : bool = true
 var player_name : String = "Mr. Fox"
 var current_scene : String = "res://Scenery/bedroom.tscn"
 var instructions : bool = true
+var money : float = 100.52
 var position = Vector2(318,546)
 # Called when the node enters the scene tree for the first time.
 func _ready():
