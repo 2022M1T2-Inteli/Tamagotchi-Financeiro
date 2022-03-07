@@ -73,8 +73,7 @@ margin_top = 30.0
 margin_right = 97.0
 margin_bottom = 69.0
 
-[node name="Node2D" parent="." instance=ExtResource( 15 )]
-position = Vector2( -127, 583 )
+[node name="Joystick" parent="." instance=ExtResource( 15 )]
 
 [node name="Player_certo" parent="." instance=ExtResource( 2 )]
 position = Vector2( 150, 705 )

@@ -135,13 +135,11 @@ margin_top = 64.0
 margin_right = 1244.0
 margin_bottom = 84.0
 
+[node name="Joystick" parent="." instance=ExtResource( 14 )]
+
 [node name="Player_certo" parent="." instance=ExtResource( 2 )]
 position = Vector2( 318, 546 )
 scale = Vector2( 0.75, 0.75 )
-
-[node name="Node2D" parent="Player_certo" instance=ExtResource( 14 )]
-position = Vector2( -601.333, -42.6667 )
-scale = Vector2( 1.33333, 1.33333 )
 
 [node name="Camera2D" type="Camera2D" parent="Player_certo"]
 current = true
