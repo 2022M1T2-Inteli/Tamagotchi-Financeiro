@@ -9,27 +9,27 @@ z_index = 1
 script = ExtResource( 3 )
 
 [node name="RIGHT" type="TouchScreenButton" parent="."]
-position = Vector2( 557, 252 )
+position = Vector2( 552, 248 )
 scale = Vector2( 0.1, 0.1 )
 normal = ExtResource( 1 )
 pressed = ExtResource( 2 )
 
 [node name="UP" type="TouchScreenButton" parent="."]
-position = Vector2( 472, 286 )
+position = Vector2( 464, 264 )
 rotation = -1.5708
 scale = Vector2( 0.1, 0.1 )
 normal = ExtResource( 1 )
 pressed = ExtResource( 2 )
 
 [node name="LEFT" type="TouchScreenButton" parent="."]
-position = Vector2( 502, 365 )
+position = Vector2( 480, 352 )
 rotation = 3.14159
 scale = Vector2( 0.1, 0.1 )
 normal = ExtResource( 1 )
 pressed = ExtResource( 2 )
 
 [node name="DOWN" type="TouchScreenButton" parent="."]
-position = Vector2( 580, 332 )
+position = Vector2( 568, 336 )
 rotation = 1.5708
 scale = Vector2( 0.1, 0.1 )
 normal = ExtResource( 1 )
