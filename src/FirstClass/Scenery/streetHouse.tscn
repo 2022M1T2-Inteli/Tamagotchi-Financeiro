@@ -139,10 +139,6 @@ margin_bottom = 84.0
 position = Vector2( 318, 546 )
 scale = Vector2( 0.75, 0.75 )
 
-[node name="Node2D" parent="Player_certo" instance=ExtResource( 14 )]
-position = Vector2( -601.333, -42.6667 )
-scale = Vector2( 1.33333, 1.33333 )
-
 [node name="Camera2D" type="Camera2D" parent="Player_certo"]
 current = true
 limit_left = 0
@@ -151,6 +147,10 @@ limit_right = 3820
 limit_bottom = 720
 
 [node name="Transition_in" parent="." instance=ExtResource( 5 )]
+
+[node name="Node2D" parent="Transition_in" instance=ExtResource( 14 )]
+position = Vector2( -133, 514 )
+scale = Vector2( 0.999997, 0.999997 )
 
 [node name="HBoxContainer" parent="." instance=ExtResource( 7 )]
 margin_left = 136.0
