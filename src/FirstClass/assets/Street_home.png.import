@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/street1.png-402fffeb116d67375d25155acedd50e2.stex"
+path="res://.import/Street_home.png-f1c24dee8b1e5fab516c0f5f57e5ef5b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/street1.png"
-dest_files=[ "res://.import/street1.png-402fffeb116d67375d25155acedd50e2.stex" ]
+source_file="res://assets/Street_home.png"
+dest_files=[ "res://.import/Street_home.png-f1c24dee8b1e5fab516c0f5f57e5ef5b.stex" ]
 
 [params]
 
