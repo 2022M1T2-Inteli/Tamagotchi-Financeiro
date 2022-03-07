@@ -16,3 +16,6 @@ func _on_LineEdit_text_entered(new_text):
 	print(Global.player_name)
 	get_tree().change_scene(reference_path)
 	pass # Replace with function body.
+
+func _on_ContinueButton_pressed(): # On continue button pressed
+	get_tree().change_scene(reference_path) # Change scene to the next one
