@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://assets/market.png" type="Texture" id=1]
 [ext_resource path="res://Scenes/marketToStreet.tscn" type="PackedScene" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://Scenes/marketToInMarket.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Scenes/Popupnoemail.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Scenes/phone.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Scenery/joystick.tscn" type="PackedScene" id=7]
 
 [node name="Node2D" type="Node2D"]
 
@@ -43,3 +44,6 @@ margin_top = 65.0
 margin_right = 1216.0
 margin_bottom = 85.0
 focus_mode = 2
+
+[node name="Node2D" parent="." instance=ExtResource( 7 )]
+position = Vector2( -118, 524 )
