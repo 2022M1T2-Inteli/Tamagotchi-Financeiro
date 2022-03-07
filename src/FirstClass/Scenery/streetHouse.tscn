@@ -150,6 +150,10 @@ limit_bottom = 720
 
 [node name="Transition_in" parent="." instance=ExtResource( 5 )]
 
+[node name="Node2D" parent="Transition_in" instance=ExtResource( 14 )]
+position = Vector2( -133, 514 )
+scale = Vector2( 0.999997, 0.999997 )
+
 [node name="HBoxContainer" parent="." instance=ExtResource( 7 )]
 margin_left = 136.0
 margin_top = 32.0
