@@ -64,7 +64,7 @@ Assim que disponível, os binários serão disponibilizados nesse mesmo reposit�
 
 <b>Windows:</b>
 
-Não há instalação, apenas executável! Baixe os arquivos disponíveis em: <a href="https://www.linkedin.com/in/ana-clara-l-m-zaidan-254376232/">COLOCAR O LINK</a>, e execute "EduFin.exe" como qualquer outro programa.
+Não há instalação, apenas executável! Baixe os arquivos disponíveis em: <a href="https://github.com/2022M1T2/Projeto1/tree/main/executáveis/Windows">Executáveis Windows</a>, e execute "EduFin.exe" como qualquer outro programa.
 
 ```sh
 Observe que é necessário que o arquivo "EduFin.pck" esteja no mesmo diretório que "EduFin.exe".
@@ -72,7 +72,7 @@ Observe que é necessário que o arquivo "EduFin.pck" esteja no mesmo diretório
 
 <b>HTML:</b>
 
-Não há instalação! Baixe os arquivos disponíveis em <a href="https://www.linkedin.com/in/ana-clara-l-m-zaidan-254376232/">COLOCAR O LINK</a>, e execute-o como uma página da web (através de algum navegador).
+Não há instalação! Baixe os arquivos disponíveis em <a href="https://github.com/2022M1T2/Projeto1/tree/main/executáveis/HTML">Executáveis HTML</a>, e execute-o como uma página da web (através de algum navegador).
 
   ```sh
 Dependendo de suas configurações de firewall, talvez seja necessário instaurar um web service como xampp ou wampp para que o jogo rode localmente.
@@ -100,6 +100,10 @@ selecione import (projeto 1 --> src --> First class --> project.godot) para ter 
 selecione (project --> export --> add) para criar um executavel para plataforma em que deseja testar o jogo
 ```
 
+## Itch.io
+  
+ Link do projeto: <a href="https://edufin-dev-team.itch.io/edufin-app">EduFin App</a>
+  
 ## 🗃 Histórico de lançamentos
 
 A cada atualização os detalhes devem ser lançados aqui.
