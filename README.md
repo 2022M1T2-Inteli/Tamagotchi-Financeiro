@@ -99,10 +99,10 @@ execute godot engine
 selecione import (projeto 1 --> src --> First class --> project.godot) para ter acesso ao projeto
 selecione (project --> export --> add) para criar um executavel para plataforma em que deseja testar o jogo
 ```
-
-## Itch.io
   
- Link do projeto: <a href="https://edufin-dev-team.itch.io/edufin-app">EduFin App</a>
+## 🎮 Itch.io
+  
+ Jogue online: <a href="https://edufin-dev-team.itch.io/edufin-app">EduFin App</a>
   
 ## 🗃 Histórico de lançamentos
 
