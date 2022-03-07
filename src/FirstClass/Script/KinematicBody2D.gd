@@ -1,7 +1,6 @@
 extends KinematicBody2D
 
 var dialogo = false
-var velocidade = Vector2.ZERO
 onready var sprite : Sprite = get_node("Sprite")
 
 #textures for sprite
@@ -14,23 +13,29 @@ func _ready():
 
 
 func _physics_process(delta):
-	if Input.is_action_pressed("ui_right"):
-		velocidade.x = 6
-		$Sprite/AnimationPlayer.play("andando")
-	elif Input.is_action_pressed("ui_left"):
-		velocidade.x = -6
-		$Sprite/AnimationPlayer.play("andando esq")
-	else:
-		velocidade.x = 0
-	if Input.is_action_pressed("ui_down"):
-		velocidade.y = 6
-		$Sprite/AnimationPlayer.play("andando baixo")
-	elif Input.is_action_pressed("ui_up"):
-		velocidade.y = -6
-		$Sprite/AnimationPlayer.play("teste")
-	else:
-		velocidade.y = 0
-	move_and_collide(velocidade)
+	var velocidade = Vector2.ZERO # Set default zero velocity
+
+	# Calc move vector based on key input
+	var inputVectors = Vector2(Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left"), Input.get_action_strength("ui_down") - Input.get_action_strength("ui_up")) # Get input vector
+
+	if inputVectors.x > 0.0: # If input is right
+		velocidade.x = 6.0 # Set velocity to right
+		$Sprite/AnimationPlayer.play("andando direita") # Play animation
+	elif inputVectors.x < 0.0: # If input is left
+		velocidade.x = -6.0 # Set velocity to left
+		$Sprite/AnimationPlayer.play("andando esquerda") # Play animation
+
+	if inputVectors.y > 0.0: # If input is down
+		velocidade.y = 6.0 # Set velocity to down
+		$Sprite/AnimationPlayer.play("andando baixo") # Play animation
+	elif inputVectors.y < 0.0: # If input is up
+		velocidade.y = -6.0 # Set velocity to up
+		$Sprite/AnimationPlayer.play("andando cima") # Play animation
+
+	if velocidade.x == 0.0 and velocidade.y == 0.0: # If no input
+		$Sprite/AnimationPlayer.play("RESET") # Play animation
+
+	move_and_collide(velocidade) # Move and collide with world
 
 func switch_texture():
 	if  (Global.gender):

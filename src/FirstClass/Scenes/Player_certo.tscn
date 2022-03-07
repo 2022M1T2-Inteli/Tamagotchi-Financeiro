@@ -18,8 +18,40 @@ tracks/0/keys = {
 "values": [ 0 ]
 }
 
+[sub_resource type="Animation" id=5]
+resource_name = "andando baixo"
+length = 0.6
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 19, 20, 21, 22, 23 ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "andando cima"
+length = 0.6
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 7, 8, 9, 10, 11 ]
+}
+
 [sub_resource type="Animation" id=3]
-resource_name = "andando"
+resource_name = "andando direita"
 length = 0.6
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:frame")
@@ -34,24 +66,8 @@ tracks/0/keys = {
 "values": [ 1, 2, 3, 4, 5, 0 ]
 }
 
-[sub_resource type="Animation" id=5]
-resource_name = "andando baixo"
-length = 0.6
-tracks/0/type = "value"
-tracks/0/path = NodePath(".:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
-"update": 1,
-"values": [ 19, 20, 21, 22, 23, 0 ]
-}
-
 [sub_resource type="Animation" id=6]
-resource_name = "andando esq"
+resource_name = "andando esquerda"
 length = 0.6
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:frame")
@@ -60,26 +76,10 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
 "update": 1,
-"values": [ 13, 14, 15, 16, 17, 0 ]
-}
-
-[sub_resource type="Animation" id=4]
-resource_name = "teste"
-length = 0.6
-tracks/0/type = "value"
-tracks/0/path = NodePath(".:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
-"update": 1,
-"values": [ 7, 8, 9, 10, 11, 0 ]
+"values": [ 13, 14, 15, 16, 17 ]
 }
 
 [sub_resource type="CapsuleShape2D" id=1]
@@ -100,10 +100,10 @@ hframes = 60
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite"]
 anims/RESET = SubResource( 2 )
-anims/andando = SubResource( 3 )
 "anims/andando baixo" = SubResource( 5 )
-"anims/andando esq" = SubResource( 6 )
-anims/teste = SubResource( 4 )
+"anims/andando cima" = SubResource( 4 )
+"anims/andando direita" = SubResource( 3 )
+"anims/andando esquerda" = SubResource( 6 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( -4, -18 )
