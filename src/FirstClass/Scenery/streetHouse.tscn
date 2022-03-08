@@ -1,4 +1,4 @@
-[gd_scene load_steps=39 format=2]
+[gd_scene load_steps=43 format=2]
 
 [ext_resource path="res://assets/street_1.png" type="Texture" id=1]
 [ext_resource path="res://Scenes/Player_certo.tscn" type="PackedScene" id=2]
@@ -10,10 +10,12 @@
 [ext_resource path="res://Scenes/streetHouseToClassUniversity.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Scenes/Money.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Scenes/Popupnoemail.tscn" type="PackedScene" id=10]
-[ext_resource path="res://assets/Street_home.png" type="Texture" id=11]
+[ext_resource path="res://assets/house.png" type="Texture" id=11]
 [ext_resource path="res://Script/streetHouse.gd" type="Script" id=12]
-[ext_resource path="res://Scenes/streetToMarket.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Scenes/marketToInMarket.tscn" type="PackedScene" id=13]
 [ext_resource path="res://Scenery/joystick.tscn" type="PackedScene" id=14]
+[ext_resource path="res://assets/bank.png" type="Texture" id=15]
+[ext_resource path="res://assets/market.png" type="Texture" id=16]
 
 [sub_resource type="CapsuleShape2D" id=1]
 
@@ -72,26 +74,28 @@ extents = Vector2( 14.5, 70 )
 extents = Vector2( 29.25, 18.75 )
 
 [sub_resource type="RectangleShape2D" id=23]
-extents = Vector2( 1921.5, 37 )
+extents = Vector2( 4439.25, 37 )
 
 [sub_resource type="RectangleShape2D" id=24]
 extents = Vector2( 8, 364.5 )
 
 [sub_resource type="RectangleShape2D" id=25]
-extents = Vector2( 1920.5, 7 )
+extents = Vector2( 4450.5, 7 )
 
 [sub_resource type="RectangleShape2D" id=26]
-extents = Vector2( 11.25, 364.25 )
+extents = Vector2( 11.625, 370.125 )
 
 [sub_resource type="RectangleShape2D" id=27]
 extents = Vector2( 173.5, 184.75 )
 
+[sub_resource type="RectangleShape2D" id=28]
+extents = Vector2( 227, 194.688 )
+
+[sub_resource type="RectangleShape2D" id=29]
+extents = Vector2( 177, 194.25 )
+
 [node name="Scene2" type="Node2D"]
 script = ExtResource( 12 )
-
-[node name="StreetHome" type="Sprite" parent="."]
-position = Vector2( 638, 360 )
-texture = ExtResource( 11 )
 
 [node name="Street1" type="Sprite" parent="."]
 position = Vector2( 1903, 358 )
@@ -102,6 +106,32 @@ texture = ExtResource( 1 )
 position = Vector2( 3197, 357 )
 scale = Vector2( 1.01992, 1.02847 )
 texture = ExtResource( 3 )
+
+[node name="Street3" type="Sprite" parent="."]
+position = Vector2( 4838, 260 )
+scale = Vector2( 1.01563, 1.02222 )
+texture = ExtResource( 1 )
+offset = Vector2( -340.677, 95.8695 )
+
+[node name="House" type="Sprite" parent="."]
+position = Vector2( 624.5, 358.75 )
+scale = Vector2( 1.79, 1.86896 )
+texture = ExtResource( 11 )
+
+[node name="Market" type="Sprite" parent="."]
+position = Vector2( 5772, 357 )
+scale = Vector2( 1.81107, 1.875 )
+texture = ExtResource( 16 )
+
+[node name="Street2" type="Sprite" parent="."]
+position = Vector2( 7066, 358 )
+scale = Vector2( 1.03516, 1.025 )
+texture = ExtResource( 1 )
+
+[node name="Bank" type="Sprite" parent="."]
+position = Vector2( 8301, 357 )
+scale = Vector2( 1.67071, 1.87595 )
+texture = ExtResource( 15 )
 
 [node name="Backscene2" type="ParallaxBackground" parent="."]
 
@@ -117,7 +147,7 @@ position = Vector2( 67, 314 )
 shape = SubResource( 1 )
 
 [node name="Goalscene2" parent="." instance=ExtResource( 4 )]
-position = Vector2( 317, 448 )
+position = Vector2( 306, 470 )
 path = "res://Scenery/bedroom.tscn"
 
 [node name="Control" parent="." instance=ExtResource( 10 )]
@@ -138,21 +168,21 @@ margin_bottom = 84.0
 [node name="Joystick" parent="." instance=ExtResource( 14 )]
 
 [node name="Player_certo" parent="." instance=ExtResource( 2 )]
-position = Vector2( 318, 546 )
+position = Vector2( 303, 624 )
 scale = Vector2( 0.75, 0.75 )
 
 [node name="Camera2D" type="Camera2D" parent="Player_certo"]
 current = true
 limit_left = 0
 limit_top = 0
-limit_right = 3820
+limit_right = 8888
 limit_bottom = 720
 
 [node name="Transition_in" parent="." instance=ExtResource( 5 )]
 
 [node name="Node2D" parent="Transition_in" instance=ExtResource( 14 )]
-position = Vector2( -133, 514 )
 scale = Vector2( 0.999997, 0.999997 )
+transform = Transform2D( 0.999997, 0, 0, 0.999997, 0, 0 )
 
 [node name="HBoxContainer" parent="." instance=ExtResource( 7 )]
 margin_left = 136.0
@@ -357,7 +387,7 @@ position = Vector2( 76.25, 371.75 )
 shape = SubResource( 22 )
 
 [node name="CollisionShape2D18" type="CollisionShape2D" parent="StaticBody2D3"]
-position = Vector2( 1938, 22 )
+position = Vector2( 4455.75, 22 )
 shape = SubResource( 23 )
 
 [node name="CollisionShape2D19" type="CollisionShape2D" parent="StaticBody2D3"]
@@ -365,16 +395,25 @@ position = Vector2( -2, 354.5 )
 shape = SubResource( 24 )
 
 [node name="CollisionShape2D22" type="CollisionShape2D" parent="StaticBody2D3"]
-position = Vector2( 1923.5, 718 )
+position = Vector2( 4453.5, 718 )
 shape = SubResource( 25 )
 
 [node name="CollisionShape2D23" type="CollisionShape2D" parent="StaticBody2D3"]
-position = Vector2( 3835.75, 356.75 )
+position = Vector2( 8890.63, 355.125 )
 shape = SubResource( 26 )
 
 [node name="CollisionShape2D24" type="CollisionShape2D" parent="StaticBody2D3"]
 position = Vector2( 2859.5, 221.25 )
 shape = SubResource( 27 )
 
-[node name="Area2D" parent="." instance=ExtResource( 13 )]
-position = Vector2( 3777, 636 )
+[node name="CollisionShape2D52" type="CollisionShape2D" parent="StaticBody2D3"]
+position = Vector2( 5443, 211.313 )
+shape = SubResource( 28 )
+
+[node name="CollisionShape2D53" type="CollisionShape2D" parent="StaticBody2D3"]
+position = Vector2( 7996, 204.75 )
+shape = SubResource( 29 )
+
+[node name="Area2D2" parent="." instance=ExtResource( 13 )]
+position = Vector2( 5444, 442 )
+scale = Vector2( 0.75, 0.75 )
