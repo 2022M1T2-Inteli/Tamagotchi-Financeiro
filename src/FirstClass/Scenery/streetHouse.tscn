@@ -135,6 +135,8 @@ margin_top = 64.0
 margin_right = 1244.0
 margin_bottom = 84.0
 
+[node name="Joystick" parent="." instance=ExtResource( 14 )]
+
 [node name="Player_certo" parent="." instance=ExtResource( 2 )]
 position = Vector2( 318, 546 )
 scale = Vector2( 0.75, 0.75 )

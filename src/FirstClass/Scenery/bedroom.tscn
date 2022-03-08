@@ -68,13 +68,13 @@ margin_bottom = 76.0
 position = Vector2( 1075, 410 )
 
 [node name="Money" parent="." instance=ExtResource( 5 )]
+visible = true
 margin_left = 75.0
 margin_top = 30.0
 margin_right = 97.0
 margin_bottom = 69.0
 
-[node name="Node2D" parent="." instance=ExtResource( 15 )]
-position = Vector2( -113, 521 )
+[node name="Joystick" parent="." instance=ExtResource( 15 )]
 
 [node name="Player_certo" parent="." instance=ExtResource( 2 )]
 position = Vector2( 150, 705 )

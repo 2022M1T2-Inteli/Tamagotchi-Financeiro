@@ -247,5 +247,4 @@ shape = SubResource( 7 )
 position = Vector2( 234, 450 )
 shape = SubResource( 8 )
 
-[node name="Node2D" parent="." instance=ExtResource( 15 )]
-position = Vector2( -108, 536 )
+[node name="Joystick" parent="." instance=ExtResource( 15 )]
