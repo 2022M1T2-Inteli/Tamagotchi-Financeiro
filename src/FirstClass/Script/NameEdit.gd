@@ -1,6 +1,6 @@
 extends LineEdit
 
-export var reference_path = "res://Scenery/bedroom.tscn"
+export var reference_path = "res://Scenes/teste.tscn"
 
 func _ready():
 	grab_focus()

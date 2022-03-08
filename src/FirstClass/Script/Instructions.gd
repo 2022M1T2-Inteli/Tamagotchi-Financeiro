@@ -1,8 +1,9 @@
 extends Sprite
 
 func _ready():
-	if (Global.instructions):
-		self.visible = true
+	self.visible = false
+	#if (Global.instructions):
+		#self.visible = true
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
