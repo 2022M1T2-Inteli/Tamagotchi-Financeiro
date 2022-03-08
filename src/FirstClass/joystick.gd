@@ -22,3 +22,8 @@ func _on_DOWN_pressed():
 func _on_DOWN_released():
 	Input.action_release("ui_down")
 
+func _ready():
+	Input.action_release("ui_down")
+	Input.action_release("ui_up")
+	Input.action_release("ui_left")
+	Input.action_release("ui_right")
