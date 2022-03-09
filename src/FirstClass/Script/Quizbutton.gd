@@ -25,7 +25,7 @@ func load_dialog():
 
 
 func _on_certo_pressed():
-	get_tree().change_scene("res://Scenes/Acertouquiz.tscn")
+	get_tree().change_scene("res://Scenes/Quiz_right_answer.tscn")
 
 
 func _on_errado_pressed():
