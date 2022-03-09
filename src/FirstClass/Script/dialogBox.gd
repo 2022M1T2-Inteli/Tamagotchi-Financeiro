@@ -1,5 +1,7 @@
 extends Control
 
+
+
 var dialog = [
 	'Poupança é um investimento de renda fixa, simples e acessível, mas, afinal, o que é renda fixa? É um investimento em que o cálculo da remuneração é previamente definido, tornando-o mais seguro, mesmo que não seja 100%',
 	'A poupança é isenta de custos. A cobrança de taxas de abertura, de manutenção, de administração ou de performance é considerada proibida. Inclusive, os rendimentos da poupança não pagam Imposto de Renda, mesmo que tenham que ser declarados anualmente.',

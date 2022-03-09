@@ -1,5 +1,8 @@
 extends Area2D
 
+# Script for change the scene from the bedroom to the Street
+# It changes the caracter's position to appear in the right place
+
 onready var changer = get_parent().get_node("Transition_in")
 
 export var path : String

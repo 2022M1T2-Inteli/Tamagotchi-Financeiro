@@ -1,6 +1,7 @@
 extends Node2D
 
-
+# Script for the touchpad
+# This script enables the movement to the touchpad
 
 func _on_RIGHT_pressed():
 	Input.action_press("ui_right")

@@ -5,7 +5,7 @@
 [ext_resource path="res://assets/Button.png" type="Texture" id=3]
 [ext_resource path="res://Fonts/Minecraftia-Regular.ttf" type="DynamicFontData" id=4]
 [ext_resource path="res://assets/fundoUniversity.png" type="Texture" id=5]
-[ext_resource path="res://Scenes/newBackClass.png" type="Texture" id=6]
+[ext_resource path="res://assets/newBackClass.png" type="Texture" id=6]
 
 [sub_resource type="DynamicFont" id=4]
 size = 21

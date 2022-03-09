@@ -1,11 +1,18 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://Script/Tela_inicio.gd" type="Script" id=1]
 [ext_resource path="res://assets/EduFin App.png" type="Texture" id=2]
 [ext_resource path="res://assets/button-play.png" type="Texture" id=3]
 
+[sub_resource type="GDScript" id=1]
+script/source = "extends Node2D
+
+func _on_Button_tela_inicio_pressed():
+	get_tree().change_scene(\"res://Scenery/ChampionSelect.tscn\")
+
+"
+
 [node name="Node2D" type="Node2D"]
-script = ExtResource( 1 )
+script = SubResource( 1 )
 
 [node name="Button_tela_inicio" type="Button" parent="."]
 show_behind_parent = true

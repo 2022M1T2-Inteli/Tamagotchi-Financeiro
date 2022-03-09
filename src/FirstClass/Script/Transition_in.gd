@@ -1,5 +1,9 @@
 extends CanvasLayer
 
+# Script for transition animation
+# When the caracter collides with the pointer arrow,
+#  the animation for changing scene will run
+
 var current_path
 func change_scene(path, delay = 0):
 	current_path = path

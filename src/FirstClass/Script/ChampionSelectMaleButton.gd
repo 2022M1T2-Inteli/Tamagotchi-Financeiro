@@ -1,5 +1,8 @@
 extends Button
 
+# Script when the male sprite is selected
+# The Player will play as the male character
+
 export var reference_path = "res://Scenery/NameSelect.tscn"
 export(bool) var start_focused = false
 

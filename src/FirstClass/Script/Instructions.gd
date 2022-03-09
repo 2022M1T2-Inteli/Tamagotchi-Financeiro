@@ -1,5 +1,8 @@
 extends Sprite
 
+# Script for the instrunction scene
+# It will appear or dissapear depending on the state of the game
+
 func _ready():
 	if (Global.instructions):
 		self.visible = true

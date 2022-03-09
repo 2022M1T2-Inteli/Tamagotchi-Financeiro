@@ -1,5 +1,7 @@
 extends Area2D
 
+# Script that change the scene from University to Street
+
 onready var changer = get_parent().get_node("Transition_in")
 
 export var path : String

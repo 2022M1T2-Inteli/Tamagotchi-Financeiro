@@ -23,7 +23,7 @@ position = Vector2( -1, 1 )
 scale = Vector2( 1.20385, 1.16398 )
 texture = ExtResource( 1 )
 
-[node name="Button_celular1" type="Button" parent="."]
+[node name="Button_cellphone" type="Button" parent="."]
 show_behind_parent = true
 margin_left = -7.0
 margin_top = -37.0
@@ -34,4 +34,4 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[connection signal="pressed" from="Button_celular1" to="." method="_on_Button_celular1_pressed"]
+[connection signal="pressed" from="Button_cellphone" to="." method="_on_Button_cellphone_pressed"]

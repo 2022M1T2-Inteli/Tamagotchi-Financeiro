@@ -11,7 +11,7 @@ position = Vector2( 640.5, 358.5 )
 scale = Vector2( 0.666146, 0.671296 )
 texture = ExtResource( 1 )
 
-[node name="certoLeite" type="Button" parent="."]
+[node name="Vmilk" type="Button" parent="."]
 show_behind_parent = true
 margin_left = 890.0
 margin_top = 245.0
@@ -21,7 +21,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="erradoLeite" type="Button" parent="."]
+[node name="Xmilk" type="Button" parent="."]
 show_behind_parent = true
 margin_left = 97.0
 margin_top = 244.0
@@ -31,7 +31,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="erradoLeite1" type="Button" parent="."]
+[node name="xmilk" type="Button" parent="."]
 show_behind_parent = true
 margin_left = 495.0
 margin_top = 245.0
@@ -41,6 +41,6 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[connection signal="pressed" from="certoLeite" to="." method="_on_certoLeite_pressed"]
-[connection signal="pressed" from="erradoLeite" to="." method="_on_erradoLeite_pressed"]
-[connection signal="pressed" from="erradoLeite1" to="." method="_on_erradoLeite1_pressed"]
+[connection signal="pressed" from="Vmilk" to="." method="_on_Vmilk_pressed"]
+[connection signal="pressed" from="Xmilk" to="." method="_on_Xmilk_pressed"]
+[connection signal="pressed" from="xmilk" to="." method="_on_xmilk_pressed"]
