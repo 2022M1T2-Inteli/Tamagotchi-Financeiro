@@ -1,0 +1,58 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://assets/market_2.png" type="Texture" id=1]
+[ext_resource path="res://Scenery/joystick.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/arrow_market.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/Player_certo.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scenes/Transition_in.tscn" type="PackedScene" id=5]
+[ext_resource path="res://assets/ToBuyList.png" type="Texture" id=6]
+[ext_resource path="res://Script/ToBuyList.gd" type="Script" id=7]
+[ext_resource path="res://Script/milk_area.gd" type="Script" id=8]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 632, 270.5 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 127, 27.875 )
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Market2" type="Sprite" parent="."]
+position = Vector2( 639, 356.5 )
+scale = Vector2( 1.00156, 1.00139 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Joystick" parent="." instance=ExtResource( 2 )]
+
+[node name="Player_certo" parent="." instance=ExtResource( 4 )]
+position = Vector2( 150, 705 )
+
+[node name="Transition_in" parent="." instance=ExtResource( 5 )]
+
+[node name="Area2D" parent="." instance=ExtResource( 3 )]
+position = Vector2( 45.9999, 668 )
+scale = Vector2( 1.00156, 1.00139 )
+
+[node name="KinematicBody2D" type="KinematicBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D"]
+position = Vector2( 629, 273.5 )
+shape = SubResource( 1 )
+
+[node name="ToBuyList" type="Sprite" parent="KinematicBody2D"]
+position = Vector2( 649, 349 )
+scale = Vector2( 0.210188, 0.240424 )
+texture = ExtResource( 6 )
+script = ExtResource( 7 )
+
+[node name="Area2D2" type="Area2D" parent="."]
+script = ExtResource( 8 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
+position = Vector2( 262, 564.125 )
+shape = SubResource( 2 )
+
+[connection signal="body_entered" from="Area2D2" to="Area2D2" method="_on_Area2D2_body_entered"]

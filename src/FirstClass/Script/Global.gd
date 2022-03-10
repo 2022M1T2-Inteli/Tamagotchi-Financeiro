@@ -3,7 +3,7 @@ extends Node
 var gender : bool = true
 var player_name : String = "Mr. Fox"
 var current_scene : String = "res://Scenery/bedroom.tscn"
-var instructions : bool = true
+var instructions = [true, true]
 var money : float = 100.52
 var position = Vector2(318,546)
 var digital_money : float = 0.0
@@ -18,7 +18,7 @@ func _ready():
 
 func are_actions_over():
 	if(actions == 0):
-		get_tree().change_scene("res://Scenery/bedroom.tscn")
+		get_tree().change_scene("res://Scenes/background_bedroom_nigth.tscn")
 		day += 1
 		actions = 4
 		
