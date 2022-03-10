@@ -19,10 +19,10 @@ position = Vector2( 50, 1 )
 [node name="StaticBody2D2" parent="StaticBody2D" instance=ExtResource( 1 )]
 position = Vector2( 101, 0 )
 
+[node name="Control" parent="." instance=ExtResource( 4 )]
+
 [node name="phone" parent="." instance=ExtResource( 3 )]
 margin_left = 1228.0
 margin_top = 62.0
 margin_right = 1240.0
 margin_bottom = 82.0
-
-[node name="Control" parent="." instance=ExtResource( 4 )]
