@@ -48,9 +48,11 @@ __meta__ = {
 }
 
 [node name="Player_certo" parent="." instance=ExtResource( 3 )]
+pause_mode = 2
 position = Vector2( 129, 689 )
 
 [node name="CanvasLayer" parent="." instance=ExtResource( 4 )]
+pause_mode = 2
 
 [node name="KinematicBody2D" type="KinematicBody2D" parent="."]
 
@@ -96,6 +98,7 @@ __meta__ = {
 }
 
 [node name="instructions_minigame_market" type="Sprite" parent="."]
+pause_mode = 2
 visible = false
 position = Vector2( 646, 357 )
 scale = Vector2( 0.232586, 0.243706 )
