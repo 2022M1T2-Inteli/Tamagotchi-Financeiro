@@ -13,13 +13,13 @@ script = ExtResource( 5 )
 position = Vector2( 160, 560 )
 
 [node name="energy_1" parent="." instance=ExtResource( 1 )]
-position = Vector2( 144, 41 )
+position = Vector2( 50, 44 )
 
 [node name="energy_2" parent="." instance=ExtResource( 1 )]
-position = Vector2( 96, 41 )
+position = Vector2( 98, 44 )
 
 [node name="energy_3" parent="." instance=ExtResource( 1 )]
-position = Vector2( 48, 42 )
+position = Vector2( 144, 42 )
 
 [node name="energy_4" parent="." instance=ExtResource( 1 )]
 position = Vector2( 192, 41 )
@@ -33,7 +33,14 @@ position = Vector2( 288, 41 )
 [node name="energy_7" parent="." instance=ExtResource( 1 )]
 position = Vector2( 333, 40 )
 
+[node name="energy_8" parent="." instance=ExtResource( 1 )]
+position = Vector2( 376, 40 )
+
 [node name="Control" parent="." instance=ExtResource( 4 )]
+margin_left = 400.0
+margin_top = 0.0
+margin_right = 392.44
+margin_bottom = -2.0
 
 [node name="phone" parent="." instance=ExtResource( 3 )]
 margin_left = 1228.0

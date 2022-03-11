@@ -7,3 +7,4 @@ func _ready():
 
 func _on_Button_exit_quiz_pressed():
 	get_tree().change_scene("res://Scenery/classUniversity.tscn")
+	Global.are_actions_over()

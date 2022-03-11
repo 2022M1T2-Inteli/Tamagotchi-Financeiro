@@ -10,7 +10,7 @@ var digital_money : float = 0.0
 var happiness : int = 100
 var health : int = 100
 var knowledge : int = 0
-var actions : int = 4
+var actions : int = 3
 var day : int = 1
 
 func _ready():
@@ -20,7 +20,7 @@ func are_actions_over():
 	if(actions == 0):
 		get_tree().change_scene("res://Scenes/background_bedroom_nigth.tscn")
 		day += 1
-		actions = 4
+		actions = 3
 		
 func subtract_actions():
 	

@@ -4,7 +4,6 @@
 [ext_resource path="res://assets/—Pngtree—right arrow glyph black icon_4071468 (1).png" type="Texture" id=2]
 [ext_resource path="res://joystick.gd" type="Script" id=3]
 
-
 [node name="joystick" type="Node2D"]
 z_index = 1
 script = ExtResource( 3 )
