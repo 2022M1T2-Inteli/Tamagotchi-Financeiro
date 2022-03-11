@@ -10,4 +10,4 @@ func _on_Area2D_body_entered(body):
 			get_tree().change_scene("res://Scenes/savings.tscn")
 			Global.bank = 1
 		else: 
-			get_tree().change_scene("res://Scenes/Choosemilk.tscn")
+			get_tree().change_scene("res://Scenes/bank_3.tscn")
