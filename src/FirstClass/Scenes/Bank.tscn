@@ -139,7 +139,6 @@ anims/RESET = SubResource( 5 )
 anims/excla2 = SubResource( 6 )
 
 [node name="Bank_instructions" type="Sprite" parent="."]
-visible = false
 position = Vector2( -520, -130 )
 scale = Vector2( 0.244626, 0.259555 )
 texture = ExtResource( 8 )
