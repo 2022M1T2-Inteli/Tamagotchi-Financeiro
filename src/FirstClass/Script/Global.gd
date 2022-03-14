@@ -11,7 +11,7 @@ var happiness : int = 100
 var health : int = 100
 var knowledge : int = 0
 var actions : int = 3
-var day : int = 1
+var day : int = 2
 var bank : int = 0
 
 func _ready():
