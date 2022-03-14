@@ -2,15 +2,24 @@
 
 importer="texture"
 type="StreamTexture"
+<<<<<<< HEAD
 path="res://.import/Action_button.png-7339c1b71fd1e838963e73e44add2b65.stex"
+=======
+path="res://.import/action_button.png-299829881e702dd1f04e3f8e4ab6e8e7.stex"
+>>>>>>> 71c87630853c9a88c977d5c14534b4f228729de5
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
+<<<<<<< HEAD
 source_file="res://assets/Action_button.png"
 dest_files=[ "res://.import/Action_button.png-7339c1b71fd1e838963e73e44add2b65.stex" ]
+=======
+source_file="res://assets/action_button.png"
+dest_files=[ "res://.import/action_button.png-299829881e702dd1f04e3f8e4ab6e8e7.stex" ]
+>>>>>>> 71c87630853c9a88c977d5c14534b4f228729de5
 
 [params]
 

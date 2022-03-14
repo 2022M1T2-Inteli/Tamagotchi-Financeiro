@@ -1,11 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://assets/Action_button.png" type="Texture" id=1]
 [ext_resource path="res://assets/Action_button_pressed.png" type="Texture" id=2]
-[ext_resource path="res://Script/CanvasLayer_action_button.gd" type="Script" id=3]
 
 [node name="CanvasLayer" type="Node2D"]
-script = ExtResource( 3 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -14,5 +12,3 @@ position = Vector2( 1152, 580 )
 scale = Vector2( 0.0690095, 0.0717174 )
 normal = ExtResource( 1 )
 pressed = ExtResource( 2 )
-
-[connection signal="pressed" from="CanvasLayer/TouchScreenButton" to="." method="_on_TouchScreenButton_pressed"]
