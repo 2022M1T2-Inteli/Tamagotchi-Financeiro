@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Script/wrong_milk.gd" type="Script" id=1]
 [ext_resource path="res://assets/milk_blue.png" type="Texture" id=2]
+[ext_resource path="res://mixkit-electronic-retro-block-hit-2185.wav" type="AudioStream" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 25.5, 31.125 )
@@ -20,4 +21,8 @@ texture = ExtResource( 2 )
 position = Vector2( -1.5, -1.125 )
 shape = SubResource( 1 )
 
+[node name="Erro2FX" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 3 )
+
 [connection signal="body_entered" from="." to="." method="_on_Blue_Milk_body_entered"]
+[connection signal="finished" from="Erro2FX" to="." method="_on_Erro2FX_finished"]

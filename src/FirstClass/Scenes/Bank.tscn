@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://Scenes/Player_certo.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/classUniversityToStreetHouse.tscn" type="PackedScene" id=2]
@@ -7,9 +7,8 @@
 [ext_resource path="res://Scenes/bankperosnagem.tscn" type="PackedScene" id=5]
 [ext_resource path="res://assets/exc.png" type="Texture" id=6]
 [ext_resource path="res://Bank2.gd" type="Script" id=7]
-[ext_resource path="res://assets/Bank 7.png" type="Texture" id=8]
-[ext_resource path="res://Script/Bank_instructions.gd" type="Script" id=9]
-[ext_resource path="res://bank_money1.gd" type="Script" id=10]
+[ext_resource path="res://Scenes/Transition_in.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Script/BanktoStreetHouse.gd" type="Script" id=9]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 651.5, 10 )
@@ -21,7 +20,7 @@ extents = Vector2( 9, 373.5 )
 extents = Vector2( 7.5, 369.75 )
 
 [sub_resource type="RectangleShape2D" id=4]
-extents = Vector2( 650.5, 15.5 )
+extents = Vector2( 650.5, 12 )
 
 [sub_resource type="Animation" id=5]
 length = 0.001
@@ -79,15 +78,6 @@ tracks/0/keys = {
 "values": [ Vector2( 26, -5 ), Vector2( 26, -10 ) ]
 }
 
-[sub_resource type="RectangleShape2D" id=7]
-extents = Vector2( 218.5, 289 )
-
-[sub_resource type="RectangleShape2D" id=8]
-extents = Vector2( 350.25, 260.875 )
-
-[sub_resource type="RectangleShape2D" id=9]
-extents = Vector2( 64, 269 )
-
 [node name="Node2D" type="Node2D"]
 position = Vector2( 1181, 496 )
 script = ExtResource( 7 )
@@ -116,13 +106,13 @@ position = Vector2( 97, -146 )
 shape = SubResource( 3 )
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="KinematicBody2D"]
-position = Vector2( -541, 233.5 )
+position = Vector2( -541, 237 )
 shape = SubResource( 4 )
 
 [node name="Goalscene2" parent="." instance=ExtResource( 2 )]
 position = Vector2( -1132, 139 )
 rotation = -1.5708
-path = "res://Scenery/streetHouse.tscn"
+script = ExtResource( 9 )
 
 [node name="Joystick" parent="." instance=ExtResource( 3 )]
 
@@ -138,27 +128,4 @@ texture = ExtResource( 6 )
 anims/RESET = SubResource( 5 )
 anims/excla2 = SubResource( 6 )
 
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2( -952.5, -135 )
-shape = SubResource( 7 )
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2( -258.75, -106.875 )
-shape = SubResource( 8 )
-
-[node name="Area2D" type="Area2D" parent="."]
-script = ExtResource( 10 )
-
-[node name="CollisionShape2D3" type="CollisionShape2D" parent="Area2D"]
-position = Vector2( -673, -157 )
-shape = SubResource( 9 )
-
-[node name="Bank_instructions" type="Sprite" parent="."]
-position = Vector2( -520, -130 )
-scale = Vector2( 0.244626, 0.259555 )
-texture = ExtResource( 8 )
-script = ExtResource( 9 )
-
-[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_Area2D_body_entered"]
+[node name="Transition_in" parent="." instance=ExtResource( 8 )]

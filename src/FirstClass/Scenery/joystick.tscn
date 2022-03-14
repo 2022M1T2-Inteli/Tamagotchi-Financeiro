@@ -1,11 +1,10 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Scenes/Raio.tscn" type="PackedScene" id=1]
 [ext_resource path="res://joystick.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Scenes/phone.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Scenes/popup.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Script/energy.gd" type="Script" id=5]
-[ext_resource path="res://Scenes/CanvasLayer_action_button.tscn" type="PackedScene" id=6]
 
 [node name="Joystick" type="CanvasLayer"]
 script = ExtResource( 5 )
@@ -38,16 +37,13 @@ position = Vector2( 333, 40 )
 position = Vector2( 376, 40 )
 
 [node name="Control" parent="." instance=ExtResource( 4 )]
-margin_left = -18.0
-margin_top = 15.0
-margin_right = -25.5599
-margin_bottom = 13.0
+margin_left = 2.0
+margin_top = -3.0
+margin_right = -5.55994
+margin_bottom = -5.0
 
 [node name="phone" parent="." instance=ExtResource( 3 )]
-margin_left = 1224.0
-margin_top = 59.0
-margin_right = 1236.0
-margin_bottom = 79.0
-
-[node name="CanvasLayer" parent="." instance=ExtResource( 6 )]
-position = Vector2( 28, 22 )
+margin_left = 1228.0
+margin_top = 62.0
+margin_right = 1240.0
+margin_bottom = 82.0
