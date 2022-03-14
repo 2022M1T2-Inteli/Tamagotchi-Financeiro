@@ -15,6 +15,7 @@ func _ready():
 #	yield(timer, "timeout")
 #	add_child(timer)
 	$HUD/Score.text = "Score: " + str(score)
+	$BackgroundFX.play()
 
 func _process(delta):
 	pass	
