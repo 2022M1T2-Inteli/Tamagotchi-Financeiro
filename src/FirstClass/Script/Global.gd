@@ -4,8 +4,8 @@ var gender : bool = true
 var player_name : String = "Mr. Fox"
 var current_scene : String = "res://Scenery/bedroom.tscn"
 var instructions = [true, true, true]
-var money : float = 100.52
-var position = Vector2(318,546)
+var money : float = 300.52
+var position = Vector2(150,705)
 var digital_money : float = 0.0
 var happiness : int = 100
 var health : int = 100
@@ -21,7 +21,7 @@ func are_actions_over():
 		get_tree().change_scene("res://Scenes/background_bedroom_nigth.tscn")
 		day += 1
 		actions = 3
-		
-func subtract_actions():
-	
-	pass
+
+func change_position(a, b):
+	position.x = a
+	position.y = b
