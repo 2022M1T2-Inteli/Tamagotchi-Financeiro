@@ -61,6 +61,7 @@ position = Vector2( 642.5, 267.5 )
 shape = SubResource( 1 )
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="KinematicBody2D"]
+visible = false
 position = Vector2( 1082.75, 560.75 )
 shape = SubResource( 2 )
 

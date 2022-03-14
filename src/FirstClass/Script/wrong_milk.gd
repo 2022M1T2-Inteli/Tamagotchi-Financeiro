@@ -14,7 +14,11 @@ func _process(delta):
 
 func _on_Blue_Milk_body_entered(body):
 	if (body.name == "Player_certo"):
-		queue_free()
+		$Erro2FX.play()
 		jogo.errado()
 		jogo.verificar()
+		$blue_milk.visible = false
 
+
+#func _on_Erro2FX_finished():
+	#queue_free()
