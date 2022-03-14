@@ -3,7 +3,7 @@ extends Node
 var gender : bool = true
 var player_name : String = "Mr. Fox"
 var current_scene : String = "res://Scenery/bedroom.tscn"
-var instructions = [true, true, true]
+var instructions = [true, true, true, true]
 var money : float = 100.52
 var position = Vector2(318,546)
 var digital_money : float = 0.0
@@ -12,6 +12,7 @@ var health : int = 100
 var knowledge : int = 0
 var actions : int = 3
 var day : int = 1
+var bank : int = 0
 
 func _ready():
 	pass # Replace with function body.
@@ -23,5 +24,4 @@ func are_actions_over():
 		actions = 3
 		
 func subtract_actions():
-	
 	pass
