@@ -19,7 +19,7 @@ func _ready():
 
 func are_actions_over():
 	if(actions == 0):
-		get_tree().change_scene("res://Scenes/background_bedroom_nigth.tscn")
+		get_tree().change_scene("res://Scenery/Night_fall.tscn")
 		Global.change_position(1175,678)
 
 func change_position(a, b):
