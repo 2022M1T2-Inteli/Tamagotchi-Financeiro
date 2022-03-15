@@ -2,7 +2,7 @@ extends Control
 
 # Script that enables the email pop-up
 
-var array = ["1.Vá ate a faculdade e veja sua aula de hoje!\n\n\n2.Conheça o mercado!","1.Vá ate a faculdade e veja sua aula de hoje!\n\n\n2.Conheça o Conheça o Banco!"]
+var array = ["1.Vá ate a faculdade e veja sua aula de hoje!\n\n\n2.Conheça o mercado!","1.Vá ate a faculdade e veja sua aula de hoje!\n\n\n2 Conheça o Banco!"]
 
 func _on_question_button_pressed() -> void:
 	print("clicou")
