@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://assets/fundo preto.png" type="Texture" id=1]
 [ext_resource path="res://assets/emptyShelf.png" type="Texture" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://Fonts/Minecraftia-Regular.ttf" type="DynamicFontData" id=6]
 [ext_resource path="res://assets/minigame_instructions.png" type="Texture" id=7]
 [ext_resource path="res://Script/instructions_minigame_market.gd" type="Script" id=8]
+[ext_resource path="res://Uncan - Wave of the Synth.mp3" type="AudioStream" id=9]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 652.5, 277.5 )
@@ -61,6 +62,7 @@ position = Vector2( 642.5, 267.5 )
 shape = SubResource( 1 )
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="KinematicBody2D"]
+visible = false
 position = Vector2( 1082.75, 560.75 )
 shape = SubResource( 2 )
 
@@ -103,5 +105,9 @@ position = Vector2( 646, 357 )
 scale = Vector2( 0.232586, 0.243706 )
 texture = ExtResource( 7 )
 script = ExtResource( 8 )
+
+[node name="BackgroundFX" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 9 )
+volume_db = -1.345
 
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

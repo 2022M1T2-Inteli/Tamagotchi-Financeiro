@@ -1,9 +1,13 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Cellphone/Task.gd" type="Script" id=1]
 [ext_resource path="res://assets/fundo preto.png" type="Texture" id=2]
-[ext_resource path="res://assets/Task.png" type="Texture" id=3]
+[ext_resource path="res://assets/19.png" type="Texture" id=3]
 [ext_resource path="res://assets/tela_quintal.png" type="Texture" id=4]
+[ext_resource path="res://Fonts/Minecraftia-Regular.ttf" type="DynamicFontData" id=5]
+
+[sub_resource type="DynamicFont" id=1]
+font_data = ExtResource( 5 )
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 1 )
@@ -34,6 +38,17 @@ margin_right = 692.0
 margin_bottom = 561.0
 __meta__ = {
 "_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="tasks text" type="RichTextLabel" parent="."]
+margin_left = 523.0
+margin_top = 201.0
+margin_right = 757.0
+margin_bottom = 513.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 1 )
+__meta__ = {
 "_edit_use_anchors_": false
 }
 

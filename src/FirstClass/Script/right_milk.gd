@@ -15,6 +15,12 @@ func _process(delta):
 func _on_Area2D_body_entered(body):
 	
 	if (body.name == "Player_certo"):
-		queue_free()
+		$RightFX.play()
 		jogo.contagem_score()
 		jogo.verificar()
+		$Lll.visible = false
+
+#func _on_RightFX_finished():
+	#queue_free()
+	#jogo.verificar()
+	#jogo.contagem_score()

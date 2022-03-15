@@ -9,6 +9,5 @@ export var path : String
 func _on_Goalscene2_body_entered(body):
 	if body.name == "Player_certo":
 		Global.current_scene = "res://Scenery/streetHouse.tscn"
-		Global.position.x = 2858
-		Global.position.y = 546
+		Global.change_position(2856,546)
 		changer.change_scene(Global.current_scene)

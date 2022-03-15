@@ -13,7 +13,12 @@ func _process(delta):
 
 func _on_Yellow_Milk_body_entered(body):
 	if (body.name == "Player_certo"):
-		queue_free()
+		$ErroFX.play()
 		jogo.errado()
 		jogo.verificar()
+		$yellow_milk.visible = false
 
+
+
+#func _on_ErroFX_finished():
+	#queue_free()
