@@ -167,6 +167,7 @@ transform = Transform2D( 0.999997, 0, 0, 0.999997, 0, 0 )
 [node name="streetHouseToClassUniversity" parent="." instance=ExtResource( 8 )]
 position = Vector2( 2862, 438 )
 rotation = 6.28319
+path = "res://Scenery/classUniversity.tscn"
 
 [node name="StaticBody2D3" type="StaticBody2D" parent="."]
 
@@ -385,6 +386,9 @@ shape = SubResource( 29 )
 [node name="Area2D2" parent="." instance=ExtResource( 13 )]
 position = Vector2( 5444, 442 )
 scale = Vector2( 0.75, 0.75 )
+path = null
 
 [node name="Area2D" parent="." instance=ExtResource( 17 )]
 position = Vector2( 7999, 440 )
+
+[connection signal="body_entered" from="Area2D2" to="Area2D2" method="_on_Area2D2_body_entered"]

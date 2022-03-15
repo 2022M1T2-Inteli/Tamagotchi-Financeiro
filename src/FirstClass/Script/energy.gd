@@ -5,13 +5,14 @@ extends CanvasLayer
 # var a = 2
 # var b = "text"
 var visibility = [true, true, true, false, false, false, false, false]
+var monthly_expenses = 300
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	#for i in range(1,visibility.size()):
-	#	get_node("energy_"+ str(i)).visible = visibility[i-1]
-	change_actions()	
-	pass # Replace with function body.
+	change_actions()
+	if Global.money + Global.digital_money <= monthly_expenses:
+		#get_node("Control/Panel/RichTextLabel").text = "Seus ganhos mensais estão iguais aos gastos mensais. Cuidado!"	
+		pass # Replace with function body.
 
 func change_actions():
 	for i in range(visibility.size(), Global.actions, -1):
@@ -19,3 +20,4 @@ func change_actions():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 	#pass
+

@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://assets/milk_pink.png" type="Texture" id=1]
 [ext_resource path="res://Script/right_milk.gd" type="Script" id=2]
+[ext_resource path="res://mixkit-bubbly-achievement-tone-3193.wav" type="AudioStream" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 27.5, 29.5 )
@@ -20,4 +21,8 @@ texture = ExtResource( 1 )
 position = Vector2( 2, -2 )
 shape = SubResource( 1 )
 
+[node name="RightFX" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 3 )
+
 [connection signal="body_entered" from="." to="." method="_on_Area2D_body_entered"]
+[connection signal="finished" from="RightFX" to="." method="_on_RightFX_finished"]

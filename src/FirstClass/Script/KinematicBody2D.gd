@@ -13,6 +13,8 @@ var texture_female = preload("res://assets/Niko.png")
 func _ready():
 	#switch_texture()
 	#print(Global.player_name)
+	self.position.x = Global.position.x
+	self.position.y = Global.position.y
 	pass
 
 

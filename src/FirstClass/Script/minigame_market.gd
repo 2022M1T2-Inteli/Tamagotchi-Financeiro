@@ -15,6 +15,7 @@ func _ready():
 #	yield(timer, "timeout")
 #	add_child(timer)
 	$HUD/Score.text = "Score: " + str(score)
+	$BackgroundFX.play()
 
 func _process(delta):
 	pass	
@@ -29,8 +30,10 @@ func errado():
 	$HUD/Score.text = "Score: " + str(score)
 	
 func verificar():
-	if (erro == 3 || score == 20):
-		get_tree().quit()
+	if (erro == 3):
+		get_tree().change_scene("res://Scenes/winMilkMinigame.tscn")
+	elif(score == 5):
+		get_tree().change_scene("res://Scenes/winMilkMinigame.tscn")
 
 
 func _on_Timer_timeout():

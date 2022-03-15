@@ -1,0 +1,109 @@
+[gd_scene load_steps=16 format=2]
+
+[ext_resource path="res://assets/fundo preto.png" type="Texture" id=1]
+[ext_resource path="res://assets/emptyShelf.png" type="Texture" id=2]
+[ext_resource path="res://Scenes/Player_certo.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/arrow_mobile.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Script/minigame_marketSoda.gd" type="Script" id=5]
+[ext_resource path="res://Fonts/Minecraftia-Regular.ttf" type="DynamicFontData" id=6]
+[ext_resource path="res://Scenes/instructionsSoda.gd" type="Script" id=7]
+[ext_resource path="res://Scenes/Player_certo_4.gd" type="Script" id=8]
+[ext_resource path="res://assets/instructionsSoda.png" type="Texture" id=9]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 652.5, 277.5 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 210.25, 16.75 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 7.5, 373.5 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 7.5, 374 )
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 648.5, 7.5 )
+
+[sub_resource type="DynamicFont" id=6]
+size = 31
+font_data = ExtResource( 6 )
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 5 )
+
+[node name="EmptyShelf" type="Sprite" parent="."]
+position = Vector2( 639.5, 360.5 )
+scale = Vector2( 1.00547, 1.00972 )
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Background_Black" type="Sprite" parent="."]
+position = Vector2( 637.5, 362 )
+scale = Vector2( 2.02969, 2.06667 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Player_certo" parent="." instance=ExtResource( 3 )]
+pause_mode = 2
+position = Vector2( 129, 689 )
+script = ExtResource( 8 )
+
+[node name="CanvasLayer" parent="." instance=ExtResource( 4 )]
+pause_mode = 2
+
+[node name="KinematicBody2D" type="KinematicBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D"]
+position = Vector2( 642.5, 267.5 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="KinematicBody2D"]
+position = Vector2( 1082.75, 560.75 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="KinematicBody2D"]
+position = Vector2( -2.5, 363.5 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="KinematicBody2D"]
+position = Vector2( 1285.5, 364 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="KinematicBody2D"]
+position = Vector2( 638.5, 729.5 )
+shape = SubResource( 5 )
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.5
+autostart = true
+
+[node name="HUD" type="CanvasLayer" parent="."]
+
+[node name="Score" type="Label" parent="HUD"]
+anchor_left = 0.012
+anchor_top = 0.015
+anchor_right = 0.138
+anchor_bottom = 0.076
+margin_left = -0.360001
+margin_top = 0.2
+margin_right = -27.64
+margin_bottom = -1.72001
+custom_fonts/font = SubResource( 6 )
+text = "Score : 0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="instructions_minigame_market" type="Sprite" parent="."]
+pause_mode = 2
+position = Vector2( 640, 360 )
+scale = Vector2( 0.232586, 0.243706 )
+texture = ExtResource( 9 )
+script = ExtResource( 7 )
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
