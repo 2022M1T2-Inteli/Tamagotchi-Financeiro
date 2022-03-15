@@ -12,7 +12,8 @@ var texture_female = preload("res://assets/Niko.png")
 
 func _ready():
 	#switch_texture()
-	print(Global.player_name)
+	#print(Global.player_name)
+	pass
 
 
 func _physics_process(delta):

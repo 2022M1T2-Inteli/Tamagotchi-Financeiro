@@ -1,9 +1,13 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://assets/bank_persona.png" type="Texture" id=1]
+[ext_resource path="res://Script/Detector_npc_bank.gd" type="Script" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 56.625, 98.625 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 56.5, 94 )
 
 [node name="KinematicBody2D" type="KinematicBody2D"]
 
@@ -17,3 +21,15 @@ frame = 4
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( -0.625, 1.375 )
 shape = SubResource( 1 )
+
+[node name="Detector" type="Area2D" parent="."]
+collision_layer = 48
+collision_mask = 48
+script = ExtResource( 2 )
+
+[node name="Shape" type="CollisionShape2D" parent="Detector"]
+position = Vector2( -7, 5 )
+shape = SubResource( 2 )
+
+[connection signal="body_entered" from="Detector" to="Detector" method="_on_Detector_body_entered"]
+[connection signal="body_exited" from="Detector" to="Detector" method="_on_Detector_body_exited"]

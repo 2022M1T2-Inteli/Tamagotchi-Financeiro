@@ -11,7 +11,7 @@ position = Vector2( 638, 359.75 )
 scale = Vector2( 0.268293, 0.272143 )
 texture = ExtResource( 1 )
 
-[node name="Button" type="Button" parent="."]
+[node name="Button_exit" type="Button" parent="."]
 show_behind_parent = true
 margin_left = 557.0
 margin_top = 557.0
@@ -21,4 +21,26 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[node name="Button_savings" type="Button" parent="."]
+show_behind_parent = true
+margin_left = 382.0
+margin_top = 278.0
+margin_right = 891.0
+margin_bottom = 366.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button_CDI" type="Button" parent="."]
+show_behind_parent = true
+margin_left = 386.0
+margin_top = 412.0
+margin_right = 898.0
+margin_bottom = 502.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="Button_exit" to="." method="_on_Button_exit_pressed"]
+[connection signal="pressed" from="Button_savings" to="." method="_on_Button_savings_pressed"]
+[connection signal="pressed" from="Button_CDI" to="." method="_on_Button_CDI_pressed"]

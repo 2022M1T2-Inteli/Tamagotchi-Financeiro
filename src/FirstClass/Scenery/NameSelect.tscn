@@ -80,10 +80,10 @@ __meta__ = {
 }
 
 [node name="LineEdit" type="LineEdit" parent="."]
-margin_left = 384.0
-margin_top = 100.0
-margin_right = 896.0
-margin_bottom = 220.0
+margin_left = 386.0
+margin_top = 94.0
+margin_right = 898.0
+margin_bottom = 214.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 2 )
 custom_styles/normal = SubResource( 1 )

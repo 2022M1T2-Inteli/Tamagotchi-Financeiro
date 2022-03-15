@@ -8,7 +8,7 @@ extends RichTextLabel
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	set_text("$" + str(Global.money).pad_zeros(2))
+	set_text("$" + str(Global.digital_money).pad_zeros(2))
 	pass # Replace with function body.
 
 
