@@ -23,6 +23,7 @@ shape = SubResource( 1 )
 
 [node name="Erro2FX" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 3 )
+volume_db = 24.0
 
 [connection signal="body_entered" from="." to="." method="_on_Blue_Milk_body_entered"]
 [connection signal="finished" from="Erro2FX" to="." method="_on_Erro2FX_finished"]
