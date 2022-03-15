@@ -1,13 +1,14 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://assets/fundo preto.png" type="Texture" id=1]
 [ext_resource path="res://assets/emptyShelf.png" type="Texture" id=2]
 [ext_resource path="res://Scenes/Player_certo.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Scenes/arrow_mobile.tscn" type="PackedScene" id=4]
-[ext_resource path="res://Script/minigame_market.gd" type="Script" id=5]
+[ext_resource path="res://Script/minigame_marketSoda.gd" type="Script" id=5]
 [ext_resource path="res://Fonts/Minecraftia-Regular.ttf" type="DynamicFontData" id=6]
-[ext_resource path="res://assets/minigame_instructions.png" type="Texture" id=7]
-[ext_resource path="res://Script/instructions_minigame_market.gd" type="Script" id=8]
+[ext_resource path="res://Scenes/instructionsSoda.gd" type="Script" id=7]
+[ext_resource path="res://Scenes/Player_certo_4.gd" type="Script" id=8]
+[ext_resource path="res://assets/instructionsSoda.png" type="Texture" id=9]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 652.5, 277.5 )
@@ -50,6 +51,7 @@ __meta__ = {
 [node name="Player_certo" parent="." instance=ExtResource( 3 )]
 pause_mode = 2
 position = Vector2( 129, 689 )
+script = ExtResource( 8 )
 
 [node name="CanvasLayer" parent="." instance=ExtResource( 4 )]
 pause_mode = 2
@@ -99,9 +101,9 @@ __meta__ = {
 
 [node name="instructions_minigame_market" type="Sprite" parent="."]
 pause_mode = 2
-position = Vector2( 646, 357 )
+position = Vector2( 640, 360 )
 scale = Vector2( 0.232586, 0.243706 )
-texture = ExtResource( 7 )
-script = ExtResource( 8 )
+texture = ExtResource( 9 )
+script = ExtResource( 7 )
 
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

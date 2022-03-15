@@ -37,10 +37,10 @@ position = Vector2( 333, 40 )
 position = Vector2( 376, 40 )
 
 [node name="Control" parent="." instance=ExtResource( 4 )]
-margin_left = 400.0
-margin_top = 0.0
-margin_right = 392.44
-margin_bottom = -2.0
+margin_left = 4.0
+margin_top = 5.0
+margin_right = -3.55994
+margin_bottom = 3.0
 
 [node name="phone" parent="." instance=ExtResource( 3 )]
 margin_left = 1228.0

@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/sodaPurple.png" type="Texture" id=1]
+[ext_resource path="res://Script/sodaPurple.gd" type="Script" id=2]
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="."]
+scale = Vector2( 0.151108, 0.121729 )
+texture = ExtResource( 1 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2( 2, 7.15256e-07 )
+scale = Vector2( 0.558866, 0.508709 )
+polygon = PoolVector2Array( -43, 48, -43, -44, -23, -61, 22, -61, 42, -44, 43, 45, 24, 60, -23, 61 )
+
+[connection signal="body_entered" from="." to="." method="_on_Area2D_body_entered"]

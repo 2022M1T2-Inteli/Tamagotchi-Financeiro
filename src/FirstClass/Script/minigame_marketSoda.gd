@@ -2,9 +2,9 @@ extends Node2D
 
 var score = 0
 var erro = 0
-var right_milk = preload("res://Scenes/right_milk.tscn")
-var wrong_milk = preload("res://Scenes/wrong_milk.tscn")
-var yellow_milk = preload("res://Scenes/yellow_milk.tscn")
+var right_milk = preload("res://Scenes/sodaPurple.tscn")
+var wrong_milk = preload("res://Scenes/sodaGreen.tscn")
+var wrong_milk2 = preload("res://Scenes/sodaRed.tscn")
 
 #var milks = ["res://Scenes/right_milk.tscn", "res://Scenes/wrong_milk.tscn"]
 #var screenSize = get_viewport().get_visible_rect().size
@@ -30,10 +30,11 @@ func errado():
 	
 func verificar():
 	if (erro == 3):
-		get_tree().change_scene("res://Scenes/winMilkMinigame.tscn")
-	elif(score == 5):
-		get_tree().change_scene("res://Scenes/winMilkMinigame.tscn")
-
+		get_tree().change_scene("res://Scenes/endMinigameMarket.tscn")
+	elif (score == 5):
+		get_tree().change_scene("res://Scenes/endMinigameMarket.tscn")
+		
+		
 
 func _on_Timer_timeout():
 	var rng = RandomNumberGenerator.new()
@@ -45,7 +46,7 @@ func _on_Timer_timeout():
 	elif choose_milk == 1:
 		new_node = wrong_milk.instance()
 	else:
-		new_node = yellow_milk.instance()
+		new_node = wrong_milk2.instance()
 	var rndX = rng.randi_range(0, 1280)
 	#var rndY = rng.randi_range(0, 720)
 	#if you want to change something in the node (for example the position here):
@@ -54,3 +55,4 @@ func _on_Timer_timeout():
 		
 
 	#pass # Replace with function body.
+
