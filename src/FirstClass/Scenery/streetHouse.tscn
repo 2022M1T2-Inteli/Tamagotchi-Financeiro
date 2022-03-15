@@ -386,6 +386,7 @@ shape = SubResource( 29 )
 [node name="Area2D2" parent="." instance=ExtResource( 13 )]
 position = Vector2( 5444, 442 )
 scale = Vector2( 0.75, 0.75 )
+path = null
 
 [node name="Area2D" parent="." instance=ExtResource( 17 )]
 position = Vector2( 7999, 440 )

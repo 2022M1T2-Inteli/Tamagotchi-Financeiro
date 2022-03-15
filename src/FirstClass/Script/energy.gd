@@ -11,8 +11,8 @@ var monthly_expenses = 300
 func _ready():
 	change_actions()
 	if Global.money + Global.digital_money <= monthly_expenses:
-		get_node("Control/Panel/RichTextLabel").text = "Seus ganhos mensais estão iguais aos gastos mensais. Cuidado!"	
-	pass # Replace with function body.
+		#get_node("Control/Panel/RichTextLabel").text = "Seus ganhos mensais estão iguais aos gastos mensais. Cuidado!"	
+		pass # Replace with function body.
 
 func change_actions():
 	for i in range(visibility.size(), Global.actions, -1):
