@@ -9,5 +9,5 @@ export var path : String
 func _on_Area2D2_body_entered(body):
 	if body.name == "Player_certo":
 		Global.current_scene = "res://Scenes/startMarket.tscn"
-s		Global.change_position(177, 674)
+		Global.change_position(177,674)
 		changer.change_scene(Global.current_scene) # Replace with function body.
