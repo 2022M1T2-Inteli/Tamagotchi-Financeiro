@@ -20,8 +20,7 @@ func _ready():
 func are_actions_over():
 	if(actions == 0):
 		get_tree().change_scene("res://Scenes/background_bedroom_nigth.tscn")
-		day += 1
-		actions = 3
+		Global.change_position(1175,678)
 
 func change_position(a, b):
 	position.x = a
