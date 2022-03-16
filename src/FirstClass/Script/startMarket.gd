@@ -2,4 +2,7 @@ extends Node2D
 
 func _on_Button_pressed():
 	Global.actions -= 1
-	get_tree().change_scene("res://Scenes/marketListShopMilk.tscn")
+	if(Global.money >= 32.75):
+		get_tree().change_scene("res://Scenes/marketListShopMilk.tscn")
+	else:
+		get_tree().change_scene("res://Scenery/streetHouse.tscn")
