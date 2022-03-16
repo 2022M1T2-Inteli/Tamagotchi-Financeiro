@@ -14,6 +14,7 @@ func _process(delta):
 
 func _on_Area2D_body_entered(body):
 	if (body.name == "Player_certo"):
-		queue_free()
+		$ErroFX.play()
 		jogo.errado()
 		jogo.verificar()
+		$Sprite.visible = false

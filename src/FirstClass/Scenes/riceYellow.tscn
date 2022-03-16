@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://assets/riceYellow.png" type="Texture" id=1]
 [ext_resource path="res://Scenes/riceYellow.gd" type="Script" id=2]
+[ext_resource path="res://mixkit-electronic-retro-block-hit-2185.wav" type="AudioStream" id=3]
 
 [node name="Area2D" type="Area2D"]
 script = ExtResource( 2 )
@@ -14,5 +15,9 @@ texture = ExtResource( 1 )
 position = Vector2( 0, 0.999998 )
 scale = Vector2( 0.679924, 0.661898 )
 polygon = PoolVector2Array( -33, -30, -32, 38, -27, 41, 27, 41, 32, 38, 33, -33, 27, -35, 26, -42, -25, -42, -26, -36 )
+
+[node name="ErroFX" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 3 )
+volume_db = 24.0
 
 [connection signal="body_entered" from="." to="." method="_on_Area2D_body_entered"]
