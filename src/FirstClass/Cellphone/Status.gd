@@ -5,10 +5,6 @@ extends Node2D
 func _ready():
 	pass # Replace with function body.
 
-func _on_Button_health_pressed():
-	get_tree().change_scene("res://Cellphone/health.tscn")
-
-
 func _on_Button_happiness_pressed():
 	get_tree().change_scene("res://Cellphone/happiness.tscn")
 
