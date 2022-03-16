@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://assets/sodaRed.png" type="Texture" id=1]
 [ext_resource path="res://Script/sodaRed.gd" type="Script" id=2]
+[ext_resource path="res://mixkit-electronic-retro-block-hit-2185.wav" type="AudioStream" id=3]
 
 [node name="Area2D" type="Area2D"]
 script = ExtResource( 2 )
@@ -15,5 +16,9 @@ texture = ExtResource( 1 )
 position = Vector2( 1, 1.19209e-07 )
 scale = Vector2( 0.542838, 0.524513 )
 polygon = PoolVector2Array( -40, 49, -22, 62, 23, 62, 41, 47, 41, -45, 23, -61, -20, -61, -39, -48 )
+
+[node name="ErroFX" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 3 )
+volume_db = 24.0
 
 [connection signal="body_entered" from="." to="." method="_on_Area2D_body_entered"]

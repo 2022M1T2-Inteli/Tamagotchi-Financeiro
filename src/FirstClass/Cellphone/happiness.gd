@@ -4,6 +4,7 @@ extends Node2D
 
 func _ready():
 	get_node("TextureProgress").value = Global.happiness
+	$RichTextLabel.set_bbcode(str(Global.happiness) + "%")
 
 func _on_Button_question_happiness_pressed():
 	pass # Replace with function body.

@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://assets/riceRed.png" type="Texture" id=1]
 [ext_resource path="res://Scenes/riceRed.gd" type="Script" id=2]
+[ext_resource path="res://mixkit-bubbly-achievement-tone-3193.wav" type="AudioStream" id=3]
 
 [node name="Area2D" type="Area2D"]
 script = ExtResource( 2 )
@@ -14,5 +15,8 @@ texture = ExtResource( 1 )
 position = Vector2( 0.017047, 0.500001 )
 scale = Vector2( 0.482955, 0.453345 )
 polygon = PoolVector2Array( -53, -51, -54, 66, -46, 70, 50, 71, 55, 65, 56, -54, 46, -59, 43, -71, -42, -71, -42, -63 )
+
+[node name="RightFX" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 3 )
 
 [connection signal="body_entered" from="." to="." method="_on_Area2D_body_entered"]
