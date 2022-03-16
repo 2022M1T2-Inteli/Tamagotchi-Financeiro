@@ -2,7 +2,7 @@ extends Area2D
 
 var jogo
 var grav : int = 980
-var velocidade = 250
+var velocidade = 450
 
 func _ready():
 	jogo = get_tree().current_scene

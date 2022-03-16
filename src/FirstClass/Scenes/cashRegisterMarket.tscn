@@ -7,7 +7,8 @@
 [ext_resource path="res://Fonts/Minecraftia-Regular.ttf" type="DynamicFontData" id=5]
 
 [sub_resource type="DynamicFont" id=1]
-size = 25
+size = 47
+extra_spacing_top = 20
 font_data = ExtResource( 5 )
 
 [node name="Node2D" type="Node2D"]
@@ -35,11 +36,12 @@ __meta__ = {
 }
 
 [node name="total" type="RichTextLabel" parent="."]
-margin_left = 484.0
-margin_top = 584.0
-margin_right = 775.0
-margin_bottom = 642.0
-custom_colors/default_color = Color( 0, 0, 0, 1 )
+margin_left = 480.0
+margin_top = 558.0
+margin_right = 833.0
+margin_bottom = 645.0
+custom_colors/default_color = Color( 0.152941, 0.529412, 0.0862745, 1 )
+custom_colors/selection_color = Color( 0, 0, 0, 1 )
 custom_fonts/normal_font = SubResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
