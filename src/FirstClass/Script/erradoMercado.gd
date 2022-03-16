@@ -4,4 +4,4 @@ func _ready():
 	pass # Replace with function body.
 
 func _on_Button_errou_pressed():
-	get_tree().change_scene("res://Scenes/Choosemilk.tscn")
+	get_tree().change_scene("res://Scenes/proposal1.tscn")
