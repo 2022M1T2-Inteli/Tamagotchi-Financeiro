@@ -8,6 +8,8 @@ export var path : String
 
 func _on_Goalscene2_body_entered(body):
 	if body.name == "Player_certo":
+		#get_tree().change_scene("res://Scenery/streetHouse.tscn")
+		
 		Global.current_scene = "res://Scenery/streetHouse.tscn"
 		Global.change_position(2856,546)
 		changer.change_scene(Global.current_scene)

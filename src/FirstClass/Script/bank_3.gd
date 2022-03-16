@@ -1,20 +1,24 @@
 extends Node2D
 
-
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-
-
-# Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
 
+func _on_Button_savings_pressed():
+	
+		if Global.savings == 0 :
+			get_tree().change_scene("res://Scenes/savings_2.tscn")
+			Global.savings = 1
+		else: 
+			get_tree().change_scene("res://Scenes/savings - deposit.tscn")
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+
+func _on_Button_exit_pressed():
+	get_tree().change_scene("res://Scenes/Bank.tscn")
 
 
-func _on_Button_pressed():
-	get_tree().change_scene("res://Scenes/bank_3.tscn")
+func _on_Button_CDI_pressed():
+		if Global.CDI == 0 :
+			get_tree().change_scene("res://Scenes/CDI.tscn")
+			Global.CDI = 1
+		else: 
+			get_tree().change_scene("res://Scenes/CDI_2.tscn")
