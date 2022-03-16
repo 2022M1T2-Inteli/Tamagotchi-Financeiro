@@ -10,8 +10,8 @@ func _on_Vmilk_pressed():
 
 
 func _on_Xmilk_pressed():
-	get_tree().change_scene("res://Scenes/erradoMercado.tscn")
+	get_tree().change_scene("res://Scenes/wrongChooseMilk.tscn")
 
 
 func _on_xmilk_pressed():
-	get_tree().change_scene("res://Scenes/erradoMercado.tscn")
+	get_tree().change_scene("res://Scenes/wrongChooseMilk.tscn")

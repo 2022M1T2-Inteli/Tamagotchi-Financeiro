@@ -10,8 +10,8 @@ func _on_rightRice_pressed():
 
 
 func _on_wrongRice_pressed():
-	get_tree().change_scene("res://Scenes/erradoMercado.tscn")
+	get_tree().change_scene("res://Scenes/wrongChooseRice.tscn")
 
 
 func _on_wrongRIce2_pressed():
-	get_tree().change_scene("res://Scenes/erradoMercado.tscn")
+	get_tree().change_scene("res://Scenes/wrongChooseRice.tscn")

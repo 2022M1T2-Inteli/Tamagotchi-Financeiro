@@ -14,9 +14,9 @@ texture = ExtResource( 1 )
 [node name="rigthSoda" type="Button" parent="."]
 show_behind_parent = true
 margin_left = 91.0
-margin_top = 240.0
+margin_top = 245.0
 margin_right = 414.0
-margin_bottom = 637.0
+margin_bottom = 642.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -34,9 +34,9 @@ __meta__ = {
 [node name="wrongSoda2" type="Button" parent="."]
 show_behind_parent = true
 margin_left = 887.0
-margin_top = 240.0
+margin_top = 245.0
 margin_right = 1208.0
-margin_bottom = 635.0
+margin_bottom = 640.0
 __meta__ = {
 "_edit_use_anchors_": false
 }

@@ -30,7 +30,7 @@ func errado():
 	
 func verificar():
 	if (erro == 3):
-		get_tree().change_scene("res://Scenes/winMilkMinigame.tscn")
+		get_tree().change_scene("res://Scenes/loseMinigameRice.tscn")
 	elif (score == 5):
 		get_tree().change_scene("res://Scenes/winRiceMinigame.tscn")
 		
