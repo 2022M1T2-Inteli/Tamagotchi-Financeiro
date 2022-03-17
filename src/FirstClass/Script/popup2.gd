@@ -2,7 +2,7 @@ extends Control
 
 # Script that enables the email pop-up
 
-var tasks = ["1.  Vá ate a faculdade e veja sua aula de hoje!\n\n\n2.  Conheça o mercado!","1.  Vá ate a faculdade e veja sua aula de hoje!\n\n\n2.  Conheça o Banco!"]
+var tasks = ["1.  Vá ate a faculdade e veja sua aula de hoje!\n\n\n2.  Conheça o mercado!","1.  Vá ate a faculdade e veja sua aula de hoje!\n\n\n2.  Conheça o Banco e invista!","1.  Vá ate a faculdade e veja sua aula de hoje!\n\n\n2.  Confira os investimentos feitos no banco !","1.  Vá ate a faculdade e veja sua aula de hoje!","1.  Vá ate a faculdade e veja sua aula de hoje!","1.  Vá ate a faculdade e veja sua aula de hoje!\n\n\n2.  se quiser, retire os investimentos feitos no banco !"]
 var monthly_expenses = 999
 
 func _on_question_button_pressed() -> void:
