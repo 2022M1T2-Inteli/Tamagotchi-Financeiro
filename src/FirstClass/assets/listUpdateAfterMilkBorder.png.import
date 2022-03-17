@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/listNoRice.png-14b3d6f8b1b7dd1cfe0da02d56d910eb.stex"
+path="res://.import/listUpdateAfterMilkBorder.png-ce9b92c7d024c28be6021beade25ab30.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/listNoRice.png"
-dest_files=[ "res://.import/listNoRice.png-14b3d6f8b1b7dd1cfe0da02d56d910eb.stex" ]
+source_file="res://assets/listUpdateAfterMilkBorder.png"
+dest_files=[ "res://.import/listUpdateAfterMilkBorder.png-ce9b92c7d024c28be6021beade25ab30.stex" ]
 
 [params]
 
