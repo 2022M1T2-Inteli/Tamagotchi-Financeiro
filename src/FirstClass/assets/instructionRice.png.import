@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/listNoRice.png-14b3d6f8b1b7dd1cfe0da02d56d910eb.stex"
+path="res://.import/instructionRice.png-98763330173756e3460e6b4b4e120ff0.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/listNoRice.png"
-dest_files=[ "res://.import/listNoRice.png-14b3d6f8b1b7dd1cfe0da02d56d910eb.stex" ]
+source_file="res://assets/instructionRice.png"
+dest_files=[ "res://.import/instructionRice.png-98763330173756e3460e6b4b4e120ff0.stex" ]
 
 [params]
 
