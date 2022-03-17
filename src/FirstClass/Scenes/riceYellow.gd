@@ -15,7 +15,7 @@ func _process(delta):
 
 func _on_Area2D_body_entered(body):
 	if (body.name == "Player_certo"):
-		$ErroFX.play()
+		$RightFX.play()
 		jogo.contagem_score()
 		jogo.verificar()
 		$Sprite.visible = false

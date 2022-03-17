@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/action_button.png-299829881e702dd1f04e3f8e4ab6e8e7.stex"
+path="res://.import/knowlodge.png-93b98c82c8be9e08c7a18a4c518d5db9.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/action_button.png"
-dest_files=[ "res://.import/action_button.png-299829881e702dd1f04e3f8e4ab6e8e7.stex" ]
+source_file="res://assets/knowlodge.png"
+dest_files=[ "res://.import/knowlodge.png-93b98c82c8be9e08c7a18a4c518d5db9.stex" ]
 
 [params]
 
