@@ -19,6 +19,8 @@ var invested_money : float = 0
 var invested_money_cdi : float = 0
 var add_money : float = 0 
 var total : float = 0
+var products = ["","",""]
+var recordsPrice : float = 0
 
 func _ready():
 	pass # Replace with function body.

@@ -6,13 +6,19 @@ func _ready():
 
 
 func _on_rightRice_pressed():
-	get_tree().change_scene("res://Scenes/startminigameRice.tscn")
 	Global.total += 23.50
+	Global.recordsPrice += 23.50
+	Global.products[1] = "res://assets/riceYellow.png"
+	get_tree().change_scene("res://Scenes/startminigameRice.tscn")
 
 func _on_wrongRice_pressed():
-	get_tree().change_scene("res://Scenes/wrongChooseRice.tscn")
 	Global.total += 18
+	Global.recordsPrice += 18
+	Global.products[1] = "res://assets/riceBlue.png"
+	get_tree().change_scene("res://Scenes/wrongChooseRice.tscn")
 
 func _on_wrongRIce2_pressed():
-	get_tree().change_scene("res://Scenes/wrongChooseRice.tscn")
 	Global.total += 12
+	Global.recordsPrice += 12
+	Global.products[1] = "res://assets/riceRed.png"
+	get_tree().change_scene("res://Scenes/wrongChooseRice.tscn")

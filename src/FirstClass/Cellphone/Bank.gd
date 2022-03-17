@@ -15,3 +15,7 @@ func _on_Button_exit_bank_left_pressed():
 
 func _on_Button_exit_bank_right_pressed():
 	get_tree().change_scene("res://Cellphone/Cellphone.tscn")
+
+
+func _on_Button_pressed():
+	get_tree().change_scene("res://Cellphone/recordsBank.tscn")
