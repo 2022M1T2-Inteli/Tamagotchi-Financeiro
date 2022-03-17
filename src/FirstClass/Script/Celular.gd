@@ -1,7 +1,9 @@
 extends Node2D
 
 func _ready():
-	pass # Replace with function body.
+	get_node("TextureProgress").value = Global.happiness
+	$RichTextLabel.set_bbcode(str(Global.happiness) + "%")
+	$knownledge.text = str (Global.knowledge)
 
 func _on_Button_Map_pressed():
 	get_tree().change_scene("res://Cellphone/Map.tscn")
@@ -9,14 +11,6 @@ func _on_Button_Map_pressed():
 
 func _on_Button_Bank_pressed():
 	get_tree().change_scene("res://Cellphone/Bank.tscn")
-
-
-func _on_Button_Status_pressed():
-	get_tree().change_scene("res://Cellphone/Status.tscn")
-
-
-func _on_Button_Task_pressed():
-	get_tree().change_scene("res://Cellphone/Task.tscn")
 
 
 func _on_Button_Credits_pressed():

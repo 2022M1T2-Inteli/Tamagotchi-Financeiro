@@ -11,3 +11,4 @@ func _on_Button_pressed():
 	Global.happiness += 2
 	Global.knowledge += 1
 	changer.change_scene(Global.current_scene)
+	Global.total = 0

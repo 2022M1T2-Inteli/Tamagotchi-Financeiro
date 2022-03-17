@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://assets/university_scene.jpg" type="Texture" id=1]
 [ext_resource path="res://Scenes/border.tscn" type="PackedScene" id=2]
@@ -58,6 +58,9 @@ radius = 14.0
 [sub_resource type="CapsuleShape2D" id=8]
 radius = 12.0
 height = 4.0
+
+[sub_resource type="SegmentShape2D" id=9]
+a = Vector2( 1277, 2 )
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 14 )
@@ -207,3 +210,9 @@ position = Vector2( 234, 450 )
 shape = SubResource( 8 )
 
 [node name="Joystick" parent="." instance=ExtResource( 15 )]
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
+position = Vector2( -7, 339 )
+shape = SubResource( 9 )

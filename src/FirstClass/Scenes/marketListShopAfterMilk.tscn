@@ -1,6 +1,7 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
-[ext_resource path="res://assets/listNoMilk.png" type="Texture" id=1]
+[ext_resource path="res://assets/listUpdateAfterMilkBorder.png" type="Texture" id=1]
+[ext_resource path="res://Scenes/border.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Scenes/ToBuyListUpdate.gd" type="Script" id=3]
 [ext_resource path="res://Script/joystick2.gd" type="Script" id=4]
 [ext_resource path="res://Script/Player_certo2.gd" type="Script" id=5]
@@ -50,10 +51,12 @@ position = Vector2( 1069, 529 )
 shape = SubResource( 2 )
 
 [node name="ToBuyList" type="Sprite" parent="."]
-visible = false
 position = Vector2( 649, 349 )
 scale = Vector2( 0.210188, 0.240424 )
 texture = ExtResource( 1 )
 script = ExtResource( 3 )
+
+[node name="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -6, -4 )
 
 [connection signal="body_entered" from="Area2D2" to="Area2D2" method="_on_Area2D2_body_entered"]
