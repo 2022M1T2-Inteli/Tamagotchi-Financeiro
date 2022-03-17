@@ -8,10 +8,6 @@
 [ext_resource path="res://assets/newBackClass.png" type="Texture" id=6]
 [ext_resource path="res://Scenes/CanvasLayer_action_button.tscn" type="PackedScene" id=7]
 
-[sub_resource type="DynamicFont" id=4]
-size = 21
-font_data = ExtResource( 4 )
-
 [sub_resource type="Animation" id=2]
 resource_name = "IDLE"
 loop = true
@@ -43,6 +39,10 @@ tracks/0/keys = {
 "values": [ Vector2( 1159, 627 ) ]
 }
 
+[sub_resource type="DynamicFont" id=4]
+size = 21
+font_data = ExtResource( 4 )
+
 [node name="Control" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -65,6 +65,15 @@ texture = ExtResource( 6 )
 __meta__ = {
 "_edit_lock_": true
 }
+
+[node name="Button" type="Sprite" parent="dialogBox"]
+position = Vector2( 1159, 627 )
+scale = Vector2( 0.374999, 0.3375 )
+texture = ExtResource( 3 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="dialogBox/Button"]
+anims/IDLE = SubResource( 2 )
+anims/RESET = SubResource( 3 )
 
 [node name="Sprite" type="Sprite" parent="dialogBox"]
 visible = false
@@ -101,15 +110,17 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button" type="Sprite" parent="dialogBox"]
-position = Vector2( 1159, 627 )
-scale = Vector2( 0.374999, 0.3375 )
-texture = ExtResource( 3 )
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="dialogBox/Button"]
-anims/IDLE = SubResource( 2 )
-anims/RESET = SubResource( 3 )
-
 [node name="CanvasLayer" parent="." instance=ExtResource( 7 )]
 
+[node name="buttonNextDialog" type="Button" parent="."]
+show_behind_parent = true
+margin_left = 339.0
+margin_top = 430.0
+margin_right = 1200.0
+margin_bottom = 673.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [connection signal="tween_completed" from="dialogBox/Tween" to="dialogBox" method="_on_Tween_tween_completed"]
+[connection signal="pressed" from="buttonNextDialog" to="dialogBox" method="_on_buttonNextDialog_pressed"]

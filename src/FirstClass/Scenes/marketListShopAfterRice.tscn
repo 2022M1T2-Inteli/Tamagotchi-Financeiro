@@ -9,7 +9,7 @@
 [ext_resource path="res://Script/Player_certo3.gd" type="Script" id=7]
 [ext_resource path="res://Scenes/areaRice.gd" type="Script" id=8]
 [ext_resource path="res://Script/ToBuyListSoda.gd" type="Script" id=9]
-[ext_resource path="res://assets/listNoRice.png" type="Texture" id=11]
+[ext_resource path="res://assets/listUpdateAfterRiceBorder.png" type="Texture" id=10]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 632, 270.5 )
@@ -51,10 +51,9 @@ position = Vector2( 584, 524 )
 shape = SubResource( 2 )
 
 [node name="ToBuyList" type="Sprite" parent="."]
-visible = false
 position = Vector2( 649, 349 )
 scale = Vector2( 0.210188, 0.240424 )
-texture = ExtResource( 11 )
+texture = ExtResource( 10 )
 script = ExtResource( 9 )
 
 [node name="StaticBody2D" parent="." instance=ExtResource( 3 )]
