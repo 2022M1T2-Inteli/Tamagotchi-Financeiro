@@ -9,7 +9,7 @@
 [ext_resource path="res://assets/instructionsRiceMinigame.png" type="Texture" id=7]
 [ext_resource path="res://Scenes/Player_certo_4.gd" type="Script" id=8]
 [ext_resource path="res://Scenes/instructions_minigame_market_Rice.gd" type="Script" id=9]
-[ext_resource path="res://Uncan - Wave of the Synth.mp3" type="AudioStream" id=10]
+[ext_resource path="res://Audios/Uncan - Wave of the Synth.mp3" type="AudioStream" id=10]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 652.5, 277.5 )

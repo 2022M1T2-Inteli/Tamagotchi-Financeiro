@@ -1,7 +1,7 @@
 extends Node2D
 
 func _ready():
-	pass # Replace with function body.
+	$lossfx.play()
 
 func _on_Button_errou_pressed():
 	get_tree().change_scene("res://Scenes/proposal1.tscn")

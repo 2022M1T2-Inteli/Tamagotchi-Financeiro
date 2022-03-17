@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Uncan - Wave of the Synth.mp3-6949b54b6084f650c0da92b4da5c1f08.mp3str"
+
+[deps]
+
+source_file="res://Audios/Uncan - Wave of the Synth.mp3"
+dest_files=[ "res://.import/Uncan - Wave of the Synth.mp3-6949b54b6084f650c0da92b4da5c1f08.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
