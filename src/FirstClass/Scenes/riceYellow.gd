@@ -2,7 +2,7 @@ extends Area2D
 
 var jogo
 var grav : int = 980
-var velocidade = 250
+var velocidade = 450
 
 func _ready():
 	jogo = get_tree().current_scene
@@ -15,6 +15,7 @@ func _process(delta):
 
 func _on_Area2D_body_entered(body):
 	if (body.name == "Player_certo"):
-		queue_free()
+		$RightFX.play()
 		jogo.contagem_score()
 		jogo.verificar()
+		$Sprite.visible = false

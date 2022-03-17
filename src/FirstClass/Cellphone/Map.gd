@@ -26,4 +26,5 @@ func _on_Button_bedroom_pressed():
 
 
 func _on_Button_bank_pressed():
+	Global.change_position(-1040, 218)
 	get_tree().change_scene("res://Scenes/Bank.tscn")

@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=2]
+[gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://Scenes/Player_certo.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/classUniversityToStreetHouse.tscn" type="PackedScene" id=2]
@@ -11,6 +11,7 @@
 [ext_resource path="res://Script/Bank_instructions.gd" type="Script" id=9]
 [ext_resource path="res://Script/bank_money1.gd" type="Script" id=10]
 [ext_resource path="res://Scenes/Transition_in.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Script/BanktoStreetHouse.gd" type="Script" id=12]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 651.5, 10 )
@@ -123,7 +124,7 @@ shape = SubResource( 4 )
 [node name="Goalscene2" parent="." instance=ExtResource( 2 )]
 position = Vector2( -1132, 139 )
 rotation = -1.5708
-path = "res://Scenery/streetHouse.tscn"
+script = ExtResource( 12 )
 
 [node name="Joystick" parent="." instance=ExtResource( 3 )]
 

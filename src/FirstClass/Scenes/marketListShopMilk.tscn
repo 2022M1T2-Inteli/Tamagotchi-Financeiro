@@ -1,9 +1,10 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://assets/instructionsUpdate.png" type="Texture" id=1]
 [ext_resource path="res://Script/milk_area.gd" type="Script" id=2]
 [ext_resource path="res://Script/ToBuyList.gd" type="Script" id=3]
 [ext_resource path="res://Scenes/Transition_in.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scenes/border.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Scenes/Player_certo.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Scenery/joystick.tscn" type="PackedScene" id=7]
 [ext_resource path="res://assets/shelfUpdate.png" type="Texture" id=8]
@@ -50,5 +51,8 @@ script = ExtResource( 2 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
 position = Vector2( 262, 564.125 )
 shape = SubResource( 2 )
+
+[node name="StaticBody2D" parent="." instance=ExtResource( 5 )]
+position = Vector2( -6, -3 )
 
 [connection signal="body_entered" from="Area2D2" to="Area2D2" method="_on_Area2D2_body_entered"]

@@ -4,6 +4,7 @@ extends Node2D
 
 func _ready():
 	get_node("TextureProgress").value = Global.happiness
+	$RichTextLabel.set_bbcode(str(Global.happiness) + "%")
 
 # Functions for transition between happiness status and cellphone main page
 
