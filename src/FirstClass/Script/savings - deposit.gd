@@ -1,7 +1,8 @@
 extends Node2D
 
-func _ready():
-	pass # Replace with function body.
+
+
+#func _ready():
 
 func _on_Button_exit_pressed():
 	get_tree().change_scene("res://Scenes/bank_3.tscn")
@@ -14,7 +15,8 @@ func _on_Button_invest_pressed():
 		Global.digital_money -= float (get_node("money_invest").text)
 		$money_digital.update()
 		$money_invest.text = ""
-		$profit.text = str((Global.invested_money * pow(1.05,Global.day-1)) - Global.invested_money)
+		$profit.text = str((Global.invested_money * pow(1.05,Global.investimentTimepoupanca)) - Global.invested_money)
+		Global.investimentTimepoupanca = 0
 	else:
 		$money_invest.text = "Valor inválido"
 		$Timer.start()

@@ -12,6 +12,7 @@ var health : int = 100
 var knowledge : int = 0
 var actions : int = 3
 var day : int = 1
+var school : bool = false
 var bank : int = 0
 var savings : int = 0
 var CDI : int = 0
@@ -19,6 +20,7 @@ var invested_money : float = 0
 var invested_money_cdi : float = 0
 var add_money : float = 0 
 var total : float = 0
+var investimentTimepoupanca = 0
 
 func _ready():
 	pass # Replace with function body.

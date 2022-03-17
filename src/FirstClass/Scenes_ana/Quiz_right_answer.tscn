@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Script/Acertouquiz.gd" type="Script" id=1]
+[ext_resource path="res://assets/acertouQuiz2.png" type="Texture" id=2]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Quiz_right_answer" type="Sprite" parent="."]
+position = Vector2( 640.5, 359.75 )
+scale = Vector2( 0.667188, 0.665278 )
+texture = ExtResource( 2 )
+
+[node name="Button_exit_quiz" type="Button" parent="."]
+show_behind_parent = true
+margin_left = 51.0
+margin_top = 47.0
+margin_right = 120.0
+margin_bottom = 109.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="Button_exit_quiz" to="." method="_on_Button_exit_quiz_pressed"]
