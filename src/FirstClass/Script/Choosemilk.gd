@@ -7,11 +7,12 @@ func _ready():
 
 func _on_Vmilk_pressed():
 	get_tree().change_scene("res://Scenes/Market_quiz_right_answer.tscn")
-
+	Global.total += 5.25
 
 func _on_Xmilk_pressed():
 	get_tree().change_scene("res://Scenes/wrongChooseMilk.tscn")
-
+	Global.total += 3
 
 func _on_xmilk_pressed():
 	get_tree().change_scene("res://Scenes/wrongChooseMilk.tscn")
+	Global.total += 4.70
