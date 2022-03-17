@@ -12,3 +12,4 @@ func _on_Button_pressed():
 	Global.knowledge += 1
 	Global.are_actions_over()
 	changer.change_scene(Global.current_scene)
+	Global.total = 0
