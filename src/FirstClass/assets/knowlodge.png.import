@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/listNoMilk.png-1f107028e00c7d58cf1c600691bd9cd8.stex"
+path="res://.import/knowlodge.png-93b98c82c8be9e08c7a18a4c518d5db9.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/listNoMilk.png"
-dest_files=[ "res://.import/listNoMilk.png-1f107028e00c7d58cf1c600691bd9cd8.stex" ]
+source_file="res://assets/knowlodge.png"
+dest_files=[ "res://.import/knowlodge.png-93b98c82c8be9e08c7a18a4c518d5db9.stex" ]
 
 [params]
 
