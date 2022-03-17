@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/mixkit-wrong-answer-fail-notification-946.wav-24c9492849072aba0e8acc3866f2cc3a.sample"
+
+[deps]
+
+source_file="res://Audios/mixkit-wrong-answer-fail-notification-946.wav"
+dest_files=[ "res://.import/mixkit-wrong-answer-fail-notification-946.wav-24c9492849072aba0e8acc3866f2cc3a.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
