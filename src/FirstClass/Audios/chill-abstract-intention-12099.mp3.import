@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/chill-abstract-intention-12099.mp3-decea26c6b6d94bb8dba5d8d46699c23.mp3str"
+
+[deps]
+
+source_file="res://Audios/chill-abstract-intention-12099.mp3"
+dest_files=[ "res://.import/chill-abstract-intention-12099.mp3-decea26c6b6d94bb8dba5d8d46699c23.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
