@@ -9,13 +9,13 @@ var image = Image.new()
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	$total.text = str (Global.total)
-#	for i in range(0, 3):
-#		image.load(Global.products[i])
-#		var texture = ImageTexture.new()
-#		texture.create_from_image(image, 0)
-#		get_node("Sprite"+ str(i+1)).texture = texture
-#		get_node("Sprite"+ str(i+1)).position = Vector2(300 + 300*i, 500)
-#		get_node("Sprite"+ str(i+1)).scale = Vector2(0.5, 0.5)
+	for i in range(0, 3):
+		image.load(Global.products[i])
+		var texture = ImageTexture.new()
+		texture.create_from_image(image, 0)
+		get_node("Sprite"+ str(i+1)).texture = texture
+		get_node("Sprite"+ str(i+1)).position = Vector2(300 + 350*i, 370)
+		get_node("Sprite"+ str(i+1)).scale = Vector2(0.5, 0.5)
 	
 	if Global.digital_money <= Global.total:
 		Global.money -= Global.total
