@@ -31,7 +31,7 @@ func _on_Button_remove_pressed():
 		Global.digital_money += float (get_node("money_invest").text)
 		$money_digital.update()
 		$money_invest.text = ""
-		$profit.text = str((Global.invested_money * pow(1.05,Global.day-1)) - Global.invested_money)
+		$profit.text = str((Global.invested_money * pow(1.05,Global.investimentTimepoupanca)) - Global.invested_money)
 	else:
 		$money_invest.text = "Valor inválido"
 		$Timer.start()
