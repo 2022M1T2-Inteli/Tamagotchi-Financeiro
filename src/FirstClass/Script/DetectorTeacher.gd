@@ -2,9 +2,13 @@ extends Area2D
 
 # onready var dialog = get_node("Control2/dialogBox") # FIXME: Node not found
 
+var contents = ["res://Scenes/dialogBoxTest.tscn","res://Scenes_ana/dialogBoxTestCDB.tscn",
+		"res://Scenes_ana/dialogBoxTestIndicadores.tscn", "res://Scenes_ana/dialogBoxTestRendaF.tscn",
+		"res://Scenes_ana/dialogBoxTestTesouroDireto.tscn"]
+
 func _on_Detector_body_entered(body):
-	body.name == "Player_certo" && Input.get_action_strength("Enter")
-	get_tree().change_scene("res://Scenes/dialogBoxTest.tscn")
+	if(body.name == "Player_certo" && !Global.school):
+		get_tree().change_scene(contents[Global.day-1])
 	#$Control2.visible = true
 
 

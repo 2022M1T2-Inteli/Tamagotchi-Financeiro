@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/y2meta.com - Undertale Start Menu (128 kbps).mp3-a636e9fc1eff7f5b6522c3a063b3c358.mp3str"
+
+[deps]
+
+source_file="res://Audios/y2meta.com - Undertale Start Menu (128 kbps).mp3"
+dest_files=[ "res://.import/y2meta.com - Undertale Start Menu (128 kbps).mp3-a636e9fc1eff7f5b6522c3a063b3c358.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

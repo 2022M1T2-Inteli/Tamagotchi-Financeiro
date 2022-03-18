@@ -1,7 +1,5 @@
 extends Control
 
-
-
 var dialog = [
 	'Poupança é um investimento de renda fixa, simples e acessível, mas, afinal, o que é renda fixa? É um investimento em que o cálculo da remuneração é previamente definido, tornando-o mais seguro, mesmo que não seja 100%',
 	'A poupança é isenta de custos. A cobrança de taxas de abertura, de manutenção, de administração ou de performance é considerada proibida. Inclusive, os rendimentos da poupança não pagam Imposto de Renda, mesmo que tenham que ser declarados anualmente.',
@@ -24,8 +22,8 @@ func _ready():
 func _process(delta):
 	$"Button".visible = finished
 	$Button/AnimationPlayer.play("IDLE")
-	if Input.is_action_just_pressed("ui_accept"):
-		load_dialog()
+	#if Input.is_action_just_pressed("ui_accept"):
+		#load_dialog()
 
 func load_dialog():
 	if dialog_index < dialog.size():
@@ -47,3 +45,7 @@ func load_dialog():
 
 func _on_Tween_tween_completed(object, key):
 	finished = true
+
+
+func _on_buttonNextDialog_pressed():
+	load_dialog()

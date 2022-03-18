@@ -7,7 +7,7 @@ onready var changer = get_parent().get_node("Transition_in")
 export var path : String
 
 func _on_Goalscene2_body_entered(body):
-	if body.name == "Player_certo":
+	if body.name == "Player_certo" && !Global.school:
 		Global.current_scene = "res://Scenery/classUniversity.tscn"
 		Global.change_position(177, 674)
 		changer.change_scene(path)

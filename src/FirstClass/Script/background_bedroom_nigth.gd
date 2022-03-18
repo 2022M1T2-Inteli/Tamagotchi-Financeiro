@@ -13,4 +13,6 @@ func _on_Area2D_body_entered(body):
 		Global.position.y = 705
 		Global.day += 1
 		Global.actions = 3
+		Global.school = false
 		changer.change_scene(Global.current_scene)
+		Global.investimentTimepoupanca +=1

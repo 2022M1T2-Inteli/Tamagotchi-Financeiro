@@ -16,8 +16,9 @@ func _on_Button_market_pressed():
 
 
 func _on_Button_college_pressed():
-	Global.change_position(177, 674)
-	get_tree().change_scene("res://Scenery/classUniversity.tscn")
+	if(!Global.school):
+		Global.change_position(177, 674)
+		get_tree().change_scene("res://Scenery/classUniversity.tscn")
 
 
 func _on_Button_bedroom_pressed():

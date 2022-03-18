@@ -12,3 +12,4 @@ func change_scene(path, delay = 0):
 
 func _on_Transition_fx_tween_completed(object, key):
 	assert(get_tree().change_scene(current_path) == OK)
+	Global.are_actions_over()

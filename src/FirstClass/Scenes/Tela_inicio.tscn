@@ -1,10 +1,14 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
+[ext_resource path="res://Audios/y2meta.com - Undertale Start Menu (128 kbps).mp3" type="AudioStream" id=1]
 [ext_resource path="res://assets/EduFin App.png" type="Texture" id=2]
 [ext_resource path="res://assets/button-play.png" type="Texture" id=3]
 
 [sub_resource type="GDScript" id=1]
 script/source = "extends Node2D
+
+func _ready():
+	$musicfx.play()
 
 func _on_Button_tela_inicio_pressed():
 	get_tree().change_scene(\"res://Scenery/ChampionSelect.tscn\")
@@ -33,5 +37,8 @@ texture = ExtResource( 2 )
 position = Vector2( 651, 501 )
 scale = Vector2( 0.166406, 0.150463 )
 texture = ExtResource( 3 )
+
+[node name="musicfx" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 1 )
 
 [connection signal="pressed" from="Button_tela_inicio" to="." method="_on_Button_tela_inicio_pressed"]

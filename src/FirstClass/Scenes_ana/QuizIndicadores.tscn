@@ -1,0 +1,96 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Fonts/Minecraftia-Regular.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Script_ana/QuizIndicadores.gd" type="Script" id=2]
+[ext_resource path="res://assets/Buttonquiz.png" type="Texture" id=3]
+[ext_resource path="res://assets/newBackClass.png" type="Texture" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 21
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 37
+font_data = ExtResource( 1 )
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="NewBackClass" type="Sprite" parent="."]
+position = Vector2( 640, 362 )
+scale = Vector2( 0.667708, 0.668519 )
+texture = ExtResource( 4 )
+
+[node name="pergunta" type="RichTextLabel" parent="."]
+margin_left = 315.0
+margin_top = 442.0
+margin_right = 1202.0
+margin_bottom = 543.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 1 )
+text = "QUIZ
+O rendimento da poupança está mais ligado a qual desses indicadores do mercado financeiro?"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Buttonquiz_certa" type="Sprite" parent="."]
+position = Vector2( 478, 594 )
+scale = Vector2( 0.689776, 0.478022 )
+texture = ExtResource( 3 )
+
+[node name="RichTextLabel_certa" type="RichTextLabel" parent="Buttonquiz_certa"]
+anchor_left = -1.357
+anchor_top = -4.98
+anchor_right = -1.357
+anchor_bottom = -4.98
+margin_left = 372.819
+margin_top = 877.073
+margin_right = 710.819
+margin_bottom = 1051.07
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 2 )
+text = "Taxa Selic"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Buttonquiz_errada" type="Sprite" parent="."]
+position = Vector2( 802, 593 )
+scale = Vector2( 0.689776, 0.478022 )
+texture = ExtResource( 3 )
+
+[node name="RichTextLabel_errada" type="RichTextLabel" parent="Buttonquiz_errada"]
+margin_left = -98.5828
+margin_top = -27.1953
+margin_right = 227.417
+margin_bottom = 160.805
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 2 )
+text = "Taxa CDI"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button_certo" type="Button" parent="."]
+show_behind_parent = true
+margin_left = 378.0
+margin_top = 564.0
+margin_right = 581.0
+margin_bottom = 630.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button_errado" type="Button" parent="."]
+show_behind_parent = true
+margin_left = 702.0
+margin_top = 569.0
+margin_right = 902.0
+margin_bottom = 628.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="Button_certo" to="." method="_on_Button_certo_pressed"]
+[connection signal="pressed" from="Button_errado" to="." method="_on_Button_errado_pressed"]

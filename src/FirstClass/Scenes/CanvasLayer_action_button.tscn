@@ -4,10 +4,12 @@
 [ext_resource path="res://assets/Action_button_pressed.png" type="Texture" id=2]
 
 [node name="CanvasLayer" type="Node2D"]
+visible = false
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="TouchScreenButton" type="TouchScreenButton" parent="CanvasLayer"]
+visible = false
 position = Vector2( 1152, 580 )
 scale = Vector2( 0.0690095, 0.0717174 )
 normal = ExtResource( 1 )
