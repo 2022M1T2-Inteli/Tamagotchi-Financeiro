@@ -80,7 +80,7 @@ position = Vector2( 638.5, 729.5 )
 shape = SubResource( 5 )
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 0.5
+wait_time = 0.2
 autostart = true
 
 [node name="HUD" type="CanvasLayer" parent="."]

@@ -1,9 +1,8 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://assets/fundo preto.png" type="Texture" id=1]
 [ext_resource path="res://assets/edufinSem.png" type="Texture" id=2]
 [ext_resource path="res://Cellphone/EduFin.gd" type="Script" id=3]
-[ext_resource path="res://assets/tela_quintal.png" type="Texture" id=4]
 [ext_resource path="res://Fonts/Minecraftia-Regular.ttf" type="DynamicFontData" id=5]
 
 [sub_resource type="DynamicFont" id=1]
@@ -13,25 +12,19 @@ font_data = ExtResource( 5 )
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 3 )
 
-[node name="BackyardBackground" type="Sprite" parent="."]
-position = Vector2( 639.75, 357.75 )
-scale = Vector2( 0.687141, 0.829558 )
-texture = ExtResource( 4 )
-
 [node name="BlackBackground" type="Sprite" parent="."]
-position = Vector2( 643.5, 359.5 )
-scale = Vector2( 2.02969, 2.04167 )
+visible = false
+position = Vector2( 639, 360.5 )
+scale = Vector2( 1.99687, 2.00278 )
 texture = ExtResource( 1 )
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="Button_EduFin" type="Button" parent="."]
+pause_mode = 2
 show_behind_parent = true
-margin_left = 585.0
-margin_top = 519.0
-margin_right = 688.0
-margin_bottom = 561.0
+margin_left = 592.0
+margin_top = 544.0
+margin_right = 672.0
+margin_bottom = 578.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -45,6 +38,7 @@ __meta__ = {
 }
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
+pause_mode = 2
 margin_left = 512.0
 margin_top = 242.0
 margin_right = 764.0
