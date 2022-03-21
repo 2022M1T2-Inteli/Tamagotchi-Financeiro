@@ -39,6 +39,9 @@ margin_left = 0.323975
 margin_top = -0.361023
 margin_right = -419.151
 margin_bottom = -121.703
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Any_tasks_active" type="RichTextLabel" parent="Panel"]
 anchor_left = 0.116

@@ -169,6 +169,11 @@ position = Vector2( 2862, 438 )
 rotation = 6.28319
 path = "res://Scenery/classUniversity.tscn"
 
+[node name="Timer" type="Timer" parent="streetHouseToClassUniversity"]
+wait_time = 3.0
+
+[node name="Warning" type="Sprite" parent="streetHouseToClassUniversity"]
+
 [node name="StaticBody2D3" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D3"]
@@ -391,4 +396,6 @@ path = null
 [node name="Area2D" parent="." instance=ExtResource( 17 )]
 position = Vector2( 7999, 440 )
 
+[connection signal="body_exited" from="streetHouseToClassUniversity" to="streetHouseToClassUniversity" method="_on_streetHouseToClassUniversity_body_exited"]
+[connection signal="timeout" from="streetHouseToClassUniversity/Timer" to="streetHouseToClassUniversity" method="_on_Timer_timeout"]
 [connection signal="body_entered" from="Area2D2" to="Area2D2" method="_on_Area2D2_body_entered"]
