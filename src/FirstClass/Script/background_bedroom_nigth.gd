@@ -3,6 +3,7 @@ extends Area2D
 onready var changer = get_parent().get_node("Transition_in")
 
 export var path : String
+var rng = RandomNumberGenerator.new()
 
 #
 
@@ -14,5 +15,7 @@ func _on_Area2D_body_entered(body):
 		Global.day += 1
 		Global.actions = 3
 		Global.school = false
-		changer.change_scene(Global.current_scene)
 		Global.investimentTimepoupanca +=1
+		rng.randomize()
+		Global.inflation += rng.randi_range(1.5,3)
+		changer.change_scene(Global.current_scene)
