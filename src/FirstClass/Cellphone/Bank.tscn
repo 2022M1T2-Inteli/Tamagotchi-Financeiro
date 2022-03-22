@@ -1,12 +1,27 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://assets/fundo preto.png" type="Texture" id=1]
 [ext_resource path="res://Cellphone/Bank.gd" type="Script" id=2]
 [ext_resource path="res://assets/Banco.png" type="Texture" id=3]
-[ext_resource path="res://assets/tela_quintal.png" type="Texture" id=4]
 [ext_resource path="res://Script/MoneyValue.gd" type="Script" id=5]
 [ext_resource path="res://Fonts/Minecraftia-Regular.ttf" type="DynamicFontData" id=6]
 [ext_resource path="res://Script/NameDisplay.gd" type="Script" id=7]
+
+[sub_resource type="StyleBoxFlat" id=6]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="StyleBoxFlat" id=7]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="StyleBoxEmpty" id=8]
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="StyleBoxFlat" id=4]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="StyleBoxEmpty" id=5]
 
 [sub_resource type="DynamicFont" id=1]
 font_data = ExtResource( 6 )
@@ -17,18 +32,11 @@ font_data = ExtResource( 6 )
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 2 )
 
-[node name="BackyardBackground" type="Sprite" parent="."]
-position = Vector2( 640, 360 )
-scale = Vector2( 0.669106, 0.815402 )
-texture = ExtResource( 4 )
-
 [node name="BlackBackground" type="Sprite" parent="."]
-position = Vector2( 640.5, 359 )
-scale = Vector2( 2.02969, 2.03333 )
+visible = false
+position = Vector2( 640, 360 )
+scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="Bank" type="Sprite" parent="."]
 position = Vector2( 640, 360 )
@@ -36,6 +44,7 @@ scale = Vector2( 0.267699, 0.268093 )
 texture = ExtResource( 3 )
 
 [node name="Button_exit_bank" type="Button" parent="."]
+pause_mode = 2
 show_behind_parent = true
 margin_left = 587.0
 margin_top = 531.0
@@ -47,20 +56,28 @@ __meta__ = {
 }
 
 [node name="Button_exit_bank_left" type="Button" parent="."]
+pause_mode = 2
 show_behind_parent = true
-margin_left = -8.0
+margin_left = 1.0
 margin_right = 476.0
 margin_bottom = 716.0
+custom_styles/hover = SubResource( 6 )
+custom_styles/pressed = SubResource( 7 )
+custom_styles/normal = SubResource( 8 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Button_exit_bank_right" type="Button" parent="."]
+pause_mode = 2
 show_behind_parent = true
 margin_left = 802.0
 margin_top = -4.0
-margin_right = 1286.0
+margin_right = 1279.0
 margin_bottom = 712.0
+custom_styles/hover = SubResource( 3 )
+custom_styles/pressed = SubResource( 4 )
+custom_styles/normal = SubResource( 5 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -90,6 +107,7 @@ __meta__ = {
 }
 
 [node name="Button" type="Button" parent="."]
+pause_mode = 2
 show_behind_parent = true
 margin_left = 514.0
 margin_top = 376.0

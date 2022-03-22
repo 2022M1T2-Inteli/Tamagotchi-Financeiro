@@ -9,11 +9,13 @@
 script = ExtResource( 3 )
 
 [node name="BackyardBackground" type="Sprite" parent="."]
+visible = false
 position = Vector2( 635.75, 362.75 )
 scale = Vector2( 0.674595, 0.836353 )
 texture = ExtResource( 4 )
 
 [node name="BlackBackground" type="Sprite" parent="."]
+visible = false
 position = Vector2( 640.5, 362 )
 scale = Vector2( 2.02344, 2.05 )
 texture = ExtResource( 2 )
@@ -30,6 +32,7 @@ __meta__ = {
 }
 
 [node name="Button_Exit_Credits" type="Button" parent="."]
+pause_mode = 2
 show_behind_parent = true
 margin_left = 586.0
 margin_top = 534.0
