@@ -36,3 +36,4 @@ func _on_question_button_pressed() -> void:
 func _on_close_button_pressed() -> void:
 	$Panel/AnimationPlayer.play_backwards("popup")
 	$close_button.visible = false
+	get_node("Panel/Any_tasks_active").text = ""
