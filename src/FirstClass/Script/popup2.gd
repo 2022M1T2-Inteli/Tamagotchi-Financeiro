@@ -15,11 +15,12 @@ func _ready():
 		matrix[x][0] = "1. Vá até a faculdade e veja sua aula de hoje!"
 		matrix[x][1] = tasks[x]
 
-
 func _on_question_button_pressed() -> void:
 	$Panel.visible = true
 	$close_button.visible = true
 	$Panel/AnimationPlayer.play("popup")
+	$question_button/AnimationPlayer.stop()
+	$question_button.visible = true
 	
 	if !Global.school:
 		get_node("Panel/Any_tasks_active").text += matrix[Global.day-1][0]
@@ -30,8 +31,6 @@ func _on_question_button_pressed() -> void:
 	
 	if Global.money + Global.digital_money <= monthly_expenses:
 		get_node("Panel/Any_tasks_active").text += "\n\n•Seus ganhos mensais estão iguais aos gastos mensais. Cuidado!"	
-
-
 
 func _on_close_button_pressed() -> void:
 	$Panel/AnimationPlayer.play_backwards("popup")
