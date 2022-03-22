@@ -1,22 +1,19 @@
 extends Node2D
 
-
-
-#func _ready():
+func _ready():
+	$money_invest_bank.text = str(Investiment.invest_money_savings)
 
 func _on_Button_exit_pressed():
 	get_tree().change_scene("res://Scenes/bank_3.tscn")
-
+	
 
 func _on_Button_invest_pressed():
 	if (float(get_node("money_invest").text) >= 0) && (Global.digital_money - float(get_node("money_invest").text) >= 0):
-		Global.invested_money += float (get_node("money_invest").text)
-		$money_invest_bank.text = str(Global.invested_money)
+		Investiment.invest_money_savings += float (get_node("money_invest").text)
 		Global.digital_money -= float (get_node("money_invest").text)
 		$money_digital.update()
+		$money_invest_bank.update()
 		$money_invest.text = ""
-		$profit.text = str((Global.invested_money * pow(1.05,Global.investimentTimepoupanca)) - Global.invested_money)
-		Global.investimentTimepoupanca = 0
 	else:
 		$money_invest.text = "Valor inválido"
 		$Timer.start()
@@ -25,13 +22,22 @@ func _on_Button_invest_pressed():
 
 
 func _on_Button_remove_pressed():
-	if (float(get_node("money_invest").text) >= 0) && (Global.digital_money - float(get_node("money_invest").text) >= 0):
-		Global.invested_money -= float (get_node("money_invest").text)
-		$money_invest_bank.text = str(Global.invested_money)
+	if (float(get_node("money_invest").text) >= 0) && (Investiment.invest_money_savings - float(get_node("money_invest").text) >= 0) && float(get_node("money_invest").text) <= Investiment.profit_savings:
+		Investiment.invest_money_savings -= float (get_node("money_invest").text)
 		Global.digital_money += float (get_node("money_invest").text)
+		Investiment.profit_savings -= float (get_node("money_invest").text)
 		$money_digital.update()
+		$money_invest_bank.update()
+		$profit.update()
 		$money_invest.text = ""
-		$profit.text = str((Global.invested_money * pow(1.05,Global.investimentTimepoupanca)) - Global.invested_money)
+	elif (float(get_node("money_invest").text) >= 0) && (Investiment.invest_money_savings - float(get_node("money_invest").text) >= 0):
+		Investiment.invest_money_savings -= float (get_node("money_invest").text)
+		Global.digital_money += float (get_node("money_invest").text)
+		Investiment.profit_savings = 0
+		$money_digital.update()
+		$profit.update()
+		$money_invest_bank.update()
+		$money_invest.text = ""
 	else:
 		$money_invest.text = "Valor inválido"
 		$Timer.start()
