@@ -17,6 +17,7 @@ config/icon="res://icon.png"
 [autoload]
 
 Global="*res://Script/Global.gd"
+Musicfx="*res://musicfx.tscn"
 
 [display]
 
