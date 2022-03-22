@@ -26,7 +26,7 @@ var recordsPrice : float = 0
 var inflation : float = 0
 
 func _ready():
-	pass
+	pass # Replace with function body.
 
 func are_actions_over():
 	if(actions == 0):
