@@ -1,0 +1,61 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Scenes/StoreMenu.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/ButtonStore.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Script/StoreHome.gd" type="Script" id=3]
+[ext_resource path="res://assets/Store_Home.png" type="Texture" id=4]
+
+[node name="Store - Home" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="StoreHome" type="Sprite" parent="."]
+position = Vector2( 640, 360 )
+texture = ExtResource( 4 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="HomeRectangle" parent="." instance=ExtResource( 2 )]
+margin_left = 35.0
+margin_top = 213.0
+margin_right = 277.0
+margin_bottom = 271.0
+
+[node name="BooksRectangle" parent="." instance=ExtResource( 2 )]
+margin_left = 35.0
+margin_top = 273.0
+margin_right = 277.0
+margin_bottom = 331.0
+
+[node name="VehiclesRectangle" parent="." instance=ExtResource( 2 )]
+margin_left = 34.0
+margin_top = 326.0
+margin_right = 276.0
+margin_bottom = 384.0
+
+[node name="ShirtsRectangle" parent="." instance=ExtResource( 2 )]
+margin_left = 34.0
+margin_top = 393.0
+margin_right = 276.0
+margin_bottom = 451.0
+
+[node name="PetsRectangle" parent="." instance=ExtResource( 2 )]
+margin_left = 33.0
+margin_top = 462.0
+margin_right = 275.0
+margin_bottom = 520.0
+
+[node name="HousesRectangle" parent="." instance=ExtResource( 2 )]
+margin_left = 33.0
+margin_top = 530.0
+margin_right = 275.0
+margin_bottom = 588.0
+
+[node name="CanvasLayer" parent="." instance=ExtResource( 1 )]
+
+[connection signal="pressed" from="HomeRectangle" to="." method="_on_HomeRectangle_pressed"]
+[connection signal="pressed" from="BooksRectangle" to="." method="_on_BooksRectangle_pressed"]
+[connection signal="pressed" from="VehiclesRectangle" to="." method="_on_VehiclesRectangle_pressed"]
+[connection signal="pressed" from="ShirtsRectangle" to="." method="_on_ShirtsRectangle_pressed"]
+[connection signal="pressed" from="PetsRectangle" to="." method="_on_PetsRectangle_pressed"]
+[connection signal="pressed" from="HousesRectangle" to="." method="_on_HousesRectangle_pressed"]

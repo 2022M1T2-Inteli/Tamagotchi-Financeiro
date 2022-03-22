@@ -6,8 +6,31 @@ onready var changer = get_parent().get_node("Transition_in")
 
 export var path : String
 
+func _ready():
+	var image = Image.new()
+	image.load("res://assets/EduFin App (3).png")
+	var texture = ImageTexture.new()
+	texture.create_from_image(image, 0)
+	get_node("Warning").texture = texture
+	get_node("Warning").position = Vector2(0,-300)
+	get_node("Warning").scale = Vector2(0.5, 0.5)
+	$Warning.visible = false
+
+
 func _on_Goalscene2_body_entered(body):
 	if body.name == "Player_certo" && !Global.school:
 		Global.current_scene = "res://Scenery/classUniversity.tscn"
 		Global.change_position(177, 674)
 		changer.change_scene(path)
+	elif Global.school:
+		$Timer.start()
+		$Warning.visible = true
+		get_parent().get_node("Joystick/Control/Panel/Any_tasks_active").text += "\nVocê já foi à faculdade hoje! Volte amanhã para mais conteúdos"
+
+
+func _on_Timer_timeout():
+	$Warning.visible = false
+
+
+func _on_streetHouseToClassUniversity_body_exited(body):
+	$Warning.visible = false

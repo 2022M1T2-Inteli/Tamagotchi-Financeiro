@@ -6,6 +6,7 @@ var right_milk = preload("res://Scenes/riceYellow.tscn")
 var wrong_milk = preload("res://Scenes/riceRed.tscn")
 var wrong_milk2 = preload("res://Scenes/riceBlue.tscn")
 
+
 #var milks = ["res://Scenes/right_milk.tscn", "res://Scenes/wrong_milk.tscn"]
 #var screenSize = get_viewport().get_visible_rect().size
 

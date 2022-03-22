@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Scenes/Raio.tscn" type="PackedScene" id=1]
 [ext_resource path="res://joystick.tscn" type="PackedScene" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://Script/money_físico.gd" type="Script" id=6]
 [ext_resource path="res://assets/carteira.png" type="Texture" id=7]
 [ext_resource path="res://Fonts/Minecraftia-Regular.ttf" type="DynamicFontData" id=8]
+[ext_resource path="res://Cellphone/Cellphone.tscn" type="PackedScene" id=9]
 
 [sub_resource type="DynamicFont" id=1]
 size = 24
@@ -46,10 +47,10 @@ position = Vector2( 333, 40 )
 position = Vector2( 376, 40 )
 
 [node name="Control" parent="." instance=ExtResource( 4 )]
-margin_left = 16.0
-margin_top = 9.0
-margin_right = 8.44006
-margin_bottom = 7.0
+margin_left = 0.0
+margin_top = 4.0
+margin_right = -7.55994
+margin_bottom = 2.0
 
 [node name="phone" parent="." instance=ExtResource( 3 )]
 margin_left = 1228.0
@@ -78,3 +79,6 @@ script = ExtResource( 6 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Cellphone_open" parent="." instance=ExtResource( 9 )]
+visible = false

@@ -1,8 +1,9 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://Scenes/Transition_in.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/Player_certo.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Scenes/collision.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Script/bedroom.gd" type="Script" id=4]
 [ext_resource path="res://Scenes/Funcao_block.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Scenes/bedroomToStreet.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Scenes/border.tscn" type="PackedScene" id=8]
@@ -12,8 +13,12 @@
 [ext_resource path="res://Script/Instructions.gd" type="Script" id=14]
 [ext_resource path="res://Scenery/joystick.tscn" type="PackedScene" id=15]
 
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 75, 29 )
+
 [node name="Tela_Inicio" type="Node2D"]
 position = Vector2( 3, 0 )
+script = ExtResource( 4 )
 
 [node name="Funcao_block2" parent="." instance=ExtResource( 9 )]
 position = Vector2( 1308, 414 )
@@ -38,10 +43,19 @@ position = Vector2( 1075, 410 )
 [node name="Joystick" parent="." instance=ExtResource( 15 )]
 
 [node name="Player_certo" parent="." instance=ExtResource( 2 )]
-position = Vector2( 150, 705 )
+position = Vector2( 118, 715 )
 
 [node name="Instructions" type="Sprite" parent="."]
+visible = false
 position = Vector2( 640, 360 )
 scale = Vector2( 0.0604544, 0.0723845 )
 texture = ExtResource( 13 )
 script = ExtResource( 14 )
+
+[node name="ComputerArea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ComputerArea"]
+position = Vector2( 519, 554 )
+shape = SubResource( 1 )
+
+[connection signal="body_entered" from="ComputerArea" to="." method="_on_ComputerArea_body_entered"]
