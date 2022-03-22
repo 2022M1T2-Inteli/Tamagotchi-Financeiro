@@ -1,0 +1,54 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Scenes/StoreMenu.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/ButtonStore.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Script/StoreBooks.gd" type="Script" id=3]
+[ext_resource path="res://assets/Store_Books.png" type="Texture" id=4]
+
+[node name="Store - Books" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="StoreBooks" type="Sprite" parent="."]
+position = Vector2( 640, 360 )
+texture = ExtResource( 4 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CanvasLayer" parent="." instance=ExtResource( 1 )]
+
+[node name="Book_I" parent="." instance=ExtResource( 2 )]
+margin_left = 18.0
+margin_top = 285.0
+margin_right = 253.0
+margin_bottom = 570.0
+
+[node name="Book_II" parent="." instance=ExtResource( 2 )]
+margin_left = 280.0
+margin_top = 285.0
+margin_right = 515.0
+margin_bottom = 570.0
+
+[node name="Book_III" parent="." instance=ExtResource( 2 )]
+margin_left = 536.0
+margin_top = 282.0
+margin_right = 771.0
+margin_bottom = 567.0
+
+[node name="Book_IV" parent="." instance=ExtResource( 2 )]
+margin_left = 787.0
+margin_top = 282.0
+margin_right = 1022.0
+margin_bottom = 567.0
+
+[node name="Book_V" parent="." instance=ExtResource( 2 )]
+margin_left = 1031.0
+margin_top = 283.0
+margin_right = 1257.0
+margin_bottom = 568.0
+
+[connection signal="pressed" from="Book_I" to="." method="_on_Book_I_pressed"]
+[connection signal="pressed" from="Book_II" to="." method="_on_Book_II_pressed"]
+[connection signal="pressed" from="Book_III" to="." method="_on_Book_III_pressed"]
+[connection signal="pressed" from="Book_IV" to="." method="_on_Book_IV_pressed"]
+[connection signal="pressed" from="Book_V" to="." method="_on_Book_V_pressed"]

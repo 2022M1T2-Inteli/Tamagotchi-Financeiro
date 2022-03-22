@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://Scenes/Transition_in.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/Player_certo.tscn" type="PackedScene" id=2]
@@ -12,6 +12,9 @@
 [ext_resource path="res://assets/primeiracena.png" type="Texture" id=13]
 [ext_resource path="res://Script/Instructions.gd" type="Script" id=14]
 [ext_resource path="res://Scenery/joystick.tscn" type="PackedScene" id=15]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 75, 29 )
 
 [node name="Tela_Inicio" type="Node2D"]
 position = Vector2( 3, 0 )
@@ -48,3 +51,11 @@ position = Vector2( 640, 360 )
 scale = Vector2( 0.0604544, 0.0723845 )
 texture = ExtResource( 13 )
 script = ExtResource( 14 )
+
+[node name="ComputerArea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ComputerArea"]
+position = Vector2( 519, 554 )
+shape = SubResource( 1 )
+
+[connection signal="body_entered" from="ComputerArea" to="." method="_on_ComputerArea_body_entered"]
