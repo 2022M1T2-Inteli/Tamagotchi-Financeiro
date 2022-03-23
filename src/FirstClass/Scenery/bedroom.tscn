@@ -1,17 +1,21 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://Scenes/Transition_in.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/Player_certo.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Scenes/collision.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Script/bedroom.gd" type="Script" id=4]
+[ext_resource path="res://assets/23.png" type="Texture" id=5]
 [ext_resource path="res://Scenes/Funcao_block.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Scenes/bedroomToStreet.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Scenes/border.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Scenes/Funcao_block2.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Scenes/bedroomToStreetHouse.tscn" type="PackedScene" id=10]
+[ext_resource path="res://assets/20.png" type="Texture" id=11]
+[ext_resource path="res://assets/21.png" type="Texture" id=12]
 [ext_resource path="res://assets/primeiracena.png" type="Texture" id=13]
 [ext_resource path="res://Script/Instructions.gd" type="Script" id=14]
 [ext_resource path="res://Scenery/joystick.tscn" type="PackedScene" id=15]
+[ext_resource path="res://assets/22.png" type="Texture" id=16]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 75, 29 )
@@ -29,7 +33,7 @@ position = Vector2( -4, 3 )
 [node name="ParallaxBackground2" parent="." instance=ExtResource( 7 )]
 
 [node name="StaticBody2D" parent="." instance=ExtResource( 3 )]
-position = Vector2( 2, 1 )
+position = Vector2( -4, 9 )
 
 [node name="Transition_in" parent="." instance=ExtResource( 1 )]
 
@@ -38,12 +42,9 @@ position = Vector2( 1256, 676 )
 path = "res://Scenery/streetHouse.tscn"
 
 [node name="Funcao_block" parent="." instance=ExtResource( 6 )]
-position = Vector2( 1075, 410 )
+position = Vector2( 1071, 410 )
 
 [node name="Joystick" parent="." instance=ExtResource( 15 )]
-
-[node name="Player_certo" parent="." instance=ExtResource( 2 )]
-position = Vector2( 118, 715 )
 
 [node name="Instructions" type="Sprite" parent="."]
 visible = false
@@ -57,5 +58,28 @@ script = ExtResource( 14 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ComputerArea"]
 position = Vector2( 519, 554 )
 shape = SubResource( 1 )
+
+[node name="1" type="Sprite" parent="."]
+position = Vector2( 407, 541 )
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 11 )
+
+[node name="2" type="Sprite" parent="."]
+position = Vector2( 1023, 262 )
+scale = Vector2( 0.15, 0.15 )
+texture = ExtResource( 12 )
+
+[node name="3" type="Sprite" parent="."]
+position = Vector2( 718, 447 )
+scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 16 )
+
+[node name="4" type="Sprite" parent="."]
+position = Vector2( 676, 80 )
+scale = Vector2( 0.21875, 0.275694 )
+texture = ExtResource( 5 )
+
+[node name="Player_certo" parent="." instance=ExtResource( 2 )]
+position = Vector2( 118, 715 )
 
 [connection signal="body_entered" from="ComputerArea" to="." method="_on_ComputerArea_body_entered"]

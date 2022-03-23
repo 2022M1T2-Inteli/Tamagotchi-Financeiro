@@ -93,6 +93,9 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Selected_Product" type="Sprite" parent="."]
+position = Vector2( 615, 420 )
+
 [connection signal="pressed" from="HomeRectangle" to="." method="_on_HomeRectangle_pressed"]
 [connection signal="pressed" from="BooksRectangle" to="." method="_on_BooksRectangle_pressed"]
 [connection signal="pressed" from="VehiclesRectangle" to="." method="_on_VehiclesRectangle_pressed"]

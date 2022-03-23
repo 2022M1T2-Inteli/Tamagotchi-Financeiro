@@ -32,9 +32,3 @@ func _on_Houses_pressed():
 func _on_Exit_pressed():
 	Global.change_position(680,600)
 	get_tree().change_scene("res://Scenery/bedroom.tscn")
-
-func addToCart(item):
-	product = item
-
-func showItem():
-	return str(product)
