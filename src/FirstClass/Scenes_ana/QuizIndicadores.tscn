@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Fonts/Minecraftia-Regular.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Script_ana/QuizIndicadores.gd" type="Script" id=2]
 [ext_resource path="res://assets/Buttonquiz.png" type="Texture" id=3]
 [ext_resource path="res://assets/newBackClass.png" type="Texture" id=4]
+[ext_resource path="res://Scenes/CalculatorIcon.tscn" type="PackedScene" id=5]
 
 [sub_resource type="DynamicFont" id=1]
 size = 21
@@ -91,6 +92,9 @@ margin_bottom = 628.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Calculatoricon" parent="." instance=ExtResource( 5 )]
+position = Vector2( 1189, 105 )
 
 [connection signal="pressed" from="Button_certo" to="." method="_on_Button_certo_pressed"]
 [connection signal="pressed" from="Button_errado" to="." method="_on_Button_errado_pressed"]

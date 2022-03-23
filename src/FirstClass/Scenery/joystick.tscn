@@ -6,7 +6,7 @@
 [ext_resource path="res://Scenes/popup.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Script/energy.gd" type="Script" id=5]
 [ext_resource path="res://Script/money_físico.gd" type="Script" id=6]
-[ext_resource path="res://assets/carteira.png" type="Texture" id=7]
+[ext_resource path="res://assets/carteira2.png" type="Texture" id=7]
 [ext_resource path="res://Fonts/Minecraftia-Regular.ttf" type="DynamicFontData" id=8]
 [ext_resource path="res://Cellphone/Cellphone.tscn" type="PackedScene" id=9]
 
@@ -59,8 +59,8 @@ margin_right = 1240.0
 margin_bottom = 82.0
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 816, 40 )
-scale = Vector2( 0.0495833, 0.0468189 )
+position = Vector2( 814.313, 42 )
+scale = Vector2( 0.115179, 0.0843606 )
 texture = ExtResource( 7 )
 
 [node name="money_1" type="RichTextLabel" parent="."]

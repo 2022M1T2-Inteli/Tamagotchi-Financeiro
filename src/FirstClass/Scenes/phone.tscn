@@ -25,10 +25,10 @@ texture = ExtResource( 1 )
 
 [node name="Button_cellphone" type="Button" parent="."]
 show_behind_parent = true
-margin_left = -7.0
-margin_top = -37.0
-margin_right = 32.0
-margin_bottom = 39.0
+margin_left = -6.0
+margin_top = -47.0
+margin_right = 39.0
+margin_bottom = 45.0
 rect_rotation = 19.8
 __meta__ = {
 "_edit_use_anchors_": false

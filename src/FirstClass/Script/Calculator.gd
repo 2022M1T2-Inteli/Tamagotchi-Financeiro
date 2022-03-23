@@ -1,4 +1,4 @@
-extends Control
+extends Node2D
 
 onready var res = $resultado
 
@@ -66,7 +66,8 @@ func _on_Button_div_pressed():
 		realizar_operacao(operacao)
 
 func _on_Button_fechar_pressed():
-	pass # Replace with function body.
+	get_tree().paused = false
+	self.queue_free()
 
 
 func _on_Button_exp_pressed():
