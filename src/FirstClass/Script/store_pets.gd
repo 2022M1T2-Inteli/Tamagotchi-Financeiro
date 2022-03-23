@@ -1,73 +1,43 @@
 extends Node2D
 
-var dog = 1500.00
-var cat = 200
-var pet_3 = 300
-var pet_4 = 20
+var dog : float = 3200.00
+var cat : float = 2200.00
+var pet_3 : float = 500.00
+var pet_4 : float = 700.00
 
 func _ready():
 	if Global.day >= 2:
-		$RichTextLabel1.text = str ("R$ ", (dog * (Global.inflation/100)))
-		$RichTextLabel2.text = str ("R$ ",(cat * (Global.inflation/100)))
-		$RichTextLabel3.text = str ("R$ ",(pet_3 * (Global.inflation/100)))
-		$RichTextLabel4.text = str ("R$ ",(pet_4 * (Global.inflation/100)))
-		
-		$RichTextLabel1.update()
-		$RichTextLabel2.update()
-		$RichTextLabel3.update()
-		$RichTextLabel3.update()
-		$RichTextLabel4.update()
-		
+		$RichTextLabel1.bbcode_text = (str ("[center]R$ " , (dog * (Global.inflation/100))).pad_zeros(2))
+		$RichTextLabel2.bbcode_text = (str ("[center]R$ " ,(cat * (Global.inflation/100))).pad_zeros(2))
+		$RichTextLabel3.bbcode_text = (str ("[center]R$ " ,(pet_3 * (Global.inflation/100))).pad_zeros(2))
+		$RichTextLabel4.bbcode_text = (str ("[center]R$ " ,(pet_4 * (Global.inflation/100))).pad_zeros(2))
 	else:
-		$RichTextLabel1.text = str ("R$ " , (dog))
-		$RichTextLabel2.text = str ("R$ " , (cat))
-		$RichTextLabel3.text = str ("R$ " , (pet_3))
-		$RichTextLabel4.text = str ("R$ " , (pet_4))
-		
-		$RichTextLabel1.update()
-		$RichTextLabel2.update()
-		$RichTextLabel3.update()
-		$RichTextLabel4.update()
-
-func _on_Button_home_pressed():
-	pass # Replace with function body.
-
-
-func _on_Button_books_pressed():
-	pass # Replace with function body.
-
-
-func _on_Button_tshirt_pressed():
-	get_tree().change_scene("res://Scenes/store_t-shirt.tscn")
-
-
-func _on_Button_pets_pressed():
-	get_tree().change_scene("res://Scenes/store_pets.tscn")
-
-
-func _on_Button_residence_pressed():
-	get_tree().change_scene("res://Scenes/store_residence.tscn")
-
-
-func _on_Button_exit_pressed():
-	get_tree().change_scene("res://Scenery/bedroom.tscn")
-
-
-func _on_Button_cars_pressed():
-	pass # Replace with function body.
+		$RichTextLabel1.bbcode_text = (str ("[center]R$ "  , (dog)).pad_zeros(2))
+		$RichTextLabel2.bbcode_text = (str ("[center]R$ "  , (cat)).pad_zeros(2))
+		$RichTextLabel3.bbcode_text = (str ("[center]R$ "  , (pet_3)).pad_zeros(2))
+		$RichTextLabel4.bbcode_text = (str ("[center]R$ "  , (pet_4)).pad_zeros(2))
+	
+	$RichTextLabel1.update()
+	$RichTextLabel2.update()
+	$RichTextLabel3.update()
+	$RichTextLabel4.update()
 
 
 func _on_Button_dog_pressed():
-	pass # Replace with function body.
+	Global.total_store += 3200.00
+	get_tree().change_scene("res://Scenes/StoreCart.tscn")
 
 
 func _on_Button_cat_pressed():
-	pass # Replace with function body.
+	Global.total_store += 5200.00
+	get_tree().change_scene("res://Scenes/StoreCart.tscn")
 
 
 func _on_Button_pet_3_pressed():
-	pass # Replace with function body.
+	Global.total_store += 500.00
+	get_tree().change_scene("res://Scenes/StoreCart.tscn")
 
 
 func _on_Button_pet_4_pressed():
-	pass # Replace with function body.
+	Global.total_store += 700.00
+	get_tree().change_scene("res://Scenes/StoreCart.tscn")

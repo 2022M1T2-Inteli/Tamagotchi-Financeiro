@@ -1,0 +1,103 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://assets/StoreEndshop.png" type="Texture" id=1]
+[ext_resource path="res://Scenes/StoreMenu.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/ButtonStore.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Script/StoreEndshop.gd" type="Script" id=4]
+[ext_resource path="res://Fonts/Minecraftia-Regular.ttf" type="DynamicFontData" id=5]
+
+[sub_resource type="DynamicFont" id=1]
+size = 29
+font_data = ExtResource( 5 )
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 4 )
+
+[node name="StoreEndshop" type="Sprite" parent="."]
+position = Vector2( 640, 360 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CanvasLayer" parent="." instance=ExtResource( 2 )]
+
+[node name="HomeRectangle" parent="." instance=ExtResource( 3 )]
+margin_left = 47.0
+margin_top = 159.0
+margin_right = 332.0
+margin_bottom = 224.0
+
+[node name="BooksRectangle" parent="." instance=ExtResource( 3 )]
+margin_left = 46.0
+margin_top = 226.0
+margin_right = 333.0
+margin_bottom = 293.0
+
+[node name="VehiclesRectangle" parent="." instance=ExtResource( 3 )]
+margin_left = 46.0
+margin_top = 302.0
+margin_right = 332.0
+margin_bottom = 369.0
+
+[node name="ShirtsRectangle" parent="." instance=ExtResource( 3 )]
+margin_left = 46.0
+margin_top = 378.0
+margin_right = 333.0
+margin_bottom = 445.0
+
+[node name="PetsRectangle" parent="." instance=ExtResource( 3 )]
+margin_left = 48.0
+margin_top = 463.0
+margin_right = 334.0
+margin_bottom = 529.0
+
+[node name="HousesRectangle" parent="." instance=ExtResource( 3 )]
+margin_left = 46.0
+margin_top = 550.0
+margin_right = 333.0
+margin_bottom = 611.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 929.0
+margin_top = 490.0
+margin_right = 1075.0
+margin_bottom = 534.0
+custom_colors/default_color = Color( 0.964706, 0.0313726, 0.0313726, 1 )
+custom_fonts/normal_font = SubResource( 1 )
+bbcode_enabled = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Button_yes" type="Button" parent="."]
+show_behind_parent = true
+margin_left = 869.0
+margin_top = 578.0
+margin_right = 1011.0
+margin_bottom = 637.0
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Button_not" type="Button" parent="."]
+show_behind_parent = true
+margin_left = 1042.0
+margin_top = 577.0
+margin_right = 1196.0
+margin_bottom = 641.0
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="HomeRectangle" to="." method="_on_HomeRectangle_pressed"]
+[connection signal="pressed" from="BooksRectangle" to="." method="_on_BooksRectangle_pressed"]
+[connection signal="pressed" from="VehiclesRectangle" to="." method="_on_VehiclesRectangle_pressed"]
+[connection signal="pressed" from="ShirtsRectangle" to="." method="_on_ShirtsRectangle_pressed"]
+[connection signal="pressed" from="PetsRectangle" to="." method="_on_PetsRectangle_pressed"]
+[connection signal="pressed" from="HousesRectangle" to="." method="_on_HousesRectangle_pressed"]
+[connection signal="pressed" from="Button_yes" to="." method="_on_Button_yes_pressed"]
+[connection signal="pressed" from="Button_not" to="." method="_on_Button_not_pressed"]
