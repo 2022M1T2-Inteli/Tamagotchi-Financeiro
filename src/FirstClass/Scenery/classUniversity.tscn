@@ -5,7 +5,7 @@
 [ext_resource path="res://Scenes/Transition_in.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Scenes/classUniversityToStreetHouse.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Scenes/Player_certo.tscn" type="PackedScene" id=5]
-[ext_resource path="res://Scenery/pixil-frame-0 (5).png" type="Texture" id=7]
+[ext_resource path="res://assets/pixil-frame-0 (5).png" type="Texture" id=7]
 [ext_resource path="res://Scenes/npcTeacher.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Scenes/dialogBoxTest.tscn" type="PackedScene" id=11]
 [ext_resource path="res://assets/university_tela.png" type="Texture" id=12]
@@ -273,11 +273,6 @@ shape = SubResource( 8 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
 position = Vector2( -7, 339 )
 shape = SubResource( 9 )
-
-[node name="Pixil-frame-0(5)2" type="Sprite" parent="."]
-position = Vector2( 811, 282 )
-scale = Vector2( 1.14, 1.12 )
-texture = ExtResource( 7 )
 
 [node name="Pixil-frame-0(5)" type="Sprite" parent="."]
 position = Vector2( 828, 271 )
