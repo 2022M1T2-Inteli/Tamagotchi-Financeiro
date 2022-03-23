@@ -15,7 +15,8 @@ func _on_Area2D_body_entered(body):
 		Global.day += 1
 		Global.actions = 3
 		Global.school = false
-		Global.investimentTimepoupanca +=1
+		Investiment.profit_savings += Investiment.invest_money_savings*0.05
+		Investiment.invest_money_savings += Investiment.invest_money_savings*0.05
 		rng.randomize()
 		Global.inflation += rng.randi_range(1.5,3)
 		changer.change_scene(Global.current_scene)

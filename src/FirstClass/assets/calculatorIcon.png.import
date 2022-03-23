@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Street_1.png-274595ebb8f3c76539e7fbbad0b270c7.stex"
+path="res://.import/calculatorIcon.png-12b0e8d5906e22d86cfe78c0a8b48cdb.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Street_1.png"
-dest_files=[ "res://.import/Street_1.png-274595ebb8f3c76539e7fbbad0b270c7.stex" ]
+source_file="res://assets/calculatorIcon.png"
+dest_files=[ "res://.import/calculatorIcon.png-12b0e8d5906e22d86cfe78c0a8b48cdb.stex" ]
 
 [params]
 

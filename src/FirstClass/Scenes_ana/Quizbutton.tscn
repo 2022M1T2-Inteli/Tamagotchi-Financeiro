@@ -1,9 +1,10 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://assets/Buttonquiz.png" type="Texture" id=1]
 [ext_resource path="res://assets/newBackClass.png" type="Texture" id=2]
 [ext_resource path="res://Fonts/Minecraftia-Regular.ttf" type="DynamicFontData" id=3]
-[ext_resource path="res://Script/Quizbutton.gd" type="Script" id=4]
+[ext_resource path="res://Script/CalculatorIcon.gd" type="Script" id=4]
+[ext_resource path="res://Scenes/CalculatorIcon.tscn" type="PackedScene" id=5]
 
 [sub_resource type="DynamicFont" id=1]
 size = 65
@@ -100,6 +101,9 @@ margin_bottom = 660.0
 __meta__ = {
 "_edit_use_anchors_": true
 }
+
+[node name="Node2D" parent="." instance=ExtResource( 5 )]
+position = Vector2( 215, -96 )
 
 [connection signal="tween_completed" from="Tween" to="." method="_on_Tween_tween_completed"]
 [connection signal="pressed" from="errado" to="." method="_on_errado_pressed"]
