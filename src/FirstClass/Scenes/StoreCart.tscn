@@ -53,6 +53,9 @@ margin_bottom = 611.0
 
 [node name="CanvasLayer" parent="." instance=ExtResource( 1 )]
 
+[node name="Selected_Product" type="Sprite" parent="."]
+position = Vector2( 775, 450 )
+
 [connection signal="pressed" from="HomeRectangle" to="." method="_on_HomeRectangle_pressed"]
 [connection signal="pressed" from="BooksRectangle" to="." method="_on_BooksRectangle_pressed"]
 [connection signal="pressed" from="VehiclesRectangle" to="." method="_on_VehiclesRectangle_pressed"]

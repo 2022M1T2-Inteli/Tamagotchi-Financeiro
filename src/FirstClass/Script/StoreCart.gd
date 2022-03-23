@@ -2,7 +2,13 @@ extends Node2D
 
 
 func _ready():
-	pass
+	var image = Image.new()
+	image.load(Global.store_product_index)
+	var texture = ImageTexture.new()
+	texture.create_from_image(image, 0)
+	get_node("Selected_Product").texture = texture
+	get_node("Selected_Product").position = Vector2(775,450)
+	get_node("Selected_Product").scale = Vector2(0.5, 0.5)
 
 func _on_HomeRectangle_pressed():
 	get_tree().change_scene("res://Scenes/StoreHome.tscn")

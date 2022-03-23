@@ -26,6 +26,8 @@ var recordsPrice : float = 0
 var inflation : float = 0
 var positioncal = Vector2(640, 360)
 
+var store_product_index : String = ""
+
 func _ready():
 	pass # Replace with function body.
 
