@@ -1,6 +1,6 @@
 [gd_scene load_steps=14 format=2]
 
-[ext_resource path="res://assets/Bank5.png" type="Texture" id=1]
+[ext_resource path="res://assets/53.png" type="Texture" id=1]
 [ext_resource path="res://Script/CDI_2.gd" type="Script" id=2]
 [ext_resource path="res://Script/money_digital.gd" type="Script" id=3]
 [ext_resource path="res://Fonts/Minecraftia-Regular.ttf" type="DynamicFontData" id=4]
@@ -84,7 +84,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="money_invest_4" type="LineEdit" parent="."]
+[node name="money_invest" type="LineEdit" parent="."]
 margin_left = 549.0
 margin_top = 508.0
 margin_right = 784.0

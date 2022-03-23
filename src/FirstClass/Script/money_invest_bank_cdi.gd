@@ -1,5 +1,8 @@
 extends RichTextLabel
 
 func _ready():
-	set_text(str(Global.invested_money_cdi).pad_zeros(2))
-	pass # Replace with function body.
+	update()
+
+func update():
+	set_text(str(Investiment.invest_money_cdb).pad_zeros(2))
+	text = str(Investiment.invest_money_cdb)

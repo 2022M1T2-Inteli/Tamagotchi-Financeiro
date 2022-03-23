@@ -4,7 +4,7 @@ func _ready():
 	$money_invest_bank.text = str(Investiment.invest_money_savings)
 
 func _on_Button_exit_pressed():
-	get_tree().change_scene("res://Scenes/bank_3.tscn")
+	get_tree().change_scene("res://Scenes/renda_fixa.tscn")
 	
 
 func _on_Button_invest_pressed():
