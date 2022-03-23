@@ -1,8 +1,8 @@
 extends RichTextLabel
 
 func _ready():
-	var money = Global.invested_money_cdi
-	print(money)
-	var a = (money * pow(1.05,Global.day-1)) - money
-	set_text(str(a).pad_zeros(2))
-	pass # Replace with function body.
+	update()
+
+func update():
+	set_text(str(Investiment.profit_cdb).pad_zeros(2))
+	text = str(Investiment.profit_cdb)
