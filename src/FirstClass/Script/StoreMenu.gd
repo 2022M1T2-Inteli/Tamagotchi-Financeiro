@@ -17,15 +17,15 @@ func _on_Vehicles_pressed():
 
 
 func _on_Shirts_pressed():
-	pass # Replace with function body.
+	get_tree().change_scene("res://Scenes/store_t-shirt.tscn")
 
 
 func _on_Pets_pressed():
-	pass # Replace with function body.
+	get_tree().change_scene("res://Scenes/store_pets.tscn")
 
 
 func _on_Houses_pressed():
-	pass # Replace with function body.
+	get_tree().change_scene("res://Scenes/store_residence.tscn")
 
 
 func _on_Exit_pressed():
