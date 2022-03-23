@@ -1,10 +1,10 @@
 extends Node2D
 
 func _ready():
-	pass # Replace with function body.
+	$RichTextLabel.bbcode_text = str("[center]R$ ",(Global.total_store))
 
 func _on_HomeRectangle_pressed():
-	pass
+	get_tree().change_scene("res://Scenes/StoreHome.tscn")
 
 
 func _on_BooksRectangle_pressed():
@@ -25,3 +25,11 @@ func _on_PetsRectangle_pressed():
 
 func _on_HousesRectangle_pressed():
 	get_tree().change_scene("res://Scenes/store_residence.tscn")
+
+
+func _on_Button_yes_pressed():
+	get_tree().change_scene("res://Scenes/StoreHome.tscn")
+
+
+func _on_Button_not_pressed():
+	get_tree().change_scene("res://Scenery/bedroom.tscn")

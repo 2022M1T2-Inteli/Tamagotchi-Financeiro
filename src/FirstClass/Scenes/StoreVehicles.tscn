@@ -1,9 +1,30 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Scenes/StoreMenu.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/ButtonStore.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Script/StoreVehicles.gd" type="Script" id=3]
 [ext_resource path="res://assets/Store_Vehicles.png" type="Texture" id=4]
+[ext_resource path="res://Fonts/Minecraftia-Regular.ttf" type="DynamicFontData" id=5]
+
+[sub_resource type="DynamicFont" id=1]
+size = 24
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 24
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 24
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 24
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 24
+font_data = ExtResource( 5 )
 
 [node name="Store - Vehicles" type="Node2D"]
 script = ExtResource( 3 )
@@ -46,6 +67,76 @@ margin_left = 1031.0
 margin_top = 283.0
 margin_right = 1257.0
 margin_bottom = 588.0
+
+[node name="RichTextLabel5" type="RichTextLabel" parent="."]
+margin_left = 1059.0
+margin_top = 454.0
+margin_right = 1236.0
+margin_bottom = 512.0
+rect_pivot_offset = Vector2( -211, 347 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 1 )
+bbcode_enabled = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel4" type="RichTextLabel" parent="."]
+margin_left = 821.0
+margin_top = 454.0
+margin_right = 999.0
+margin_bottom = 512.0
+rect_pivot_offset = Vector2( -211, 347 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 2 )
+bbcode_enabled = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="."]
+margin_left = 572.0
+margin_top = 454.0
+margin_right = 745.0
+margin_bottom = 517.0
+rect_pivot_offset = Vector2( -211, 347 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 3 )
+bbcode_enabled = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+margin_left = 306.0
+margin_top = 454.0
+margin_right = 490.0
+margin_bottom = 515.0
+rect_pivot_offset = Vector2( -211, 347 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 4 )
+bbcode_enabled = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel1" type="RichTextLabel" parent="."]
+margin_left = 51.0
+margin_top = 454.0
+margin_right = 221.0
+margin_bottom = 510.0
+rect_pivot_offset = Vector2( -211, 347 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 5 )
+bbcode_enabled = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
 
 [connection signal="pressed" from="Bicycle" to="." method="_on_Bicycle_pressed"]
 [connection signal="pressed" from="Eletric_Bike" to="." method="_on_Eletric_Bike_pressed"]

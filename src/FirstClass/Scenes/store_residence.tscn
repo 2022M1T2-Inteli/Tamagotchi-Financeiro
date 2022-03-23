@@ -1,8 +1,9 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://assets/store_4.png" type="Texture" id=1]
 [ext_resource path="res://Script/store_residence.gd" type="Script" id=2]
 [ext_resource path="res://Fonts/Minecraftia-Regular.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://Scenes/StoreMenu.tscn" type="PackedScene" id=4]
 
 [sub_resource type="DynamicFont" id=1]
 size = 24
@@ -24,88 +25,10 @@ font_data = ExtResource( 3 )
 script = ExtResource( 2 )
 
 [node name="Store4" type="Sprite" parent="."]
-position = Vector2( 639, 361 )
-scale = Vector2( 1.00312, 1.00556 )
+position = Vector2( 640, 360 )
 texture = ExtResource( 1 )
 __meta__ = {
 "_edit_lock_": true
-}
-
-[node name="Button_home" type="Button" parent="."]
-show_behind_parent = true
-margin_left = 892.0
-margin_top = 56.0
-margin_right = 929.0
-margin_bottom = 94.0
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": false
-}
-
-[node name="Button_books" type="Button" parent="."]
-show_behind_parent = true
-margin_left = 943.0
-margin_top = 55.0
-margin_right = 980.0
-margin_bottom = 95.0
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": false
-}
-
-[node name="Button_cars" type="Button" parent="."]
-show_behind_parent = true
-margin_left = 993.0
-margin_top = 55.0
-margin_right = 1034.0
-margin_bottom = 95.0
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": false
-}
-
-[node name="Button_t-shirt" type="Button" parent="."]
-show_behind_parent = true
-margin_left = 1047.0
-margin_top = 55.0
-margin_right = 1088.0
-margin_bottom = 95.0
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": false
-}
-
-[node name="Button_pets" type="Button" parent="."]
-show_behind_parent = true
-margin_left = 1098.0
-margin_top = 55.0
-margin_right = 1140.0
-margin_bottom = 96.0
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": false
-}
-
-[node name="Button_residence" type="Button" parent="."]
-show_behind_parent = true
-margin_left = 1149.0
-margin_top = 56.0
-margin_right = 1191.0
-margin_bottom = 96.0
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": false
-}
-
-[node name="Button_exit" type="Button" parent="."]
-show_behind_parent = true
-margin_left = 1223.0
-margin_top = 56.0
-margin_right = 1261.0
-margin_bottom = 95.0
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": false
 }
 
 [node name="Button_house_1" type="Button" parent="."]
@@ -154,63 +77,58 @@ __meta__ = {
 
 [node name="RichTextLabel4" type="RichTextLabel" parent="."]
 margin_left = 1022.0
-margin_top = 476.0
+margin_top = 478.0
 margin_right = 1200.0
-margin_bottom = 534.0
+margin_bottom = 528.0
 rect_pivot_offset = Vector2( -211, 347 )
 custom_colors/default_color = Color( 0, 0, 0, 1 )
 custom_fonts/normal_font = SubResource( 1 )
+bbcode_enabled = true
 __meta__ = {
-"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 
 [node name="RichTextLabel3" type="RichTextLabel" parent="."]
-margin_left = 714.0
-margin_top = 476.0
-margin_right = 887.0
-margin_bottom = 539.0
+margin_left = 716.0
+margin_top = 480.0
+margin_right = 889.0
+margin_bottom = 529.0
 rect_pivot_offset = Vector2( -211, 347 )
 custom_colors/default_color = Color( 0, 0, 0, 1 )
 custom_fonts/normal_font = SubResource( 2 )
+bbcode_enabled = true
 __meta__ = {
-"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 
 [node name="RichTextLabel2" type="RichTextLabel" parent="."]
-margin_left = 401.0
-margin_top = 476.0
-margin_right = 585.0
-margin_bottom = 537.0
+margin_left = 402.0
+margin_top = 478.0
+margin_right = 586.0
+margin_bottom = 529.0
 rect_pivot_offset = Vector2( -211, 347 )
 custom_colors/default_color = Color( 0, 0, 0, 1 )
 custom_fonts/normal_font = SubResource( 3 )
+bbcode_enabled = true
 __meta__ = {
-"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 
 [node name="RichTextLabel1" type="RichTextLabel" parent="."]
-margin_left = 94.0
-margin_top = 478.0
-margin_right = 264.0
-margin_bottom = 534.0
+margin_left = 96.0
+margin_top = 479.0
+margin_right = 266.0
+margin_bottom = 527.0
 rect_pivot_offset = Vector2( -211, 347 )
 custom_colors/default_color = Color( 0, 0, 0, 1 )
 custom_fonts/normal_font = SubResource( 4 )
+bbcode_enabled = true
 __meta__ = {
-"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 
-[connection signal="pressed" from="Button_home" to="." method="_on_Button_home_pressed"]
-[connection signal="pressed" from="Button_books" to="." method="_on_Button_books_pressed"]
-[connection signal="pressed" from="Button_cars" to="." method="_on_Button_cars_pressed"]
-[connection signal="pressed" from="Button_t-shirt" to="." method="_on_Button_tshirt_pressed"]
-[connection signal="pressed" from="Button_pets" to="." method="_on_Button_pets_pressed"]
-[connection signal="pressed" from="Button_residence" to="." method="_on_Button_residence_pressed"]
-[connection signal="pressed" from="Button_exit" to="." method="_on_Button_exit_pressed"]
+[node name="CanvasLayer" parent="." instance=ExtResource( 4 )]
+
 [connection signal="pressed" from="Button_house_1" to="." method="_on_Button_house_1_pressed"]
 [connection signal="pressed" from="Button_house_2" to="." method="_on_Button_house_2_pressed"]
 [connection signal="pressed" from="Button_house_3" to="." method="_on_Button_house_3_pressed"]
