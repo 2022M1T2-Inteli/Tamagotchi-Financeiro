@@ -100,7 +100,7 @@ scale = Vector2( 1.82857, 1.83206 )
 texture = ExtResource( 4 )
 
 [node name="Player_certo" parent="." instance=ExtResource( 1 )]
-position = Vector2( -1040, 218 )
+position = Vector2( -980, 200 )
 
 [node name="KinematicBody2D" type="KinematicBody2D" parent="."]
 position = Vector2( 1, 0 )
@@ -154,8 +154,11 @@ shape = SubResource( 8 )
 script = ExtResource( 10 )
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="Area2D"]
-position = Vector2( -673, -157 )
+position = Vector2( -672, -126 )
 shape = SubResource( 9 )
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Bank_instructions" type="Sprite" parent="."]
 visible = false
