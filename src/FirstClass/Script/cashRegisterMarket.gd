@@ -21,6 +21,8 @@ func _ready():
 		Global.money -= Global.total
 	else: 
 		Global.digital_money -= Global.total
+		
+	Global.recordsPrice.append(Global.total*-1)
 
 
 
