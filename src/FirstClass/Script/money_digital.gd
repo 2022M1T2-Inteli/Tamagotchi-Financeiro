@@ -5,4 +5,4 @@ func _ready():
 	pass # Replace with function body.
 
 func update():
-	set_text(str(Global.digital_money).pad_zeros(2))
+	set_text("%.2f" % float(Global.digital_money))

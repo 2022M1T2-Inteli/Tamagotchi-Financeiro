@@ -4,5 +4,4 @@ func _ready():
 	update()
 
 func update():
-	set_text(str(Investiment.invest_money_cdb).pad_zeros(2))
-	text = str(Investiment.invest_money_cdb)
+	set_text("%.2f" % float(Investiment.invest_money_cdb))

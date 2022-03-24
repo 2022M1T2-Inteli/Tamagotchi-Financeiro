@@ -4,7 +4,7 @@
 [ext_resource path="res://Script/classUniversityToStreetHouse.gd" type="Script" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 53, 46 )
+extents = Vector2( 30, 42.5 )
 
 [node name="Goalscene2" type="Area2D"]
 script = ExtResource( 2 )
@@ -16,7 +16,7 @@ scale = Vector2( 0.163235, 0.263233 )
 texture = ExtResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 0, 1 )
+position = Vector2( -3.49999, -1.33514e-05 )
 rotation = -1.5708
 shape = SubResource( 1 )
 

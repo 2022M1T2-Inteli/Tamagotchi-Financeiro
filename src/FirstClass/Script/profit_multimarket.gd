@@ -4,4 +4,4 @@ func _ready():
 	update()
 
 func update():
-	set_text("%.2f" % float(Investiment.profit_savings))
+	set_text("%.2f" % float(Investiment.profit_multimarket_fund))

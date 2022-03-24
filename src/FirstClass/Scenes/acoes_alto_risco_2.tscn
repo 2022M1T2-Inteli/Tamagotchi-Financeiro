@@ -3,8 +3,8 @@
 [ext_resource path="res://Fonts/Minecraftia-Regular.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Script/money_digital.gd" type="Script" id=2]
 [ext_resource path="res://money_invest_our_remove.gd" type="Script" id=3]
-[ext_resource path="res://Script/money_invest.gd" type="Script" id=4]
-[ext_resource path="res://Script/profit.gd" type="Script" id=5]
+[ext_resource path="res://Script/money_invest_bank_high_risk_stock_2.gd" type="Script" id=4]
+[ext_resource path="res://Script/profit_high_risk_stock2.gd" type="Script" id=5]
 [ext_resource path="res://Script/acoes_alto_risco_2.gd" type="Script" id=6]
 [ext_resource path="res://assets/46.png" type="Texture" id=7]
 
@@ -36,6 +36,14 @@ font_data = ExtResource( 1 )
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 6 )
+
+[node name="46" type="Sprite" parent="."]
+position = Vector2( 640.5, 360 )
+scale = Vector2( 0.266432, 0.266814 )
+texture = ExtResource( 7 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="Button_exit" type="Button" parent="."]
 show_behind_parent = true
@@ -119,14 +127,6 @@ custom_fonts/normal_font = SubResource( 6 )
 script = ExtResource( 5 )
 __meta__ = {
 "_edit_use_anchors_": false
-}
-
-[node name="46" type="Sprite" parent="."]
-position = Vector2( 640.5, 360 )
-scale = Vector2( 0.266432, 0.266814 )
-texture = ExtResource( 7 )
-__meta__ = {
-"_edit_lock_": true
 }
 
 [connection signal="pressed" from="Button_exit" to="." method="_on_Button_exit_pressed"]

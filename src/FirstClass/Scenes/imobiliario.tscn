@@ -5,8 +5,8 @@
 [ext_resource path="res://Script/money_digital.gd" type="Script" id=3]
 [ext_resource path="res://money_invest_our_remove.gd" type="Script" id=4]
 [ext_resource path="res://Script/imobiliario.gd" type="Script" id=5]
-[ext_resource path="res://Script/money_invest.gd" type="Script" id=6]
-[ext_resource path="res://Script/profit.gd" type="Script" id=7]
+[ext_resource path="res://Script/profit_real_state.gd" type="Script" id=6]
+[ext_resource path="res://Script/money_invest_bank_real_state.gd" type="Script" id=7]
 
 [sub_resource type="DynamicFont" id=1]
 size = 25
@@ -110,7 +110,7 @@ margin_right = 874.0
 margin_bottom = 289.0
 custom_colors/default_color = Color( 0, 0, 0, 1 )
 custom_fonts/normal_font = SubResource( 5 )
-script = ExtResource( 6 )
+script = ExtResource( 7 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -124,7 +124,7 @@ margin_right = 874.0
 margin_bottom = 358.0
 custom_colors/default_color = Color( 0, 0, 0, 1 )
 custom_fonts/normal_font = SubResource( 6 )
-script = ExtResource( 7 )
+script = ExtResource( 6 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
