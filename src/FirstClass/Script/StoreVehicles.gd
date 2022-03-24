@@ -57,7 +57,7 @@ func _on_Eletric_Bike_pressed():
 
 
 func _on_Motorcycle_pressed():
-	StoreManagement.store_product_index[0] = "res://assets/Motorcycle.png"
+	StoreManagement.store_product_index = "res://assets/Motorcycle.png"
 	StoreManagement.i = 1
 	StoreManagement.j = 2
 	if(!StoreManagement.products[StoreManagement.i][StoreManagement.j]):
@@ -67,7 +67,7 @@ func _on_Motorcycle_pressed():
 
 
 func _on_Standard_Car_pressed():
-	StoreManagement.store_product_index[0] = "res://assets/Standard_Car.png"
+	StoreManagement.store_product_index = "res://assets/Standard_Car.png"
 	StoreManagement.i = 1
 	StoreManagement.j = 3
 	StoreManagement.store_total = 8000.00
@@ -78,7 +78,7 @@ func _on_Standard_Car_pressed():
 
 
 func _on_Deluxe_Car_pressed():
-	StoreManagement.store_product_index[0] = "res://assets/Deluxe_Car.png"
+	StoreManagement.store_product_index = "res://assets/Deluxe_Car.png"
 	StoreManagement.i = 1
 	StoreManagement.j = 4
 	StoreManagement.store_total = 32000.00

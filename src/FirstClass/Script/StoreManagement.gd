@@ -8,11 +8,11 @@ var item_status = [0,0,0]
 
 # Product disponibility matrix
 # Index for i variable
-# 1 - Books (0 to 4)
-# 2 - Vehicles (0 to 4)
-# 3 - Shirts (0 to 4)
-# 4 - Pets (0 to 3)
-# 5 - Houses (0 to 3)
+# 0 - Books (0 to 4)
+# 1 - Vehicles (0 to 4)
+# 2 - Shirts (0 to 4)
+# 3 - Pets (0 to 3)
+# 4 - Houses (0 to 3)
 var products = []
 
 func _ready():
