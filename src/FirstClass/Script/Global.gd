@@ -4,7 +4,7 @@ var gender : bool = true
 var player_name : String = "Mr. Fox"
 var current_scene : String = "res://Scenery/bedroom.tscn"
 var instructions = [true, true, true, true, true, true, true, true, true]
-var money : float = 1000000.00
+var money : float = 1000.00
 var position = Vector2(150,705)
 var digital_money : float = 0.0
 var happiness : int = 50
@@ -22,11 +22,10 @@ var add_money : float = 0
 var total : float = 0
 var investimentTimepoupanca = 0
 var products = ["","",""]
-var recordsPrice : Array = []
+var recordsPrice : float = 0
 var inflation : float = 0
 var checkout : float = 0
 var positioncal = Vector2(640, 360)
-var recordsBank : Array = []
 
 func _ready():
 	pass # Replace with function body.

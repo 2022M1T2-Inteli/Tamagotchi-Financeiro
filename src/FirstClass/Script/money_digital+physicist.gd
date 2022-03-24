@@ -11,14 +11,12 @@ func _on_Button_add_pressed():
 	if (float(get_node("money_invest").text) >= 0) && (Global.money - float(get_node("money_invest").text) >= 0):
 		Global.digital_money += float (get_node("money_invest").text)
 		Global.money -= float (get_node("money_invest").text)
-		Global.recordsBank.append(float(get_node("money_invest").text))
 		print(Global.money)
 		print(Global.digital_money)
 		$money_digital.text = str(Global.digital_money)
 		$money_physicist.text = str(Global.money)
 		$money_digital.update()
 		$money_invest.text = ""
-		
 	else:
 		$money_invest.text = "Valor inválido"
 		$Timer.start()
@@ -30,7 +28,6 @@ func _on_Button_remove_pressed():
 	if (float(get_node("money_invest").text) >= 0) && (Global.digital_money - float(get_node("money_invest").text) >= 0):
 		Global.money += float (get_node("money_invest").text)
 		Global.digital_money -= float (get_node("money_invest").text)
-		Global.recordsBank.append(float(get_node("money_invest").text)*-1)
 		$money_digital.text = str(Global.digital_money)
 		$money_physicist.text = str(Global.money)
 		$money_digital.update()
