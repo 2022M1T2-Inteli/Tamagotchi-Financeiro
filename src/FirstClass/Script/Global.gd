@@ -24,7 +24,6 @@ var investimentTimepoupanca = 0
 var products = ["","",""]
 var recordsPrice : float = 0
 var inflation : float = 0
-var total_store : float = 0
 var checkout : float = 0
 var positioncal = Vector2(640, 360)
 

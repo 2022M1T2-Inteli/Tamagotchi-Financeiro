@@ -1,7 +1,15 @@
 extends Node2D
 
 func _ready():
-	$RichTextLabel.bbcode_text = str("[center]R$ ",(Global.total_store))
+	$RichTextLabel.bbcode_text = str("[center]R$ ",(StoreManagement.store_total))
+	var image = Image.new()
+	image.load(StoreManagement.store_product_index)
+	var texture = ImageTexture.new()
+	texture.create_from_image(image, 0)
+	get_node("Selected_Product").texture = texture
+	get_node("Selected_Product").position = Vector2(615,410)
+	get_node("Selected_Product").scale = Vector2(0.5, 0.5)
+
 
 func _on_HomeRectangle_pressed():
 	get_tree().change_scene("res://Scenes/StoreHome.tscn")

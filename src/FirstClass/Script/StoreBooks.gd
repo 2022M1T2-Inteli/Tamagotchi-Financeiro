@@ -6,7 +6,11 @@ var Book_III : float = 1400.00
 var Book_IV : float = 2700.00
 var Book_V : float = 4200.00
 
+var purchased = preload("res://Scenes/Purchased.tscn")
+
 func _ready():
+	pass
+
 	if Global.day >= 2:
 		$RichTextLabel1.bbcode_text = (str ("[center]R$ " ,(Book_I * (Global.inflation/100))).pad_zeros(2))
 		$RichTextLabel2.bbcode_text= (str ("[center]R$ " ,(Book_II * (Global.inflation/100))).pad_zeros(2))
@@ -25,27 +29,65 @@ func _ready():
 	$RichTextLabel3.update()
 	$RichTextLabel4.update()
 	$RichTextLabel4.update()
+	
+	for i in 5:
+		if(StoreManagement.products[0][i] == true):
+			var new_node = purchased.instance()
+			new_node.position = Vector2(125 + 250*i, 450)
+			add_child(new_node)
+
+
 
 func _on_Book_I_pressed():
-	Global.total_store += 500.00
-	get_tree().change_scene("res://Scenes/StoreCart.tscn")
+	StoreManagement.store_product_index = "res://assets/Book_I.png"
+	StoreManagement.i = 0
+	StoreManagement.j = 0
+	StoreManagement.store_total = 500.00
+	if(!StoreManagement.products[StoreManagement.i][StoreManagement.j]):
+		get_tree().change_scene("res://Scenes/StoreCart.tscn")
+	else:
+		pass
 
 
 func _on_Book_II_pressed():
-	Global.total_store += 900.00
-	get_tree().change_scene("res://Scenes/StoreCart.tscn")
+	StoreManagement.store_product_index = "res://assets/Book_II.png"
+	StoreManagement.i = 0
+	StoreManagement.j = 1
+	StoreManagement.store_total = 900.00
+	if(!StoreManagement.products[StoreManagement.i][StoreManagement.j]):
+		get_tree().change_scene("res://Scenes/StoreCart.tscn")
+	else:
+		pass
 
 
 func _on_Book_III_pressed():
-	Global.total_store += 1400.00
-	get_tree().change_scene("res://Scenes/StoreCart.tscn")
+	StoreManagement.store_product_index = "res://assets/Book_III.png"
+	StoreManagement.i = 0
+	StoreManagement.j = 2
+	StoreManagement.store_total = 1400.00
+	if(!StoreManagement.products[StoreManagement.i][StoreManagement.j]):
+		get_tree().change_scene("res://Scenes/StoreCart.tscn")
+	else:
+		pass
 
 
 func _on_Book_IV_pressed():
-	Global.total_store += 2700.00
-	get_tree().change_scene("res://Scenes/StoreCart.tscn")
+	StoreManagement.store_product_index = "res://assets/Book_IV.png"
+	StoreManagement.i = 0
+	StoreManagement.j = 3
+	StoreManagement.store_total = 2700.00
+	if(!StoreManagement.products[StoreManagement.i][StoreManagement.j]):
+		get_tree().change_scene("res://Scenes/StoreCart.tscn")
+	else:
+		pass
 
 
 func _on_Book_V_pressed():
-	Global.total_store += 4200.00
-	get_tree().change_scene("res://Scenes/StoreCart.tscn")
+	StoreManagement.store_product_index = "res://assets/Book_V.png"
+	StoreManagement.i = 0
+	StoreManagement.j = 4
+	StoreManagement.store_total = 4200.00
+	if(!StoreManagement.products[StoreManagement.i][StoreManagement.j]):
+		get_tree().change_scene("res://Scenes/StoreCart.tscn")
+	else:
+		pass

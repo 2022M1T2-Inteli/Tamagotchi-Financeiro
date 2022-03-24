@@ -6,6 +6,8 @@ var t_shirt_3 : float = 300.00
 var t_shirt_4 : float = 300.00
 var t_shirt_5 : float = 300.00
 
+var purchased = preload("res://Scenes/Purchased.tscn")
+
 func _ready():
 	if Global.day >= 2:
 		$RichTextLabel1.bbcode_text = (str ("[center]R$ " ,(t_shirt_1 * (Global.inflation/100))).pad_zeros(2))
@@ -26,27 +28,63 @@ func _ready():
 	$RichTextLabel3.update()
 	$RichTextLabel4.update()
 	$RichTextLabel4.update()
-	pass # Replace with function body.
+	
+	for i in 5:
+		if(StoreManagement.products[2][i] == true):
+			var new_node = purchased.instance()
+			new_node.position = Vector2(125 + 250*i, 450)
+			add_child(new_node)
+	StoreManagement.item_status[0] = 0
+	StoreManagement.item_status[1] = 1
+	StoreManagement.item_status[2] = 0
+
 
 func _on_Button_tshirt_yellow_pressed():
-	Global.total_store += 300.00
-	get_tree().change_scene("res://Scenes/StoreCart.tscn")
+	StoreManagement.store_product_index = "res://assets/Yellow_Shirt.png"
+	StoreManagement.i = 2
+	StoreManagement.j = 0
+	StoreManagement.store_total = 300.00
+	if(!StoreManagement.products[StoreManagement.i][StoreManagement.j]):
+		get_tree().change_scene("res://Scenes/StoreCart.tscn")
+	else:
+		pass
 
 
 func _on_Button_tshirt_black_pressed():
-	Global.total_store += 300.00
-	get_tree().change_scene("res://Scenes/StoreCart.tscn")
+	StoreManagement.store_product_index = "res://assets/Black_Shirt.png"
+	StoreManagement.i = 2
+	StoreManagement.j = 1
+	StoreManagement.store_total = 300.00
+	if(!StoreManagement.products[StoreManagement.i][StoreManagement.j]):
+		get_tree().change_scene("res://Scenes/StoreCart.tscn")
+	else:
+		pass
 	
 func _on_Button_tshirt_purple_pressed():
-	Global.total_store += 300.00
-	get_tree().change_scene("res://Scenes/StoreCart.tscn")
+	StoreManagement.store_product_index = "res://assets/Purple_Shirt.png"
+	StoreManagement.i = 2
+	StoreManagement.j = 2
+	StoreManagement.store_total = 300.00
+	if(!StoreManagement.products[StoreManagement.i][StoreManagement.j]):
+		get_tree().change_scene("res://Scenes/StoreCart.tscn")
+	else:
+		pass
 
 
 func _on_Button_tshirt_green_pressed():
-	Global.total_store += 300.00
+	StoreManagement.store_product_index = "res://assets/Green_Shirt.png"
+	StoreManagement.i = 2
+	StoreManagement.j = 3
+	StoreManagement.store_total = 300.00
 	get_tree().change_scene("res://Scenes/StoreCart.tscn")
 
 
 func _on_Button_tshirt_pink_pressed():
-	Global.total_store += 300.00
-	get_tree().change_scene("res://Scenes/StoreCart.tscn")
+	StoreManagement.store_product_index = "res://assets/Pink_Shirt.png"
+	StoreManagement.i = 2
+	StoreManagement.j = 4
+	StoreManagement.store_total = 300.00
+	if(!StoreManagement.products[StoreManagement.i][StoreManagement.j]):
+		get_tree().change_scene("res://Scenes/StoreCart.tscn")
+	else:
+		pass

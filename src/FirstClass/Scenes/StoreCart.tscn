@@ -122,7 +122,7 @@ margin_bottom = 611.0
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 margin_left = 731.0
 margin_top = 588.0
-margin_right = 877.0
+margin_right = 969.0
 margin_bottom = 632.0
 custom_colors/default_color = Color( 0.964706, 0.0313726, 0.0313726, 1 )
 custom_fonts/normal_font = SubResource( 1 )
@@ -183,6 +183,9 @@ __meta__ = {
 [node name="Timer" type="Timer" parent="."]
 pause_mode = 2
 wait_time = 3.0
+
+[node name="Selected_Product" type="Sprite" parent="."]
+position = Vector2( 775, 450 )
 
 [node name="Sprite2" type="Sprite" parent="."]
 visible = false

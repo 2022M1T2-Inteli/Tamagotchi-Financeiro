@@ -3,8 +3,14 @@ extends Node2D
 var paymentType = null
 
 func _ready():
-	$RichTextLabel.bbcode_text = str("[center]R$ ",(Global.total_store))
-	pass
+	$RichTextLabel.bbcode_text = str("[center]R$ ",(StoreManagement.store_total))
+	var image = Image.new()
+	image.load(StoreManagement.store_product_index)
+	var texture = ImageTexture.new()
+	texture.create_from_image(image, 0)
+	get_node("Selected_Product").texture = texture
+	get_node("Selected_Product").position = Vector2(775,450)
+	get_node("Selected_Product").scale = Vector2(0.5, 0.5)
 
 func _on_HomeRectangle_pressed():
 	get_tree().change_scene("res://Scenes/StoreHome.tscn")
@@ -36,13 +42,21 @@ func _on_Button_digital_pressed():
 	paymentType = 1
 
 func _on_finish_pressed():
-	Global.total_store += float (get_node("RichTextLabel").text)
+	StoreManagement.store_total += float (get_node("RichTextLabel").text)
 	
-	if (Global.total_store >= 0) and (Global.money - Global.total_store >= 0) and (paymentType == 0):
-		Global.money -= Global.total_store 
+	if (StoreManagement.store_total >= 0) and (Global.money - StoreManagement.store_total >= 0) and (paymentType == 0):
+		Global.money -= StoreManagement.store_total
+		StoreManagement.products[StoreManagement.i][StoreManagement.j] = true
+		Global.actions += StoreManagement.item_status[0] 
+		Global.happiness += StoreManagement.item_status[1] 
+		Global.knowledge += StoreManagement.item_status[2] 
 		get_tree().change_scene("res://Scenes/StoreEndshop.tscn")
-	elif (Global.total_store >= 0) and (Global.digital_money - Global.total_store >= 0) and (paymentType == 1):
-		Global.digital_money -= Global.total_store 
+	elif (StoreManagement.store_total >= 0) and (Global.digital_money - StoreManagement.store_total >= 0) and (paymentType == 1):
+		Global.digital_money -= StoreManagement.store_total
+		Global.actions += StoreManagement.item_status[0] 
+		Global.happiness += StoreManagement.item_status[1] 
+		Global.knowledge += StoreManagement.item_status[2] 
+		StoreManagement.products[StoreManagement.i][StoreManagement.j] = true
 		get_tree().change_scene("res://Scenes/StoreEndshop.tscn")
 	else:
 		$Sprite.visible = true

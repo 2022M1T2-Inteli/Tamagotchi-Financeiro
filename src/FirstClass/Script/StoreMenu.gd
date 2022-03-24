@@ -1,5 +1,6 @@
 extends CanvasLayer
 
+var product
 
 func _ready():
 	pass
