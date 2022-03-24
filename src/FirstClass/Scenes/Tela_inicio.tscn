@@ -7,12 +7,10 @@
 script/source = "extends Node2D
 
 func _ready():
-	$musicfx.play()
+	pass
 
 func _on_Button_tela_inicio_pressed():
 	get_tree().change_scene(\"res://Scenery/ChampionSelect.tscn\")
-
-
 
 func _on_Button_pressed():
 	get_tree().quit()
