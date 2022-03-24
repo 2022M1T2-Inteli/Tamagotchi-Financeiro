@@ -6,20 +6,9 @@ var right_milk = preload("res://Scenes/riceYellow.tscn")
 var wrong_milk = preload("res://Scenes/riceRed.tscn")
 var wrong_milk2 = preload("res://Scenes/riceBlue.tscn")
 
-
-#var milks = ["res://Scenes/right_milk.tscn", "res://Scenes/wrong_milk.tscn"]
-#var screenSize = get_viewport().get_visible_rect().size
-
 func _ready():
-#	timer = Timer.new()
-#	timer.set_wait_time(2)
-#	yield(timer, "timeout")
-#	add_child(timer)
 	$HUD/Score.text = "Score: " + str(score)
 	$BackgroundFX.play()
-
-func _process(delta):
-	pass	
 
 func contagem_score():
 	score += 1
