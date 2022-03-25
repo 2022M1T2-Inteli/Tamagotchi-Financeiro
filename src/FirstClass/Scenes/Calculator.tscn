@@ -31,6 +31,7 @@ scale = Vector2( 2.3432, 2.27219 )
 texture = ExtResource( 3 )
 
 [node name="resultado" type="Label" parent="."]
+pause_mode = 2
 margin_left = 508.0
 margin_top = 83.0
 margin_right = 795.0
@@ -41,6 +42,7 @@ __meta__ = {
 }
 
 [node name="Button_1" type="Button" parent="resultado"]
+pause_mode = 2
 show_behind_parent = true
 margin_left = -10.0
 margin_top = 158.0
@@ -52,6 +54,7 @@ __meta__ = {
 }
 
 [node name="Button_2" type="Button" parent="resultado"]
+pause_mode = 2
 show_behind_parent = true
 margin_left = 73.0
 margin_top = 158.0
@@ -63,6 +66,7 @@ __meta__ = {
 }
 
 [node name="Button_3" type="Button" parent="resultado"]
+pause_mode = 2
 show_behind_parent = true
 margin_left = 155.0
 margin_top = 162.0
@@ -74,6 +78,7 @@ __meta__ = {
 }
 
 [node name="Button_4" type="Button" parent="resultado"]
+pause_mode = 2
 show_behind_parent = true
 margin_left = -8.0
 margin_top = 239.0
@@ -85,6 +90,7 @@ __meta__ = {
 }
 
 [node name="Button_5" type="Button" parent="resultado"]
+pause_mode = 2
 show_behind_parent = true
 margin_left = 72.0
 margin_top = 238.0
@@ -96,6 +102,7 @@ __meta__ = {
 }
 
 [node name="Button_6" type="Button" parent="resultado"]
+pause_mode = 2
 show_behind_parent = true
 margin_left = 155.0
 margin_top = 233.0
@@ -107,6 +114,7 @@ __meta__ = {
 }
 
 [node name="Button_7" type="Button" parent="resultado"]
+pause_mode = 2
 show_behind_parent = true
 margin_left = -11.0
 margin_top = 315.0
@@ -118,6 +126,7 @@ __meta__ = {
 }
 
 [node name="Button_8" type="Button" parent="resultado"]
+pause_mode = 2
 show_behind_parent = true
 margin_left = 76.0
 margin_top = 314.0
@@ -129,6 +138,7 @@ __meta__ = {
 }
 
 [node name="Button_9" type="Button" parent="resultado"]
+pause_mode = 2
 show_behind_parent = true
 margin_left = 150.0
 margin_top = 312.0
@@ -140,6 +150,7 @@ __meta__ = {
 }
 
 [node name="Button_0" type="Button" parent="resultado"]
+pause_mode = 2
 show_behind_parent = true
 margin_left = -6.0
 margin_top = 393.0
@@ -151,6 +162,7 @@ __meta__ = {
 }
 
 [node name="Button_ponto" type="Button" parent="resultado"]
+pause_mode = 2
 show_behind_parent = true
 margin_left = 71.0
 margin_top = 391.0
@@ -162,6 +174,7 @@ __meta__ = {
 }
 
 [node name="Button_x" type="Button" parent="resultado"]
+pause_mode = 2
 show_behind_parent = true
 margin_left = 233.0
 margin_top = 230.0
@@ -173,6 +186,7 @@ __meta__ = {
 }
 
 [node name="Button_+" type="Button" parent="resultado"]
+pause_mode = 2
 show_behind_parent = true
 margin_left = 238.0
 margin_top = 392.0
@@ -184,6 +198,7 @@ __meta__ = {
 }
 
 [node name="Button_-" type="Button" parent="resultado"]
+pause_mode = 2
 show_behind_parent = true
 margin_left = 239.0
 margin_top = 310.0
@@ -195,6 +210,7 @@ __meta__ = {
 }
 
 [node name="Button_div" type="Button" parent="resultado"]
+pause_mode = 2
 show_behind_parent = true
 margin_left = 235.0
 margin_top = 153.0
@@ -220,6 +236,7 @@ __meta__ = {
 }
 
 [node name="Button_exp" type="Button" parent="resultado"]
+pause_mode = 2
 show_behind_parent = true
 margin_left = 78.0
 margin_top = 80.0
@@ -231,6 +248,7 @@ __meta__ = {
 }
 
 [node name="Button_AC" type="Button" parent="resultado"]
+pause_mode = 2
 show_behind_parent = true
 margin_left = 152.0
 margin_top = 80.0
@@ -242,6 +260,7 @@ __meta__ = {
 }
 
 [node name="Button_=" type="Button" parent="resultado"]
+pause_mode = 2
 show_behind_parent = true
 margin_left = 156.0
 margin_top = 389.0
@@ -253,6 +272,7 @@ __meta__ = {
 }
 
 [node name="Button_CE" type="Button" parent="resultado"]
+pause_mode = 2
 show_behind_parent = true
 margin_left = 237.0
 margin_top = 79.0

@@ -8,6 +8,16 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "Area2D",
+"class": "LeftMovingObject",
+"language": "GDScript",
+"path": "res://Script/LeftMovingObject.gd"
+} ]
+_global_script_class_icons={
+"LeftMovingObject": ""
+}
+
 [application]
 
 config/name="EduFin App"
