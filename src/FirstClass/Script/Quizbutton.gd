@@ -1,7 +1,7 @@
 extends Node2D
 
 var dialog = [
-	'Se a poupança render 5% ao mês. E 1000$ seus forem investidos. quanto você terá ao final de 1 mês?',
+	'\n Uma das desvantagens dos mercados para quem investe em rendas variáveis é a...',
 ]
 
 var dialog_index = 0
@@ -25,11 +25,11 @@ func load_dialog():
 
 
 func _on_certo_pressed():
-	get_tree().change_scene("res://Scenes/Quiz_right_answer.tscn")
+	get_tree().change_scene("res://Scenes/Quiz_right_answer_RendaVar.tscn")
 
 
 func _on_errado_pressed():
-	get_tree().change_scene("res://Scenes/Errouquiz.tscn")
+	get_tree().change_scene("res://Scenes/ErrouquizRendaVar.tscn")
 
 
 func _on_Tween_tween_completed(object, key):
