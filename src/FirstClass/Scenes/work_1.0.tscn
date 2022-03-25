@@ -1,0 +1,255 @@
+[gd_scene load_steps=21 format=2]
+
+[ext_resource path="res://assets/work_3.png" type="Texture" id=1]
+[ext_resource path="res://assets/esteiraa.png" type="Texture" id=2]
+[ext_resource path="res://Script/work_1.0.gd" type="Script" id=3]
+[ext_resource path="res://Fonts/Minecraftia-Regular.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://assets/64.png" type="Texture" id=5]
+[ext_resource path="res://assets/62.png" type="Texture" id=6]
+[ext_resource path="res://assets/63.png" type="Texture" id=7]
+
+[sub_resource type="Animation" id=1]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 597.25, 611.5 ) ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "esteira"
+length = 5.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1, 2, 3, 4, 5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 616.75, 611.5 ), Vector2( 636.75, 611.5 ), Vector2( 621.75, 611.5 ), Vector2( 609.75, 611.5 ), Vector2( 595.75, 611.5 ), Vector2( 582.75, 611.5 ) ]
+}
+
+[sub_resource type="DynamicFont" id=10]
+size = 24
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 37
+font_data = ExtResource( 4 )
+
+[sub_resource type="StyleBoxFlat" id=7]
+bg_color = Color( 0.329412, 0.298039, 0.286275, 1 )
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="StyleBoxFlat" id=6]
+bg_color = Color( 0.188235, 0.133333, 0.113725, 1 )
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="StyleBoxFlat" id=11]
+bg_color = Color( 0.160784, 0.109804, 0.0941176, 0 )
+
+[sub_resource type="StyleBoxEmpty" id=9]
+
+[sub_resource type="DynamicFont" id=12]
+size = 22
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=13]
+size = 22
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=14]
+size = 24
+font_data = ExtResource( 4 )
+
+[sub_resource type="RectangleShape2D" id=16]
+extents = Vector2( 30.5, 135.5 )
+
+[sub_resource type="DynamicFont" id=15]
+size = 26
+font_data = ExtResource( 4 )
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="70" type="Sprite" parent="."]
+position = Vector2( 639, 361.625 )
+scale = Vector2( 0.264572, 0.265619 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Esteiraa" type="Sprite" parent="."]
+position = Vector2( 597.25, 611.5 )
+scale = Vector2( 2.12107, 1.45625 )
+texture = ExtResource( 2 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Esteiraa"]
+anims/RESET = SubResource( 1 )
+anims/esteira = SubResource( 2 )
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+margin_left = 353.0
+margin_top = 187.0
+margin_right = 440.0
+margin_bottom = 231.0
+custom_colors/default_color = Color( 0.341176, 0.952941, 0.0627451, 1 )
+custom_fonts/normal_font = SubResource( 10 )
+bbcode_enabled = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 547.0
+margin_top = 269.0
+margin_right = 743.0
+margin_bottom = 322.0
+custom_colors/default_color = Color( 1, 1, 1, 1 )
+custom_fonts/normal_font = SubResource( 4 )
+bbcode_enabled = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button_yes" type="Button" parent="."]
+margin_left = 534.0
+margin_top = 256.0
+margin_right = 760.0
+margin_bottom = 338.0
+custom_styles/hover = SubResource( 7 )
+custom_styles/pressed = SubResource( 6 )
+custom_styles/focus = SubResource( 11 )
+custom_styles/normal = SubResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="62" type="Sprite" parent="."]
+visible = false
+position = Vector2( 638, 361 )
+scale = Vector2( 0.243282, 0.239526 )
+texture = ExtResource( 6 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="63" type="Sprite" parent="."]
+visible = false
+position = Vector2( 637, 370 )
+scale = Vector2( 0.242107, 0.243735 )
+texture = ExtResource( 7 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="64" type="Sprite" parent="."]
+visible = false
+position = Vector2( 642, 367 )
+scale = Vector2( 0.230725, 0.238745 )
+texture = ExtResource( 5 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="."]
+margin_left = 55.0
+margin_top = 189.0
+margin_right = 357.0
+margin_bottom = 233.0
+custom_colors/default_color = Color( 1, 0.945098, 0.945098, 1 )
+custom_fonts/normal_font = SubResource( 12 )
+text = "VALOR DE MERCADO: R$"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel4" type="RichTextLabel" parent="."]
+margin_left = 846.0
+margin_top = 189.0
+margin_right = 1152.0
+margin_bottom = 229.0
+custom_fonts/normal_font = SubResource( 13 )
+text = "VALOR DO PRODUTO: R$"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel5" type="RichTextLabel" parent="."]
+margin_left = 1143.0
+margin_top = 185.0
+margin_right = 1229.0
+margin_bottom = 229.0
+custom_colors/default_color = Color( 0.980392, 0.988235, 0.0313726, 1 )
+custom_fonts/normal_font = SubResource( 14 )
+bbcode_enabled = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( -162, 423 )
+shape = SubResource( 16 )
+
+[node name="HUD" type="CanvasLayer" parent="."]
+
+[node name="Score" type="Label" parent="HUD"]
+anchor_left = 0.012
+anchor_top = 0.015
+anchor_right = 0.138
+anchor_bottom = 0.076
+margin_left = 558.64
+margin_top = 159.2
+margin_right = 542.36
+margin_bottom = 159.28
+custom_fonts/font = SubResource( 15 )
+text = "Score : 0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 3.0
+autostart = true
+
+[node name="Area2D2" type="Area2D" parent="."]
+position = Vector2( 1176, 479 )
+
+[node name="Sprite" type="Sprite" parent="Area2D2"]
+position = Vector2( -1056, -448 )
+
+[node name="Boom" type="Timer" parent="."]
+wait_time = 3.0
+
+[connection signal="pressed" from="Button_yes" to="." method="_on_Button_yes_pressed"]
+[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
+[connection signal="timeout" from="Boom" to="." method="_on_Boom_timeout"]

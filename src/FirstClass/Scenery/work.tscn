@@ -172,15 +172,5 @@ __meta__ = {
 position = Vector2( 518, 564 )
 shape = SubResource( 10 )
 
-[node name="Button" type="Button" parent="."]
-margin_left = 341.0
-margin_top = 105.0
-margin_right = 941.0
-margin_bottom = 669.0
-keep_pressed_outside = true
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_Area2D_body_entered"]
 [connection signal="body_entered" from="Area2D2" to="Area2D2" method="_on_Area2D2_body_entered"]
