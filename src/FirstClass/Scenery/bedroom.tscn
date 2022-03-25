@@ -1,8 +1,8 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://Scenes/Transition_in.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/Player_certo.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Scenes/collision.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Script/wardrobe.gd" type="Script" id=3]
 [ext_resource path="res://Script/bedroom.gd" type="Script" id=4]
 [ext_resource path="res://assets/23.png" type="Texture" id=5]
 [ext_resource path="res://Scenes/Funcao_block.tscn" type="PackedScene" id=6]
@@ -18,7 +18,10 @@
 [ext_resource path="res://assets/22.png" type="Texture" id=16]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 75, 29 )
+extents = Vector2( 90, 35.5 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 72, 30 )
 
 [node name="Tela_Inicio" type="Node2D"]
 position = Vector2( 3, 0 )
@@ -31,9 +34,6 @@ position = Vector2( 1308, 414 )
 position = Vector2( -4, 3 )
 
 [node name="ParallaxBackground2" parent="." instance=ExtResource( 7 )]
-
-[node name="StaticBody2D" parent="." instance=ExtResource( 3 )]
-position = Vector2( -4, 9 )
 
 [node name="Transition_in" parent="." instance=ExtResource( 1 )]
 
@@ -56,11 +56,11 @@ script = ExtResource( 14 )
 [node name="ComputerArea" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ComputerArea"]
-position = Vector2( 519, 554 )
+position = Vector2( 460, 476.5 )
 shape = SubResource( 1 )
 
 [node name="1" type="Sprite" parent="."]
-position = Vector2( 158, 525 )
+position = Vector2( 260, 497 )
 scale = Vector2( 0.2, 0.2 )
 texture = ExtResource( 11 )
 
@@ -70,7 +70,7 @@ scale = Vector2( 0.15, 0.15 )
 texture = ExtResource( 12 )
 
 [node name="3" type="Sprite" parent="."]
-position = Vector2( 718, 447 )
+position = Vector2( 622, 447 )
 scale = Vector2( 0.1, 0.1 )
 texture = ExtResource( 16 )
 
@@ -82,4 +82,18 @@ texture = ExtResource( 5 )
 [node name="Player_certo" parent="." instance=ExtResource( 2 )]
 position = Vector2( 118, 715 )
 
+[node name="StaticBorder2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBorder2D"]
+polygon = PoolVector2Array( -1, 632, 377, 627, 326, 470, 676, 475, 714, 493, 719, 545, 739, 555, 747, 552, 754, 505, 793, 502, 1284, 501, 1285, 732, -27, 719, -21, 758, 1317, 755, 1307, 474, 556, 430, 289, 437, 318, 589, -3, 599, -30, 697 )
+
+[node name="wardrobe" type="Area2D" parent="."]
+script = ExtResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="wardrobe"]
+position = Vector2( 871, 524 )
+shape = SubResource( 2 )
+
 [connection signal="body_entered" from="ComputerArea" to="." method="_on_ComputerArea_body_entered"]
+[connection signal="body_entered" from="wardrobe" to="wardrobe" method="_on_wardrobe_body_entered"]
+[connection signal="body_exited" from="wardrobe" to="wardrobe" method="_on_wardrobe_body_exited"]

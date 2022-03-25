@@ -5,4 +5,4 @@ func _ready():
 
 
 func _on_Button_pressed():
-	get_tree().change_scene("res://Scenes/dialogBoxTest.tscn")
+	get_tree().change_scene("res://Scenes/dialogBoxRendaVariável.tscn")

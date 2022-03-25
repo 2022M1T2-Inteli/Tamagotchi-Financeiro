@@ -15,13 +15,13 @@ var day_trade = 0
 
 func _ready():
 	rng.randomize()
-	real_estate_fund = rng.randi_range(0.07,0.1)
-	multimarket_fund = rng.randi_range(0.06,0.11)
-	stock_fund = rng.randi_range(0.05,0.13)
-	high_risk_stock_fund = rng.randi_range(-0.03,0.16)
-	low_risk_stock = rng.randi_range(0.01,0.2)
-	high_risk_stock = rng.randi_range(-0.1,0.4)
-	day_trade = rng.randi_range(-0.2,0.5)
+	real_estate_fund = rng.randf_range(0.07,0.1)
+	multimarket_fund = rng.randf_range(0.06,0.11)
+	stock_fund = rng.randf_range(0.05,0.13)
+	high_risk_stock_fund = rng.randf_range(-0.03,0.16)
+	low_risk_stock = rng.randf_range(0.01,0.2)
+	high_risk_stock = rng.randf_range(-0.1,0.4)
+	day_trade = rng.randf_range(-0.2,0.5)
 
 
 func _on_Area2D_body_entered(body):
@@ -48,8 +48,8 @@ func _on_Area2D_body_entered(body):
 		Investiment.invest_money_debenture += Investiment.invest_money_debenture*0.07
 		
 		#fund
-		#Investiment.profit_real_estate_fund += Investiment.invest_money_real_estate_fund*real_estate_fund
-		#Investiment.invest_money_real_estate_fund += Investiment.invest_money_real_estate_fund*real_estate_fund
+		Investiment.profit_real_estate_fund += Investiment.invest_money_real_estate_fund*real_estate_fund
+		Investiment.invest_money_real_estate_fund += Investiment.invest_money_real_estate_fund*real_estate_fund
 		
 		#Investiment.profit_multimarket_fund += Investiment.invest_money_multimarket_fund*multimarket_fund
 		#Investiment.invest_money_multimarket_fund += Investiment.invest_money_multimarket_fund*multimarket_fund
@@ -62,14 +62,14 @@ func _on_Area2D_body_entered(body):
 		
 		#variable income 
 		
-		#Investiment.profit_low_risk_stock += Investiment.invest_money_low_risk_stocks*low_risk_stock
-		#Investiment.invest_money_low_risk_stock += Investiment.invest_money_low_risk_stock*low_risk_stock
+		Investiment.profit_low_risk_stock += Investiment.invest_money_low_risk_stock*low_risk_stock
+		Investiment.invest_money_low_risk_stock += Investiment.invest_money_low_risk_stock*low_risk_stock
 		
 		#Investiment.profit_high_risk_stock += Investiment.invest_money_high_risk_stock*high_risk_stock
 		#Investiment.invest_money_high_risk_stock += Investiment.invest_money_high_risk_stock*high_risk_stock
 		
-		#Investiment.profit_day_trade += Investiment.invest_money_day_trade*day_trade
-		#Investiment.invest_money_day_trade += Investiment.invest_money_day_trade*day_trade
+		Investiment.profit_day_trade += Investiment.invest_money_day_trade*day_trade
+		Investiment.invest_money_day_trade += Investiment.invest_money_day_trade*day_trade
 		
-		Global.inflation += rng.randi_range(1.5,3)
+		Global.inflation += rng.randf_range(1.5,3)
 		changer.change_scene(Global.current_scene)

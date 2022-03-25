@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/recordsBank.png-4a40e14e18db4307769427016a4376d3.stex"
+path="res://.import/wardropenew.png-f760826c2b847c75c0249b8c8e7f028c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://recordsBank.png"
-dest_files=[ "res://.import/recordsBank.png-4a40e14e18db4307769427016a4376d3.stex" ]
+source_file="res://assets/wardropenew.png"
+dest_files=[ "res://.import/wardropenew.png-f760826c2b847c75c0249b8c8e7f028c.stex" ]
 
 [params]
 
