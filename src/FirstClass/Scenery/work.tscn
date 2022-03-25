@@ -57,7 +57,6 @@ extents = Vector2( 98.5, 15 )
 script = ExtResource( 11 )
 
 [node name="Work!" type="Sprite" parent="."]
-pause_mode = 1
 position = Vector2( 640.5, 361 )
 scale = Vector2( 0.264779, 0.264609 )
 texture = ExtResource( 1 )
@@ -84,10 +83,8 @@ rotation = -1.5708
 shape = SubResource( 1 )
 
 [node name="Joystick" parent="." instance=ExtResource( 6 )]
-pause_mode = 1
 
 [node name="Transition_in" parent="." instance=ExtResource( 2 )]
-pause_mode = 1
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 pause_mode = 1
@@ -107,7 +104,6 @@ __meta__ = {
 }
 
 [node name="KinematicBody2D" type="KinematicBody2D" parent="."]
-pause_mode = 1
 
 [node name="Sprite" type="Sprite" parent="KinematicBody2D"]
 position = Vector2( 788, 296 )
@@ -151,7 +147,6 @@ pause_mode = 1
 script = ExtResource( 10 )
 
 [node name="FundoPreto" type="Sprite" parent="Area2D2"]
-visible = false
 position = Vector2( 643.803, 361.755 )
 scale = Vector2( 2.01312, 2.00136 )
 texture = ExtResource( 9 )
@@ -160,7 +155,6 @@ __meta__ = {
 }
 
 [node name="CargosTrabalho" type="Sprite" parent="Area2D2"]
-visible = false
 position = Vector2( 658, 336 )
 scale = Vector2( 0.229356, 0.236058 )
 texture = ExtResource( 8 )
@@ -172,12 +166,48 @@ __meta__ = {
 position = Vector2( 518, 564 )
 shape = SubResource( 10 )
 
-[node name="Button" type="Button" parent="."]
-margin_left = 341.0
-margin_top = 105.0
-margin_right = 941.0
-margin_bottom = 669.0
-keep_pressed_outside = true
+[node name="firstfloor" type="Button" parent="."]
+process_priority = 1
+margin_left = 262.0
+margin_top = 277.0
+margin_right = 431.0
+margin_bottom = 543.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="secondfloor" type="Button" parent="."]
+margin_left = 431.0
+margin_top = 277.0
+margin_right = 598.0
+margin_bottom = 543.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="thirdfloor" type="Button" parent="."]
+margin_left = 598.0
+margin_top = 274.0
+margin_right = 765.0
+margin_bottom = 545.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="forthfloor" type="Button" parent="."]
+margin_left = 765.0
+margin_top = 276.0
+margin_right = 924.0
+margin_bottom = 547.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="fifthfloor" type="Button" parent="."]
+margin_left = 926.0
+margin_top = 274.0
+margin_right = 1079.0
+margin_bottom = 545.0
 __meta__ = {
 "_edit_use_anchors_": false
 }

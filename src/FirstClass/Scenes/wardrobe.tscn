@@ -1,0 +1,163 @@
+[gd_scene load_steps=19 format=2]
+
+[ext_resource path="res://assets/newwardrobe.png" type="Texture" id=1]
+[ext_resource path="res://Script/wardrobescene.gd" type="Script" id=2]
+[ext_resource path="res://assets/newbedroom.png" type="Texture" id=3]
+[ext_resource path="res://Scenes/Transition_in.tscn" type="PackedScene" id=4]
+[ext_resource path="res://assets/shirtPurple.png" type="Texture" id=5]
+[ext_resource path="res://assets/shirtGreen.png" type="Texture" id=6]
+[ext_resource path="res://assets/shirtBlack.png" type="Texture" id=7]
+[ext_resource path="res://assets/shirtYellow.png" type="Texture" id=8]
+[ext_resource path="res://assets/shirtRed.png" type="Texture" id=9]
+[ext_resource path="res://assets/wolfShirtDefault.png" type="Texture" id=10]
+
+[sub_resource type="StyleBoxEmpty" id=1]
+
+[sub_resource type="StyleBoxEmpty" id=2]
+
+[sub_resource type="StyleBoxEmpty" id=3]
+
+[sub_resource type="StyleBoxEmpty" id=4]
+
+[sub_resource type="StyleBoxEmpty" id=5]
+
+[sub_resource type="StyleBoxEmpty" id=6]
+
+[sub_resource type="StyleBoxEmpty" id=7]
+
+[sub_resource type="StyleBoxEmpty" id=8]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="Transition_in" parent="." instance=ExtResource( 4 )]
+
+[node name="Newbedroom" type="Sprite" parent="."]
+position = Vector2( 640, 360 )
+scale = Vector2( 1.82857, 1.83206 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Wardropenew" type="Sprite" parent="."]
+position = Vector2( 640, 360 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="sairteste" type="Button" parent="."]
+pause_mode = 2
+show_behind_parent = true
+margin_left = 367.0
+margin_top = 562.0
+margin_right = 553.0
+margin_bottom = 640.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="WolfShirtDefault" type="Sprite" parent="."]
+position = Vector2( 307, 359 )
+scale = Vector2( 0.79703, 0.74552 )
+texture = ExtResource( 10 )
+
+[node name="Shirt_0" type="Sprite" parent="."]
+position = Vector2( 927, 214 )
+scale = Vector2( 0.241266, 0.279629 )
+texture = ExtResource( 8 )
+
+[node name="Shirt_1" type="Sprite" parent="."]
+position = Vector2( 761, 357 )
+scale = Vector2( 0.236702, 0.257211 )
+texture = ExtResource( 7 )
+
+[node name="Shirt_2" type="Sprite" parent="."]
+position = Vector2( 1098, 355 )
+scale = Vector2( 0.20064, 0.226483 )
+texture = ExtResource( 5 )
+
+[node name="Shirt_3" type="Sprite" parent="."]
+position = Vector2( 762, 528 )
+scale = Vector2( 0.221835, 0.22921 )
+texture = ExtResource( 6 )
+
+[node name="Shirt_4" type="Sprite" parent="."]
+position = Vector2( 1096.38, 528.313 )
+scale = Vector2( 0.195, 0.227156 )
+texture = ExtResource( 9 )
+
+[node name="ShirtYellow" type="Button" parent="."]
+margin_left = 865.0
+margin_top = 151.0
+margin_right = 990.0
+margin_bottom = 278.0
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/focus = SubResource( 3 )
+custom_styles/normal = SubResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ShirtBlack" type="Button" parent="."]
+show_behind_parent = true
+margin_left = 698.0
+margin_top = 291.0
+margin_right = 823.0
+margin_bottom = 417.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ShirtPurple" type="Button" parent="."]
+show_behind_parent = true
+margin_left = 1031.0
+margin_top = 296.0
+margin_right = 1162.0
+margin_bottom = 423.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ShirtGreen" type="Button" parent="."]
+show_behind_parent = true
+margin_left = 696.0
+margin_top = 457.0
+margin_right = 837.0
+margin_bottom = 597.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ShirtPink" type="Button" parent="."]
+show_behind_parent = true
+margin_left = 1028.0
+margin_top = 464.0
+margin_right = 1164.0
+margin_bottom = 596.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Default" type="Button" parent="."]
+margin_left = 126.0
+margin_top = 560.0
+margin_right = 312.0
+margin_bottom = 637.0
+custom_styles/hover = SubResource( 5 )
+custom_styles/pressed = SubResource( 6 )
+custom_styles/focus = SubResource( 7 )
+custom_styles/normal = SubResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="sairteste" to="." method="_on_sairteste_pressed"]
+[connection signal="pressed" from="ShirtYellow" to="." method="_on_ShirtYellow_pressed"]
+[connection signal="pressed" from="ShirtBlack" to="." method="_on_ShirtBlack_pressed"]
+[connection signal="pressed" from="ShirtPurple" to="." method="_on_ShirtPurple_pressed"]
+[connection signal="pressed" from="ShirtGreen" to="." method="_on_ShirtGreen_pressed"]
+[connection signal="pressed" from="ShirtPink" to="." method="_on_ShirtPink_pressed"]
+[connection signal="pressed" from="Default" to="." method="_on_Default_pressed"]
