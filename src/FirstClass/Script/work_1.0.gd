@@ -14,6 +14,7 @@ func _ready():
 	$HUD/Score.text = "Score: " + str(score)
 	ValoresProdutos()
 	ValorProdutosMercado()
+	$music.play()
 
 var next = 62
 var new_node = null 
@@ -91,17 +92,19 @@ func ValorProdutosMercado():
 func contagem_score():
 	score += 1
 	$HUD/Score.text = "Score: " + str(score)
+	$right.play()
 
 func errado():
 	score -= 1
 	erro += 1
 	$HUD/Score.text = "Score: " + str(score)
+	$wrong.play()
 	
 func verificar():
 	if (erro == 5):
-		get_tree().change_scene("res://Scenery/work.tscn")
+		get_tree().change_scene("res://Scenery/losswork.tscn")
 	elif (score == 10):
-		get_tree().change_scene("res://Scenery/work.tscn")
+		get_tree().change_scene("res://Scenery/WinWork.tscn")
 
 func _on_Button_yes_pressed():
 	#new_node.queue_free()
