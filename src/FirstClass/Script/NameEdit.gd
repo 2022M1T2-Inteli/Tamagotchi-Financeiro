@@ -14,6 +14,4 @@ func _on_LineEdit_text_entered(new_text):
 	get_tree().change_scene(reference_path)
 
 func _on_ContinueButton_pressed(): # On continue button pressed
-	Global.player_name = text
-	print(Global.player_name)
-	get_tree().change_scene(reference_path) # Change scene to the next one
+	get_tree().change_scene("res://Scenes/story_letter.tscn")

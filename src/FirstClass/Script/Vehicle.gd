@@ -2,7 +2,7 @@ extends Sprite
 
 func _ready():
 	var image = Image.new()
-	if(true):
+	if(StoreManagement.products[1][0]):
 		image.load("res://assets/Vehicles_0.png")
 		self.scale = Vector2(0.3, 0.3)
 	if(StoreManagement.products[1][1]):
