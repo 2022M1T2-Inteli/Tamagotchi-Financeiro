@@ -76,6 +76,9 @@ margin_bottom = 594.0
 custom_colors/default_color = Color( 0, 0, 0, 1 )
 custom_fonts/normal_font = SubResource( 3 )
 bbcode_enabled = true
+text = "QUIZ
+Se você investir 1000$ na poupança, quanto você terá ao final do 1° mês? 
+-> Fórmula do rendimento: M = C x (1+ i)^t \\n - juros= 0.5%"
 __meta__ = {
 "_edit_use_anchors_": false
 }

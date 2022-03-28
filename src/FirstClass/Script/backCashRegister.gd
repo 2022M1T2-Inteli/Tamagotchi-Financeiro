@@ -7,8 +7,7 @@ export var path : String
 
 func _on_Button_pressed():
 	Global.current_scene = "res://Scenery/streetHouse.tscn"
+	Global.actions -= 1
 	Global.change_position(5450,500)
-	Global.happiness += 2
-	Global.knowledge += 1
 	changer.change_scene(Global.current_scene)
 	Global.total = 0

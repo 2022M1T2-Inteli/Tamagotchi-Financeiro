@@ -114,6 +114,7 @@ a = Vector2( 3324, -275 )
 b = Vector2( 3312, 902 )
 
 [node name="Scene2" type="Node2D"]
+position = Vector2( 2, 0 )
 
 [node name="Street1" type="Sprite" parent="."]
 position = Vector2( 1917.75, 358 )
@@ -865,7 +866,6 @@ shape = SubResource( 31 )
 [node name="Area2D2" parent="." instance=ExtResource( 13 )]
 position = Vector2( 5444, 442 )
 scale = Vector2( 0.75, 0.75 )
-path = null
 
 [node name="Area2D" parent="." instance=ExtResource( 17 )]
 position = Vector2( 7998, 442 )
