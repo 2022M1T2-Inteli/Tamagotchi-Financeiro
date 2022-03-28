@@ -1,6 +1,7 @@
 extends Control
 
 var dialog = [
+	'Bom dia! Você está pronto para aprender sobre investimentos de Renda Fixa?',
 	'Além da Poupança e CDBs, existem outros investimentos de renda fixa, como o Tesouro Direto, Debêntures, LCI e LCA, CRI e CRA.',
 	'TESOURO DIRETO: \n - emprestar dinheiro para o governo; \n -renda mínima muito pequena; \n - considerado o investimento mais seguro;\n -tem liquidez diária; \n-custos: taxa de custódia (0,25% ao ano) e 20% de imposto.',
 	'DEBÊNTURES: \n -Títulos emitidos por empresas;\n -normalmente servem p financiar grandes projetos; \n-Têm o vencimento muito mais longo;\n - São tributadas no imposto de renda (menos as incentivadas); \n-Não são cobertas por FGC.',
@@ -36,7 +37,7 @@ func load_dialog():
 	else:
 
 		queue_free()
-		get_tree().change_scene("res://Scenes_ana/Quizbutton.tscn")
+		get_tree().change_scene("res://Scenes_ana/QuizTesouroDireto.tscn")
 	dialog_index += 1
 
 

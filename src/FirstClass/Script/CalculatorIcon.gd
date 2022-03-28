@@ -16,3 +16,11 @@ func _on_Button_pressed():
 	add_child(new_node)
 	new_node.global_position = Vector2(0, 0)
 	$CalculatorIcon.visible = false
+
+
+func _on_certo_pressed():
+	get_tree().change_scene("res://Scenes/Quiz_right_answer.tscn")
+
+
+func _on_errado_pressed():
+	get_tree().change_scene("res://Scenes/Errouquiz.tscn")

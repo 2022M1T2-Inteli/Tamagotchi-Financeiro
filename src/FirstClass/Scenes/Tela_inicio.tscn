@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://musicfx.tscn" type="PackedScene" id=1]
-[ext_resource path="res://assets/backgrounStartMenu.png" type="Texture" id=2]
+[ext_resource path="res://assets/startneww.png" type="Texture" id=2]
 
 [sub_resource type="GDScript" id=1]
 script/source = "extends Node2D
@@ -17,6 +17,7 @@ func _on_Button_pressed():
 "
 
 [node name="Node2D" type="Node2D"]
+position = Vector2( -1, 2 )
 script = SubResource( 1 )
 
 [node name="EduFinApp" type="Sprite" parent="."]
@@ -28,20 +29,20 @@ texture = ExtResource( 2 )
 
 [node name="Button" type="Button" parent="."]
 show_behind_parent = true
-margin_left = 903.0
-margin_top = 530.0
-margin_right = 1152.0
-margin_bottom = 634.0
+margin_left = 682.0
+margin_top = 449.0
+margin_right = 931.0
+margin_bottom = 553.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Button_tela_inicio" type="Button" parent="."]
 show_behind_parent = true
-margin_left = 571.0
-margin_top = 531.0
-margin_right = 818.0
-margin_bottom = 636.0
+margin_left = 359.0
+margin_top = 446.0
+margin_right = 606.0
+margin_bottom = 551.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
