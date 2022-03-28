@@ -16,7 +16,7 @@ func _ready():
 #	add_child(timer)
 	$HUD/Score.text = "Score: " + str(score)
 	$BackgroundFX.play()
-	$"/root/Musicfx".stop()
+	#$"/root/Musicfx".stop()
 
 func _process(delta):
 	pass	

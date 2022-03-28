@@ -58,12 +58,9 @@ script = ExtResource( 11 )
 
 [node name="Work!" type="Sprite" parent="."]
 pause_mode = 1
-position = Vector2( 640.5, 361 )
+position = Vector2( 638, 361 )
 scale = Vector2( 0.264779, 0.264609 )
 texture = ExtResource( 1 )
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="Area2D" type="Area2D" parent="."]
 pause_mode = 1
@@ -110,7 +107,7 @@ __meta__ = {
 pause_mode = 1
 
 [node name="Sprite" type="Sprite" parent="KinematicBody2D"]
-position = Vector2( 788, 296 )
+position = Vector2( 792, 293 )
 scale = Vector2( 4.37366, 5.92882 )
 texture = ExtResource( 7 )
 hframes = 11
@@ -125,7 +122,7 @@ shape = SubResource( 5 )
 
 [node name="Player_certo" parent="." instance=ExtResource( 3 )]
 pause_mode = 1
-position = Vector2( 151, 689 )
+position = Vector2( 161, 660 )
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="."]
 pause_mode = 1

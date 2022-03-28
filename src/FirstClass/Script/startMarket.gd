@@ -1,7 +1,8 @@
 extends Node2D
 
 func _ready():
-	$"/root/Musicfx".stop()
+	#$"/root/Musicfx".stop()
+	pass
 	
 func _on_Button_pressed():
 	Global.actions -= 1
