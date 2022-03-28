@@ -1,4 +1,4 @@
-[gd_scene load_steps=49 format=2]
+[gd_scene load_steps=50 format=2]
 
 [ext_resource path="res://assets/street_1.png" type="Texture" id=1]
 [ext_resource path="res://Scenes/Player_certo.tscn" type="PackedScene" id=2]
@@ -19,6 +19,7 @@
 [ext_resource path="res://Scenes/seta_banco.tscn" type="PackedScene" id=17]
 [ext_resource path="res://Script/Vehicle.gd" type="Script" id=18]
 [ext_resource path="res://Script/balon.gd" type="Script" id=19]
+[ext_resource path="res://assets/balon.png" type="Texture" id=20]
 
 [sub_resource type="CapsuleShape2D" id=1]
 
@@ -862,7 +863,6 @@ shape = SubResource( 31 )
 [node name="Area2D2" parent="." instance=ExtResource( 13 )]
 position = Vector2( 5444, 442 )
 scale = Vector2( 0.75, 0.75 )
-path = null
 
 [node name="Area2D" parent="." instance=ExtResource( 17 )]
 position = Vector2( 7998, 442 )
@@ -888,6 +888,11 @@ script = ExtResource( 19 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="balon"]
 position = Vector2( 15302, 602 )
 shape = SubResource( 32 )
+
+[node name="Balon" type="Sprite" parent="."]
+position = Vector2( 15316, 399 )
+scale = Vector2( 0.438802, 0.47963 )
+texture = ExtResource( 20 )
 
 [connection signal="body_exited" from="streetHouseToClassUniversity" to="streetHouseToClassUniversity" method="_on_streetHouseToClassUniversity_body_exited"]
 [connection signal="timeout" from="streetHouseToClassUniversity/Timer" to="streetHouseToClassUniversity" method="_on_Timer_timeout"]
