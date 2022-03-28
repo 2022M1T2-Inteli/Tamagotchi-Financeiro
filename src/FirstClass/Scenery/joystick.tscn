@@ -51,14 +51,12 @@ margin_left = 0.0
 margin_top = 4.0
 margin_right = -7.55994
 margin_bottom = 2.0
-mouse_filter = 1
 
 [node name="phone" parent="." instance=ExtResource( 3 )]
 margin_left = 1228.0
 margin_top = 62.0
 margin_right = 1240.0
 margin_bottom = 82.0
-mouse_filter = 1
 
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( 814.313, 42 )
@@ -74,7 +72,6 @@ margin_left = 7.67993
 margin_top = 0.24
 margin_right = 0.319946
 margin_bottom = -0.800003
-mouse_filter = 1
 custom_colors/default_color = Color( 0.360784, 0.976471, 0.32549, 1 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_fonts/normal_font = SubResource( 1 )

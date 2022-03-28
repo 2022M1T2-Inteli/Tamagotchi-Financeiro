@@ -51,22 +51,22 @@ func _on_Area2D_body_entered(body):
 		Investiment.profit_real_estate_fund += Investiment.invest_money_real_estate_fund*real_estate_fund
 		Investiment.invest_money_real_estate_fund += Investiment.invest_money_real_estate_fund*real_estate_fund
 		
-		#Investiment.profit_multimarket_fund += Investiment.invest_money_multimarket_fund*multimarket_fund
-		#Investiment.invest_money_multimarket_fund += Investiment.invest_money_multimarket_fund*multimarket_fund
+		Investiment.profit_multimarket_fund += Investiment.invest_money_multimarket_fund*multimarket_fund
+		Investiment.invest_money_multimarket_fund += Investiment.invest_money_multimarket_fund*multimarket_fund
 		
-		#Investiment.profit_stock_fund += Investiment.invest_money_stock_fund*stock_fund
-		#Investiment.invest_money_stock_fund += Investiment.invest_money_stock_fund*stock_fund
+		Investiment.profit_stock_fund += Investiment.invest_money_stock_fund*stock_fund
+		Investiment.invest_money_stock_fund += Investiment.invest_money_stock_fund*stock_fund
 		
-		#Investiment.profit_high_risk_stock_fund += Investiment.invest_money_high_risk_stock_fund*high_risk_stock_fund
-		#Investiment.invest_high_risk_stock_fund += Investiment.invest_money_high_risk_stock_fund*high_risk_stock_fund
+		Investiment.profit_high_risk_stock_fund += Investiment.invest_money_high_risk_stock_fund*high_risk_stock_fund
+		Investiment.invest_money_high_risk_stock_fund += Investiment.invest_money_high_risk_stock_fund*high_risk_stock_fund
 		
 		#variable income 
 		
 		Investiment.profit_low_risk_stock += Investiment.invest_money_low_risk_stock*low_risk_stock
 		Investiment.invest_money_low_risk_stock += Investiment.invest_money_low_risk_stock*low_risk_stock
 		
-		#Investiment.profit_high_risk_stock += Investiment.invest_money_high_risk_stock*high_risk_stock
-		#Investiment.invest_money_high_risk_stock += Investiment.invest_money_high_risk_stock*high_risk_stock
+		Investiment.profit_high_risk_stock += Investiment.invest_money_high_risk_stock*high_risk_stock
+		Investiment.invest_money_high_risk_stock += Investiment.invest_money_high_risk_stock*high_risk_stock
 		
 		Investiment.profit_day_trade += Investiment.invest_money_day_trade*day_trade
 		Investiment.invest_money_day_trade += Investiment.invest_money_day_trade*day_trade

@@ -108,6 +108,7 @@ radius = 108.0
 height = 0.0
 
 [node name="Scene2" type="Node2D"]
+position = Vector2( 2, 0 )
 
 [node name="Street1" type="Sprite" parent="."]
 position = Vector2( 1903, 358 )

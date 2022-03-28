@@ -27,6 +27,7 @@ var inflation : float = 0
 var checkout : float = 0
 var positioncal = Vector2(640, 360)
 var recordsBank : Array = []
+var player_job = 0
 
 func _ready():
 	pass # Replace with function body.
