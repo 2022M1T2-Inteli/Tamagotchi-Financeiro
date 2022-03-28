@@ -36,7 +36,7 @@ func load_dialog():
 	else:
 
 		queue_free()
-		get_tree().change_scene("res://Scenes_ana/Quizbutton.tscn")
+		get_tree().change_scene("res://Scenes_ana/QuizTesouroDireto.tscn")
 	dialog_index += 1
 
 
