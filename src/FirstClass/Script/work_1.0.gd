@@ -56,6 +56,7 @@ func _process(delta):
 			past_timer = current_timer
 		if(verified[0] && verified[1] && verified[2]):
 			start = true
+			$Timer.start()
 	var windowSizeLocal = get_viewport().size
 	if new_node && start:
 		if new_node.position.x >= -300:
@@ -109,13 +110,14 @@ func verificar():
 func _on_Button_yes_pressed():
 	#new_node.queue_free()
 	#new_node = null
-	new_node.visible = false
-	next = true
-	if int ($RichTextLabel5.text) <=  int($RichTextLabel2.text):
-		contagem_score()
-	else:
-		errado()
-	verificar()
+	if new_node:
+		new_node.visible = false
+		next = true
+		if int ($RichTextLabel5.text) <=  int($RichTextLabel2.text):
+			contagem_score()
+		else:
+			errado()
+		verificar()
 
 
 func _on_Boom_timeout():

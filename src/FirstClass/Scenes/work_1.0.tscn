@@ -240,7 +240,6 @@ __meta__ = {
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 3.0
-autostart = true
 
 [node name="Area2D2" type="Area2D" parent="."]
 position = Vector2( 1176, 479 )
