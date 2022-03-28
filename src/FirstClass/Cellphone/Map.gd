@@ -11,9 +11,12 @@ func _on_Button_exit_map_pressed():
 
 
 func _on_Button_market_pressed():
-	get_tree().paused = false
-	Global.change_position(150,705)
-	get_tree().change_scene("res://Scenes/startMarket.tscn")
+	if(Global.school):
+		get_tree().paused = false
+		Global.change_position(150,705)
+		get_tree().change_scene("res://Scenes/startMarket.tscn")
+	else:
+		pass
 
 
 func _on_Button_college_pressed():
@@ -30,6 +33,9 @@ func _on_Button_bedroom_pressed():
 
 
 func _on_Button_bank_pressed():
-	get_tree().paused = false
-	Global.change_position(-1040, 218)
-	get_tree().change_scene("res://Scenes/Bank.tscn")
+	if(Global.school):
+		get_tree().paused = false
+		Global.change_position(-1040, 218)
+		get_tree().change_scene("res://Scenes/Bank.tscn")
+	else:
+		pass
