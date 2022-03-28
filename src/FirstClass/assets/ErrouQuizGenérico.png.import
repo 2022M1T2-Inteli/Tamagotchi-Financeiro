@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Street_1.png-274595ebb8f3c76539e7fbbad0b270c7.stex"
+path="res://.import/ErrouQuizGenérico.png-4ec7a94ce6a9cb433fc1397c1de3e47e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Street_1.png"
-dest_files=[ "res://.import/Street_1.png-274595ebb8f3c76539e7fbbad0b270c7.stex" ]
+source_file="res://assets/ErrouQuizGenérico.png"
+dest_files=[ "res://.import/ErrouQuizGenérico.png-4ec7a94ce6a9cb433fc1397c1de3e47e.stex" ]
 
 [params]
 

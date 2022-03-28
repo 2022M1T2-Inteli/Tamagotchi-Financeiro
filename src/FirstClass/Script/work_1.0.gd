@@ -2,6 +2,11 @@ extends Node2D
 
 var score = 0
 var erro = 0
+var start = false
+var verified = [false, false, false]
+var counter = 0
+var past_timer = 0
+var current_timer = 0
 
 func _ready():
 	$Esteiraa/AnimationPlayer.play("esteira")
@@ -9,7 +14,6 @@ func _ready():
 	$HUD/Score.text = "Score: " + str(score)
 	ValoresProdutos()
 	ValorProdutosMercado()
-	#get_tree().paused = true
 
 var next = 62
 var new_node = null 
@@ -34,9 +38,25 @@ var bola = preload("res://assets/bola.png")
 var produtos = [mochila,impressora,televisao,computador,cadeira,abajur,lixeira,ferro,ventilador,balde,panela,bola]
 
 func _process(delta):
-	#get_node(str(next)).visible = false
+	if(!start):
+		print(current_timer - past_timer)
+		current_timer += delta
+		if(Input.is_action_pressed("ui_accept") && current_timer - past_timer > 1):
+			verified[counter] = true
+			if(counter == 0):
+				get_node("62").visible = false
+				get_node("63").visible = true
+			elif(counter == 1):
+				get_node("63").visible = false
+				get_node("64").visible = true
+			else:
+				get_node("64").visible = false
+			counter+=1
+			past_timer = current_timer
+		if(verified[0] && verified[1] && verified[2]):
+			start = true
 	var windowSizeLocal = get_viewport().size
-	if new_node:
+	if new_node && start:
 		if new_node.position.x >= -300:
 			new_node.position.x -= 14
 

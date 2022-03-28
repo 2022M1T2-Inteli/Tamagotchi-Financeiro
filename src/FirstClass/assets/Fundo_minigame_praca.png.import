@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Street_1.png-274595ebb8f3c76539e7fbbad0b270c7.stex"
+path="res://.import/Fundo_minigame_praca.png-86f1dd523f839929ca544c4bd24d1b67.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Street_1.png"
-dest_files=[ "res://.import/Street_1.png-274595ebb8f3c76539e7fbbad0b270c7.stex" ]
+source_file="res://assets/Fundo_minigame_praca.png"
+dest_files=[ "res://.import/Fundo_minigame_praca.png-86f1dd523f839929ca544c4bd24d1b67.stex" ]
 
 [params]
 

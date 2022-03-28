@@ -22,8 +22,8 @@ func _ready():
 func _process(delta):
 	$"Button".visible = finished
 	$Button/AnimationPlayer.play("IDLE")
-	#if Input.is_action_just_pressed("ui_accept"):
-		#load_dialog()
+	if Input.is_action_just_pressed("ui_accept"):
+		load_dialog()
 
 func load_dialog():
 	if dialog_index < dialog.size():
