@@ -8,7 +8,7 @@
 [ext_resource path="res://assets/3.png" type="Texture" id=6]
 [ext_resource path="res://assets/work_2.png" type="Texture" id=7]
 [ext_resource path="res://Scenes/streetHouseToClassUniversity.tscn" type="PackedScene" id=8]
-[ext_resource path="res://assets/4.png" type="Texture" id=9]
+[ext_resource path="res://assets/EduFin App (7).png" type="Texture" id=9]
 [ext_resource path="res://assets/seta direita pixel.png" type="Texture" id=10]
 [ext_resource path="res://assets/house.png" type="Texture" id=11]
 [ext_resource path="res://Script/Area2D3.gd" type="Script" id=12]
