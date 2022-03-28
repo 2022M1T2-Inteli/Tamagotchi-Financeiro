@@ -151,11 +151,11 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="62" type="Sprite" parent="."]
+[node name="64" type="Sprite" parent="."]
 visible = false
-position = Vector2( 638, 361 )
-scale = Vector2( 0.243282, 0.239526 )
-texture = ExtResource( 6 )
+position = Vector2( 642, 367 )
+scale = Vector2( 0.230725, 0.238745 )
+texture = ExtResource( 5 )
 __meta__ = {
 "_edit_lock_": true
 }
@@ -169,11 +169,10 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="64" type="Sprite" parent="."]
-visible = false
-position = Vector2( 642, 367 )
-scale = Vector2( 0.230725, 0.238745 )
-texture = ExtResource( 5 )
+[node name="62" type="Sprite" parent="."]
+position = Vector2( 638, 361 )
+scale = Vector2( 0.243282, 0.239526 )
+texture = ExtResource( 6 )
 __meta__ = {
 "_edit_lock_": true
 }
