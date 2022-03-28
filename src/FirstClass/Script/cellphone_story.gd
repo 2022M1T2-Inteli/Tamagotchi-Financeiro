@@ -47,4 +47,4 @@ func story6():
 	$Timer6.start()
 
 func _on_Timer6_timeout():
-	get_tree().change_scene("res://Scenery/bedroom.tscn")
+	get_tree().change_scene("res://Scenes/taxi.tscn")

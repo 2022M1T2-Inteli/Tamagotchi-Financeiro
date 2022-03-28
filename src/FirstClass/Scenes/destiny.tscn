@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/destiny.png" type="Texture" id=1]
+[ext_resource path="res://Script/destiny.gd" type="Script" id=2]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="Destiny" type="Sprite" parent="."]
+position = Vector2( 640, 360 )
+scale = Vector2( 0.264572, 0.264609 )
+texture = ExtResource( 1 )
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 5.0
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
