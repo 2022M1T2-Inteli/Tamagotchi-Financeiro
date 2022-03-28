@@ -102,9 +102,9 @@ func errado():
 	
 func verificar():
 	if (erro == 5):
-		get_tree().change_scene("res://Scenery/losswork.tscn")
+		get_tree().change_scene("res://Scenes/losswork.tscn")
 	elif (score == 10):
-		get_tree().change_scene("res://Scenery/WinWork.tscn")
+		get_tree().change_scene("res://Scenes/WinWork.tscn")
 
 func _on_Button_yes_pressed():
 	#new_node.queue_free()
