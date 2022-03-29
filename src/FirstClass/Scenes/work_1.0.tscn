@@ -154,32 +154,6 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="64" type="Sprite" parent="."]
-visible = false
-position = Vector2( 642, 367 )
-scale = Vector2( 0.230725, 0.238745 )
-texture = ExtResource( 5 )
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="63" type="Sprite" parent="."]
-visible = false
-position = Vector2( 637, 370 )
-scale = Vector2( 0.242107, 0.243735 )
-texture = ExtResource( 7 )
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="62" type="Sprite" parent="."]
-position = Vector2( 638, 361 )
-scale = Vector2( 0.243282, 0.239526 )
-texture = ExtResource( 6 )
-__meta__ = {
-"_edit_lock_": true
-}
-
 [node name="RichTextLabel3" type="RichTextLabel" parent="."]
 margin_left = 55.0
 margin_top = 189.0
@@ -228,10 +202,10 @@ anchor_left = 0.012
 anchor_top = 0.015
 anchor_right = 0.138
 anchor_bottom = 0.076
-margin_left = 558.64
-margin_top = 159.2
-margin_right = 542.36
-margin_bottom = 159.28
+margin_left = 557.64
+margin_top = 105.2
+margin_right = 541.36
+margin_bottom = 105.28
 custom_fonts/font = SubResource( 15 )
 text = "Score : 0"
 __meta__ = {
@@ -259,6 +233,32 @@ volume_db = 8.794
 
 [node name="music" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 10 )
+
+[node name="62" type="Sprite" parent="."]
+position = Vector2( 638, 361 )
+scale = Vector2( 0.243282, 0.239526 )
+texture = ExtResource( 6 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="63" type="Sprite" parent="."]
+visible = false
+position = Vector2( 637, 370 )
+scale = Vector2( 0.242107, 0.243735 )
+texture = ExtResource( 7 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="64" type="Sprite" parent="."]
+visible = false
+position = Vector2( 642, 367 )
+scale = Vector2( 0.230725, 0.238745 )
+texture = ExtResource( 5 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [connection signal="pressed" from="Button_yes" to="." method="_on_Button_yes_pressed"]
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
