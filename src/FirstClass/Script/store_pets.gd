@@ -9,15 +9,15 @@ var purchased = preload("res://Scenes/Purchased.tscn")
 
 func _ready():
 	if Global.day >= 2:
-		$RichTextLabel1.bbcode_text = (str ("[center]R$ " , (dog * (Global.inflation/100))).pad_zeros(2))
-		$RichTextLabel2.bbcode_text = (str ("[center]R$ " ,(cat * (Global.inflation/100))).pad_zeros(2))
-		$RichTextLabel3.bbcode_text = (str ("[center]R$ " ,(pet_3 * (Global.inflation/100))).pad_zeros(2))
-		$RichTextLabel4.bbcode_text = (str ("[center]R$ " ,(pet_4 * (Global.inflation/100))).pad_zeros(2))
+		$RichTextLabel1.bbcode_text = (str ("[center]R$%.2f" % float(dog * (Global.inflation/100))))
+		$RichTextLabel2.bbcode_text = (str ("[center]R$%.2f" % float(cat * (Global.inflation/100))))
+		$RichTextLabel3.bbcode_text = (str ("[center]R$%.2f" % float(pet_3 * (Global.inflation/100))))
+		$RichTextLabel4.bbcode_text = (str ("[center]R$%.2f" % float(pet_4 * (Global.inflation/100))))
 	else:
-		$RichTextLabel1.bbcode_text = (str ("[center]R$ "  , (dog)).pad_zeros(2))
-		$RichTextLabel2.bbcode_text = (str ("[center]R$ "  , (cat)).pad_zeros(2))
-		$RichTextLabel3.bbcode_text = (str ("[center]R$ "  , (pet_3)).pad_zeros(2))
-		$RichTextLabel4.bbcode_text = (str ("[center]R$ "  , (pet_4)).pad_zeros(2))
+		$RichTextLabel1.bbcode_text = (str ("[center]R$%.2f"  % float(dog)))
+		$RichTextLabel2.bbcode_text = (str ("[center]R$%.2f"  % float(cat)))
+		$RichTextLabel3.bbcode_text = (str ("[center]R$%.2f"  % float(pet_3)))
+		$RichTextLabel4.bbcode_text = (str ("[center]R$%.2f"  % float(pet_4)))
 	
 	$RichTextLabel1.update()
 	$RichTextLabel2.update()

@@ -1,7 +1,7 @@
 extends Node2D
 
 func _ready():
-	$RichTextLabel.bbcode_text = str("[center]R$ ",(StoreManagement.store_total))
+	$RichTextLabel.bbcode_text = str("[center]R$%.2f" % float(StoreManagement.store_total))
 	var image = Image.new()
 	image.load(StoreManagement.store_product_index)
 	var texture = ImageTexture.new()

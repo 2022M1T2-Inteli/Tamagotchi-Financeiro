@@ -22,8 +22,6 @@ func _ready():
 func _process(delta):
 	$"Button".visible = finished
 	$Button/AnimationPlayer.play("IDLE")
-	if Input.is_action_just_pressed("ui_accept"):
-		load_dialog()
 
 func load_dialog():
 	if dialog_index < dialog.size():
@@ -39,7 +37,7 @@ func load_dialog():
 	else:
 
 		queue_free()
-		get_tree().change_scene("res://Scenes/Quizbutton.tscn")
+		get_tree().change_scene("res://Scenes_ana/Quizbutton.tscn")
 	dialog_index += 1
 
 
@@ -47,5 +45,6 @@ func _on_Tween_tween_completed(object, key):
 	finished = true
 
 
-func _on_buttonNextDialog_pressed():
+
+func _on_Button_pressed():
 	load_dialog()
