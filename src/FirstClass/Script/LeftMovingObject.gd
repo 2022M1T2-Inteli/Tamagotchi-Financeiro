@@ -1,7 +1,7 @@
 extends Area2D
 class_name LeftMovingObject
 
-const OFFSET: int = 32
+const OFFSET: int = 42
 
 var speed: int = 200
 var direction: Vector2 = Vector2.LEFT
