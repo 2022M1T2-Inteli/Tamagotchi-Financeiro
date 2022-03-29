@@ -47,13 +47,15 @@ func _on_finish_pressed():
 	if (StoreManagement.store_total >= 0) and (Global.money - StoreManagement.store_total >= 0) and (paymentType == 0):
 		Global.money -= StoreManagement.store_total
 		StoreManagement.products[StoreManagement.i][StoreManagement.j] = true
-		Global.actions += StoreManagement.item_status[0] 
+		if(Global.actions < StoreManagement.item_status[0]):
+			Global.actions = StoreManagement.item_status[0] 
 		Global.happiness += StoreManagement.item_status[1] 
 		Global.knowledge += StoreManagement.item_status[2] 
 		get_tree().change_scene("res://Scenes/StoreEndshop.tscn")
 	elif (StoreManagement.store_total >= 0) and (Global.digital_money - StoreManagement.store_total >= 0) and (paymentType == 1):
 		Global.digital_money -= StoreManagement.store_total
-		Global.actions += StoreManagement.item_status[0] 
+		if(Global.actions < StoreManagement.item_status[0]):
+			Global.actions = StoreManagement.item_status[0] 
 		Global.happiness += StoreManagement.item_status[1] 
 		Global.knowledge += StoreManagement.item_status[2] 
 		StoreManagement.products[StoreManagement.i][StoreManagement.j] = true

@@ -12,11 +12,11 @@ func _ready():
 	pass
 
 	if Global.day >= 2:
-		$RichTextLabel1.bbcode_text = (str ("[center]R$%.2f" % float(Book_I * (Global.inflation/100))))
-		$RichTextLabel2.bbcode_text= (str ("[center]R$%.2f" % float(Book_II * (Global.inflation/100))))
-		$RichTextLabel3.bbcode_text = (str ("[center]R$%.2f" % float(Book_III * (Global.inflation/100))))
-		$RichTextLabel4.bbcode_text = (str ("[center]R$%.2f" % float(Book_IV * (Global.inflation/100))))
-		$RichTextLabel5.bbcode_text = (str ("[center]R$%.2f" % float(Book_V * (Global.inflation/100))))
+		$RichTextLabel1.bbcode_text = (str ("[center]R$%.2f" % float(Book_I + Book_I * (Global.inflation/100))))
+		$RichTextLabel2.bbcode_text= (str ("[center]R$%.2f" % float(Book_II + Book_II * (Global.inflation/100))))
+		$RichTextLabel3.bbcode_text = (str ("[center]R$%.2f" % float(Book_III + Book_III * (Global.inflation/100))))
+		$RichTextLabel4.bbcode_text = (str ("[center]R$%.2f" % float(Book_IV + Book_IV * (Global.inflation/100))))
+		$RichTextLabel5.bbcode_text = (str ("[center]R$%.2f" % float(Book_V + Book_V * (Global.inflation/100))))
 	else:
 		$RichTextLabel1.bbcode_text = (str ("[center]R$%.2f" % float(Book_I)))
 		$RichTextLabel2.bbcode_text = (str ("[center]R$%.2f" % float(Book_II)))
@@ -35,6 +35,7 @@ func _ready():
 			var new_node = purchased.instance()
 			new_node.position = Vector2(125 + 250*i, 450)
 			add_child(new_node)
+	StoreManagement.item_status[0] = 3
 
 
 

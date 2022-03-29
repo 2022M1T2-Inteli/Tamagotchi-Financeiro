@@ -17,8 +17,10 @@ func _ready():
 
 
 func _on_wardrobe_body_entered(body):
-	if body.name == "Player_certo":
+	if body.name == "Player_certo" && (StoreManagement.products[2][0] || StoreManagement.products[2][1] || StoreManagement.products[2][2] || StoreManagement.products[2][3] || StoreManagement.products[2][4]):
 		get_tree().change_scene("res://Scenes/wardrobe.tscn")
+	else:
+		pass
 #		hide_joystick()
 #		get_tree().paused = true
 #		new_node = wardrobe.instance()
