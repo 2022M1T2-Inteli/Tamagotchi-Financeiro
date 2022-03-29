@@ -10,17 +10,17 @@ var purchased = preload("res://Scenes/Purchased.tscn")
 
 func _ready():
 	if Global.day >= 2:
-		$RichTextLabel1.bbcode_text = (str ("[center]R$ " ,(Bicycle * (Global.inflation/100))).pad_zeros(2))
-		$RichTextLabel2.bbcode_text = (str ("[center]R$ " ,(Eletric_Bike * (Global.inflation/100))).pad_zeros(2))
-		$RichTextLabel3.bbcode_text = (str ("[center]R$ " ,(Motorcycle * (Global.inflation/100))).pad_zeros(2))
-		$RichTextLabel4.bbcode_text = (str ("[center]R$ " ,(Standard_Car * (Global.inflation/100))).pad_zeros(2))
-		$RichTextLabel5.bbcode_text = (str ("[center]R$ " ,(Deluxe_Car * (Global.inflation/100))).pad_zeros(2))
+		$RichTextLabel1.bbcode_text = (str ("[center]R$%.2f" % float(Bicycle * (Global.inflation/100))))
+		$RichTextLabel2.bbcode_text = (str ("[center]R$%.2f" % float(Eletric_Bike * (Global.inflation/100))))
+		$RichTextLabel3.bbcode_text = (str ("[center]R$%.2f" % float(Motorcycle * (Global.inflation/100))))
+		$RichTextLabel4.bbcode_text = (str ("[center]R$%.2f" % float(Standard_Car * (Global.inflation/100))))
+		$RichTextLabel5.bbcode_text = (str ("[center]R$%.2f" % float(Deluxe_Car * (Global.inflation/100))))
 	else:
-		$RichTextLabel1.bbcode_text = (str ("[center]R$ "  , (Bicycle)).pad_zeros(2))
-		$RichTextLabel2.bbcode_text = (str ("[center]R$ "  , (Eletric_Bike)).pad_zeros(2))
-		$RichTextLabel3.bbcode_text = (str ("[center]R$ "  , (Motorcycle)).pad_zeros(2))
-		$RichTextLabel4.bbcode_text = (str ("[center]R$ "  , (Standard_Car)).pad_zeros(2))
-		$RichTextLabel5.bbcode_text = (str ("[center]R$ "  , (Deluxe_Car)).pad_zeros(2))
+		$RichTextLabel1.bbcode_text = (str ("[center]R$%.2f"  % float(Bicycle)))
+		$RichTextLabel2.bbcode_text = (str ("[center]R$%.2f"  % float(Eletric_Bike)))
+		$RichTextLabel3.bbcode_text = (str ("[center]R$%.2f"  % float(Motorcycle)))
+		$RichTextLabel4.bbcode_text = (str ("[center]R$%.2f"  % float(Standard_Car)))
+		$RichTextLabel5.bbcode_text = (str ("[center]R$%.2f"  % float(Deluxe_Car)))
 	
 	$RichTextLabel1.update()
 	$RichTextLabel2.update()

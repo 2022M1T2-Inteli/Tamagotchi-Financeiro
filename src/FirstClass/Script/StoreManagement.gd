@@ -1,5 +1,6 @@
 extends Node
 
+var vehicle = 0
 var store_product_index: String = ""
 var store_total : float = 0.0
 var i = 0

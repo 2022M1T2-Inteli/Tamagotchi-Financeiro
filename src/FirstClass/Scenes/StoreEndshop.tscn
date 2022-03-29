@@ -61,13 +61,12 @@ margin_bottom = 611.0
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 margin_left = 929.0
 margin_top = 490.0
-margin_right = 1075.0
+margin_right = 1129.0
 margin_bottom = 534.0
 custom_colors/default_color = Color( 0.964706, 0.0313726, 0.0313726, 1 )
 custom_fonts/normal_font = SubResource( 1 )
 bbcode_enabled = true
 __meta__ = {
-"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 
