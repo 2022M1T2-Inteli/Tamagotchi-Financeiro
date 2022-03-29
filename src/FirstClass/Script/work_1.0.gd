@@ -59,7 +59,7 @@ func _process(delta):
 			$Timer.start()
 	var windowSizeLocal = get_viewport().size
 	if new_node && start:
-		if new_node.position.x >= -300:
+		if new_node.position.x >= -100:
 			new_node.position.x -= 14
 
 func _on_Timer_timeout():

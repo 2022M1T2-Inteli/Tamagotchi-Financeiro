@@ -7,6 +7,8 @@ func _ready():
 	$Joystick/Control/question_button/AnimationPlayer.play("aviso")
 	for i in range(1,5):
 		get_node(str(i)).visible = StoreManagement.products[3][i-1]
+	$Excla/AnimationPlayer.play("RESET")
+	
 
 
 func _on_ComputerArea_body_entered(body):
