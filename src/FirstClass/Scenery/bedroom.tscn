@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=2]
+[gd_scene load_steps=23 format=2]
 
 [ext_resource path="res://Scenes/Transition_in.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/Player_certo.tscn" type="PackedScene" id=2]
@@ -56,6 +56,9 @@ tracks/0/keys = {
 "values": [ Vector2( 1181, 496 ), Vector2( 1181, 507 ) ]
 }
 
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 104.5, 23.5 )
+
 [node name="Tela_Inicio" type="Node2D"]
 position = Vector2( 3, 0 )
 script = ExtResource( 4 )
@@ -76,6 +79,10 @@ path = "res://Scenery/streetHouse.tscn"
 
 [node name="Funcao_block" parent="." instance=ExtResource( 6 )]
 position = Vector2( 1071, 410 )
+
+[node name="Funcao_block3" parent="." instance=ExtResource( 6 )]
+position = Vector2( 871, 408 )
+scale = Vector2( 0.7, 1.05 )
 
 [node name="Joystick" parent="." instance=ExtResource( 15 )]
 
@@ -121,7 +128,7 @@ position = Vector2( 871, 524 )
 shape = SubResource( 2 )
 
 [node name="Excla" type="Sprite" parent="."]
-position = Vector2( 437, 340.553 )
+position = Vector2( 437, 344 )
 scale = Vector2( 0.171752, 0.178344 )
 texture = ExtResource( 17 )
 
@@ -136,6 +143,13 @@ scale = Vector2( 0.0604544, 0.0723845 )
 texture = ExtResource( 13 )
 script = ExtResource( 14 )
 
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( 1070.5, 523.5 )
+shape = SubResource( 5 )
+
 [connection signal="body_entered" from="ComputerArea" to="." method="_on_ComputerArea_body_entered"]
 [connection signal="body_entered" from="wardrobe" to="wardrobe" method="_on_wardrobe_body_entered"]
 [connection signal="body_exited" from="wardrobe" to="wardrobe" method="_on_wardrobe_body_exited"]
+[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]

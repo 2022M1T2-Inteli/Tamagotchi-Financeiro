@@ -9,10 +9,10 @@ var purchased = preload("res://Scenes/Purchased.tscn")
 
 func _ready():
 	if Global.day >= 2:
-		$RichTextLabel1.bbcode_text = (str ("[center]R$%.2f" % float(house_1 * (Global.inflation/100))))
-		$RichTextLabel2.bbcode_text = (str ("[center]R$%.2f" % float(house_2 * (Global.inflation/100))))
-		$RichTextLabel3.bbcode_text = (str ("[center]R$%.2f" % float(house_3 * (Global.inflation/100))))
-		$RichTextLabel4.bbcode_text = (str ("[center]R$%.2f" % float(house_4 * (Global.inflation/100))))
+		$RichTextLabel1.bbcode_text = (str ("[center]R$%.2f" % float(house_1 + house_1 * (Global.inflation/100))))
+		$RichTextLabel2.bbcode_text = (str ("[center]R$%.2f" % float(house_2 + house_2 * (Global.inflation/100))))
+		$RichTextLabel3.bbcode_text = (str ("[center]R$%.2f" % float(house_3 + house_3 * (Global.inflation/100))))
+		$RichTextLabel4.bbcode_text = (str ("[center]R$%.2f" % float(house_4 + house_4 * (Global.inflation/100))))
 	else:
 		$RichTextLabel1.bbcode_text = (str ("[center]R$%.2f" % float(house_1)))
 		$RichTextLabel2.bbcode_text = (str ("[center]R$%.2f" % float(house_2)))

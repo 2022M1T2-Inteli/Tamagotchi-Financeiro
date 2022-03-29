@@ -7,10 +7,21 @@ func _ready():
 	$Joystick/Control/question_button/AnimationPlayer.play("aviso")
 	for i in range(1,5):
 		get_node(str(i)).visible = StoreManagement.products[3][i-1]
+	for i in 5:
+		if(StoreManagement.products[0][i]):
+			$Funcao_block.visible = false
+			$Funcao_block2.visible = false
+		if(StoreManagement.products[2][i]):
+			$Funcao_block3.visible = false
 	$Excla/AnimationPlayer.play("RESET")
+	
 	
 
 
 func _on_ComputerArea_body_entered(body):
 	if body.name == "Player_certo":
 		get_tree().change_scene("res://Scenes/StoreHome.tscn")
+
+
+func _on_Area2D_body_entered(body):
+	pass # Replace with function body.

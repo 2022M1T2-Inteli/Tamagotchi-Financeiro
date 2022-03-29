@@ -10,11 +10,11 @@ var purchased = preload("res://Scenes/Purchased.tscn")
 
 func _ready():
 	if Global.day >= 2:
-		$RichTextLabel1.bbcode_text = (str ("[center]R$%.2f" % float(t_shirt_1 * (Global.inflation/100))))
-		$RichTextLabel2.bbcode_text = (str ("[center]R$%.2f" % float(t_shirt_2 * (Global.inflation/100))))
-		$RichTextLabel3.bbcode_text = (str ("[center]R$%.2f" % float(t_shirt_3 * (Global.inflation/100))))
-		$RichTextLabel4.bbcode_text = (str ("[center]R$%.2f" % float(t_shirt_4 * (Global.inflation/100))))
-		$RichTextLabel5.bbcode_text = (str ("[center]R$%.2f" % float(t_shirt_5 * (Global.inflation/100))))
+		$RichTextLabel1.bbcode_text = (str ("[center]R$%.2f" % float(t_shirt_1 + t_shirt_1 * (Global.inflation/100))))
+		$RichTextLabel2.bbcode_text = (str ("[center]R$%.2f" % float(t_shirt_2 + t_shirt_2 * (Global.inflation/100))))
+		$RichTextLabel3.bbcode_text = (str ("[center]R$%.2f" % float(t_shirt_3 + t_shirt_3 * (Global.inflation/100))))
+		$RichTextLabel4.bbcode_text = (str ("[center]R$%.2f" % float(t_shirt_4 + t_shirt_4 * (Global.inflation/100))))
+		$RichTextLabel5.bbcode_text = (str ("[center]R$%.2f" % float(t_shirt_5 + t_shirt_5 * (Global.inflation/100))))
 		
 	else:
 		$RichTextLabel1.bbcode_text = (str ("[center]R$%.2f" % float(t_shirt_1)))

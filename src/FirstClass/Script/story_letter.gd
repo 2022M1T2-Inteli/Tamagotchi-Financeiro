@@ -12,4 +12,12 @@ func _on_Area2D_body_entered(body):
 	$Timer.start()
 
 func _on_Timer_timeout():
-	get_tree().change_scene("res://Scenes/cellphone_story.tscn")
+	$Button.visible = true
+	#get_tree().change_scene("res://Scenes/cellphone_story.tscn")
+
+
+func _on_Button_pressed():
+	if($Button.visible == false):
+		pass # Replace with function body.
+	else:
+		get_tree().change_scene("res://Scenes/cellphone_story.tscn")

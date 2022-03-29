@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://assets/fundo preto.png" type="Texture" id=1]
 [ext_resource path="res://assets/story_1.png" type="Texture" id=2]
@@ -9,6 +9,15 @@
 [ext_resource path="res://assets/story_7.png" type="Texture" id=7]
 [ext_resource path="res://assets/story_6.png" type="Texture" id=8]
 [ext_resource path="res://Script/cellphone_story.gd" type="Script" id=9]
+[ext_resource path="res://assets/seta direita pixel.png" type="Texture" id=10]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="StyleBoxEmpty" id=3]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 9 )
@@ -84,26 +93,21 @@ __meta__ = {
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 1.5
-autostart = true
 
-[node name="Timer2" type="Timer" parent="."]
-wait_time = 1.5
-
-[node name="Timer3" type="Timer" parent="."]
-wait_time = 1.5
-
-[node name="Timer4" type="Timer" parent="."]
-wait_time = 1.5
-
-[node name="Timer5" type="Timer" parent="."]
-wait_time = 1.5
-
-[node name="Timer6" type="Timer" parent="."]
-wait_time = 1.5
+[node name="Button" type="Button" parent="."]
+visible = false
+margin_left = 708.0
+margin_top = 611.0
+margin_right = 1048.0
+margin_bottom = 781.0
+rect_scale = Vector2( 0.5, 0.5 )
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/normal = SubResource( 3 )
+icon = ExtResource( 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
-[connection signal="timeout" from="Timer2" to="." method="_on_Timer2_timeout"]
-[connection signal="timeout" from="Timer3" to="." method="_on_Timer3_timeout"]
-[connection signal="timeout" from="Timer4" to="." method="_on_Timer4_timeout"]
-[connection signal="timeout" from="Timer5" to="." method="_on_Timer5_timeout"]
-[connection signal="timeout" from="Timer6" to="." method="_on_Timer6_timeout"]
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]

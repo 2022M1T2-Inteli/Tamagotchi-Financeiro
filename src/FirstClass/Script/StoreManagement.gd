@@ -5,7 +5,13 @@ var store_product_index: String = ""
 var store_total : float = 0.0
 var i = 0
 var j = 0
+
+# Index for item_status
+# 0 - Actions
+# 1 - Happiness
+# 2 - Knowledge
 var item_status = [0,0,0]
+
 
 # Product disponibility matrix
 # Index for i variable
