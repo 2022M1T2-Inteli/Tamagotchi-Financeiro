@@ -6,10 +6,7 @@ func _ready():
 	$Story6.visible = false
 	$Story7.visible = false
 	$Story8.visible = false
-	story1()
-
-func story1():
-	$Timer.start()
+	$Button.visible = false
 	
 func _on_Timer_timeout():
 	$Story4.visible = true
@@ -44,7 +41,7 @@ func _on_Timer5_timeout():
 	story6()
 
 func story6():
-	$Timer6.start()
+	$Button.visible = true
 
-func _on_Timer6_timeout():
+func _on_Button_pressed():
 	get_tree().change_scene("res://Scenes/taxi.tscn")
