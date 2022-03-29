@@ -65,6 +65,7 @@ __meta__ = {
 }
 
 [node name="Story7" type="Sprite" parent="."]
+visible = false
 position = Vector2( 640.75, 360.25 )
 scale = Vector2( 0.66901, 0.666204 )
 texture = ExtResource( 7 )
@@ -73,6 +74,7 @@ __meta__ = {
 }
 
 [node name="Story8" type="Sprite" parent="."]
+visible = false
 position = Vector2( 640.5, 359 )
 scale = Vector2( 0.668229, 0.666667 )
 texture = ExtResource( 3 )
@@ -97,6 +99,7 @@ wait_time = 1.5
 wait_time = 1.5
 
 [node name="Timer6" type="Timer" parent="."]
+wait_time = 1.5
 
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
 [connection signal="timeout" from="Timer2" to="." method="_on_Timer2_timeout"]
