@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/university_scene.jpg-4de596672097751430fe30ae2c128e03.stex"
+path="res://.import/continuar.png-508553af926fe1f0a3b1fcce505e1240.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/university_scene.jpg"
-dest_files=[ "res://.import/university_scene.jpg-4de596672097751430fe30ae2c128e03.stex" ]
+source_file="res://assets/continuar.png"
+dest_files=[ "res://.import/continuar.png-508553af926fe1f0a3b1fcce505e1240.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=false
+flags/filter=true
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
@@ -31,5 +31,5 @@ process/invert_color=false
 process/normal_map_invert_y=false
 stream=false
 size_limit=0
-detect_3d=false
+detect_3d=true
 svg/scale=1.0
