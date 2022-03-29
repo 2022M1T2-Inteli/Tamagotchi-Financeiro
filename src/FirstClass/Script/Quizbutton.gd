@@ -1,7 +1,7 @@
 extends Node2D
 
 var dialog = [
-	'\n Uma das desvantagens dos mercados para quem investe em rendas variáveis é a...',
+	'QUIZ\n\n Uma das desvantagens dos mercados para quem investe em rendas variáveis é a...',
 ]
 
 var dialog_index = 0

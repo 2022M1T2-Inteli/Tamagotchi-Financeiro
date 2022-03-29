@@ -53,6 +53,7 @@ margin_left = 5.0
 margin_top = 3.0
 margin_right = -2.55994
 margin_bottom = 1.0
+mouse_filter = 2
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -67,6 +68,7 @@ margin_left = -7.44998
 margin_top = -7.274
 margin_right = -512.35
 margin_bottom = -159.49
+mouse_filter = 2
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -79,6 +81,7 @@ margin_top = 14.0
 margin_right = -71.6
 margin_bottom = -30.6046
 rect_scale = Vector2( 1.1, 1.1 )
+mouse_filter = 2
 custom_fonts/normal_font = SubResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false

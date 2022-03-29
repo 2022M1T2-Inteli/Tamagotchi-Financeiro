@@ -7,4 +7,5 @@ func _on_Area2D2_body_entered(body):
 	if body.name == "Player_certo":
 		$FundoPreto.visible = true
 		$CargosTrabalho.visible = true
-		get_tree().paused = true
+		$Button_1.visible = true
+		$Player_certo.visible = false

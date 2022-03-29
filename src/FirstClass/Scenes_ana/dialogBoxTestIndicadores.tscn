@@ -8,7 +8,6 @@
 [ext_resource path="res://assets/newBackClass.png" type="Texture" id=6]
 [ext_resource path="res://Scenes/CanvasLayer_action_button.tscn" type="PackedScene" id=7]
 
-
 [sub_resource type="DynamicFont" id=4]
 size = 21
 font_data = ExtResource( 4 )

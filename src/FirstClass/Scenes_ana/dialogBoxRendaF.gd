@@ -3,6 +3,7 @@ extends Control
 
 
 var dialog = [
+	'Bom dia! Você está pronto para aprender sobre Renda Fixa?',
 	'RENDA FIXA \n \n Logo no inicio de investimentos de renda fixa, você já tem acesso a todas as condições de investimento: \n - como vai ser remunerado, qual o prazo do investimento, liquidez e riscos.',
 	'Você pode "emprestar" seu dinheiro para:\n - Bancos (CDBs, poupança, LCI, LCA); \n - Governo (Tesouro Direto);\n - Empresas (Debêntures, CRI, CRA).',
 	'Segurança: \n -São mais previsíveis que aplicações de renda variável (veremos mais à frente), mas não são livres de riscos. \n -Risco de crédito: perdas causadas pela incapacidade financeira da empresa emissora - chance de tomar um calote; \n -Risco de mercado: aumento do juros ou inflação.',

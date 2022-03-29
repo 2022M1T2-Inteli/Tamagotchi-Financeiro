@@ -1,6 +1,7 @@
 extends Control
 
 var dialog = [
+	'Bom dia! Você está pronto para aprender sobre CDBs',
 	'CDBs - Certificados de Depósitos Bancários\n \n -São investimentos de renda fixa emitidos por bancos; \n -Na maioria dos casos, quanto maior o valor mínimo do investimento, maior o rendimento.',
 	'O CDB pode ser: \n 1. Pré-fixado: taxa de juros definida no momento da aplicação; \n 2. Pós-fixado: no momento da aplicação, é definido um indicador de referencia para a rentabilidade (% da taxa do CDI); \n 3. CDB híbrido: parte pré fixada e parte atrelada à inflação.',
 	'-Não possui liquidez diária; \n -O papel tem uma data de vencimento em que o banco devolve o dinheiro; \n -Porém, muitos bancos oferecem uma liquidez diária condicionada: o dinheiro pode ser retirado após certo tempo de "carência", mas o rendimento diminui.',

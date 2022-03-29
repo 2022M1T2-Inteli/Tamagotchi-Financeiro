@@ -16,7 +16,7 @@ func _ready():
 #	add_child(timer)
 	$HUD/Score.text = "Score: " + str(score)
 	$BackgroundFX.play()
-	$"/root/Musicfx".stop()
+	#$"/root/Musicfx".stop()
 
 func _process(delta):
 	pass	
@@ -35,6 +35,7 @@ func verificar():
 		get_tree().change_scene("res://Scenes/loseMinigameMilk.tscn")
 	elif(score == 5):
 		get_tree().change_scene("res://Scenes/winMilkMinigame.tscn")
+		Global.happiness +=1
 
 
 func _on_Timer_timeout():
