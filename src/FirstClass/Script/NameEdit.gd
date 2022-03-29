@@ -14,4 +14,4 @@ func _on_LineEdit_text_entered(new_text):
 	get_tree().change_scene(reference_path)
 
 func _on_ContinueButton_pressed(): # On continue button pressed
-	get_tree().change_scene("res://Scenes/story_letter.tscn")
+	get_tree().change_scene("res://Scenes/instructions1.tscn")
