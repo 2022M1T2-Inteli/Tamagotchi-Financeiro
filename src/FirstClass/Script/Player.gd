@@ -1,7 +1,7 @@
 extends KinematicBody2D
 
 const NORMAL: Vector2 = Vector2(0, -1)
-const JUMP_FORCE: int = -1000
+const JUMP_FORCE: int = -1250
 const GRAVITY: int = 50
 
 var motion: Vector2
