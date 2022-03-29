@@ -84,15 +84,19 @@ __meta__ = {
 }
 
 [node name="Timer" type="Timer" parent="."]
-autostart = true
+wait_time = 0.5
 
 [node name="Timer2" type="Timer" parent="."]
+wait_time = 2.0
 
 [node name="Timer3" type="Timer" parent="."]
+wait_time = 2.0
 
 [node name="Timer4" type="Timer" parent="."]
+wait_time = 2.0
 
 [node name="Timer5" type="Timer" parent="."]
+wait_time = 2.0
 
 [node name="Button" type="Button" parent="."]
 margin_left = 1027.0
