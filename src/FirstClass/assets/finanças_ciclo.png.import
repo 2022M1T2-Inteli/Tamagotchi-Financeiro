@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/action_button.png-299829881e702dd1f04e3f8e4ab6e8e7.stex"
+path="res://.import/finanças_ciclo.png-e5b457f75a1a228aadae8352f83bd8e7.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/action_button.png"
-dest_files=[ "res://.import/action_button.png-299829881e702dd1f04e3f8e4ab6e8e7.stex" ]
+source_file="res://assets/finanças_ciclo.png"
+dest_files=[ "res://.import/finanças_ciclo.png-e5b457f75a1a228aadae8352f83bd8e7.stex" ]
 
 [params]
 

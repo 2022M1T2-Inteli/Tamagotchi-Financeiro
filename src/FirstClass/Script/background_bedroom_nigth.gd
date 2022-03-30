@@ -26,7 +26,7 @@ func _ready():
 
 func _on_Area2D_body_entered(body):
 	if body.name == "Player_certo":
-		Global.current_scene = "res://Scenery/bedroom.tscn"
+		Global.current_scene = "res://Scenes/mudar_ciclo.tscn"
 		Global.position.x = 150
 		Global.position.y = 705
 		Global.day += 1
