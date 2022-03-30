@@ -1,9 +1,10 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
-[ext_resource path="res://assets/sotore_2.png" type="Texture" id=1]
+[ext_resource path="res://assets/story15.png" type="Texture" id=1]
 [ext_resource path="res://Script/store_pets.gd" type="Script" id=2]
 [ext_resource path="res://Fonts/Minecraftia-Regular.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://Scenes/StoreMenu.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scenes/CanvasLayer.tscn" type="PackedScene" id=5]
 
 [sub_resource type="DynamicFont" id=1]
 size = 24
@@ -130,7 +131,31 @@ __meta__ = {
 
 [node name="CanvasLayer" parent="." instance=ExtResource( 4 )]
 
+[node name="Button2" type="Button" parent="."]
+show_behind_parent = true
+margin_left = 16.0
+margin_top = 10.0
+margin_right = 36.0
+margin_bottom = 36.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="."]
+show_behind_parent = true
+margin_left = 41.0
+margin_top = 10.0
+margin_right = 62.0
+margin_bottom = 36.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CanvasLayer2" parent="." instance=ExtResource( 5 )]
+
 [connection signal="pressed" from="Button_dog" to="." method="_on_Button_dog_pressed"]
 [connection signal="pressed" from="Button_cat" to="." method="_on_Button_cat_pressed"]
 [connection signal="pressed" from="Button_pet_3" to="." method="_on_Button_pet_3_pressed"]
 [connection signal="pressed" from="Button_pet_4" to="." method="_on_Button_pet_4_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]

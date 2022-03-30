@@ -164,16 +164,6 @@ scale = Vector2( 0.244626, 0.259555 )
 texture = ExtResource( 8 )
 script = ExtResource( 9 )
 
-[node name="Button" type="Button" parent="."]
-show_behind_parent = true
-margin_left = -1211.0
-margin_top = -522.0
-margin_right = 96.0
-margin_bottom = 241.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
 [node name="Transition_in" parent="." instance=ExtResource( 11 )]
 
 [node name="Area2D" type="Area2D" parent="."]
@@ -184,5 +174,15 @@ script = ExtResource( 10 )
 position = Vector2( 37, -199.5 )
 shape = SubResource( 9 )
 
-[connection signal="pressed" from="Button" to="Bank_instructions" method="_on_Button_pressed"]
+[node name="Button" type="Button" parent="."]
+show_behind_parent = true
+margin_left = -1178.0
+margin_top = -491.0
+margin_right = 96.0
+margin_bottom = 241.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_Area2D_body_entered"]
+[connection signal="pressed" from="Button" to="Bank_instructions" method="_on_Button_pressed"]

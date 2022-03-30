@@ -1,10 +1,11 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
-[ext_resource path="res://assets/StoreEndshop.png" type="Texture" id=1]
+[ext_resource path="res://assets/story18.png" type="Texture" id=1]
 [ext_resource path="res://Scenes/StoreMenu.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Scenes/ButtonStore.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Script/StoreEndshop.gd" type="Script" id=4]
 [ext_resource path="res://Fonts/Minecraftia-Regular.ttf" type="DynamicFontData" id=5]
+[ext_resource path="res://Scenes/CanvasLayer3.tscn" type="PackedScene" id=6]
 
 [sub_resource type="DynamicFont" id=1]
 size = 29
@@ -94,6 +95,8 @@ __meta__ = {
 
 [node name="Selected_Product" type="Sprite" parent="."]
 position = Vector2( 615, 420 )
+
+[node name="CanvasLayer2" parent="." instance=ExtResource( 6 )]
 
 [connection signal="pressed" from="HomeRectangle" to="." method="_on_HomeRectangle_pressed"]
 [connection signal="pressed" from="BooksRectangle" to="." method="_on_BooksRectangle_pressed"]
