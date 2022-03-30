@@ -17,7 +17,7 @@ func _on_Button_pressed():
 "
 
 [node name="Node2D" type="Node2D"]
-position = Vector2( -1, 2 )
+position = Vector2( -2, 2 )
 script = SubResource( 1 )
 
 [node name="EduFinApp" type="Sprite" parent="."]

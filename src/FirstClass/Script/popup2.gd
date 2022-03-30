@@ -9,13 +9,15 @@ var matrix = []
 func _ready():
 	for x in range(40):
 		matrix.append([])
-		for y in range(2):
+		for y in range(3):
 			matrix[x].append("")
 	for x in range(5):
 		matrix[x][0] = "1. Vá até a faculdade e veja sua aula de hoje!"
 		matrix[x][1] = tasks[x]
+		matrix[x][2] = "3. Explore o mapa!"
 
 func _on_question_button_pressed() -> void:
+	get_node("Panel/Any_tasks_active").text = ""
 	$Panel.visible = true
 	$close_button.visible = true
 	$Panel/AnimationPlayer.play("popup")
