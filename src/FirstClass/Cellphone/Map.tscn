@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://assets/map_cellphone.png" type="Texture" id=1]
 [ext_resource path="res://Cellphone/Map.gd" type="Script" id=2]
+[ext_resource path="res://assets/Here.png" type="Texture" id=3]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 2 )
@@ -94,6 +95,12 @@ __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": false
 }
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 656, 301 )
+rotation = 1.5708
+scale = Vector2( 0.07, 0.05 )
+texture = ExtResource( 3 )
 
 [connection signal="pressed" from="Button_exit_map" to="." method="_on_Button_exit_map_pressed"]
 [connection signal="pressed" from="Button_market" to="." method="_on_Button_market_pressed"]

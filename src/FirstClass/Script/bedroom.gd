@@ -6,6 +6,11 @@ var new_node
 func _ready():
 	for i in range(1,5):
 		get_node(str(i)).visible = StoreManagement.products[3][i-1]
+	for i in 5:
+		if(StoreManagement.products[0][i]):
+			$Funcao_block.visible = false
+		if(StoreManagement.products[2][i]):
+			$Funcao_block2.visible = false
 	$Player_certo.visible = false
 	$"/root/Ambient".play()
 

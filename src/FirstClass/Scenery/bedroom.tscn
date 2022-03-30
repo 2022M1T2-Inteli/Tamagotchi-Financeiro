@@ -109,6 +109,10 @@ path = "res://Scenery/streetHouse.tscn"
 [node name="Funcao_block" parent="." instance=ExtResource( 6 )]
 position = Vector2( 1071, 410 )
 
+[node name="Funcao_block2" parent="." instance=ExtResource( 6 )]
+position = Vector2( 874, 410 )
+scale = Vector2( 0.7, 1.1 )
+
 [node name="Joystick" parent="." instance=ExtResource( 15 )]
 
 [node name="ComputerArea" type="Area2D" parent="."]
@@ -262,7 +266,6 @@ texture = ExtResource( 21 )
 
 [connection signal="body_entered" from="ComputerArea" to="." method="_on_ComputerArea_body_entered"]
 [connection signal="body_entered" from="wardrobe" to="wardrobe" method="_on_wardrobe_body_entered"]
-[connection signal="body_exited" from="wardrobe" to="wardrobe" method="_on_wardrobe_body_exited"]
 [connection signal="pressed" from="Button_Instructions1" to="." method="_on_Button_Instructions1_pressed"]
 [connection signal="pressed" from="Button_Instructions2" to="." method="_on_Button_Instructions2_pressed"]
 [connection signal="pressed" from="Button_Instructions3" to="." method="_on_Button_Instructions3_pressed"]
