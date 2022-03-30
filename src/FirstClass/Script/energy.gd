@@ -1,6 +1,5 @@
 extends CanvasLayer
 
-
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
@@ -10,6 +9,8 @@ var visibility = [true, true, true, false, false, false, false, false]
 func _ready():
 	change_actions()
 	 # Replace with function body.
+	
+	
 
 func change_actions():
 	for i in range(visibility.size(), Global.actions, -1):
@@ -17,4 +18,5 @@ func change_actions():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 	#pass
+
 
