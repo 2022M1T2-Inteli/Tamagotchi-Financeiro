@@ -8,7 +8,6 @@
 [ext_resource path="res://Scenes/Funcao_block.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Scenes/bedroomToStreet.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Scenes/border.tscn" type="PackedScene" id=8]
-[ext_resource path="res://Scenes/Funcao_block2.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Scenes/bedroomToStreetHouse.tscn" type="PackedScene" id=10]
 [ext_resource path="res://assets/20.png" type="Texture" id=11]
 [ext_resource path="res://assets/21.png" type="Texture" id=12]
@@ -60,6 +59,7 @@ tracks/0/keys = {
 "values": [ Vector2( 1181, 496 ), Vector2( 1181, 507 ) ]
 }
 
+<<<<<<< Updated upstream
 [sub_resource type="Animation" id=5]
 length = 0.7
 loop = true
@@ -91,13 +91,14 @@ tracks/0/keys = {
 "update": 0,
 "values": [ Vector2( 1181, 496 ), Vector2( 1181, 507 ) ]
 }
+=======
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 116.986, 42.8545 )
+>>>>>>> Stashed changes
 
 [node name="Tela_Inicio" type="Node2D"]
 position = Vector2( 3, 0 )
 script = ExtResource( 4 )
-
-[node name="Funcao_block2" parent="." instance=ExtResource( 9 )]
-position = Vector2( 1308, 414 )
 
 [node name="StaticBody2D2" parent="." instance=ExtResource( 8 )]
 position = Vector2( -4, 3 )
@@ -165,6 +166,7 @@ texture = ExtResource( 17 )
 anims/RESET = SubResource( 3 )
 anims/exclam = SubResource( 4 )
 
+<<<<<<< Updated upstream
 [node name="Excla2" type="Sprite" parent="."]
 position = Vector2( 871, 265 )
 scale = Vector2( 0.171752, 0.178344 )
@@ -263,6 +265,15 @@ __meta__ = {
 position = Vector2( -136, -32 )
 scale = Vector2( 0.44375, 0.468519 )
 texture = ExtResource( 21 )
+=======
+[node name="books" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="books"]
+position = Vector2( 1071, 513 )
+rotation = 0.00275187
+scale = Vector2( 1, 1 )
+shape = SubResource( 5 )
+>>>>>>> Stashed changes
 
 [connection signal="body_entered" from="ComputerArea" to="." method="_on_ComputerArea_body_entered"]
 [connection signal="body_entered" from="wardrobe" to="wardrobe" method="_on_wardrobe_body_entered"]
