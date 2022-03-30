@@ -13,6 +13,7 @@ func _ready():
 			$Funcao_block2.visible = false
 	$Player_certo.visible = false
 	$"/root/Ambient".play()
+	
 	if Global.day == 1:
 		$Button_Instructions1/Instructions1.visible = true
 		$Button_Instructions1.visible = true
