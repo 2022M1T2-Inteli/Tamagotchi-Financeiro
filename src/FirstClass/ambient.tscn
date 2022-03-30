@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Audios/chill-abstract-intention-12099.mp3" type="AudioStream" id=1]
+[ext_resource path="res://ambient.gd" type="Script" id=2]
+
+[node name="ambient" type="AudioStreamPlayer"]
+stream = ExtResource( 1 )
+volume_db = -7.0
+pitch_scale = 0.7
+script = ExtResource( 2 )

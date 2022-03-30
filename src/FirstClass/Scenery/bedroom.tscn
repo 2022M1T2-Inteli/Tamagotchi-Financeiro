@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=2]
+[gd_scene load_steps=27 format=2]
 
 [ext_resource path="res://Scenes/Transition_in.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/Player_certo.tscn" type="PackedScene" id=2]
@@ -8,15 +8,18 @@
 [ext_resource path="res://Scenes/Funcao_block.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Scenes/bedroomToStreet.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Scenes/border.tscn" type="PackedScene" id=8]
-[ext_resource path="res://Scenes/Funcao_block2.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Scenes/bedroomToStreetHouse.tscn" type="PackedScene" id=10]
 [ext_resource path="res://assets/20.png" type="Texture" id=11]
 [ext_resource path="res://assets/21.png" type="Texture" id=12]
-[ext_resource path="res://assets/primeiracena.png" type="Texture" id=13]
-[ext_resource path="res://Script/Instructions.gd" type="Script" id=14]
+[ext_resource path="res://assets/Instructions_1.png" type="Texture" id=13]
+[ext_resource path="res://assets/Instructions_2.png" type="Texture" id=14]
 [ext_resource path="res://Scenery/joystick.tscn" type="PackedScene" id=15]
 [ext_resource path="res://assets/22.png" type="Texture" id=16]
 [ext_resource path="res://assets/exc.png" type="Texture" id=17]
+[ext_resource path="res://assets/Instructions_3.png" type="Texture" id=18]
+[ext_resource path="res://assets/Instructions4.png" type="Texture" id=19]
+[ext_resource path="res://assets/Instructions5.png" type="Texture" id=20]
+[ext_resource path="res://assets/Instructions6.png" type="Texture" id=21]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 90, 35.5 )
@@ -56,15 +59,41 @@ tracks/0/keys = {
 "values": [ Vector2( 1181, 496 ), Vector2( 1181, 507 ) ]
 }
 
-[sub_resource type="RectangleShape2D" id=5]
-extents = Vector2( 104.5, 23.5 )
+[sub_resource type="Animation" id=5]
+length = 0.7
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.3, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 871, 265 ), Vector2( 871, 261 ), Vector2( 871, 252 ) ]
+}
+
+[sub_resource type="Animation" id=6]
+resource_name = "exclam"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1181, 496 ), Vector2( 1181, 507 ) ]
+}
 
 [node name="Tela_Inicio" type="Node2D"]
 position = Vector2( 3, 0 )
 script = ExtResource( 4 )
-
-[node name="Funcao_block2" parent="." instance=ExtResource( 9 )]
-position = Vector2( 1308, 414 )
 
 [node name="StaticBody2D2" parent="." instance=ExtResource( 8 )]
 position = Vector2( -4, 3 )
@@ -79,10 +108,6 @@ path = "res://Scenery/streetHouse.tscn"
 
 [node name="Funcao_block" parent="." instance=ExtResource( 6 )]
 position = Vector2( 1071, 410 )
-
-[node name="Funcao_block3" parent="." instance=ExtResource( 6 )]
-position = Vector2( 871, 408 )
-scale = Vector2( 0.7, 1.05 )
 
 [node name="Joystick" parent="." instance=ExtResource( 15 )]
 
@@ -136,20 +161,111 @@ texture = ExtResource( 17 )
 anims/RESET = SubResource( 3 )
 anims/exclam = SubResource( 4 )
 
-[node name="Instructions" type="Sprite" parent="."]
-visible = false
-position = Vector2( 640, 360 )
-scale = Vector2( 0.0604544, 0.0723845 )
+[node name="Excla2" type="Sprite" parent="."]
+position = Vector2( 871, 265 )
+scale = Vector2( 0.171752, 0.178344 )
+texture = ExtResource( 17 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Excla2"]
+anims/RESET = SubResource( 5 )
+anims/exclam = SubResource( 6 )
+
+[node name="Button_Instructions1" type="Button" parent="."]
+margin_left = 429.0
+margin_top = 176.0
+margin_right = 549.0
+margin_bottom = 224.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Instructions1" type="Sprite" parent="Button_Instructions1"]
+position = Vector2( -160, -64 )
+scale = Vector2( 0.454427, 0.460648 )
 texture = ExtResource( 13 )
-script = ExtResource( 14 )
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="Button_Instructions2" type="Button" parent="."]
+visible = false
+margin_left = 837.0
+margin_top = 192.0
+margin_right = 949.0
+margin_bottom = 236.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2( 1070.5, 523.5 )
-shape = SubResource( 5 )
+[node name="Instructions2" type="Sprite" parent="Button_Instructions2"]
+visible = false
+position = Vector2( -160, -75 )
+scale = Vector2( 0.411458, 0.47037 )
+texture = ExtResource( 14 )
+
+[node name="Button_Instructions3" type="Button" parent="."]
+visible = false
+margin_left = 1053.0
+margin_top = 192.0
+margin_right = 1165.0
+margin_bottom = 243.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Instructions3" type="Sprite" parent="Button_Instructions3"]
+position = Vector2( -126, -40 )
+scale = Vector2( 0.433333, 0.454861 )
+texture = ExtResource( 18 )
+
+[node name="Button_Instructions4" type="Button" parent="."]
+visible = false
+margin_left = 1149.0
+margin_top = 236.0
+margin_right = 1263.0
+margin_bottom = 280.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Instructions4" type="Sprite" parent="Button_Instructions4"]
+position = Vector2( -160, -48 )
+scale = Vector2( 0.447917, 0.437963 )
+texture = ExtResource( 19 )
+
+[node name="Button_Instructions5" type="Button" parent="."]
+visible = false
+margin_left = 589.0
+margin_top = 294.0
+margin_right = 685.0
+margin_bottom = 344.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Instructions5" type="Sprite" parent="Button_Instructions5"]
+position = Vector2( -141, -29 )
+scale = Vector2( 0.380208, 0.536111 )
+texture = ExtResource( 20 )
+
+[node name="Button_Instructions6" type="Button" parent="."]
+visible = false
+margin_left = 997.0
+margin_top = 640.0
+margin_right = 1117.0
+margin_bottom = 688.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Instructions6" type="Sprite" parent="Button_Instructions6"]
+position = Vector2( -136, -32 )
+scale = Vector2( 0.44375, 0.468519 )
+texture = ExtResource( 21 )
 
 [connection signal="body_entered" from="ComputerArea" to="." method="_on_ComputerArea_body_entered"]
 [connection signal="body_entered" from="wardrobe" to="wardrobe" method="_on_wardrobe_body_entered"]
 [connection signal="body_exited" from="wardrobe" to="wardrobe" method="_on_wardrobe_body_exited"]
-[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
+[connection signal="pressed" from="Button_Instructions1" to="." method="_on_Button_Instructions1_pressed"]
+[connection signal="pressed" from="Button_Instructions2" to="." method="_on_Button_Instructions2_pressed"]
+[connection signal="pressed" from="Button_Instructions3" to="." method="_on_Button_Instructions3_pressed"]
+[connection signal="pressed" from="Button_Instructions4" to="." method="_on_Button_Instructions4_pressed"]
+[connection signal="pressed" from="Button_Instructions5" to="." method="_on_Button_Instructions5_pressed"]
+[connection signal="pressed" from="Button_Instructions6" to="." method="_on_Button_Instructions6_pressed"]

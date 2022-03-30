@@ -74,3 +74,11 @@ func _on_Button_house_4_pressed():
 		get_tree().change_scene("res://Scenes/StoreCart.tscn")
 	else:
 		pass
+
+
+func _on_Button_pressed():
+	get_tree().change_scene("res://Scenes/store_pets.tscn")
+
+
+func _on_Button2_pressed():
+	get_tree().change_scene("res://Scenes/StoreHome.tscn")

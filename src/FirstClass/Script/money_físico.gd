@@ -1,4 +1,4 @@
 extends RichTextLabel
 
 func _ready():
-	self.text = (str(Global.money).pad_decimals(2))
+	self.bbcode_text = (str ("[center]R$%.2f" % float (Global.money)))

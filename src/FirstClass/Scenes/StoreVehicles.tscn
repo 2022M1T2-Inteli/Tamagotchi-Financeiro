@@ -1,10 +1,11 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://Scenes/StoreMenu.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/ButtonStore.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Script/StoreVehicles.gd" type="Script" id=3]
-[ext_resource path="res://assets/Store_Vehicles.png" type="Texture" id=4]
+[ext_resource path="res://assets/story2.png" type="Texture" id=4]
 [ext_resource path="res://Fonts/Minecraftia-Regular.ttf" type="DynamicFontData" id=5]
+[ext_resource path="res://Scenes/CanvasLayer.tscn" type="PackedScene" id=6]
 
 [sub_resource type="DynamicFont" id=1]
 size = 24
@@ -25,6 +26,10 @@ font_data = ExtResource( 5 )
 [sub_resource type="DynamicFont" id=5]
 size = 24
 font_data = ExtResource( 5 )
+
+[sub_resource type="StyleBoxEmpty" id=6]
+
+[sub_resource type="StyleBoxEmpty" id=7]
 
 [node name="Store - Vehicles" type="Node2D"]
 script = ExtResource( 3 )
@@ -138,8 +143,35 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Button" type="Button" parent="."]
+show_behind_parent = true
+margin_left = 13.0
+margin_top = 6.0
+margin_right = 37.0
+margin_bottom = 41.0
+custom_styles/normal = SubResource( 6 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Button2" type="Button" parent="."]
+show_behind_parent = true
+margin_left = 40.0
+margin_top = 6.0
+margin_right = 62.0
+margin_bottom = 41.0
+custom_styles/normal = SubResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CanvasLayer2" parent="." instance=ExtResource( 6 )]
+
 [connection signal="pressed" from="Bicycle" to="." method="_on_Bicycle_pressed"]
 [connection signal="pressed" from="Eletric_Bike" to="." method="_on_Eletric_Bike_pressed"]
 [connection signal="pressed" from="Motorcycle" to="." method="_on_Motorcycle_pressed"]
 [connection signal="pressed" from="Standard_Car" to="." method="_on_Standard_Car_pressed"]
 [connection signal="pressed" from="Deluxe_Car" to="." method="_on_Deluxe_Car_pressed"]
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]

@@ -1,12 +1,13 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://Scenes/StoreMenu.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/ButtonStore.tscn" type="PackedScene" id=2]
-[ext_resource path="res://assets/Store_Cart.png" type="Texture" id=3]
+[ext_resource path="res://assets/story17.png" type="Texture" id=3]
 [ext_resource path="res://Script/StoreCart.gd" type="Script" id=4]
 [ext_resource path="res://Fonts/Minecraftia-Regular.ttf" type="DynamicFontData" id=5]
 [ext_resource path="res://assets/fundo preto.png" type="Texture" id=6]
 [ext_resource path="res://assets/EduFin App (6).png" type="Texture" id=7]
+[ext_resource path="res://Scenes/CanvasLayer3.tscn" type="PackedScene" id=8]
 
 [sub_resource type="DynamicFont" id=1]
 size = 29
@@ -86,6 +87,8 @@ margin_left = 47.0
 margin_top = 159.0
 margin_right = 332.0
 margin_bottom = 224.0
+
+[node name="CanvasLayer" parent="HomeRectangle" instance=ExtResource( 8 )]
 
 [node name="BooksRectangle" parent="." instance=ExtResource( 2 )]
 margin_left = 46.0

@@ -11,3 +11,4 @@ func _on_Button_pressed():
 	Global.change_position(5450,500)
 	changer.change_scene(Global.current_scene)
 	Global.total = 0
+	$"/root/Ambient".play()

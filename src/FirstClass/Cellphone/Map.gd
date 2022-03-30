@@ -39,3 +39,19 @@ func _on_Button_bank_pressed():
 		get_tree().change_scene("res://Scenes/Bank.tscn")
 	else:
 		pass
+
+func _on_Button_work_pressed():
+	if(Global.school):
+		get_tree().paused = false
+		Global.change_position(151,689)
+		get_tree().change_scene("res://Scenery/work.tscn")
+	else:
+		pass
+func _on_Button_park_pressed():
+	if(Global.school):
+		get_tree().paused = false
+		Global.change_position(13390,714)
+		get_tree().change_scene("res://Scenery/streetHouse.tscn")
+	else:
+		pass
+
