@@ -8,4 +8,4 @@ func _ready():
 	$RichTextLabel5.text = str (Global.work)
 
 func _on_Button_pressed():
-	pass # Replace with function body.
+	get_tree().change_scene("res://Scenery/bedroom.tscn")
