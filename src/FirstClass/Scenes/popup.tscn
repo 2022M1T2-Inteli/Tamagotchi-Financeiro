@@ -97,11 +97,10 @@ anchor_left = 0.819
 anchor_top = 0.032
 anchor_right = 0.893
 anchor_bottom = 0.12
-margin_left = -0.225098
-margin_top = -11.976
-margin_right = 0.424927
-margin_bottom = -0.160004
-icon = ExtResource( 2 )
+margin_left = -10.225
+margin_top = -6.976
+margin_right = 2.42505
+margin_bottom = 4.84
 flat = true
 __meta__ = {
 "_edit_use_anchors_": false
@@ -110,6 +109,11 @@ __meta__ = {
 [node name="AnimationPlayer" type="AnimationPlayer" parent="question_button"]
 anims/RESET = SubResource( 4 )
 anims/aviso = SubResource( 5 )
+
+[node name="Newemailteste" type="Sprite" parent="question_button"]
+position = Vector2( 53, 41 )
+scale = Vector2( 1.5241, 1.42029 )
+texture = ExtResource( 2 )
 
 [node name="close_button" type="Button" parent="."]
 visible = false
