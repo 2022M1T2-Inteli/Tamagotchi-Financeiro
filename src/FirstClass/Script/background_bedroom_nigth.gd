@@ -73,3 +73,9 @@ func _on_Area2D_body_entered(body):
 		
 		Global.inflation += rng.randf_range(1.5,3)
 		changer.change_scene(Global.current_scene)
+		
+				
+		if Global.happiness >= 80 && Global.actions < 8: 
+			Global.actions += 1
+		elif Global.happiness <= 30 && Global.actions > 0:
+			Global.actions -=1

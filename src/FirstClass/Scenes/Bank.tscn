@@ -175,7 +175,6 @@ position = Vector2( 37, -199.5 )
 shape = SubResource( 9 )
 
 [node name="Button" type="Button" parent="."]
-visible = false
 show_behind_parent = true
 margin_left = -1178.0
 margin_top = -491.0
