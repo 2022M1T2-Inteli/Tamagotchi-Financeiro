@@ -3,6 +3,7 @@ extends Node2D
 func _ready():
 	$Excla/AnimationPlayer.play("RESET")
 	$Excla2.visible = false
+	$"/root/Ambient".stop()
 
 
 func _on_Button_1_pressed():
