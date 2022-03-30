@@ -1,10 +1,11 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://musicfx.tscn" type="PackedScene" id=1]
-[ext_resource path="res://assets/MenuNew.png" type="Texture" id=2]
+[ext_resource path="res://assets/EduFin App.webm" type="VideoStream" id=2]
+[ext_resource path="res://Script/VideoPlayer.gd" type="Script" id=3]
 
 [sub_resource type="GDScript" id=1]
-script/source = "extends Node2D
+script/source = "extends Control
 
 func _ready():
 	pass
@@ -16,16 +17,20 @@ func _on_Button_pressed():
 	get_tree().quit()
 "
 
-[node name="Node2D" type="Node2D"]
-position = Vector2( -2, 2 )
+[node name="Node2D" type="Control"]
 script = SubResource( 1 )
-
-[node name="MenuNew" type="Sprite" parent="."]
-position = Vector2( 641, 357 )
-scale = Vector2( 0.666146, 0.665741 )
-texture = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="musicfx" parent="." instance=ExtResource( 1 )]
+
+[node name="VideoPlayer" type="VideoPlayer" parent="."]
+margin_right = 1283.0
+margin_bottom = 718.0
+stream = ExtResource( 2 )
+autoplay = true
+script = ExtResource( 3 )
 
 [node name="Button" type="Button" parent="."]
 show_behind_parent = true
@@ -47,5 +52,6 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[connection signal="finished" from="VideoPlayer" to="VideoPlayer" method="_on_VideoPlayer_finished"]
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="Button_tela_inicio" to="." method="_on_Button_tela_inicio_pressed"]

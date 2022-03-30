@@ -8,7 +8,7 @@
 [ext_resource path="res://Fonts/Minecraftia-Regular.ttf" type="DynamicFontData" id=6]
 [ext_resource path="res://Scenes/instructionsSoda.gd" type="Script" id=7]
 [ext_resource path="res://Scenes/Player_certo_4.gd" type="Script" id=8]
-[ext_resource path="res://assets/instructionsSoda.png" type="Texture" id=9]
+[ext_resource path="res://assets/36.png" type="Texture" id=9]
 [ext_resource path="res://Audios/Uncan - Wave of the Synth.mp3" type="AudioStream" id=10]
 
 [sub_resource type="RectangleShape2D" id=1]

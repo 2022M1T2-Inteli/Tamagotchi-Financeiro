@@ -33,6 +33,7 @@ var monthly_expenses : float = 1000
 var cont : int = 0
 var work = ""
 
+
 func _ready():
 	pass # Replace with function body.
 
