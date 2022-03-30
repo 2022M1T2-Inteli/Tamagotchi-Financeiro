@@ -26,7 +26,7 @@ func _ready():
 
 func _on_Area2D_body_entered(body):
 	if body.name == "Player_certo":
-		Global.current_scene = "res://Scenery/bedroom.tscn"
+		Global.current_scene = "res://Scenes/mudar_ciclo.tscn"
 		Global.position.x = 150
 		Global.position.y = 705
 		Global.day += 1
@@ -73,3 +73,9 @@ func _on_Area2D_body_entered(body):
 		
 		Global.inflation += rng.randf_range(1.5,3)
 		changer.change_scene(Global.current_scene)
+		
+				
+		if Global.happiness >= 80 && Global.actions < 8: 
+			Global.actions += 1
+		elif Global.happiness <= 30 && Global.actions > 0:
+			Global.actions -=1

@@ -175,6 +175,7 @@ anims/RESET = SubResource( 5 )
 anims/exclam = SubResource( 6 )
 
 [node name="Button_Instructions1" type="Button" parent="."]
+visible = false
 margin_left = 429.0
 margin_top = 176.0
 margin_right = 549.0
