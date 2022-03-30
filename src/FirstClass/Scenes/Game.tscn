@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Script/Game.gd" type="Script" id=2]
@@ -8,6 +8,8 @@
 [ext_resource path="res://Scenes/Cloud.tscn" type="PackedScene" id=6]
 [ext_resource path="res://assets/pixil-frame-0 (9).png" type="Texture" id=7]
 [ext_resource path="res://assets/balon.png" type="Texture" id=8]
+[ext_resource path="res://assets/intructionsPark.png" type="Texture" id=9]
+[ext_resource path="res://assets/loseParkMinigame.png" type="Texture" id=10]
 
 [sub_resource type="Animation" id=2]
 resource_name = "default"
@@ -48,6 +50,14 @@ tracks/0/keys = {
 
 [sub_resource type="RectangleShape2D" id=4]
 extents = Vector2( 643.75, 31.25 )
+
+[sub_resource type="StyleBoxEmpty" id=5]
+
+[sub_resource type="StyleBoxEmpty" id=6]
+
+[sub_resource type="StyleBoxEmpty" id=7]
+
+[sub_resource type="StyleBoxEmpty" id=8]
 
 [node name="Game" type="Node"]
 script = ExtResource( 2 )
@@ -165,6 +175,34 @@ position = Vector2( -5, -3 )
 position = Vector2( 648, 694 )
 shape = SubResource( 4 )
 
+[node name="IntructionsPark" type="Sprite" parent="."]
+visible = false
+position = Vector2( 640, 360 )
+scale = Vector2( 0.264572, 0.264609 )
+texture = ExtResource( 9 )
+
+[node name="Button1" type="Button" parent="."]
+pause_mode = 2
+show_behind_parent = true
+margin_left = 1.0
+margin_top = -1.0
+margin_right = 1278.0
+margin_bottom = 721.0
+custom_styles/hover = SubResource( 5 )
+custom_styles/pressed = SubResource( 6 )
+custom_styles/focus = SubResource( 7 )
+custom_styles/normal = SubResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LoseParkMinigame" type="Sprite" parent="."]
+visible = false
+position = Vector2( 641, 360 )
+scale = Vector2( 0.264986, 0.264609 )
+texture = ExtResource( 10 )
+
 [connection signal="timeout" from="SpawnTimer" to="." method="_on_SpawnTimer_timeout"]
 [connection signal="timeout" from="ScoreTimer" to="." method="_on_ScoreTimer_timeout"]
 [connection signal="timeout" from="DifficultTimer" to="." method="_on_DifficultTimer_timeout"]
+[connection signal="pressed" from="Button1" to="." method="_on_Button1_pressed"]

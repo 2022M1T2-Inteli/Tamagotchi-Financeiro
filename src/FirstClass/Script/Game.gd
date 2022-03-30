@@ -20,6 +20,10 @@ var score: int
 var game_speed: float = 200
 var modifier: float = 0.05
 
+func _ready():
+	$IntructionsPark.visible = true
+	get_tree().paused = true
+
 func spawn_obstacle() -> void:
 	var spawn_id: int = randi() % 2
 	var spawn_point: Node
@@ -64,3 +68,8 @@ func _on_ScoreTimer_timeout() -> void:
 func _on_DifficultTimer_timeout():
 	game_speed += game_speed * modifier
 	$SpawnTimer.wait_time -= $SpawnTimer.wait_time * modifier
+
+
+func _on_Button1_pressed():
+	$IntructionsPark.visible = false
+	get_tree().paused = false
