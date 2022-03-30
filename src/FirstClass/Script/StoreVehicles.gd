@@ -95,3 +95,11 @@ func _on_Deluxe_Car_pressed():
 		get_tree().change_scene("res://Scenes/StoreCart.tscn")
 	else:
 		pass
+
+
+func _on_Button_pressed():
+		get_tree().change_scene("res://Scenes/StoreBooks.tscn")
+
+
+func _on_Button2_pressed():
+		get_tree().change_scene("res://Scenes/store_t-shirt.tscn")

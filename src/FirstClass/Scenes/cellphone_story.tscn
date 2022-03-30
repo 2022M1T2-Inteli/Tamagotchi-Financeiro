@@ -9,7 +9,7 @@
 [ext_resource path="res://assets/story_7.png" type="Texture" id=7]
 [ext_resource path="res://assets/story_6.png" type="Texture" id=8]
 [ext_resource path="res://Script/cellphone_story.gd" type="Script" id=9]
-[ext_resource path="res://assets/seta direita pixel.png" type="Texture" id=10]
+[ext_resource path="res://assets/continuar.png" type="Texture" id=10]
 
 [sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 0.6, 0.6, 0.6, 0 )
@@ -96,11 +96,11 @@ wait_time = 1.5
 
 [node name="Button" type="Button" parent="."]
 visible = false
-margin_left = 708.0
-margin_top = 611.0
-margin_right = 1048.0
-margin_bottom = 781.0
-rect_scale = Vector2( 0.5, 0.5 )
+margin_left = 962.0
+margin_top = 559.0
+margin_right = 5800.0
+margin_bottom = 3280.0
+rect_scale = Vector2( 0.07, 0.07 )
 custom_styles/hover = SubResource( 1 )
 custom_styles/pressed = SubResource( 2 )
 custom_styles/normal = SubResource( 3 )

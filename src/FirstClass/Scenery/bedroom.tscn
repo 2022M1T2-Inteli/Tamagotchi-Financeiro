@@ -166,7 +166,7 @@ anims/RESET = SubResource( 3 )
 anims/exclam = SubResource( 4 )
 
 [node name="Excla2" type="Sprite" parent="."]
-position = Vector2( 871, 254.264 )
+position = Vector2( 871, 265 )
 scale = Vector2( 0.171752, 0.178344 )
 texture = ExtResource( 17 )
 

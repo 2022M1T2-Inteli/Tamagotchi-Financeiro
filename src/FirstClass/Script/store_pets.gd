@@ -73,3 +73,10 @@ func _on_Button_pet_4_pressed():
 		get_tree().change_scene("res://Scenes/StoreCart.tscn")
 	else:
 		pass
+
+
+func _on_Button2_pressed():
+	get_tree().change_scene("res://Scenes/store_t-shirt.tscn")
+
+func _on_Button_pressed():
+	get_tree().change_scene("res://Scenes/store_residence.tscn")

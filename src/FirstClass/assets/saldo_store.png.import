@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/action_button.png-299829881e702dd1f04e3f8e4ab6e8e7.stex"
+path="res://.import/saldo_store.png-2822be77ec5144120c844572656a112e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/action_button.png"
-dest_files=[ "res://.import/action_button.png-299829881e702dd1f04e3f8e4ab6e8e7.stex" ]
+source_file="res://assets/saldo_store.png"
+dest_files=[ "res://.import/saldo_store.png-2822be77ec5144120c844572656a112e.stex" ]
 
 [params]
 
