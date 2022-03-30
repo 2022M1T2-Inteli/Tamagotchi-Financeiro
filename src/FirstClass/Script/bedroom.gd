@@ -7,6 +7,7 @@ func _ready():
 	for i in range(1,5):
 		get_node(str(i)).visible = StoreManagement.products[3][i-1]
 	$Player_certo.visible = false
+	$"/root/Ambient".play()
 
 func _on_Button_Instructions1_pressed():
 	$Button_Instructions2/Instructions2.visible = true
