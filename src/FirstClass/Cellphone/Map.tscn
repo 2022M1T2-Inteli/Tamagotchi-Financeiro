@@ -75,6 +75,7 @@ __meta__ = {
 }
 
 [node name="Button_work" type="Button" parent="."]
+pause_mode = 2
 show_behind_parent = true
 margin_left = 661.0
 margin_top = 415.0
@@ -86,6 +87,7 @@ __meta__ = {
 }
 
 [node name="Button_park" type="Button" parent="."]
+pause_mode = 2
 show_behind_parent = true
 margin_left = 610.0
 margin_top = 505.0
