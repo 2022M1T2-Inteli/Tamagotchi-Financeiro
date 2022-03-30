@@ -30,6 +30,7 @@ var recordsBank : Array = []
 var player_job = 0
 var update_wallet = [false, 0]
 
+
 func _ready():
 	pass # Replace with function body.
 
