@@ -1,5 +1,11 @@
 extends Node2D
 
+var busTaxi
+var new_node
+
+#onready var sceneWithButton = preload("res://Cellphone/Cellphone.tscn")
+
+
 # Functions for the Map
 # This functions are responsible for transitions between sceneries (Fast Travel)
 
@@ -19,25 +25,17 @@ func _ready():
 	pass # Replace with function body.
 
 func _on_Button_exit_map_pressed():
+	Global.button = true
 	self.queue_free()
+	
+	
+func _on_Button_college_pressed() -> void:
+	busTaxi = preload("res://Scenes/busUniversity.tscn")
+	new_node = busTaxi.instance()
+	new_node.global_position = Vector2.ZERO
+	add_child(new_node)
+	new_node.global_position = Vector2(0, 0)
 
-
-func _on_Button_market_pressed():
-	if(Global.school):
-		get_tree().paused = false
-		Global.change_position(150,705)
-		Global.current_scene = "res://Scenes/startMarket.tscn"
-		get_tree().change_scene("res://Scenes/startMarket.tscn")
-	else:
-		pass
-
-
-func _on_Button_college_pressed():
-	get_tree().paused = false
-	if(!Global.school):
-		Global.change_position(177, 674)
-		Global.current_scene = "res://Scenery/classUniversity.tscn"
-		get_tree().change_scene("res://Scenery/classUniversity.tscn")
 
 
 func _on_Button_bedroom_pressed():
@@ -48,29 +46,31 @@ func _on_Button_bedroom_pressed():
 
 
 func _on_Button_bank_pressed():
-	if(Global.school):
-		get_tree().paused = false
-		Global.change_position(-1040, 218)
-		Global.current_scene = "res://Scenes/Bank.tscn"
-		get_tree().change_scene("res://Scenes/Bank.tscn")
-	else:
-		pass
+	busTaxi = preload("res://Scenes/busBank.tscn")
+	new_node = busTaxi.instance()
+	new_node.global_position = Vector2.ZERO
+	add_child(new_node)
+	new_node.global_position = Vector2(0, 0)
 
 func _on_Button_work_pressed():
-	if(Global.school):
-		get_tree().paused = false
-		Global.change_position(151,689)
-		Global.current_scene = "res://Scenery/work.tscn"
-		get_tree().change_scene("res://Scenery/work.tscn")
-	else:
-		pass
+	busTaxi = preload("res://Scenes/buswork.tscn")
+	new_node = busTaxi.instance()
+	new_node.global_position = Vector2.ZERO
+	add_child(new_node)
+	new_node.global_position = Vector2(0, 0)
 
 func _on_Button_park_pressed():
-	if(Global.school):
-		get_tree().paused = false
-		Global.change_position(13390,714)
-		Global.current_scene = "res://Scenery/streetHouse.tscn"
-		get_tree().change_scene("res://Scenery/streetHouse.tscn")
-	else:
-		pass
+	busTaxi = preload("res://Scenes/busPark.tscn")
+	new_node = busTaxi.instance()
+	new_node.global_position = Vector2.ZERO
+	add_child(new_node)
+	new_node.global_position = Vector2(0, 0)
+
+
+func _on_Button_market_pressed():
+	busTaxi = preload("res://Scenes/busMarket.tscn")
+	new_node = busTaxi.instance()
+	new_node.global_position = Vector2.ZERO
+	add_child(new_node)
+	new_node.global_position = Vector2(0, 0)
 

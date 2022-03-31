@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=2]
+[gd_scene load_steps=28 format=2]
 
 [ext_resource path="res://Scenes/Transition_in.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/Player_certo.tscn" type="PackedScene" id=2]
@@ -58,6 +58,41 @@ tracks/0/keys = {
 "update": 0,
 "values": [ Vector2( 1181, 496 ), Vector2( 1181, 507 ) ]
 }
+
+[sub_resource type="Animation" id=5]
+length = 0.7
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.3, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 871, 265 ), Vector2( 871, 261 ), Vector2( 871, 252 ) ]
+}
+
+[sub_resource type="Animation" id=6]
+resource_name = "exclam"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1181, 496 ), Vector2( 1181, 507 ) ]
+}
+
+[sub_resource type="RectangleShape2D" id=7]
+extents = Vector2( 115.5, 30 )
 
 [node name="Tela_Inicio" type="Node2D"]
 position = Vector2( 3, 0 )
@@ -132,6 +167,15 @@ texture = ExtResource( 17 )
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Excla"]
 anims/RESET = SubResource( 3 )
 anims/exclam = SubResource( 4 )
+
+[node name="Excla2" type="Sprite" parent="."]
+position = Vector2( 871, 265 )
+scale = Vector2( 0.171752, 0.178344 )
+texture = ExtResource( 17 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Excla2"]
+anims/RESET = SubResource( 5 )
+anims/exclam = SubResource( 6 )
 
 [node name="Button_Instructions1" type="Button" parent="."]
 visible = false
@@ -224,6 +268,12 @@ position = Vector2( -136, -32 )
 scale = Vector2( 0.44375, 0.468519 )
 texture = ExtResource( 21 )
 
+[node name="shelfBooks" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="shelfBooks"]
+position = Vector2( 1070.5, 524 )
+shape = SubResource( 7 )
+
 [connection signal="body_entered" from="ComputerArea" to="." method="_on_ComputerArea_body_entered"]
 [connection signal="body_entered" from="wardrobe" to="wardrobe" method="_on_wardrobe_body_entered"]
 [connection signal="pressed" from="Button_Instructions1" to="." method="_on_Button_Instructions1_pressed"]
@@ -232,3 +282,4 @@ texture = ExtResource( 21 )
 [connection signal="pressed" from="Button_Instructions4" to="." method="_on_Button_Instructions4_pressed"]
 [connection signal="pressed" from="Button_Instructions5" to="." method="_on_Button_Instructions5_pressed"]
 [connection signal="pressed" from="Button_Instructions6" to="." method="_on_Button_Instructions6_pressed"]
+[connection signal="body_entered" from="shelfBooks" to="." method="_on_shelfBooks_body_entered"]

@@ -9,8 +9,9 @@ var j = 0
 # Index for item_status
 # 0 - Actions
 # 1 - Happiness
-# 2 - Knowledge
-var item_status = [0,0,0]
+# 2 - Passive Happiness
+# 3 - Monthly expenses
+var item_status = [0,0,0,0]
 
 
 # Product disponibility matrix
