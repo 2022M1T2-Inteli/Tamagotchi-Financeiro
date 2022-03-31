@@ -50,7 +50,8 @@ func _on_finish_pressed():
 		if(Global.actions < StoreManagement.item_status[0]):
 			Global.actions = StoreManagement.item_status[0] 
 		Global.happiness += StoreManagement.item_status[1] 
-		Global.knowledge += StoreManagement.item_status[2]
+		Global.passive_happiness += StoreManagement.item_status[2] 
+		Global.monthly_expenses += StoreManagement.item_status[3]
 		Global.recordsPrice.append(StoreManagement.store_total*-1)
 		Global.update_wallet[0] = true
 		Global.update_wallet[1] = Global.recordsPrice.back() 
@@ -60,7 +61,8 @@ func _on_finish_pressed():
 		if(Global.actions < StoreManagement.item_status[0]):
 			Global.actions = StoreManagement.item_status[0] 
 		Global.happiness += StoreManagement.item_status[1] 
-		Global.knowledge += StoreManagement.item_status[2] 
+		Global.passive_happiness += StoreManagement.item_status[2] 
+		Global.monthly_expenses += StoreManagement.item_status[3]
 		StoreManagement.products[StoreManagement.i][StoreManagement.j] = true
 		get_tree().change_scene("res://Scenes/StoreEndshop.tscn")
 	else:
