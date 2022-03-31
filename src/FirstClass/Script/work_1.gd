@@ -52,17 +52,17 @@ func _on_button_job1_3_pressed():
 
 	
 func _on_Area2D3_body_entered(body):
-	
-	if Global.player_job == 1 && Global.actions >= 1||Global.player_job == 4 && Global.actions >= 1||Global.player_job ==7 && Global.actions >= 1||Global.player_job ==10 && Global.actions >= 1||Global.player_job ==13 && Global.actions >= 1  :
-		Global.actions -=1 
-		Global.current_scene = "res://Scenes/work_1.0.tscn"
-		get_tree().change_scene(Global.current_scene)
-	if Global.player_job == 2 && Global.actions >= 2 ||Global.player_job == 5 && Global.actions >= 2 ||Global.player_job ==8 && Global.actions >= 2||Global.player_job ==11 && Global.actions >= 2||Global.player_job ==14 && Global.actions >= 2  :
-		Global.actions -=2
-		Global.current_scene = "res://Scenes/work_1.0.tscn"
-		get_tree().change_scene(Global.current_scene)
-	if Global.player_job == 3 && Global.actions >= 3||Global.player_job == 6 && Global.actions >= 3||Global.player_job ==9 && Global.actions >= 3||Global.player_job ==12 && Global.actions >= 3||Global.player_job ==15 && Global.actions >= 3  :
-		Global.actions -=3 
-		Global.current_scene = "res://Scenes/work_1.0.tscn"
-		get_tree().change_scene(Global.current_scene)
-		
+	if(body.name == "Player_certo"):
+		if (Global.player_job == 1 && Global.actions >= 1) || (Global.player_job == 4 && Global.actions >= 1) || (Global.player_job ==7 && Global.actions >= 1) || (Global.player_job ==10 && Global.actions >= 1) || (Global.player_job ==13 && Global.actions >= 1):
+			Global.actions -=1 
+			Global.current_scene = "res://Scenes/work_1.0.tscn"
+			get_tree().change_scene(Global.current_scene)
+		elif (Global.player_job == 2 && Global.actions >= 2) || (Global.player_job == 5 && Global.actions >= 2) || (Global.player_job ==8 && Global.actions >= 2) || (Global.player_job ==11 && Global.actions >= 2) || (Global.player_job ==14 && Global.actions >= 2):
+			Global.actions -=2
+			Global.current_scene = "res://Scenes/work_1.0.tscn"
+			get_tree().change_scene(Global.current_scene)
+		elif (Global.player_job == 3 && Global.actions >= 3) || (Global.player_job == 6 && Global.actions >= 3) || (Global.player_job ==9 && Global.actions >= 3) || (Global.player_job ==12 && Global.actions >= 3) || (Global.player_job ==15 && Global.actions >= 3):
+			Global.actions -=3 
+			Global.current_scene = "res://Scenes/work_1.0.tscn"
+			get_tree().change_scene(Global.current_scene)
+			
