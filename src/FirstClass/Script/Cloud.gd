@@ -12,5 +12,5 @@ func _ready() -> void:
 
 func _process(delta: float) -> void:
 	if global_position.x < -POSITION_OFFSET:
-		global_position.x = 640 + POSITION_OFFSET
+		global_position.x = 1200 + POSITION_OFFSET
 	pass

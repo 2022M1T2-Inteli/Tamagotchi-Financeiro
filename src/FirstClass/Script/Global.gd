@@ -35,6 +35,8 @@ var work = ""
 var letter = false
 var excla = false
 var transition = false
+var excla2 = false
+var excla3 = false
 
 func _ready():
 	pass # Replace with function body.
