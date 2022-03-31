@@ -3,7 +3,7 @@
 [ext_resource path="res://Scenes/StoreMenu.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/ButtonStore.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Script/StoreBooks.gd" type="Script" id=3]
-[ext_resource path="res://assets/booksNew.png" type="Texture" id=4]
+[ext_resource path="res://assets/story3.png" type="Texture" id=4]
 [ext_resource path="res://Fonts/Minecraftia-Regular.ttf" type="DynamicFontData" id=5]
 [ext_resource path="res://Scenes/CanvasLayer.tscn" type="PackedScene" id=6]
 
@@ -79,6 +79,7 @@ custom_colors/default_color = Color( 0, 0, 0, 1 )
 custom_fonts/normal_font = SubResource( 1 )
 bbcode_enabled = true
 __meta__ = {
+"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 
@@ -92,6 +93,7 @@ custom_colors/default_color = Color( 0, 0, 0, 1 )
 custom_fonts/normal_font = SubResource( 2 )
 bbcode_enabled = true
 __meta__ = {
+"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 
@@ -105,6 +107,7 @@ custom_colors/default_color = Color( 0, 0, 0, 1 )
 custom_fonts/normal_font = SubResource( 3 )
 bbcode_enabled = true
 __meta__ = {
+"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 
@@ -118,6 +121,7 @@ custom_colors/default_color = Color( 0, 0, 0, 1 )
 custom_fonts/normal_font = SubResource( 4 )
 bbcode_enabled = true
 __meta__ = {
+"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 

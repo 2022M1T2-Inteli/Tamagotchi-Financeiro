@@ -32,8 +32,6 @@ var update_wallet = [false, 0]
 var monthly_expenses : float = 1000
 var cont : int = 0
 var work = ""
-var button = false
-
 
 
 func _ready():

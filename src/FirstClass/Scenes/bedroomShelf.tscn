@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://assets/fundo preto.png" type="Texture" id=1]
 [ext_resource path="res://assets/bedroomdaywin.png" type="Texture" id=2]
@@ -8,10 +8,8 @@
 [ext_resource path="res://assets/pinkBook2.png" type="Texture" id=6]
 [ext_resource path="res://assets/greenBook2.png" type="Texture" id=7]
 [ext_resource path="res://assets/blueBook2.png" type="Texture" id=8]
-[ext_resource path="res://Script/bedroomShelf.gd" type="Script" id=9]
 
 [node name="Node2D" type="Node2D"]
-script = ExtResource( 9 )
 
 [node name="Bedroomdaywin" type="Sprite" parent="."]
 position = Vector2( 640, 360 )
@@ -28,93 +26,27 @@ position = Vector2( 640, 360 )
 scale = Vector2( 0.264572, 0.264609 )
 texture = ExtResource( 3 )
 
-[node name="Book_0" type="Sprite" parent="."]
-position = Vector2( 487, 211 )
+[node name="BlueBook2" type="Sprite" parent="."]
+position = Vector2( 487, 220 )
 scale = Vector2( 0.275526, 0.224957 )
 texture = ExtResource( 8 )
 
-[node name="Book_1" type="Sprite" parent="."]
-position = Vector2( 638, 212 )
-scale = Vector2( 0.268366, 0.223446 )
-texture = ExtResource( 4 )
-
-[node name="Book_2" type="Sprite" parent="."]
-position = Vector2( 790.789, 211.398 )
-scale = Vector2( 0.272067, 0.226922 )
+[node name="PinkBook2" type="Sprite" parent="."]
+position = Vector2( 795.156, 222.406 )
+scale = Vector2( 0.275962, 0.260328 )
 texture = ExtResource( 6 )
 
-[node name="Book_3" type="Sprite" parent="."]
-position = Vector2( 487, 409 )
-scale = Vector2( 0.254022, 0.236502 )
-texture = ExtResource( 7 )
-
-[node name="Book_4" type="Sprite" parent="."]
-position = Vector2( 788, 412 )
+[node name="RedBook2" type="Sprite" parent="."]
+position = Vector2( 795.375, 417.438 )
 scale = Vector2( 0.271497, 0.244255 )
 texture = ExtResource( 5 )
 
-[node name="Button_exit" type="Button" parent="."]
-margin_left = 1051.0
-margin_top = 604.0
-margin_right = 1260.0
-margin_bottom = 700.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
+[node name="GreenBook2" type="Sprite" parent="."]
+position = Vector2( 490, 420 )
+scale = Vector2( 0.254022, 0.236502 )
+texture = ExtResource( 7 )
 
-[node name="Book_I" type="Button" parent="."]
-show_behind_parent = true
-margin_left = 440.0
-margin_top = 150.0
-margin_right = 552.0
-margin_bottom = 299.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Book_II" type="Button" parent="."]
-show_behind_parent = true
-margin_left = 591.0
-margin_top = 150.0
-margin_right = 695.0
-margin_bottom = 298.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Book_III" type="Button" parent="."]
-show_behind_parent = true
-margin_left = 741.0
-margin_top = 147.0
-margin_right = 839.0
-margin_bottom = 298.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Book_IV" type="Button" parent="."]
-show_behind_parent = true
-margin_left = 440.0
-margin_top = 347.0
-margin_right = 547.0
-margin_bottom = 494.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Book_V" type="Button" parent="."]
-show_behind_parent = true
-margin_left = 736.0
-margin_top = 346.0
-margin_right = 852.0
-margin_bottom = 494.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[connection signal="pressed" from="Button_exit" to="." method="_on_Button_exit_pressed"]
-[connection signal="pressed" from="Book_I" to="." method="_on_Book_I_pressed"]
-[connection signal="pressed" from="Book_II" to="." method="_on_Book_II_pressed"]
-[connection signal="pressed" from="Book_III" to="." method="_on_Book_III_pressed"]
-[connection signal="pressed" from="Book_IV" to="." method="_on_Book_IV_pressed"]
-[connection signal="pressed" from="Book_V" to="." method="_on_Book_V_pressed"]
+[node name="BlackBook2" type="Sprite" parent="."]
+position = Vector2( 639, 220 )
+scale = Vector2( 0.277908, 0.24654 )
+texture = ExtResource( 4 )

@@ -34,7 +34,7 @@ func verificar():
 		get_tree().change_scene("res://Scenes/endMinigameLose.tscn")
 	elif (score == 5):
 		get_tree().change_scene("res://Scenes/endMinigameMarket.tscn")
-		Global.knowledge +=1
+		Global.knowledge +=1 
 		
 		
 
