@@ -45,13 +45,7 @@ func _on_Button_EduFin_pressed():
 
 
 func _on_Button_Volume_pressed():
-	var master_sound = AudioServer.get_bus_index("Master")
-	GameManager.is_muted = !GameManager.is_muted
-	AudioServer.set_bus_mute(master_sound, GameManager.is_muted)
-	if !GameManager.is_muted:
-		$SoundGame.texture_normal = unmuted_texture
-	else: 
-		$SoundGame.texture_normal = muted_texture
+	pass # Replace with function body.
 
 
 func _on_Button_Exit_pressed():

@@ -14,7 +14,7 @@ func _ready():
 	$Player_certo.visible = false
 	$"/root/Ambient".play()
 	
-	if !Global.letter:
+	if Global.day == 1:
 		$Button_Instructions1/Instructions1.visible = true
 		$Button_Instructions1.visible = true
 	else:
@@ -60,7 +60,6 @@ func _on_Button_Instructions6_pressed():
 	$Excla2/AnimationPlayer.play("RESET")
 	$Joystick/Control/question_button/AnimationPlayer.play("aviso")
 	$Player_certo.visible = true
-	Global.letter = true
 	
 func _on_ComputerArea_body_entered(body):
 	if body.name == "Player_certo":

@@ -6,7 +6,7 @@ func _ready():
 	$RichTextLabel3.text = str ("R$ %.2f" % float(Global.monthly_expenses))
 	$RichTextLabel4.text = str (Global.cont)
 	if Global.player_job >= 1:
-		$RichTextLabel5.text = str ("R$ %.2f" % float((Global.player_job *100)))
+		$RichTextLabel5.text = str ("R$ %.2f" % float((Global.player_job *80)+20))
 	else:
 		$RichTextLabel5.text = str(0)
 

@@ -34,8 +34,6 @@ func _on_question_button_pressed() -> void:
 	
 	if Global.money + Global.digital_money <= monthly_expenses:
 		get_node("Panel/Any_tasks_active").text += "\n\n•Seus ganhos mensais estão iguais aos gastos mensais. Cuidado!"	
-	if Global.happiness <= 30:
-		get_node("Panel/Any_tasks_active").text += "\n\n•Seu bem-estar está muito baixo! Cuidado, voce perdera energia!"	
 
 func _on_close_button_pressed() -> void:
 	$Panel/AnimationPlayer.play_backwards("popup")
