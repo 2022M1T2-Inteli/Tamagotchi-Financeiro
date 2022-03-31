@@ -28,9 +28,12 @@ var checkout : float = 0
 var positioncal = Vector2(640, 360)
 var recordsBank : Array = []
 var player_job = 0
+var update_wallet = [false, 0]
 var monthly_expenses : float = 1000
 var cont : int = 0
 var work = ""
+var letter = false
+var excla = false
 
 func _ready():
 	pass # Replace with function body.

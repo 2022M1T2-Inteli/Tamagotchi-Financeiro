@@ -23,6 +23,8 @@ func _ready():
 		Global.digital_money -= Global.total
 		
 	Global.recordsPrice.append(Global.total*-1)
+	Global.update_wallet[0] = true
+	Global.update_wallet[1] = Global.recordsPrice.back()
 
 
 

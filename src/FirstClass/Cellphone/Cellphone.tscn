@@ -45,7 +45,7 @@ size = 10
 font_data = ExtResource( 7 )
 
 [sub_resource type="DynamicFont" id=2]
-size = 22
+size = 17
 font_data = ExtResource( 7 )
 
 [node name="Node2D" type="Node2D"]
@@ -55,7 +55,7 @@ __meta__ = {
 }
 
 [node name="BlackBackground" type="Sprite" parent="."]
-position = Vector2( 640, 360 )
+position = Vector2( 641, 354 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 3 )
 
@@ -251,14 +251,13 @@ __meta__ = {
 }
 
 [node name="knownledge" type="RichTextLabel" parent="."]
-margin_left = 696.0
-margin_top = 184.0
-margin_right = 736.0
-margin_bottom = 254.0
+margin_left = 686.0
+margin_top = 188.0
+margin_right = 723.0
+margin_bottom = 341.0
 custom_colors/default_color = Color( 0, 0, 0, 1 )
 custom_fonts/normal_font = SubResource( 2 )
-text = "1
-"
+bbcode_enabled = true
 __meta__ = {
 "_edit_use_anchors_": false
 }

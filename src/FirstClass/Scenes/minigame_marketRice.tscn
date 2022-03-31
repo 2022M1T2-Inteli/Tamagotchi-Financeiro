@@ -6,7 +6,7 @@
 [ext_resource path="res://Scenes/arrow_mobile.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Scenes/minigame_marketRicee.gd" type="Script" id=5]
 [ext_resource path="res://Fonts/Minecraftia-Regular.ttf" type="DynamicFontData" id=6]
-[ext_resource path="res://assets/instructionRice.png" type="Texture" id=7]
+[ext_resource path="res://assets/37.png" type="Texture" id=7]
 [ext_resource path="res://Scenes/Player_certo_4.gd" type="Script" id=8]
 [ext_resource path="res://Scenes/instructions_minigame_market_Rice.gd" type="Script" id=9]
 [ext_resource path="res://Audios/Uncan - Wave of the Synth.mp3" type="AudioStream" id=10]

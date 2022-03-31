@@ -6,7 +6,7 @@ var new_node
 func _ready():
 	get_node("TextureProgress").value = Global.happiness
 	$RichTextLabel.set_bbcode(str(Global.happiness) + "%")
-	$knownledge.text = str (Global.knowledge)
+	$knownledge.bbcode_text = str ("[center]", (Global.knowledge))
 
 func _on_Button_Map_pressed():
 	celltest = preload("res://Cellphone/Map.tscn")

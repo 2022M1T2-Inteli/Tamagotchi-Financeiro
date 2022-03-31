@@ -50,7 +50,10 @@ func _on_finish_pressed():
 		if(Global.actions < StoreManagement.item_status[0]):
 			Global.actions = StoreManagement.item_status[0] 
 		Global.happiness += StoreManagement.item_status[1] 
-		Global.knowledge += StoreManagement.item_status[2] 
+		Global.knowledge += StoreManagement.item_status[2]
+		Global.recordsPrice.append(StoreManagement.store_total*-1)
+		Global.update_wallet[0] = true
+		Global.update_wallet[1] = Global.recordsPrice.back() 
 		get_tree().change_scene("res://Scenes/StoreEndshop.tscn")
 	elif (StoreManagement.store_total >= 0) and (Global.digital_money - StoreManagement.store_total >= 0) and (paymentType == 1):
 		Global.digital_money -= StoreManagement.store_total

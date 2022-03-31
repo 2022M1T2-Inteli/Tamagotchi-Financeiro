@@ -12,6 +12,8 @@ func _on_Button_add_pressed():
 		Global.digital_money += float (get_node("money_invest").text)
 		Global.money -= float (get_node("money_invest").text)
 		Global.recordsBank.append(float(get_node("money_invest").text))
+		Global.update_wallet[0] = true
+		Global.update_wallet[1] = Global.recordsBank.back()*-1 
 		print(Global.money)
 		print(Global.digital_money)
 		$money_digital.text = str(Global.digital_money)

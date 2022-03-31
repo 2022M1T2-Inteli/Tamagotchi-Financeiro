@@ -4,17 +4,23 @@ var celltest = preload ("res://Cellphone/Cellphone.tscn")
 var new_node
 
 func _ready():
+	$Excla.visible = false
+	$Excla/AnimationPlayer.play()
 	for i in range(1,5):
 		get_node(str(i)).visible = StoreManagement.products[3][i-1]
+	for i in 5:
+		if(StoreManagement.products[0][i]):
+			$Funcao_block.visible = false
+		if(StoreManagement.products[2][i]):
+			$Funcao_block2.visible = false
 	$Player_certo.visible = false
 	$"/root/Ambient".play()
-	if Global.day == 1:
+	
+	if !Global.letter:
 		$Button_Instructions1/Instructions1.visible = true
 		$Button_Instructions1.visible = true
 	else:
 		$Player_certo.visible = true
-		$Excla/AnimationPlayer.play("RESET")
-		$Excla2/AnimationPlayer.play("RESET")
 		$Joystick/Control/question_button/AnimationPlayer.play("aviso")
 
 func _on_Button_Instructions1_pressed():
@@ -51,10 +57,15 @@ func _on_Button_Instructions6_pressed():
 	$Button_Instructions6/Instructions6.visible = false
 	$Button_Instructions6.visible = false
 	$Excla/AnimationPlayer.play("RESET")
-	$Excla2/AnimationPlayer.play("RESET")
 	$Joystick/Control/question_button/AnimationPlayer.play("aviso")
 	$Player_certo.visible = true
+	Global.letter = true
 	
 func _on_ComputerArea_body_entered(body):
 	if body.name == "Player_certo":
 		get_tree().change_scene("res://Scenes/StoreHome.tscn")
+
+#starts the exclamation when the email is pressed:
+func _process(delta):
+	if Global.excla == true:
+		$Excla.visible = true
