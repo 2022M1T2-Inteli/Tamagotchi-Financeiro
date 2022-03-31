@@ -6,7 +6,7 @@
 [ext_resource path="res://Scenes/arrow_mobile.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Script/minigame_market.gd" type="Script" id=5]
 [ext_resource path="res://Fonts/Minecraftia-Regular.ttf" type="DynamicFontData" id=6]
-[ext_resource path="res://assets/minigame_instructions.png" type="Texture" id=7]
+[ext_resource path="res://assets/35.png" type="Texture" id=7]
 [ext_resource path="res://Script/instructions_minigame_market.gd" type="Script" id=8]
 [ext_resource path="res://Audios/Uncan - Wave of the Synth.mp3" type="AudioStream" id=9]
 
