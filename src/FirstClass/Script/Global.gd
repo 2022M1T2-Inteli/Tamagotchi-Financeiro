@@ -32,11 +32,11 @@ var update_wallet = [false, 0]
 var monthly_expenses : float = 1000
 var cont : int = 0
 var work = ""
-var letter = false
-var excla = false
+var button = false
 var transition = false
-var excla2 = false
-var excla3 = false
+var excla2
+var excla3
+var letter = false
 
 func _ready():
 	pass # Replace with function body.

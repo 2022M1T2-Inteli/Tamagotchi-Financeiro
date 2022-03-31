@@ -2,7 +2,7 @@ extends Area2D
 
 
 var wardrobe = preload ("res://Scenes/wardrobe.tscn")
-var new_node 
+var new_node
 
 func _ready():
 	pass # Replace with function body.
