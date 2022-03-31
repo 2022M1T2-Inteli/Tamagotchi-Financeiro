@@ -1,5 +1,6 @@
 extends Node2D
 
+
 var celltest
 var new_node 
 
@@ -8,40 +9,68 @@ func _ready():
 	$RichTextLabel.set_bbcode(str(Global.happiness) + "%")
 	$knownledge.bbcode_text = str ("[center]", (Global.knowledge))
 
+func _process(delta):
+	if (Global.button):
+		$Button_Credits.disabled = false
+		$Button_EduFin.disabled = false
+		$Button_Bank.disabled = false
+		$Button_Map.disabled = false
+		$Button_Exit.disabled = false
+
 func _on_Button_Map_pressed():
+	get_tree().paused = false
+	$Button_Credits.disabled = true
+	$Button_EduFin.disabled = true
+	$Button_Bank.disabled = true
+	$Button_Map.disabled = true
+	$Button_Exit.disabled = true
 	celltest = preload("res://Cellphone/Map.tscn")
 	new_node = celltest.instance()
 	new_node.global_position = Vector2.ZERO
 	add_child(new_node)
 	new_node.global_position = Vector2(0, 0)
-	#get_tree().change_scene("res://Cellphone/Map.tscn")
 
 
 func _on_Button_Bank_pressed():
+	get_tree().paused = false
+	$Button_Credits.disabled = true
+	$Button_EduFin.disabled = true
+	$Button_Bank.disabled = true
+	$Button_Map.disabled = true
+	$Button_Exit.disabled = true
 	celltest = preload("res://Cellphone/Bank.tscn")
 	new_node = celltest.instance()
 	new_node.global_position = Vector2.ZERO
 	add_child(new_node)
 	new_node.global_position = Vector2(0, 0)
-	#get_tree().change_scene("res://Cellphone/Bank.tscn")
 
 
 func _on_Button_Credits_pressed():
+	get_tree().paused = false
+	$Button_Credits.disabled = true
+	$Button_EduFin.disabled = true
+	$Button_Bank.disabled = true
+	$Button_Map.disabled = true
+	$Button_Exit.disabled = true
 	celltest = preload("res://Cellphone/Credits.tscn")
 	new_node = celltest.instance()
 	new_node.global_position = Vector2.ZERO
 	add_child(new_node)
 	new_node.global_position = Vector2(0, 0)
-	#get_tree().change_scene("res://Cellphone/Credits.tscn")
 
 
 func _on_Button_EduFin_pressed():
+	get_tree().paused = false
+	$Button_Credits.disabled = true
+	$Button_EduFin.disabled = true
+	$Button_Bank.disabled = true
+	$Button_Map.disabled = true
+	$Button_Exit.disabled = true
 	celltest = preload("res://Cellphone/EduFin.tscn")
 	new_node = celltest.instance()
 	new_node.global_position = Vector2.ZERO
 	add_child(new_node)
 	new_node.global_position = Vector2(0, 0)
-	#get_tree().change_scene("res://Cellphone/EduFin.tscn")
 
 
 func _on_Button_Volume_pressed():
