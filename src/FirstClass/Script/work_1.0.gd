@@ -108,6 +108,7 @@ func verificar():
 	elif (score == 10):
 		get_tree().change_scene("res://Scenes/WinWork.tscn")
 		Global.money += (Global.player_job*80 +20) *1.2
+	
 
 func _on_Button_yes_pressed():
 	#new_node.queue_free()

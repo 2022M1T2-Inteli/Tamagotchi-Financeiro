@@ -34,6 +34,7 @@ var cont : int = 0
 var work = ""
 var letter = false
 var excla = false
+var transition = false
 var excla2 = false
 var excla3 = false
 
