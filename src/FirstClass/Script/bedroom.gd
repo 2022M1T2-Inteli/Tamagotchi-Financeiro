@@ -4,6 +4,8 @@ var celltest = preload ("res://Cellphone/Cellphone.tscn")
 var new_node
 
 func _ready():
+	$Excla.visible = false
+	$Excla2.visible = false
 	for i in range(1,5):
 		get_node(str(i)).visible = StoreManagement.products[3][i-1]
 	for i in 5:
@@ -72,3 +74,11 @@ func _on_shelfBooks_body_entered(body):
 		get_tree().change_scene("res://Scenes/bedroomShelf.tscn")
 	else:
 		pass
+		
+#starts the exclamation when the email is pressed:
+func _process(delta):
+	if Global.excla == true:
+		$Excla.visible = true
+		$Excla2.visible = true 
+	
+

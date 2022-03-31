@@ -34,8 +34,9 @@ var cont : int = 0
 var work = ""
 var button = false
 var transition = false
-var excla2
-var excla3
+var excla = false
+var excla2 = false
+var excla3 = false
 var letter = false
 var passive_happiness = 0
 
