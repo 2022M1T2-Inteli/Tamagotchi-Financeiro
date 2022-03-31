@@ -39,3 +39,7 @@ func _on_close_button_pressed() -> void:
 	$Panel/AnimationPlayer.play_backwards("popup")
 	$close_button.visible = false
 	get_node("Panel/Any_tasks_active").text = ""
+
+#starts the exclamation when the email is pressed:
+func _on_AnimationPlayer_animation_started(anim_name):
+	Global.excla = true 
