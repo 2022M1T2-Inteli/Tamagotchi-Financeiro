@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Street_1.png-274595ebb8f3c76539e7fbbad0b270c7.stex"
+path="res://.import/LetterPixel.png-24f0bb03eb5ceeeb84a5ed719a0d014d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Street_1.png"
-dest_files=[ "res://.import/Street_1.png-274595ebb8f3c76539e7fbbad0b270c7.stex" ]
+source_file="res://assets/LetterPixel.png"
+dest_files=[ "res://.import/LetterPixel.png-24f0bb03eb5ceeeb84a5ed719a0d014d.stex" ]
 
 [params]
 

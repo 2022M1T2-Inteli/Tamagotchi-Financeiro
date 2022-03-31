@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Street_1.png-274595ebb8f3c76539e7fbbad0b270c7.stex"
+path="res://.import/redBook2.png-2dae81094c9ef7bdbbc5e000da2ae487.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Street_1.png"
-dest_files=[ "res://.import/Street_1.png-274595ebb8f3c76539e7fbbad0b270c7.stex" ]
+source_file="res://assets/redBook2.png"
+dest_files=[ "res://.import/redBook2.png-2dae81094c9ef7bdbbc5e000da2ae487.stex" ]
 
 [params]
 
