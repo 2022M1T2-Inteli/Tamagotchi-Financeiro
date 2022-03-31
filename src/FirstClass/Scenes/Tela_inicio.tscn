@@ -19,6 +19,9 @@ func _on_Button_pressed():
 
 [node name="Node2D" type="Control"]
 script = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="musicfx" parent="." instance=ExtResource( 1 )]
 
