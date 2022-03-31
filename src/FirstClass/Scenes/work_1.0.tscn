@@ -100,13 +100,6 @@ font_data = ExtResource( 4 )
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 3 )
 
-[node name="Touch" type="Button" parent="."]
-margin_right = 1280.0
-margin_bottom = 720.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
 [node name="70" type="Sprite" parent="."]
 position = Vector2( 639, 361.625 )
 scale = Vector2( 0.264572, 0.265619 )
@@ -267,7 +260,6 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[connection signal="pressed" from="Touch" to="." method="_on_Touch_pressed"]
 [connection signal="pressed" from="Button_yes" to="." method="_on_Button_yes_pressed"]
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

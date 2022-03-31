@@ -11,7 +11,6 @@ func _ready():
 
 func _on_Area2D_body_entered(body):
 	if body.name == "Player_certo":
-		Global.transition = true
 		Global.current_scene = "res://Scenery/streetHouse.tscn"
 		Global.change_position(10525,546)
 		changer.change_scene(Global.current_scene)

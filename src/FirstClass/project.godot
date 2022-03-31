@@ -22,9 +22,6 @@ _global_script_class_icons={
 
 config/name="EduFin App"
 run/main_scene="res://Scenes/Tela_inicio.tscn"
-boot_splash/image="res://assets/teladefundo_1.png"
-boot_splash/fullsize=false
-boot_splash/bg_color=Color( 0.141176, 0.141176, 0.141176, 1 )
 config/icon="res://icon.png"
 
 [autoload]

@@ -108,7 +108,6 @@ func verificar():
 	elif (score == 10):
 		get_tree().change_scene("res://Scenes/WinWork.tscn")
 		Global.money += (Global.player_job*80 +20) *1.2
-	
 
 func _on_Button_yes_pressed():
 	#new_node.queue_free()
@@ -129,23 +128,3 @@ func _on_Boom_timeout():
 	next = true
 	ValoresProdutos()
 	ValorProdutosMercado()
-
-
-func _on_Touch_pressed():
-	if(!start):
-		if(current_timer - past_timer > 1):
-			verified[counter] = true
-			if(counter == 0):
-				get_node("62").visible = false
-				get_node("63").visible = true
-			elif(counter == 1):
-				get_node("63").visible = false
-				get_node("64").visible = true
-			else:
-				get_node("64").visible = false
-			counter+=1
-			past_timer = current_timer
-		if(verified[0] && verified[1] && verified[2]):
-			start = true
-			$Timer.start()
-			$Touch.visible = false
