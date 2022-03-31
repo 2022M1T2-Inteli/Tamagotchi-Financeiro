@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://assets/MAPAS (7).png" type="Texture" id=1]
-[ext_resource path="res://Script/won_game.gd" type="Script" id=2]
+[ext_resource path="res://assets/MAPAS (8).png" type="Texture" id=1]
+[ext_resource path="res://Script/lossgame.gd" type="Script" id=2]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 2 )

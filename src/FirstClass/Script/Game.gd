@@ -64,3 +64,4 @@ func _on_ScoreTimer_timeout() -> void:
 func _on_DifficultTimer_timeout():
 	game_speed += game_speed * modifier
 	$SpawnTimer.wait_time -= $SpawnTimer.wait_time * modifier
+	
