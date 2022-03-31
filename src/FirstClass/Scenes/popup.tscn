@@ -130,6 +130,5 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[connection signal="animation_started" from="Panel/AnimationPlayer" to="." method="_on_AnimationPlayer_animation_started"]
 [connection signal="pressed" from="question_button" to="." method="_on_question_button_pressed"]
 [connection signal="pressed" from="close_button" to="." method="_on_close_button_pressed"]
