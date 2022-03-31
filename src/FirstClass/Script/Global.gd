@@ -37,6 +37,7 @@ var transition = false
 var excla2
 var excla3
 var letter = false
+var game_muted = false
 
 func _ready():
 	pass # Replace with function body.
