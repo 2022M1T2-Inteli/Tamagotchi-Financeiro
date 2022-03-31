@@ -90,6 +90,7 @@ anims/default = SubResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="World/Ground"]
 position = Vector2( 292, 352.5 )
+scale = Vector2( 0.972382, 0.865324 )
 shape = SubResource( 1 )
 
 [node name="Player" parent="World" instance=ExtResource( 1 )]
@@ -148,6 +149,7 @@ position = Vector2( 819, 38 )
 
 [node name="HI-Score" parent="UI" instance=ExtResource( 4 )]
 position = Vector2( 631, 40 )
+scale = Vector2( -0.00366228, 1.24682 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 position = Vector2( -5, -3 )
