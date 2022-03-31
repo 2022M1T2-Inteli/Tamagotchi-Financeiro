@@ -36,6 +36,7 @@ func _on_Button_dog_pressed():
 	StoreManagement.i = 3
 	StoreManagement.j = 0
 	StoreManagement.store_total = 3200.00
+	StoreManagement.item_status = []
 	if(!StoreManagement.products[StoreManagement.i][StoreManagement.j]):
 		get_tree().change_scene("res://Scenes/StoreCart.tscn")
 	else:
