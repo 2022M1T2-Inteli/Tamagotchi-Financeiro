@@ -34,6 +34,7 @@ var cont : int = 0
 var work = ""
 var letter = false
 var excla = false
+var transition = false
 
 func _ready():
 	pass # Replace with function body.

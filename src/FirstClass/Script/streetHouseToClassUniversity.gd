@@ -19,6 +19,7 @@ func _ready():
 
 func _on_Goalscene2_body_entered(body):
 	if body.name == "Player_certo" && !Global.school:
+		Global.transition = true
 		Global.current_scene = "res://Scenery/classUniversity.tscn"
 		Global.change_position(177, 674)
 		changer.change_scene(path)

@@ -15,7 +15,7 @@ func _ready():
 	#print(Global.player_name)
 	self.position.x = Global.position.x
 	self.position.y = Global.position.y
-	pass
+	Global.transition = false
 
 
 func _physics_process(delta):
