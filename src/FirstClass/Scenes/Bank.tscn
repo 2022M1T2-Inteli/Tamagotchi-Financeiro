@@ -241,13 +241,10 @@ shape = SubResource( 9 )
 
 [node name="Button" type="Button" parent="."]
 show_behind_parent = true
-margin_left = -1178.0
-margin_top = -491.0
-margin_right = 96.0
-margin_bottom = 241.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
+margin_left = -1177.0
+margin_top = -488.0
+margin_right = 97.0
+margin_bottom = 244.0
 
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_Area2D_body_entered"]
 [connection signal="pressed" from="Button" to="Bank_instructions" method="_on_Button_pressed"]
