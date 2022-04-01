@@ -104,10 +104,10 @@ func errado():
 func verificar():
 	if (erro == 5):
 		get_tree().change_scene("res://Scenes/losswork.tscn")
-		Global.money += Global.player_job*80 +20
+		Global.money += (Global.player_job*100) * 0.8
 	elif (score == 10):
 		get_tree().change_scene("res://Scenes/WinWork.tscn")
-		Global.money += (Global.player_job*80 +20) *1.2
+		Global.money += (Global.player_job*100) 
 	
 
 func _on_Button_yes_pressed():

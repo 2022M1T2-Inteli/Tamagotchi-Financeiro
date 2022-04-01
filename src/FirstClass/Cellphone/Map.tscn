@@ -15,6 +15,12 @@ __meta__ = {
 "_edit_lock_": true
 }
 
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 656, 301 )
+rotation = 1.5708
+scale = Vector2( 0.07, 0.05 )
+texture = ExtResource( 3 )
+
 [node name="Button_exit_map" type="Button" parent="."]
 pause_mode = 2
 show_behind_parent = true
@@ -26,18 +32,6 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button_market" type="Button" parent="."]
-pause_mode = 2
-show_behind_parent = true
-margin_left = 662.0
-margin_top = 263.0
-margin_right = 717.0
-margin_bottom = 326.0
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": false
-}
-
 [node name="Button_college" type="Button" parent="."]
 pause_mode = 2
 show_behind_parent = true
@@ -46,7 +40,6 @@ margin_top = 194.0
 margin_right = 730.0
 margin_bottom = 252.0
 __meta__ = {
-"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 
@@ -58,7 +51,6 @@ margin_top = 113.0
 margin_right = 717.0
 margin_bottom = 178.0
 __meta__ = {
-"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 
@@ -67,10 +59,9 @@ pause_mode = 2
 show_behind_parent = true
 margin_left = 663.0
 margin_top = 336.0
-margin_right = 730.0
+margin_right = 745.0
 margin_bottom = 397.0
 __meta__ = {
-"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 
@@ -82,7 +73,6 @@ margin_top = 415.0
 margin_right = 771.0
 margin_bottom = 491.0
 __meta__ = {
-"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 
@@ -94,20 +84,25 @@ margin_top = 505.0
 margin_right = 719.0
 margin_bottom = 553.0
 __meta__ = {
-"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 
-[node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 656, 301 )
-rotation = 1.5708
-scale = Vector2( 0.07, 0.05 )
-texture = ExtResource( 3 )
+[node name="Button_market" type="Button" parent="."]
+pause_mode = 2
+show_behind_parent = true
+margin_left = 656.0
+margin_top = 263.0
+margin_right = 710.0
+margin_bottom = 324.0
+rect_scale = Vector2( 1.14922, 1.02938 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [connection signal="pressed" from="Button_exit_map" to="." method="_on_Button_exit_map_pressed"]
-[connection signal="pressed" from="Button_market" to="." method="_on_Button_market_pressed"]
 [connection signal="pressed" from="Button_college" to="." method="_on_Button_college_pressed"]
 [connection signal="pressed" from="Button_bedroom" to="." method="_on_Button_bedroom_pressed"]
 [connection signal="pressed" from="Button_bank" to="." method="_on_Button_bank_pressed"]
 [connection signal="pressed" from="Button_work" to="." method="_on_Button_work_pressed"]
 [connection signal="pressed" from="Button_park" to="." method="_on_Button_park_pressed"]
+[connection signal="pressed" from="Button_market" to="." method="_on_Button_market_pressed"]
