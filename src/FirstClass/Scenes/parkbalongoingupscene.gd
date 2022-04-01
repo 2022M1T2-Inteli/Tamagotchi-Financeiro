@@ -2,4 +2,6 @@ extends Node2D
 
 
 func _ready():
-	pass
+	$"Airplane]/AnimationPlayer".play("airplane")
+	$Balon/AnimationPlayer.play("balon")
+	

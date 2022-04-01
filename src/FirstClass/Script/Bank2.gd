@@ -2,8 +2,16 @@ extends Node2D
 
 func _process(delta):
 	$Exc/AnimationPlayer.play("excla2")
-	
+	$Exc2/AnimationPlayer.play("excla2")
+	#stops exclamation:
+	if Global.excla2 == true:
+		$Exc.visible = false
+		$Exc2.visible = true
+	if Global.excla3 == true:
+		$Exc2.visible = false
+
 func _ready():
+	$Exc2.visible = false
 	$Player_certo.position = Vector2(-980,200)
 	#$"/root/Musicfx".stop()
 

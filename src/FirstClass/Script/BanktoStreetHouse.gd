@@ -10,6 +10,7 @@ export var path : String
 
 func _on_Goalscene2_body_entered(body):
 	if body.name == "Player_certo":
+		Global.transition = true
 		Global.current_scene = "res://Scenery/streetHouse.tscn"
 		Global.change_position(8025,546)
 		Global.actions -= 1
