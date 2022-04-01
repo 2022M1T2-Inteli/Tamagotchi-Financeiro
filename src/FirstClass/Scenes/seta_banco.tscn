@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Script/seta_banco.gd" type="Script" id=1]
-[ext_resource path="res://assets/setapreta.png" type="Texture" id=2]
+[ext_resource path="res://assets/seta direita pixel.png" type="Texture" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 32.5, 31.5 )
@@ -16,7 +16,7 @@ scale = Vector2( 0.25, 0.394118 )
 texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( -5, -1 )
+position = Vector2( 0.5, -1.5 )
 shape = SubResource( 1 )
 
 [connection signal="body_entered" from="." to="." method="_on_Area2D_body_entered"]

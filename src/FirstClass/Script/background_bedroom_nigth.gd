@@ -33,10 +33,10 @@ func _on_Area2D_body_entered(body):
 		Global.actions = 3
 		Global.school = false
 		Global.happiness -= Global.passive_happiness
-	if Global.digital_money >= Global.monthly_expenses:
-		Global.digital_money -= Global.monthly_expenses
-	else:
-		Global.money -= Global.monthly_expenses
+	#if Global.digital_money >= Global.monthly_expenses:
+		#Global.digital_money -= Global.monthly_expenses
+	#else:
+		#Global.money -= Global.monthly_expenses
 		rng.randomize()
 		
 		#fix income
@@ -76,7 +76,7 @@ func _on_Area2D_body_entered(body):
 		Investiment.profit_day_trade += Investiment.invest_money_day_trade*day_trade
 		Investiment.invest_money_day_trade += Investiment.invest_money_day_trade*day_trade
 		
-		Global.inflation += rng.randf_range(0.75,1.5)
+		Global.inflation += rng.randf_range(1.5,3)
 		changer.change_scene(Global.current_scene)
 		
 				
