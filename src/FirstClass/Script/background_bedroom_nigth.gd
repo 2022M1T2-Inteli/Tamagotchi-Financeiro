@@ -46,11 +46,11 @@ func _on_Area2D_body_entered(body):
 		Investiment.profit_cdb += Investiment.invest_money_cdb*0.08
 		Investiment.invest_money_cdb += Investiment.invest_money_cdb*0.08
 		
-		Investiment.profit_direct_treasury += Investiment.invest_money_direct_treasury*0.075
-		Investiment.invest_money_direct_treasury += Investiment.invest_money_direct_treasury*0.075
+		Investiment.profit_direct_treasury += Investiment.invest_money_direct_treasury*0.081
+		Investiment.invest_money_direct_treasury += Investiment.invest_money_direct_treasury*0.081
 		
-		Investiment.profit_debenture += Investiment.invest_money_debenture*0.07
-		Investiment.invest_money_debenture += Investiment.invest_money_debenture*0.07
+		Investiment.profit_debenture += Investiment.invest_money_debenture*0.083
+		Investiment.invest_money_debenture += Investiment.invest_money_debenture*0.083
 		
 		#fund
 		Investiment.profit_real_estate_fund += Investiment.invest_money_real_estate_fund*real_estate_fund

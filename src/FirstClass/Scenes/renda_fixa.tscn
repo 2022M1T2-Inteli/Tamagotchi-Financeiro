@@ -1,7 +1,14 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://assets/50.png" type="Texture" id=1]
 [ext_resource path="res://Script/renda_fixa.gd" type="Script" id=2]
+[ext_resource path="res://assets/fundo preto.png" type="Texture" id=3]
+[ext_resource path="res://assets/star.png" type="Texture" id=4]
+[ext_resource path="res://Fonts/Minecraftia-Regular.ttf" type="DynamicFontData" id=5]
+
+[sub_resource type="DynamicFont" id=1]
+size = 24
+font_data = ExtResource( 5 )
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 2 )
@@ -66,6 +73,159 @@ margin_right = 756.0
 margin_bottom = 687.0
 __meta__ = {
 "_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="FundoPreto" type="Sprite" parent="."]
+position = Vector2( 729.238, 465.165 )
+scale = Vector2( 0.676563, 0.205556 )
+texture = ExtResource( 3 )
+offset = Vector2( -95.6864, -535.94 )
+
+[node name="FundoPreto2" type="Sprite" parent="."]
+position = Vector2( 727.836, 563.154 )
+scale = Vector2( 0.682813, 0.208333 )
+texture = ExtResource( 3 )
+offset = Vector2( -95.6864, -535.94 )
+
+[node name="FundoPreto3" type="Sprite" parent="."]
+position = Vector2( 729, 665 )
+scale = Vector2( 0.67671, 0.213843 )
+texture = ExtResource( 3 )
+offset = Vector2( -95.6864, -535.94 )
+
+[node name="Star" type="Sprite" parent="."]
+position = Vector2( 867, 227 )
+scale = Vector2( 0.0541078, 0.048757 )
+texture = ExtResource( 4 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 858.0
+margin_top = 215.0
+margin_right = 973.0
+margin_bottom = 336.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 1 )
+text = "3
+
+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Star2" type="Sprite" parent="."]
+position = Vector2( 869, 326 )
+scale = Vector2( 0.0541078, 0.048757 )
+texture = ExtResource( 4 )
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+margin_left = 862.0
+margin_top = 315.0
+margin_right = 933.0
+margin_bottom = 436.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 1 )
+text = "5
+
+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Star3" type="Sprite" parent="."]
+position = Vector2( 869, 428 )
+scale = Vector2( 0.0541078, 0.048757 )
+texture = ExtResource( 4 )
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="."]
+margin_left = 852.0
+margin_top = 414.0
+margin_right = 1418.0
+margin_bottom = 535.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 1 )
+text = "10
+
+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Star4" type="Sprite" parent="."]
+position = Vector2( 875, 526 )
+scale = Vector2( 0.0541078, 0.048757 )
+texture = ExtResource( 4 )
+
+[node name="RichTextLabel4" type="RichTextLabel" parent="."]
+margin_left = 857.0
+margin_top = 512.0
+margin_right = 1179.0
+margin_bottom = 633.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 1 )
+text = "10
+
+
+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="return" type="RichTextLabel" parent="."]
+margin_left = 309.0
+margin_top = 232.0
+margin_right = 631.0
+margin_bottom = 399.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 1 )
+text = "0.5% a.s.
+
+
+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="return2" type="RichTextLabel" parent="."]
+margin_left = 308.0
+margin_top = 334.0
+margin_right = 630.0
+margin_bottom = 501.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 1 )
+text = "0.8% a.s.
+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="return3" type="RichTextLabel" parent="."]
+margin_left = 304.0
+margin_top = 433.0
+margin_right = 626.0
+margin_bottom = 600.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 1 )
+text = "0.82% a.s
+
+
+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="return4" type="RichTextLabel" parent="."]
+margin_left = 307.0
+margin_top = 529.0
+margin_right = 629.0
+margin_bottom = 696.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 1 )
+text = "0.83% a.s
+
+
+"
+__meta__ = {
 "_edit_use_anchors_": false
 }
 
