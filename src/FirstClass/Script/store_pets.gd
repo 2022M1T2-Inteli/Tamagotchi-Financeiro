@@ -48,6 +48,7 @@ func _on_Button_cat_pressed():
 	StoreManagement.i = 3
 	StoreManagement.j = 1
 	StoreManagement.store_total = 5200.00
+	StoreManagement.item_status = [0,0,1,80]
 	if(!StoreManagement.products[StoreManagement.i][StoreManagement.j]):
 		get_tree().change_scene("res://Scenes/StoreCart.tscn")
 	else:
@@ -59,6 +60,7 @@ func _on_Button_pet_3_pressed():
 	StoreManagement.i = 3
 	StoreManagement.j = 2
 	StoreManagement.store_total = 500.00
+	StoreManagement.item_status = [0,0,0.5,50]
 	if(!StoreManagement.products[StoreManagement.i][StoreManagement.j]):
 		get_tree().change_scene("res://Scenes/StoreCart.tscn")
 	else:
@@ -70,6 +72,7 @@ func _on_Button_pet_4_pressed():
 	StoreManagement.i = 3
 	StoreManagement.j = 3
 	StoreManagement.store_total = 700.00
+	StoreManagement.item_status = [0,0,0.5,50]
 	if(!StoreManagement.products[StoreManagement.i][StoreManagement.j]):
 		get_tree().change_scene("res://Scenes/StoreCart.tscn")
 	else:

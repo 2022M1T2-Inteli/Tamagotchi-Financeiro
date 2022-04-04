@@ -1,9 +1,9 @@
-[gd_scene load_steps=44 format=2]
+[gd_scene load_steps=46 format=2]
 
 [ext_resource path="res://assets/work_!.png" type="Texture" id=1]
 [ext_resource path="res://Scenes/Transition_in.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Scenes/Player_certo.tscn" type="PackedScene" id=3]
-[ext_resource path="res://assets/seta direita pixel.png" type="Texture" id=4]
+[ext_resource path="res://assets/setapreta.png" type="Texture" id=4]
 [ext_resource path="res://Script/arrow_work.gd" type="Script" id=5]
 [ext_resource path="res://Scenery/joystick.tscn" type="PackedScene" id=6]
 [ext_resource path="res://assets/ElevadorAbrindo.png" type="Texture" id=7]
@@ -13,6 +13,38 @@
 [ext_resource path="res://Script/work_1.gd" type="Script" id=11]
 [ext_resource path="res://assets/job 1.png" type="Texture" id=12]
 [ext_resource path="res://assets/exc.png" type="Texture" id=13]
+
+[sub_resource type="Animation" id=32]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("../Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 41, 669 ) ]
+}
+
+[sub_resource type="Animation" id=33]
+resource_name = "seta1"
+length = 2.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("../Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1, 1.9 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 41, 669 ), Vector2( 82, 669 ), Vector2( 41, 669 ) ]
+}
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 53, 34.5 )
@@ -228,8 +260,13 @@ rotation = -3.14159
 scale = Vector2( 0.242557, 0.351368 )
 texture = ExtResource( 4 )
 
+[node name="setapreta" type="AnimationPlayer" parent="Area2D/Sprite"]
+root_node = NodePath("../../CollisionShape2D")
+anims/RESET = SubResource( 32 )
+anims/seta1 = SubResource( 33 )
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2( 35, 672 )
+position = Vector2( 41, 667 )
 rotation = -1.5708
 shape = SubResource( 1 )
 
