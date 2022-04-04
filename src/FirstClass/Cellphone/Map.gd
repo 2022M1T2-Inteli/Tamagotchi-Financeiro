@@ -2,7 +2,7 @@ extends Node2D
 
 var busTaxi
 var new_node
-
+var test
 #onready var sceneWithButton = preload("res://Cellphone/Cellphone.tscn")
 
 

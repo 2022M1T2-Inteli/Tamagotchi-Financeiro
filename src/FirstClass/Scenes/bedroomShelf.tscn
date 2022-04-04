@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=25 format=2]
 
 [ext_resource path="res://assets/fundo preto.png" type="Texture" id=1]
 [ext_resource path="res://assets/bedroomdaywin.png" type="Texture" id=2]
@@ -9,6 +9,29 @@
 [ext_resource path="res://assets/greenBook2.png" type="Texture" id=7]
 [ext_resource path="res://assets/blueBook2.png" type="Texture" id=8]
 [ext_resource path="res://Script/bedroomShelf.gd" type="Script" id=9]
+[ext_resource path="res://assets/inflação.png" type="Texture" id=10]
+[ext_resource path="res://assets/inflação (2).png" type="Texture" id=11]
+[ext_resource path="res://assets/inflação (5).png" type="Texture" id=12]
+[ext_resource path="res://assets/inflação (3).png" type="Texture" id=13]
+[ext_resource path="res://assets/inflação (4).png" type="Texture" id=14]
+[ext_resource path="res://assets/nextButton.png" type="Texture" id=15]
+[ext_resource path="res://assets/exitButton.png" type="Texture" id=16]
+
+[sub_resource type="StyleBoxEmpty" id=5]
+
+[sub_resource type="StyleBoxEmpty" id=6]
+
+[sub_resource type="StyleBoxEmpty" id=7]
+
+[sub_resource type="StyleBoxEmpty" id=8]
+
+[sub_resource type="StyleBoxEmpty" id=1]
+
+[sub_resource type="StyleBoxEmpty" id=2]
+
+[sub_resource type="StyleBoxEmpty" id=3]
+
+[sub_resource type="StyleBoxEmpty" id=4]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 9 )
@@ -52,15 +75,6 @@ texture = ExtResource( 7 )
 position = Vector2( 788, 412 )
 scale = Vector2( 0.271497, 0.244255 )
 texture = ExtResource( 5 )
-
-[node name="Button_exit" type="Button" parent="."]
-margin_left = 1051.0
-margin_top = 604.0
-margin_right = 1260.0
-margin_bottom = 700.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Book_I" type="Button" parent="."]
 show_behind_parent = true
@@ -112,9 +126,76 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[connection signal="pressed" from="Button_exit" to="." method="_on_Button_exit_pressed"]
+[node name="Sprite" type="Sprite" parent="."]
+visible = false
+position = Vector2( 640, 360 )
+scale = Vector2( 0.264572, 0.264609 )
+texture = ExtResource( 10 )
+
+[node name="Sprite2" type="Sprite" parent="."]
+visible = false
+position = Vector2( 640, 360 )
+scale = Vector2( 0.264572, 0.264609 )
+texture = ExtResource( 11 )
+
+[node name="Sprite3" type="Sprite" parent="."]
+visible = false
+position = Vector2( 640, 360 )
+scale = Vector2( 0.264572, 0.264609 )
+texture = ExtResource( 13 )
+
+[node name="Sprite4" type="Sprite" parent="."]
+visible = false
+position = Vector2( 640, 360 )
+scale = Vector2( 0.264572, 0.264609 )
+texture = ExtResource( 14 )
+
+[node name="Sprite5" type="Sprite" parent="."]
+visible = false
+position = Vector2( 640, 360 )
+scale = Vector2( 0.264572, 0.264609 )
+texture = ExtResource( 12 )
+
+[node name="Button_exit" type="Button" parent="."]
+margin_left = 17.0
+margin_top = 586.0
+margin_right = 244.0
+margin_bottom = 693.0
+custom_styles/hover = SubResource( 5 )
+custom_styles/pressed = SubResource( 6 )
+custom_styles/focus = SubResource( 7 )
+custom_styles/normal = SubResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ExitButton" type="Sprite" parent="Button_exit"]
+position = Vector2( 114, 52 )
+scale = Vector2( 0.341691, 0.376515 )
+texture = ExtResource( 16 )
+
+[node name="Button_next_book1" type="Button" parent="."]
+margin_left = 1032.0
+margin_top = 581.0
+margin_right = 1249.0
+margin_bottom = 687.0
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/focus = SubResource( 3 )
+custom_styles/normal = SubResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="NextButton" type="Sprite" parent="Button_next_book1"]
+position = Vector2( 110, 53.9999 )
+scale = Vector2( 0.329251, 0.335715 )
+texture = ExtResource( 15 )
+
 [connection signal="pressed" from="Book_I" to="." method="_on_Book_I_pressed"]
 [connection signal="pressed" from="Book_II" to="." method="_on_Book_II_pressed"]
 [connection signal="pressed" from="Book_III" to="." method="_on_Book_III_pressed"]
 [connection signal="pressed" from="Book_IV" to="." method="_on_Book_IV_pressed"]
 [connection signal="pressed" from="Book_V" to="." method="_on_Book_V_pressed"]
+[connection signal="pressed" from="Button_exit" to="." method="_on_Button_exit_pressed"]
+[connection signal="pressed" from="Button_next_book1" to="." method="_on_Button_next_book1_pressed"]

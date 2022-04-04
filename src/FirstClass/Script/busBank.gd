@@ -39,3 +39,7 @@ func _on_Button_taxi_pressed():
 	else:
 		pass
 		Global.happiness -= 2
+
+
+func _on_exit_pressed():
+	self.queue_free()

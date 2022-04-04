@@ -79,18 +79,6 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button_Bank" type="Button" parent="."]
-pause_mode = 2
-show_behind_parent = true
-margin_left = 650.0
-margin_top = 261.0
-margin_right = 749.0
-margin_bottom = 360.0
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": false
-}
-
 [node name="Button_Credits" type="Button" parent="."]
 pause_mode = 2
 show_behind_parent = true
@@ -262,8 +250,19 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Button_Bank" type="Button" parent="."]
+pause_mode = 2
+show_behind_parent = true
+margin_left = 650.0
+margin_top = 261.0
+margin_right = 749.0
+margin_bottom = 360.0
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
 [connection signal="pressed" from="Button_Map" to="." method="_on_Button_Map_pressed"]
-[connection signal="pressed" from="Button_Bank" to="." method="_on_Button_Bank_pressed"]
 [connection signal="pressed" from="Button_Credits" to="." method="_on_Button_Credits_pressed"]
 [connection signal="pressed" from="Button_EduFin" to="." method="_on_Button_EduFin_pressed"]
 [connection signal="pressed" from="Button_Volume" to="." method="_on_Button_Volume_pressed"]
@@ -272,3 +271,4 @@ __meta__ = {
 [connection signal="pressed" from="Button_Exit/Button_exit_right" to="." method="_on_Button_exit_right_pressed"]
 [connection signal="pressed" from="Button_Cellphone_Bottom" to="." method="_on_Button_Cellphone_Bottom_pressed"]
 [connection signal="pressed" from="Button_Cellphone_Top" to="." method="_on_Button_Cellphone_Top_pressed"]
+[connection signal="pressed" from="Button_Bank" to="." method="_on_Button_Bank_pressed"]

@@ -19,8 +19,8 @@ func _ready():
 		$Button_Instructions1.visible = true
 	else:
 		$Player_certo.visible = true
-		$Excla/AnimationPlayer.play("RESET")
-		$Excla2/AnimationPlayer.play("RESET")
+#		$Excla/AnimationPlayer.play("RESET")
+#		$Excla2/AnimationPlayer.play("RESET")
 		$Joystick/Control/question_button/AnimationPlayer.play("aviso")
 
 func _on_Button_Instructions1_pressed():
@@ -56,8 +56,8 @@ func _on_Button_Instructions5_pressed():
 func _on_Button_Instructions6_pressed():
 	$Button_Instructions6/Instructions6.visible = false
 	$Button_Instructions6.visible = false
-	$Excla/AnimationPlayer.play("RESET")
-	$Excla2/AnimationPlayer.play("RESET")
+#	$Excla/AnimationPlayer.play("RESET")
+#	$Excla2/AnimationPlayer.play("RESET")
 	$Joystick/Control/question_button/AnimationPlayer.play("aviso")
 	$Player_certo.visible = true
 	Global.letter = true

@@ -1,7 +1,7 @@
 extends Node2D
 
 # Functions for transition between bank app and cellphone main page
-var celltest = preload ("res://Cellphone/recordsBank.tscn")
+var celltes1
 var new_node 
 
 func _ready():
@@ -24,8 +24,8 @@ func _on_Button_exit_bank_right_pressed():
 
 func _on_Button_pressed():
 	Global.button = true
-	new_node = celltest.instance()
+	celltes1 = preload("res://Cellphone/recordsBank.tscn")
+	new_node = celltes1.instance()
 	new_node.global_position = Vector2.ZERO
 	add_child(new_node)
 	new_node.global_position = Vector2(0, 0)
-	self.queue_free()

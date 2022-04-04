@@ -2,9 +2,14 @@ extends Node2D
 
 var valorBus = 12
 var valorTaxi = 26
+var bemBusval = 3
+var bemTaxval = 2
 
 func _ready():
-	pass # Replace with function body.
+	$dinheiroBus.text = str ("R$ - %.2f" % float(valorBus), " Reais")
+	$bemestarBus.text = str ("- %.2f" % float(bemBusval), " de Bem-estar")
+	$dinherioTaxi.text = str ("R$ - %.2f" % float(valorTaxi), " Reais")
+	$BemestarTaxi.text = str ("- %.2f" % float(bemTaxval), " de Bem-estar")
 
 
 func _on_Button_bus_pressed():
@@ -35,3 +40,7 @@ func _on_Button_taxi_pressed():
 	else:
 		pass
 	Global.happiness -= 2
+
+
+func _on_exit_pressed():
+	self.queue_free()

@@ -1,9 +1,10 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://assets/fundo preto.png" type="Texture" id=1]
-[ext_resource path="res://assets/busOrTaxi.png" type="Texture" id=2]
+[ext_resource path="res://assets/newBus.png" type="Texture" id=2]
 [ext_resource path="res://Script/busBank.gd" type="Script" id=3]
 [ext_resource path="res://Fonts/Minecraftia-Regular.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://assets/backButton.png" type="Texture" id=5]
 
 [sub_resource type="DynamicFont" id=1]
 size = 29
@@ -21,6 +22,14 @@ font_data = ExtResource( 4 )
 size = 29
 font_data = ExtResource( 4 )
 
+[sub_resource type="StyleBoxEmpty" id=5]
+
+[sub_resource type="StyleBoxEmpty" id=6]
+
+[sub_resource type="StyleBoxEmpty" id=7]
+
+[sub_resource type="StyleBoxEmpty" id=8]
+
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 3 )
 
@@ -35,44 +44,44 @@ scale = Vector2( 0.264572, 0.264609 )
 texture = ExtResource( 2 )
 
 [node name="dinheiroBus" type="RichTextLabel" parent="."]
-margin_left = 157.0
-margin_top = 509.0
-margin_right = 624.0
-margin_bottom = 569.0
-custom_colors/default_color = Color( 0, 0, 0, 1 )
+margin_left = 255.0
+margin_top = 510.0
+margin_right = 605.0
+margin_bottom = 570.0
+custom_colors/default_color = Color( 1, 0, 0, 1 )
 custom_fonts/normal_font = SubResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="bemestarBus" type="RichTextLabel" parent="."]
-margin_left = 190.0
-margin_top = 579.0
-margin_right = 602.0
-margin_bottom = 646.0
-custom_colors/default_color = Color( 0, 0, 0, 1 )
+margin_left = 243.0
+margin_top = 567.0
+margin_right = 611.0
+margin_bottom = 634.0
+custom_colors/default_color = Color( 1, 0, 0, 1 )
 custom_fonts/normal_font = SubResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="dinherioTaxi" type="RichTextLabel" parent="."]
-margin_left = 775.0
+margin_left = 782.0
 margin_top = 517.0
-margin_right = 1129.0
+margin_right = 1136.0
 margin_bottom = 595.0
-custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_colors/default_color = Color( 1, 0, 0, 1 )
 custom_fonts/normal_font = SubResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="BemestarTaxi" type="RichTextLabel" parent="."]
-margin_left = 737.0
-margin_top = 588.0
-margin_right = 1160.0
-margin_bottom = 660.0
-custom_colors/default_color = Color( 0, 0, 0, 1 )
+margin_left = 786.0
+margin_top = 590.0
+margin_right = 1209.0
+margin_bottom = 662.0
+custom_colors/default_color = Color( 1, 0, 0, 1 )
 custom_fonts/normal_font = SubResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -100,5 +109,24 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="exit" type="Button" parent="."]
+margin_left = 25.0
+margin_top = 604.0
+margin_right = 248.0
+margin_bottom = 700.0
+custom_styles/hover = SubResource( 5 )
+custom_styles/pressed = SubResource( 6 )
+custom_styles/focus = SubResource( 7 )
+custom_styles/normal = SubResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BackButton" type="Sprite" parent="exit"]
+position = Vector2( 112, 46.0001 )
+scale = Vector2( 0.33631, 0.351211 )
+texture = ExtResource( 5 )
+
 [connection signal="pressed" from="Button_bus" to="." method="_on_Button_bus_pressed"]
 [connection signal="pressed" from="Button_taxi" to="." method="_on_Button_taxi_pressed"]
+[connection signal="pressed" from="exit" to="." method="_on_exit_pressed"]

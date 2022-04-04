@@ -1,9 +1,16 @@
 extends Node2D
 
+var book = 0
 
 func _ready():
 	for i in range(0,5):
 		get_node("Book_" + str(i)).visible = StoreManagement.products[0][i]
+	$Sprite.visible = false
+	$Sprite2.visible = false
+	$Sprite3.visible = false
+	$Sprite4.visible = false
+	$Sprite5.visible = false 
+	$Button_next_book1.visible = false
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -16,8 +23,33 @@ func _on_Button_exit_pressed():
 
 
 func _on_Book_I_pressed():
-	pass # Replace with function body.
-
+	if (StoreManagement.products[0][0]):
+		$Button_exit.visible = false
+		$Sprite.visible = true
+		book = 1
+		$Button_next_book1.visible = true
+		
+func _on_Button_next_book1_pressed():
+	if book == 1:
+		$Sprite.visible = false
+		$Sprite2.visible = true
+		book += 1
+	elif book == 2:
+		$Sprite2.visible = false
+		$Sprite3.visible = true
+		book +=1
+	elif book == 3:
+		$Sprite3.visible = false
+		$Sprite4.visible = true
+		book += 1 
+	elif book == 4:
+		$Sprite4.visible = false
+		$Sprite5.visible = true
+		book += 1 
+	elif book == 5 :
+		$Sprite5.visible = false
+		$Button_next_book1.visible = false
+		$Button_exit.visible = true
 
 func _on_Book_II_pressed():
 	pass # Replace with function body.
@@ -33,3 +65,9 @@ func _on_Book_IV_pressed():
 
 func _on_Book_V_pressed():
 	pass # Replace with function body.
+
+
+
+
+#func _on_Button_next_book1_pressed():
+#	pass # Replace with function body.

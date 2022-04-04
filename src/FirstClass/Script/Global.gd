@@ -4,10 +4,10 @@ var gender : bool = true
 var player_name : String = "Mr. Fox"
 var current_scene : String = "res://Scenery/bedroom.tscn"
 var instructions = [true, true, true, true, true, true, true, true, true]
-var money : float = 10000000.00
+var money : float = 10000.00
 var position = Vector2(150,705)
 var digital_money : float = 0.0
-var happiness : int = 20
+var happiness : int = 50
 var health : int = 100
 var knowledge : int = 0
 var actions : int = 3
@@ -34,8 +34,8 @@ var cont : int = 0
 var work = ""
 var button = false
 var transition = false
-var excla2
-var excla3
+var excla
+#var excla3
 var letter = false
 var passive_happiness = 0
 

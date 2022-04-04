@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=2]
 
-[ext_resource path="res://assets/bedroom_nigth.png" type="Texture" id=1]
+[ext_resource path="res://assets/newBedroomNew.png" type="Texture" id=1]
 [ext_resource path="res://Scenes/arrow_mobile.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Scenes/Player_certo.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Scenes/border.tscn" type="PackedScene" id=6]

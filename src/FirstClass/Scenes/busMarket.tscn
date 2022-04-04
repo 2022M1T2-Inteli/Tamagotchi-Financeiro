@@ -1,8 +1,34 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://assets/fundo preto.png" type="Texture" id=1]
-[ext_resource path="res://assets/busOrTaxi.png" type="Texture" id=2]
+[ext_resource path="res://assets/newBus.png" type="Texture" id=2]
 [ext_resource path="res://Script/busMarket.gd" type="Script" id=3]
+[ext_resource path="res://Fonts/Minecraftia-Regular.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://assets/backButton.png" type="Texture" id=5]
+
+[sub_resource type="DynamicFont" id=1]
+size = 29
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 29
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 29
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 29
+font_data = ExtResource( 4 )
+
+[sub_resource type="StyleBoxEmpty" id=5]
+
+[sub_resource type="StyleBoxEmpty" id=6]
+
+[sub_resource type="StyleBoxEmpty" id=7]
+
+[sub_resource type="StyleBoxEmpty" id=8]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 3 )
@@ -39,5 +65,68 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="dinheiroBus" type="RichTextLabel" parent="."]
+margin_left = 168.0
+margin_top = 510.0
+margin_right = 518.0
+margin_bottom = 570.0
+custom_colors/default_color = Color( 1, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="bemestarBus" type="RichTextLabel" parent="."]
+margin_left = 157.0
+margin_top = 566.0
+margin_right = 525.0
+margin_bottom = 633.0
+custom_colors/default_color = Color( 1, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="dinherioTaxi" type="RichTextLabel" parent="."]
+margin_left = 758.0
+margin_top = 518.0
+margin_right = 1112.0
+margin_bottom = 596.0
+custom_colors/default_color = Color( 1, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BemestarTaxi" type="RichTextLabel" parent="."]
+margin_left = 742.0
+margin_top = 591.0
+margin_right = 1165.0
+margin_bottom = 663.0
+custom_colors/default_color = Color( 1, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="exit" type="Button" parent="."]
+margin_left = 25.0
+margin_top = 602.0
+margin_right = 248.0
+margin_bottom = 702.0
+custom_styles/hover = SubResource( 5 )
+custom_styles/pressed = SubResource( 6 )
+custom_styles/focus = SubResource( 7 )
+custom_styles/normal = SubResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BackButton" type="Sprite" parent="exit"]
+position = Vector2( 112, 48.0001 )
+scale = Vector2( 0.33631, 0.351211 )
+texture = ExtResource( 5 )
+
 [connection signal="pressed" from="Button_bus" to="." method="_on_Button_bus_pressed"]
 [connection signal="pressed" from="Button_taxi" to="." method="_on_Button_taxi_pressed"]
+[connection signal="pressed" from="exit" to="." method="_on_exit_pressed"]

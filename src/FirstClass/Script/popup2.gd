@@ -44,4 +44,4 @@ func _on_close_button_pressed() -> void:
 
 #starts the exclamation when the email is pressed:
 func _on_AnimationPlayer_animation_started(anim_name):
-	Global.excla = true 
+	Global.excla = true
