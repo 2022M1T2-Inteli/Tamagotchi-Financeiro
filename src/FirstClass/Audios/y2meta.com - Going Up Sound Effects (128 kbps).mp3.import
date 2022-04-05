@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/y2meta.com - Going Up Sound Effects (128 kbps).mp3-0d4626cc01eec7fce134310db3ad5d2a.mp3str"
+
+[deps]
+
+source_file="res://Audios/y2meta.com - Going Up Sound Effects (128 kbps).mp3"
+dest_files=[ "res://.import/y2meta.com - Going Up Sound Effects (128 kbps).mp3-0d4626cc01eec7fce134310db3ad5d2a.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
