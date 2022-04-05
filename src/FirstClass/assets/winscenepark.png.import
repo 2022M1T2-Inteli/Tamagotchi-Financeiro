@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/MAPAS.png-4d11b8f69ad48f2652bb1c9447911bd7.stex"
+path="res://.import/winscenepark.png-b938d722b2ca6acb214d0fb5f1c84c0f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/MAPAS.png"
-dest_files=[ "res://.import/MAPAS.png-4d11b8f69ad48f2652bb1c9447911bd7.stex" ]
+source_file="res://assets/winscenepark.png"
+dest_files=[ "res://.import/winscenepark.png-b938d722b2ca6acb214d0fb5f1c84c0f.stex" ]
 
 [params]
 

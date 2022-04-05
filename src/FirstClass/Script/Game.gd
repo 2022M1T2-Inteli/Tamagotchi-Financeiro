@@ -66,9 +66,8 @@ func _on_DifficultTimer_timeout():
 	$SpawnTimer.wait_time -= $SpawnTimer.wait_time * modifier
 
 func _ready():
-	while score > 0:
-		if score == 30:
-			print("asdasd")
+	if score == 30:
+		get_tree().change_scene("res://Scenery/streetHouse.tscn")
 	
 
 
