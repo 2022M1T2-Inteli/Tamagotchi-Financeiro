@@ -52,6 +52,10 @@ func reset_game() -> void:
 	score = 0
 	$UI/Score.number = "0".pad_zeros(ZERO_PADS)
 
+func _process(delta):
+	if score == 80:
+		get_tree().change_scene("res://Winscnenepark.tscn")
+		
 
 func _on_SpawnTimer_timeout() -> void:
 	spawn_obstacle()
@@ -64,4 +68,8 @@ func _on_ScoreTimer_timeout() -> void:
 func _on_DifficultTimer_timeout():
 	game_speed += game_speed * modifier
 	$SpawnTimer.wait_time -= $SpawnTimer.wait_time * modifier
-	
+
+
+func _on_Button_pressed():
+	Global.change_position(15180,662)
+	get_tree().change_scene("res://Scenery/streetHouse.tscn")

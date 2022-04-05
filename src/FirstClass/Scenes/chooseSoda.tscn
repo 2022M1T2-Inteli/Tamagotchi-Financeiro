@@ -1,8 +1,21 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=8 format=2]
 
-[ext_resource path="res://assets/c.png" type="Texture" id=1]
+[ext_resource path="res://assets/SodaPrice.png" type="Texture" id=1]
 [ext_resource path="res://Script/chooseSoda.gd" type="Script" id=2]
 [ext_resource path="res://Script/CanvasLayer_calculadora.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Fonts/Minecraftia-Regular.ttf" type="DynamicFontData" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 24
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 24
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 24
+font_data = ExtResource( 4 )
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 2 )
@@ -15,9 +28,9 @@ texture = ExtResource( 1 )
 [node name="rigthSoda" type="Button" parent="."]
 show_behind_parent = true
 margin_left = 91.0
-margin_top = 245.0
+margin_top = 238.0
 margin_right = 414.0
-margin_bottom = 642.0
+margin_bottom = 583.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -27,7 +40,7 @@ show_behind_parent = true
 margin_left = 490.0
 margin_top = 241.0
 margin_right = 813.0
-margin_bottom = 636.0
+margin_bottom = 579.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -35,14 +48,50 @@ __meta__ = {
 [node name="wrongSoda2" type="Button" parent="."]
 show_behind_parent = true
 margin_left = 887.0
-margin_top = 245.0
+margin_top = 241.0
 margin_right = 1208.0
-margin_bottom = 640.0
+margin_bottom = 582.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="CanvasLayer" parent="." instance=ExtResource( 3 )]
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 240.0
+margin_top = 516.0
+margin_right = 390.0
+margin_bottom = 576.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 1 )
+bbcode_enabled = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+margin_left = 630.0
+margin_top = 516.0
+margin_right = 780.0
+margin_bottom = 576.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 2 )
+bbcode_enabled = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="."]
+margin_left = 1030.0
+margin_top = 516.0
+margin_right = 1180.0
+margin_bottom = 576.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 3 )
+bbcode_enabled = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [connection signal="pressed" from="rigthSoda" to="." method="_on_rigthSoda_pressed"]
 [connection signal="pressed" from="wrongSoda" to="." method="_on_wrongSoda_pressed"]

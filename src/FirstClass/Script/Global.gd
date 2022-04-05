@@ -34,9 +34,13 @@ var cont : int = 0
 var work = ""
 var button = false
 var transition = false
-var excla
+var excla = false
+var excla2 = false
+var excla3 = false
 var letter = false
 var passive_happiness = 0
+var bank1 = false
+var university1 = false
 
 func _ready():
 	pass # Replace with function body.
