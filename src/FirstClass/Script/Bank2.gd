@@ -15,7 +15,7 @@ func _ready():
 	$Player_certo.position = Vector2(-980,200)
 	##$"/root/Musicfx".stop()
 	#$setapreta7/setapreta7.play("seta7")
-	$Ex3/Ex3.play("exclama3")
+	$Sprite/setapreta.play("setapreta")
 	
 	
 
