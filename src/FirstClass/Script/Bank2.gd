@@ -14,7 +14,11 @@ func _process(delta):
 func _ready():
 	$Exc2.visible = false
 	$Player_certo.position = Vector2(-980,200)
-	#$"/root/Musicfx".stop()
+	##$"/root/Musicfx".stop()
+	$setapreta7/setapreta7.play("seta7")
+	$Ex3/Ex3.play("Exclama3")
+	
+	
 
 func _on_Area2D_body_entered(body):
 	pass # Replace with function body.

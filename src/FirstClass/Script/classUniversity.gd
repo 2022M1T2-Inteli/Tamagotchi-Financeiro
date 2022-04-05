@@ -10,4 +10,5 @@ func _ready():
 
 func _process(delta):
 		$Excla/AnimationPlayer.play("exclam")
+		$setapreta8/setapreta8.play("seta8")
 	

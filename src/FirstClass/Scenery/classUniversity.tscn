@@ -1,10 +1,11 @@
-[gd_scene load_steps=23 format=2]
+[gd_scene load_steps=26 format=2]
 
 [ext_resource path="res://assets/university_scene.jpg" type="Texture" id=1]
 [ext_resource path="res://Scenes/border.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Scenes/Transition_in.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Scenes/classUniversityToStreetHouse.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Scenes/Player_certo.tscn" type="PackedScene" id=5]
+[ext_resource path="res://assets/setapreta.png" type="Texture" id=6]
 [ext_resource path="res://assets/pixil-frame-0 (5).png" type="Texture" id=7]
 [ext_resource path="res://Scenes/npcTeacher.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Scenes/dialogBoxTest.tscn" type="PackedScene" id=11]
@@ -117,6 +118,37 @@ tracks/1/keys = {
 "transitions": PoolRealArray( 1, 1 ),
 "update": 1,
 "values": [ false, true ]
+}
+
+[sub_resource type="Animation" id=12]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 74, 660 ) ]
+}
+
+[sub_resource type="Animation" id=13]
+resource_name = "seta8"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 74, 660 ), Vector2( 105, 660 ), Vector2( 74, 660 ) ]
 }
 
 [node name="Node2D" type="Node2D"]
@@ -288,3 +320,13 @@ texture = ExtResource( 7 )
 autoplay = "some"
 anims/RESET = SubResource( 10 )
 anims/some = SubResource( 11 )
+
+[node name="setapreta8" type="Sprite" parent="."]
+position = Vector2( 74, 660 )
+rotation = 3.14159
+scale = Vector2( 0.267098, 0.422262 )
+texture = ExtResource( 6 )
+
+[node name="setapreta8" type="AnimationPlayer" parent="setapreta8"]
+anims/RESET = SubResource( 12 )
+anims/seta8 = SubResource( 13 )
