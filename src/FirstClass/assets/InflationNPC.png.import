@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Street_1.png-274595ebb8f3c76539e7fbbad0b270c7.stex"
+path="res://.import/InflationNPC.png-c22a93f8ab465449aa7a2b3d0d224795.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Street_1.png"
-dest_files=[ "res://.import/Street_1.png-274595ebb8f3c76539e7fbbad0b270c7.stex" ]
+source_file="res://assets/InflationNPC.png"
+dest_files=[ "res://.import/InflationNPC.png-c22a93f8ab465449aa7a2b3d0d224795.stex" ]
 
 [params]
 
