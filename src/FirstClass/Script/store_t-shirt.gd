@@ -44,6 +44,7 @@ func _on_Button_tshirt_yellow_pressed():
 	StoreManagement.i = 2
 	StoreManagement.j = 0
 	StoreManagement.store_total = 300.00
+	StoreManagement.item_status = [0,1,0,0]
 	if(!StoreManagement.products[StoreManagement.i][StoreManagement.j]):
 		get_tree().change_scene("res://Scenes/StoreCart.tscn")
 	else:
@@ -55,6 +56,7 @@ func _on_Button_tshirt_black_pressed():
 	StoreManagement.i = 2
 	StoreManagement.j = 1
 	StoreManagement.store_total = 300.00
+	StoreManagement.item_status = [0,1,0,0]
 	if(!StoreManagement.products[StoreManagement.i][StoreManagement.j]):
 		get_tree().change_scene("res://Scenes/StoreCart.tscn")
 	else:
@@ -65,6 +67,7 @@ func _on_Button_tshirt_purple_pressed():
 	StoreManagement.i = 2
 	StoreManagement.j = 2
 	StoreManagement.store_total = 300.00
+	StoreManagement.item_status = [0,1,0,0]
 	if(!StoreManagement.products[StoreManagement.i][StoreManagement.j]):
 		get_tree().change_scene("res://Scenes/StoreCart.tscn")
 	else:
@@ -76,6 +79,7 @@ func _on_Button_tshirt_green_pressed():
 	StoreManagement.i = 2
 	StoreManagement.j = 3
 	StoreManagement.store_total = 300.00
+	StoreManagement.item_status = [0,1,0,0]
 	get_tree().change_scene("res://Scenes/StoreCart.tscn")
 
 
@@ -84,6 +88,7 @@ func _on_Button_tshirt_pink_pressed():
 	StoreManagement.i = 2
 	StoreManagement.j = 4
 	StoreManagement.store_total = 300.00
+	StoreManagement.item_status = [0,1,0,0]
 	if(!StoreManagement.products[StoreManagement.i][StoreManagement.j]):
 		get_tree().change_scene("res://Scenes/StoreCart.tscn")
 	else:

@@ -195,19 +195,19 @@ margin_right = 461.0
 margin_bottom = 515.0
 custom_colors/default_color = Color( 0, 0, 0, 1 )
 custom_fonts/normal_font = SubResource( 2 )
-text = "(-1 a 19) % a.s"
+text = "(5 a 13) % a.s"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="return4" type="RichTextLabel" parent="."]
-margin_left = 223.0
+margin_left = 201.0
 margin_top = 525.0
-margin_right = 460.0
+margin_right = 438.0
 margin_bottom = 611.0
 custom_colors/default_color = Color( 0, 0, 0, 1 )
 custom_fonts/normal_font = SubResource( 2 )
-text = "(1 a 20) % a.s"
+text = "(-1 a 19) % a.s"
 __meta__ = {
 "_edit_use_anchors_": false
 }
