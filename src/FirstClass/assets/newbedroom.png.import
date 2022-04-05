@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/street_1.png-7bc5d75e18feface24ccb69c5f05b514.stex"
+path="res://.import/newbedroom.png-4088006108a234bbe2141a742c40991d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/street_1.png"
-dest_files=[ "res://.import/street_1.png-7bc5d75e18feface24ccb69c5f05b514.stex" ]
+source_file="res://assets/newbedroom.png"
+dest_files=[ "res://.import/newbedroom.png-4088006108a234bbe2141a742c40991d.stex" ]
 
 [params]
 
