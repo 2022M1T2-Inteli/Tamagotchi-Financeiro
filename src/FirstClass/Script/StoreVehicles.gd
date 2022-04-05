@@ -4,7 +4,7 @@ var Bicycle : float = 300.00
 var Eletric_Bike : float = 1300.00
 var Motorcycle : float = 2100.00
 var Standard_Car : float = 8000.00
-var Deluxe_Car : float = 32000.00
+var Deluxe_Car : float = 22000.00
 
 var purchased = preload("res://Scenes/Purchased.tscn")
 
@@ -42,7 +42,7 @@ func _on_Bicycle_pressed():
 	StoreManagement.i = 1
 	StoreManagement.j = 0
 	StoreManagement.store_total = 300.00
-	StoreManagement.item_status[0] = 4
+	StoreManagement.item_status[0] = 3
 	if(!StoreManagement.products[StoreManagement.i][StoreManagement.j]):
 		get_tree().change_scene("res://Scenes/StoreCart.tscn")
 	else:
@@ -54,7 +54,8 @@ func _on_Eletric_Bike_pressed():
 	StoreManagement.i = 1
 	StoreManagement.j = 1
 	StoreManagement.store_total = 1300.00
-	StoreManagement.item_status[0] = 5
+	StoreManagement.item_status[0] = 4
+	StoreManagement.item_status[3] = 10
 	if(!StoreManagement.products[StoreManagement.i][StoreManagement.j]):
 		get_tree().change_scene("res://Scenes/StoreCart.tscn")
 	else:
@@ -67,6 +68,7 @@ func _on_Motorcycle_pressed():
 	StoreManagement.j = 2
 	StoreManagement.store_total = 1300.00
 	StoreManagement.item_status[0] = 5
+	StoreManagement.item_status[3] = 25
 	if(!StoreManagement.products[StoreManagement.i][StoreManagement.j]):
 		get_tree().change_scene("res://Scenes/StoreCart.tscn")
 	else:
@@ -79,6 +81,7 @@ func _on_Standard_Car_pressed():
 	StoreManagement.j = 3
 	StoreManagement.store_total = 8000.00
 	StoreManagement.item_status[0] = 6
+	StoreManagement.item_status[3] = 50
 	if(!StoreManagement.products[StoreManagement.i][StoreManagement.j]):
 		get_tree().change_scene("res://Scenes/StoreCart.tscn")
 	else:
@@ -89,8 +92,9 @@ func _on_Deluxe_Car_pressed():
 	StoreManagement.store_product_index = "res://assets/Deluxe_Car.png"
 	StoreManagement.i = 1
 	StoreManagement.j = 4
-	StoreManagement.store_total = 32000.00
+	StoreManagement.store_total = 22000.00
 	StoreManagement.item_status[0] = 7
+	StoreManagement.item_status[3] = 500
 	if(!StoreManagement.products[StoreManagement.i][StoreManagement.j]):
 		get_tree().change_scene("res://Scenes/StoreCart.tscn")
 	else:

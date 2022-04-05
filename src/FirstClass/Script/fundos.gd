@@ -8,28 +8,32 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+	if Global.knowledge >= 30:
+		$FundoPreto3.visible = false
+		$FundoPreto4.visible = false
+	if Global.knowledge >= 15:
+		$FundoPreto.visible = false
+		$FundoPreto2.visible = false
 
 
 func _on_Button_pressed():
-	get_tree().change_scene("res://Scenes/imobiliario.tscn")
+	if Global.knowledge >= 15:
+		get_tree().change_scene("res://Scenes/imobiliario.tscn")
 
 
 func _on_Button2_pressed():
-	get_tree().change_scene("res://Scenes/multi_mercado.tscn")
+	if Global.knowledge >= 15:
+		get_tree().change_scene("res://Scenes/multi_mercado.tscn")
 
 
 func _on_Button3_pressed():
-	get_tree().change_scene("res://Scenes/acoes.tscn")
+	if Global.knowledge >= 30:
+		get_tree().change_scene("res://Scenes/acoes.tscn")
 
 
 func _on_Button4_pressed():
-	get_tree().change_scene("res://Scenes/acoes_alto_risco_1.tscn")
+	if Global.knowledge >= 30:
+		get_tree().change_scene("res://Scenes/acoes_alto_risco_1.tscn")
 
 
 func _on_Button5_pressed():

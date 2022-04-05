@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/cashRegisterMarket.png-a566f2bee82e9e18d5e5ea7f015bd715.stex"
+path="res://.import/cellphone_map2.png-a29211d85fb2621d98f379be56325cbc.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/cashRegisterMarket.png"
-dest_files=[ "res://.import/cashRegisterMarket.png-a566f2bee82e9e18d5e5ea7f015bd715.stex" ]
+source_file="res://Cellphone/cellphone_map2.png"
+dest_files=[ "res://.import/cellphone_map2.png-a29211d85fb2621d98f379be56325cbc.stex" ]
 
 [params]
 

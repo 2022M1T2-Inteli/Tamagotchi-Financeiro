@@ -2,7 +2,7 @@ extends Area2D
 
 # onready var dialog = get_node("Control2/dialogBox") # FIXME: Node not found
 
-var contents = ["res://Scenes_ana/dialogBoxTest.tscn","res://Scenes_ana/dialogBoxTestCDB.tscn",
+var contents = ["res://Scenes_ana/dialogBoxInflacao.tscn","res://Scenes_ana/dialogBoxTest.tscn","res://Scenes_ana/dialogBoxTestCDB.tscn",
 		"res://Scenes_ana/dialogBoxTestIndicadores.tscn", "res://Scenes_ana/dialogBoxTestRendaF.tscn",
 		"res://Scenes_ana/dialogBoxTestTesouroDireto.tscn"]
 
