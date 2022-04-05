@@ -21,7 +21,7 @@ func _ready():
 	elif Global.current_scene == "res://Scenery/work.tscn":
 		$Sprite.position = Vector2(-340,880)
 	elif Global.current_scene == "res://Scenery/streetHouse.tscn":
-		$Sprite.position = Vector2(-350,800)
+		$Sprite.position = Vector2(-350,1500)
 
 func _on_Button_exit_map_pressed():
 	Global.button = true
