@@ -1,7 +1,7 @@
 extends Node2D
 
-var dog : float = 3200.00
-var cat : float = 2200.00
+var dog : float = 2100.00
+var cat : float = 1400.00
 var pet_3 : float = 500.00
 var pet_4 : float = 700.00
 
@@ -35,7 +35,7 @@ func _on_Button_dog_pressed():
 	StoreManagement.store_product_index = "res://assets/Pets_Dog.png"
 	StoreManagement.i = 3
 	StoreManagement.j = 0
-	StoreManagement.store_total = 3200.00
+	StoreManagement.store_total = 2100.00
 	StoreManagement.item_status = [0,0,1,100]
 	if(!StoreManagement.products[StoreManagement.i][StoreManagement.j]):
 		get_tree().change_scene("res://Scenes/StoreCart.tscn")
@@ -47,7 +47,7 @@ func _on_Button_cat_pressed():
 	StoreManagement.store_product_index = "res://assets/Pets_Cat.png"
 	StoreManagement.i = 3
 	StoreManagement.j = 1
-	StoreManagement.store_total = 5200.00
+	StoreManagement.store_total = 1400.00
 	StoreManagement.item_status = [0,0,1,80]
 	if(!StoreManagement.products[StoreManagement.i][StoreManagement.j]):
 		get_tree().change_scene("res://Scenes/StoreCart.tscn")

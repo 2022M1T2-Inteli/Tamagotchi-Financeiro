@@ -6,5 +6,4 @@
 [node name="ambient" type="AudioStreamPlayer"]
 stream = ExtResource( 1 )
 volume_db = -7.0
-pitch_scale = 0.7
 script = ExtResource( 2 )

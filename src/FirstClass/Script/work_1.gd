@@ -4,6 +4,7 @@ func _ready():
 	$Excla/AnimationPlayer.play("RESET")
 	$Excla2.visible = false
 	$"/root/Ambient".stop()
+	$Area2D/setapreta9/setapreat9.play("seta9")
 
 
 func _on_Button_1_pressed():

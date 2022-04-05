@@ -1,0 +1,60 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://Fonts/Minecraftia-Regular.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Winscnenepark.gd" type="Script" id=2]
+[ext_resource path="res://assets/winscenepark.png" type="Texture" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxEmpty" id=2]
+
+[sub_resource type="StyleBoxEmpty" id=3]
+
+[sub_resource type="StyleBoxEmpty" id=4]
+
+[sub_resource type="StyleBoxEmpty" id=5]
+
+[sub_resource type="DynamicFont" id=6]
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxEmpty" id=7]
+
+[sub_resource type="StyleBoxEmpty" id=8]
+
+[sub_resource type="StyleBoxEmpty" id=9]
+
+[sub_resource type="StyleBoxEmpty" id=10]
+
+[node name="Winscnenepark" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="Winscenepark" type="Sprite" parent="."]
+position = Vector2( 642, 360.5 )
+scale = Vector2( 0.262505, 0.264241 )
+texture = ExtResource( 3 )
+
+[node name="Buttonsim" type="Button" parent="."]
+margin_left = 430.0
+margin_top = 546.0
+margin_right = 579.0
+margin_bottom = 635.0
+custom_fonts/font = SubResource( 1 )
+custom_styles/hover = SubResource( 2 )
+custom_styles/pressed = SubResource( 3 )
+custom_styles/focus = SubResource( 4 )
+custom_styles/normal = SubResource( 5 )
+
+[node name="Buttonnao" type="Button" parent="."]
+margin_left = 705.0
+margin_top = 543.0
+margin_right = 876.0
+margin_bottom = 632.0
+custom_fonts/font = SubResource( 6 )
+custom_styles/hover = SubResource( 7 )
+custom_styles/pressed = SubResource( 8 )
+custom_styles/focus = SubResource( 9 )
+custom_styles/normal = SubResource( 10 )
+
+[connection signal="pressed" from="Buttonsim" to="." method="_on_Buttonsim_pressed"]
+[connection signal="pressed" from="Buttonnao" to="." method="_on_Buttonnao_pressed"]
