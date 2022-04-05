@@ -9,6 +9,7 @@ export(bool) var start_focused = false
 func _ready():
 	if(start_focused):
 		grab_focus()
+
 	connect("pressed", self, "on_Button_Pressed")
 
 func on_Button_mouse_pressed():

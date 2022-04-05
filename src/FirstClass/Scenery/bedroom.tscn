@@ -145,8 +145,7 @@ scale = Vector2( 0.21875, 0.275694 )
 texture = ExtResource( 5 )
 
 [node name="Player_certo" parent="." instance=ExtResource( 2 )]
-visible = false
-position = Vector2( 106, 710 )
+position = Vector2( 118, 715 )
 
 [node name="StaticBorder2D" type="StaticBody2D" parent="."]
 

@@ -1,16 +1,9 @@
 extends Node2D
 
-var milk1 : float = 5.25 
-var milk2 : float = 3.00
-var milk3 : float = 4.70
+# Market minigame choise system
 
 func _ready():
-	milk1 += Global.inflation
-	milk2 += Global.inflation
-	milk3 += Global.inflation
-	$RichTextLabel.bbcode_text = (str("[center]%.2f" % float(milk1)))
-	$RichTextLabel2.bbcode_text = (str("[center]%.2f" % float(milk2)))
-	$RichTextLabel3.bbcode_text = (str("[center]%.2f" % float(milk3)))
+	pass # Replace with function body.
 
 func _on_Vmilk_pressed():
 	Global.total += 5.25

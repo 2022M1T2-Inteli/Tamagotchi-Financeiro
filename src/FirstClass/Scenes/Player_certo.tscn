@@ -1,8 +1,7 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Script/KinematicBody2D.gd" type="Script" id=1]
 [ext_resource path="res://Action RPG Resources/Player/Player.png" type="Texture" id=2]
-[ext_resource path="res://assets/player2.png" type="Texture" id=3]
 
 [sub_resource type="Animation" id=2]
 length = 0.001
@@ -87,98 +86,19 @@ tracks/0/keys = {
 radius = 25.0
 height = 0.0
 
-[sub_resource type="Animation" id=7]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/path = NodePath(".:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ 0 ]
-}
-
-[sub_resource type="Animation" id=8]
-resource_name = "baixo"
-length = 0.6
-tracks/0/type = "value"
-tracks/0/path = NodePath(".:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
-"update": 1,
-"values": [ 17, 18, 19, 20, 21 ]
-}
-
-[sub_resource type="Animation" id=9]
-resource_name = "cima"
-length = 0.6
-tracks/0/type = "value"
-tracks/0/path = NodePath(".:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
-"update": 1,
-"values": [ 7, 8, 9, 10, 11 ]
-}
-
-[sub_resource type="Animation" id=10]
-resource_name = "direita"
-length = 0.6
-tracks/0/type = "value"
-tracks/0/path = NodePath(".:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
-"update": 1,
-"values": [ 1, 2, 3, 4, 5 ]
-}
-
-[sub_resource type="Animation" id=11]
-resource_name = "esquerda"
-length = 0.4
-tracks/0/type = "value"
-tracks/0/path = NodePath(".:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 0.1, 0.2 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
-"update": 1,
-"values": [ 13, 14, 15 ]
-}
-
 [node name="Player_certo" type="KinematicBody2D"]
 position = Vector2( 0, 1 )
 collision_layer = 35
 collision_mask = 35
 script = ExtResource( 1 )
 
-[node name="Sprite_bunny" type="Sprite" parent="."]
+[node name="Sprite" type="Sprite" parent="."]
 position = Vector2( 0.999998, -87 )
 scale = Vector2( 6.82226, 6.87695 )
 texture = ExtResource( 2 )
 hframes = 60
 
-[node name="AnimationBunny" type="AnimationPlayer" parent="Sprite_bunny"]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite"]
 anims/RESET = SubResource( 2 )
 "anims/andando baixo" = SubResource( 5 )
 "anims/andando cima" = SubResource( 4 )
@@ -189,16 +109,3 @@ anims/RESET = SubResource( 2 )
 visible = false
 position = Vector2( -4, -18 )
 shape = SubResource( 1 )
-
-[node name="Sprite_wolf" type="Sprite" parent="."]
-position = Vector2( -2, -68 )
-scale = Vector2( 0.198312, 0.239402 )
-texture = ExtResource( 3 )
-hframes = 22
-
-[node name="AnimationWolf" type="AnimationPlayer" parent="Sprite_wolf"]
-anims/RESET = SubResource( 7 )
-anims/baixo = SubResource( 8 )
-anims/cima = SubResource( 9 )
-anims/direita = SubResource( 10 )
-anims/esquerda = SubResource( 11 )
