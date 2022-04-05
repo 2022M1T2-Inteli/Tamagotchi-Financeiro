@@ -1,8 +1,13 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Script/popup2.gd" type="Script" id=1]
 [ext_resource path="res://assets/newemailteste.png" type="Texture" id=2]
 [ext_resource path="res://Fonts/Minecraftia-Regular.ttf" type="DynamicFontData" id=3]
+
+[sub_resource type="StyleBoxFlat" id=8]
+bg_color = Color( 0.498039, 0.32549, 0.92549, 1 )
+border_color = Color( 0, 0, 0, 1 )
+border_blend = true
 
 [sub_resource type="DynamicFont" id=3]
 size = 18
@@ -27,6 +32,9 @@ tracks/0/keys = {
 "values": [ Vector2( 0, 0 ), Vector2( 421, 123 ), Vector2( 600, 200 ) ]
 }
 
+[sub_resource type="StyleBoxFlat" id=7]
+bg_color = Color( 0.894118, 0.305882, 0.305882, 1 )
+
 [sub_resource type="Animation" id=4]
 length = 0.001
 
@@ -45,6 +53,9 @@ tracks/0/keys = {
 "update": 1,
 "values": [ true, false, true, false, true, false ]
 }
+
+[sub_resource type="StyleBoxFlat" id=6]
+bg_color = Color( 1, 0.360784, 0.898039, 1 )
 
 [node name="Control" type="Control"]
 anchor_right = 1.002
@@ -69,6 +80,7 @@ margin_top = -0.0940094
 margin_right = -564.625
 margin_bottom = -132.924
 mouse_filter = 2
+custom_styles/panel = SubResource( 8 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -101,6 +113,7 @@ margin_left = -10.225
 margin_top = -6.976
 margin_right = 2.42505
 margin_bottom = 4.84
+custom_styles/normal = SubResource( 7 )
 flat = true
 __meta__ = {
 "_edit_use_anchors_": false
@@ -125,6 +138,7 @@ margin_left = -0.200073
 margin_top = 0.191986
 margin_right = 0.224976
 margin_bottom = 3.65199
+custom_styles/normal = SubResource( 6 )
 text = "X"
 __meta__ = {
 "_edit_use_anchors_": false

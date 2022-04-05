@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://Action RPG Resources/Player/Player.png" type="Texture" id=1]
+[ext_resource path="res://assets/player2.png" type="Texture" id=1]
 
 [sub_resource type="Animation" id=1]
 length = 0.001
@@ -97,10 +97,10 @@ __meta__ = {
 }
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 167, 178 )
-scale = Vector2( 9.98828, 11.5508 )
+position = Vector2( 152, 184 )
+scale = Vector2( 0.347896, 0.426406 )
 texture = ExtResource( 1 )
-hframes = 60
+hframes = 22
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite"]
 anims/RESET = SubResource( 1 )

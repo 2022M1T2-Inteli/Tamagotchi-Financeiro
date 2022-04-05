@@ -7,8 +7,8 @@ var dialogue = false
 onready var sprite : Sprite = get_node("Sprite")
 
 #textures for sprite
-var texture_male = preload("res://assets/Tails.png")
-var texture_female = preload("res://assets/Niko.png")
+var texture_male #= preload("res://assets/Tails.png")
+var texture_female #= preload("res://assets/Niko.png")
 
 func _ready():
 	#switch_texture()

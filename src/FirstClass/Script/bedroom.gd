@@ -2,8 +2,22 @@ extends Node2D
 
 var celltest = preload ("res://Cellphone/Cellphone.tscn")
 var new_node
+var player_character_wolf = ("res://Scenes/wolfPlayer.tscn")
+var player_character_bunny = ("res://Scenes/Player_certo.tscn")
+
 
 func _ready():
+#	if Global.gender == false:
+#		var player_character = load(player_character_wolf).instance()
+#		player_character.start_position = Vector2(633, 655)
+#		add_child(player_character)
+#
+#	if Global.gender == true:
+#		pass
+#		var player_character = load(player_character_bunny).instance()
+#		player_character.start_position = Vector2(633, 655)
+#		add_child(player_character)
+
 	for i in range(1,5):
 		get_node(str(i)).visible = StoreManagement.products[3][i-1]
 	for i in 5:
@@ -19,8 +33,6 @@ func _ready():
 		$Button_Instructions1.visible = true
 	else:
 		$Player_certo.visible = true
-#		$Excla/AnimationPlayer.play("RESET")
-#		$Excla2/AnimationPlayer.play("RESET")
 		$Joystick/Control/question_button/AnimationPlayer.play("aviso")
 
 func _on_Button_Instructions1_pressed():

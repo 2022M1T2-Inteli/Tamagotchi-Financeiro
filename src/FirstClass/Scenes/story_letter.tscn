@@ -99,7 +99,7 @@ position = Vector2( 491.5, 345 )
 shape = SubResource( 5 )
 
 [node name="Player_certo" parent="." instance=ExtResource( 4 )]
-position = Vector2( 100, 612 )
+position = Vector2( 137, 577 )
 
 [node name="FundoPreto" type="Sprite" parent="."]
 visible = false

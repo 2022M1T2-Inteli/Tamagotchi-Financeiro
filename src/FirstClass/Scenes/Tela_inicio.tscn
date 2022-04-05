@@ -7,20 +7,20 @@
 [sub_resource type="GDScript" id=1]
 script/source = "extends Control
 
-func _ready():
-	pass
-
-func _on_Button_tela_inicio_pressed():
-	get_tree().change_scene(\"res://Scenery/ChampionSelect.tscn\")
-
 func _on_Button_pressed():
 	get_tree().quit()
+
+
+func _on_Button_tela_inicio_pressed():
+	print(\"cheguei\")
+	get_tree().change_scene(\"res://Scenery/ChampionSelect.tscn\")
 "
 
 [node name="Node2D2" type="Control"]
 script = SubResource( 1 )
 __meta__ = {
-"_edit_horizontal_guides_": [  ]
+"_edit_horizontal_guides_": [  ],
+"_edit_use_anchors_": false
 }
 
 [node name="musicfx" parent="." instance=ExtResource( 1 )]
@@ -31,6 +31,9 @@ margin_bottom = 718.0
 stream = ExtResource( 2 )
 autoplay = true
 script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Button" type="Button" parent="."]
 show_behind_parent = true
@@ -44,10 +47,10 @@ __meta__ = {
 
 [node name="Button_tela_inicio" type="Button" parent="."]
 show_behind_parent = true
-margin_left = 305.0
-margin_top = 515.0
-margin_right = 588.0
-margin_bottom = 575.0
+margin_left = 162.0
+margin_top = 481.0
+margin_right = 558.0
+margin_bottom = 607.0
 __meta__ = {
 "_edit_use_anchors_": false
 }

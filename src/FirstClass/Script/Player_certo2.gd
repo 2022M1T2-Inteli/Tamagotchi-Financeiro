@@ -7,8 +7,8 @@ var dialogue = false
 onready var sprite : Sprite = get_node("Sprite")
 
 #textures for sprite
-var texture_male = preload("res://assets/Tails.png")
-var texture_female = preload("res://assets/Niko.png")
+#var texture_male = preload("res://assets/Tails.png")
+#var texture_female = preload("res://assets/Niko.png")
 
 func _ready():
 	#switch_texture()
@@ -41,7 +41,8 @@ func _physics_process(delta):
 	move_and_collide(velocity) # Move and collide with world
 
 func switch_texture():
-	if  (Global.gender):
-		sprite.set_texture(texture_female)
-	else:
-		sprite.set_texture(texture_male)
+#	if  (Global.gender):
+#		sprite.set_texture(texture_female)
+#	else:
+#		sprite.set_texture(texture_male)
+	pass

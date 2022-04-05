@@ -1,7 +1,19 @@
 extends Node2D
 
+
+var player_character_wolf = ("res://Sprites wolf/frame 0.png")
+var player_character_bunny = ("res://Scenes/Player_certo.tscn")
 # Called when the node enters the scene tree for the first time.
 func _ready():
+#	if Global.gender == false:
+#		var player_character = load(player_character_wolf).instance()
+#		player_character.position = Vector2(420,549)
+#		add_child(player_character)
+#
+#	if Global.gender == true:
+#		var player_character = load(player_character_bunny).instance()
+#		player_character.position = Vector2(420,549)
+#		add_child(player_character)
 	$Exc/AnimationPlayer.play("excla2")
 
 func _on_Area2D_body_entered(body):
