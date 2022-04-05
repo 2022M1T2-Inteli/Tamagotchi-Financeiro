@@ -35,7 +35,6 @@ var work = ""
 var button = false
 var transition = false
 var excla
-#var excla3
 var letter = false
 var passive_happiness = 0
 

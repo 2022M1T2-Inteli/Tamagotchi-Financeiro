@@ -41,7 +41,7 @@ func _on_Area2D_body_entered(body):
 		
 		#fix income
 		Investiment.profit_savings += Investiment.invest_money_savings*0.05
-		Investiment.invest_money_savings += Investiment.invest_money_savings*0.05
+		Investiment.invest_money_savings *= 1.05
 		
 		Investiment.profit_cdb += Investiment.invest_money_cdb*0.08
 		Investiment.invest_money_cdb += Investiment.invest_money_cdb*0.08
