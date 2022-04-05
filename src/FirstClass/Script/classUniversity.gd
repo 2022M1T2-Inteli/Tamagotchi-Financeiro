@@ -10,6 +10,7 @@ func _ready():
 
 func _process(delta):
 		$Excla/AnimationPlayer.play("exclam")
+		$Goalscene2/Sprite2/setapreta.play("setapreta")
 		
 		if !Global.university1:
 			$Player_certo.visible = false
