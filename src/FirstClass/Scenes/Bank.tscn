@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=2]
+[gd_scene load_steps=28 format=2]
 
 [ext_resource path="res://Scenes/Player_certo.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/classUniversityToStreetHouse.tscn" type="PackedScene" id=2]
@@ -182,38 +182,6 @@ tracks/0/keys = {
 "values": [ Vector2( -1134, 155 ), Vector2( -1094, 155 ), Vector2( -1134, 155 ) ]
 }
 
-[sub_resource type="Animation" id=15]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ Vector2( -665, -130 ) ]
-}
-
-[sub_resource type="Animation" id=16]
-resource_name = "seta7"
-length = 2.0
-loop = true
-tracks/0/type = "value"
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 1.1, 2 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
-"update": 0,
-"values": [ Vector2( -665, -131 ), Vector2( -665, -114 ), Vector2( -665, -131 ) ]
-}
-
 [node name="Node2D2" type="Node2D"]
 position = Vector2( 1181, 496 )
 script = ExtResource( 7 )
@@ -320,15 +288,6 @@ texture = ExtResource( 13 )
 [node name="Ex3" type="AnimationPlayer" parent="Ex3"]
 anims/RESET = SubResource( 13 )
 anims/exclama3 = SubResource( 14 )
-
-[node name="setapreta7" type="Sprite" parent="."]
-position = Vector2( -665, -130 )
-scale = Vector2( 0.253937, 0.167197 )
-texture = ExtResource( 6 )
-
-[node name="setapreta7" type="AnimationPlayer" parent="setapreta7"]
-anims/RESET = SubResource( 15 )
-anims/seta7 = SubResource( 16 )
 
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_Area2D_body_entered"]
 [connection signal="pressed" from="Button" to="Bank_instructions" method="_on_Button_pressed"]
