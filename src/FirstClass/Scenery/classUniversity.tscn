@@ -1,18 +1,72 @@
-[gd_scene load_steps=26 format=2]
+[gd_scene load_steps=30 format=2]
 
 [ext_resource path="res://assets/university_scene.jpg" type="Texture" id=1]
 [ext_resource path="res://Scenes/border.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Scenes/Transition_in.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Scenes/classUniversityToStreetHouse.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Scenes/Player_certo.tscn" type="PackedScene" id=5]
-[ext_resource path="res://assets/setapreta.png" type="Texture" id=6]
+[ext_resource path="res://assets/fundo preto.png" type="Texture" id=6]
 [ext_resource path="res://assets/pixil-frame-0 (5).png" type="Texture" id=7]
+[ext_resource path="res://assets/university_dynamics.png" type="Texture" id=8]
+[ext_resource path="res://assets/setapreta.png" type="Texture" id=9]
 [ext_resource path="res://Scenes/npcTeacher.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Scenes/dialogBoxTest.tscn" type="PackedScene" id=11]
 [ext_resource path="res://assets/university_tela.png" type="Texture" id=12]
 [ext_resource path="res://assets/exc.png" type="Texture" id=13]
 [ext_resource path="res://Script/classUniversity.gd" type="Script" id=14]
 [ext_resource path="res://Scenery/joystick.tscn" type="PackedScene" id=15]
+
+[sub_resource type="RectangleShape2D" id=12]
+extents = Vector2( 32.5, 42.5 )
+
+[sub_resource type="Animation" id=13]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1.95227, 8.3887 ) ]
+}
+
+[sub_resource type="Animation" id=14]
+resource_name = "seta1"
+length = 2.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 346.314, 483.396 ), Vector2( 346.314, 501.264 ), Vector2( 346.314, 483.396 ) ]
+}
+
+[sub_resource type="Animation" id=15]
+resource_name = "setapreta"
+length = 2.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 3.09937, 33.1799 ), Vector2( 3.09937, 50.9459 ), Vector2( 3.099, 33 ) ]
+}
 
 [sub_resource type="Animation" id=2]
 length = 0.001
@@ -120,39 +174,6 @@ tracks/1/keys = {
 "values": [ false, true ]
 }
 
-[sub_resource type="Animation" id=12]
-length = 0.001
-loop = true
-tracks/0/type = "value"
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ Vector2( 74, 660 ) ]
-}
-
-[sub_resource type="Animation" id=13]
-resource_name = "seta8"
-length = 2.0
-loop = true
-tracks/0/type = "value"
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 1, 2 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
-"update": 0,
-"values": [ Vector2( 74, 660 ), Vector2( 105, 660 ), Vector2( 74, 660 ) ]
-}
-
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 14 )
 
@@ -167,7 +188,8 @@ position = Vector2( 1179, 614 )
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
 [node name="Sprite" type="Sprite" parent="ParallaxBackground"]
-position = Vector2( 641, 361 )
+visible = false
+position = Vector2( 346.314, 490.692 )
 scale = Vector2( 0.998437, 1 )
 texture = ExtResource( 1 )
 __meta__ = {
@@ -178,15 +200,30 @@ __meta__ = {
 position = Vector2( -7, -6 )
 
 [node name="Goalscene2" parent="." instance=ExtResource( 4 )]
-position = Vector2( 55, 662 )
+position = Vector2( 23, 672 )
 rotation = -1.5708
 path = "res://Scenery/streetHouse.tscn"
 
-[node name="Transition_in" parent="." instance=ExtResource( 3 )]
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Goalscene2"]
+position = Vector2( -4.99994, -3 )
+rotation = -1.5708
+shape = SubResource( 12 )
 
-[node name="Player_certo" parent="." instance=ExtResource( 5 )]
-position = Vector2( 177, 674 )
-scale = Vector2( 0.75, 0.75 )
+[node name="Sprite2" type="Sprite" parent="Goalscene2"]
+position = Vector2( 1.95227, 8.3887 )
+rotation = -1.5708
+scale = Vector2( 0.286765, 0.376471 )
+texture = ExtResource( 9 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="setapreta" type="AnimationPlayer" parent="Goalscene2/Sprite2"]
+anims/RESET = SubResource( 13 )
+anims/seta1 = SubResource( 14 )
+anims/setapreta = SubResource( 15 )
+
+[node name="Transition_in" parent="." instance=ExtResource( 3 )]
 
 [node name="Control2" parent="." instance=ExtResource( 11 )]
 visible = false
@@ -323,12 +360,28 @@ autoplay = "some"
 anims/RESET = SubResource( 10 )
 anims/some = SubResource( 11 )
 
-[node name="setapreta8" type="Sprite" parent="."]
-position = Vector2( 74, 660 )
-rotation = 3.14159
-scale = Vector2( 0.267098, 0.422262 )
+[node name="Button" type="Button" parent="."]
+visible = false
+margin_left = 943.0
+margin_top = 108.0
+margin_right = 993.0
+margin_bottom = 151.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="FundoPreto" type="Sprite" parent="Button"]
+position = Vector2( -298.5, 249 )
+scale = Vector2( 2.01094, 2.01667 )
 texture = ExtResource( 6 )
 
-[node name="setapreta8" type="AnimationPlayer" parent="setapreta8"]
-anims/RESET = SubResource( 12 )
-anims/seta8 = SubResource( 13 )
+[node name="UniversityDynamics" type="Sprite" parent="Button"]
+position = Vector2( -298, 284.5 )
+scale = Vector2( 0.573958, 0.589815 )
+texture = ExtResource( 8 )
+
+[node name="Player_certo" parent="." instance=ExtResource( 5 )]
+position = Vector2( 177, 674 )
+scale = Vector2( 0.75, 0.75 )
+
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
