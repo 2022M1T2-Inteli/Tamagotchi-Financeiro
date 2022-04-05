@@ -33,10 +33,6 @@ func _on_Area2D_body_entered(body):
 		Global.actions = 3
 		Global.school = false
 		Global.happiness -= Global.passive_happiness
-	#if Global.digital_money >= Global.monthly_expenses:
-		#Global.digital_money -= Global.monthly_expenses
-	#else:
-		#Global.money -= Global.monthly_expenses
 		rng.randomize()
 		
 		#fix income
@@ -84,3 +80,8 @@ func _on_Area2D_body_entered(body):
 			Global.actions += 1
 		elif Global.happiness <= 30 && Global.actions > 0:
 			Global.actions -=1
+			
+		if Global.digital_money >= Global.monthly_expenses:
+			Global.digital_money -= Global.monthly_expenses
+		else:
+			Global.money -= Global.monthly_expenses

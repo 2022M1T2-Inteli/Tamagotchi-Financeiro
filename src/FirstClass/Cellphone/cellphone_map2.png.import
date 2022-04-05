@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/cellphone_map.png-f3c53e42ec4ea8a60357ad4520103d91.stex"
+path="res://.import/cellphone_map2.png-a29211d85fb2621d98f379be56325cbc.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Cellphone/cellphone_map.png"
-dest_files=[ "res://.import/cellphone_map.png-f3c53e42ec4ea8a60357ad4520103d91.stex" ]
+source_file="res://Cellphone/cellphone_map2.png"
+dest_files=[ "res://.import/cellphone_map2.png-a29211d85fb2621d98f379be56325cbc.stex" ]
 
 [params]
 
