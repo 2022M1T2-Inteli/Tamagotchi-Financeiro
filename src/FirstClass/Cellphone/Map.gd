@@ -11,17 +11,17 @@ var test
 
 func _ready():
 	if Global.current_scene == "res://Scenes/startMarket.tscn":
-		$Sprite.position = Vector2(728,298)
+		$Sprite.position = Vector2(-294,556)
 	elif Global.current_scene == "res://Scenery/classUniversity.tscn":
-		$Sprite.position = Vector2(728,226)
+		$Sprite.position = Vector2(-294,456)
 	elif Global.current_scene == "res://Scenery/bedroom.tscn":
-		$Sprite.position = Vector2(728,150)
+		$Sprite.position = Vector2(-294,346)
 	elif Global.current_scene == "res://Scenes/Bank.tscn":
-		$Sprite.position = Vector2(728,370)
+		$Sprite.position = Vector2(-294,663)
 	elif Global.current_scene == "res://Scenery/work.tscn":
-		$Sprite.position = Vector2(728,456)
+		$Sprite.position = Vector2(-294,788)
 	elif Global.current_scene == "res://Scenery/streetHouse.tscn":
-		$Sprite.position = Vector2(656,301)
+		$Sprite.position = Vector2(-342,861)
 	pass # Replace with function body.
 
 func _on_Button_exit_map_pressed():
