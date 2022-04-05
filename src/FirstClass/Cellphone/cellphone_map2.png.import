@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/MAPAS.png-4d11b8f69ad48f2652bb1c9447911bd7.stex"
+path="res://.import/cellphone_map2.png-a29211d85fb2621d98f379be56325cbc.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/MAPAS.png"
-dest_files=[ "res://.import/MAPAS.png-4d11b8f69ad48f2652bb1c9447911bd7.stex" ]
+source_file="res://Cellphone/cellphone_map2.png"
+dest_files=[ "res://.import/cellphone_map2.png-a29211d85fb2621d98f379be56325cbc.stex" ]
 
 [params]
 
