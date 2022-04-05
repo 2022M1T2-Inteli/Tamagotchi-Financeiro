@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/street_1.png-7bc5d75e18feface24ccb69c5f05b514.stex"
+path="res://.import/CasaPobre.png-9f4c5d63be4ad4d8a9beadf77d362e63.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/street_1.png"
-dest_files=[ "res://.import/street_1.png-7bc5d75e18feface24ccb69c5f05b514.stex" ]
+source_file="res://assets/CasaPobre.png"
+dest_files=[ "res://.import/CasaPobre.png-9f4c5d63be4ad4d8a9beadf77d362e63.stex" ]
 
 [params]
 

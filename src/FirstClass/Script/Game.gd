@@ -64,4 +64,14 @@ func _on_ScoreTimer_timeout() -> void:
 func _on_DifficultTimer_timeout():
 	game_speed += game_speed * modifier
 	$SpawnTimer.wait_time -= $SpawnTimer.wait_time * modifier
+
+func _ready():
+	while score > 0:
+		if score == 30:
+			print("asdasd")
 	
+
+
+func _on_Button_pressed():
+	Global.change_position(15180,662)
+	get_tree().change_scene("res://Scenery/streetHouse.tscn")

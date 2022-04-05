@@ -17,7 +17,7 @@
 [sub_resource type="Animation" id=32]
 length = 0.001
 tracks/0/type = "value"
-tracks/0/path = NodePath("../Sprite:position")
+tracks/0/path = NodePath(".:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
@@ -26,24 +26,24 @@ tracks/0/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ Vector2( 41, 669 ) ]
+"values": [ Vector2( 47.6123, 664.633 ) ]
 }
 
 [sub_resource type="Animation" id=33]
-resource_name = "seta1"
+resource_name = "seta9"
 length = 2.0
 loop = true
 tracks/0/type = "value"
-tracks/0/path = NodePath("../Sprite:position")
+tracks/0/path = NodePath(".:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 1, 1.9 ),
+"times": PoolRealArray( 0, 1, 2 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ Vector2( 41, 669 ), Vector2( 82, 669 ), Vector2( 41, 669 ) ]
+"values": [ Vector2( 47.6123, 664.633 ), Vector2( 89.6123, 664.633 ), Vector2( 47.009, 664.633 ) ]
 }
 
 [sub_resource type="RectangleShape2D" id=1]
@@ -254,19 +254,18 @@ __meta__ = {
 pause_mode = 1
 script = ExtResource( 5 )
 
-[node name="Sprite" type="Sprite" parent="Area2D"]
-position = Vector2( 41, 669 )
+[node name="setapreta9" type="Sprite" parent="Area2D"]
+position = Vector2( 47.6123, 664.633 )
 rotation = -3.14159
-scale = Vector2( 0.242557, 0.351368 )
+scale = Vector2( 0.275571, 0.390984 )
 texture = ExtResource( 4 )
 
-[node name="setapreta" type="AnimationPlayer" parent="Area2D/Sprite"]
-root_node = NodePath("../../CollisionShape2D")
+[node name="setapreat9" type="AnimationPlayer" parent="Area2D/setapreta9"]
 anims/RESET = SubResource( 32 )
-anims/seta1 = SubResource( 33 )
+anims/seta9 = SubResource( 33 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2( 41, 667 )
+position = Vector2( 50, 653 )
 rotation = -1.5708
 shape = SubResource( 1 )
 
