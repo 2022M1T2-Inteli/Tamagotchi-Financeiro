@@ -13,6 +13,3 @@ func _ready():
 
 func _on_AnimationPlayer_animation_finished(carhouse):
 	get_tree().change_scene("res://Scenery/bedroom.tscn")
-#	Global.player_name = text
-#	print(Global.player_name)
-#	get_tree().change_scene(reference_path)

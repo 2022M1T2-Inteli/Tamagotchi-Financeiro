@@ -1,9 +1,9 @@
 extends Node2D
 
-var house_1 : float = 300.00
+var house_1 : float = 500.00
 var house_2 : float = 1200.00
 var house_3 : float = 6000.00
-var house_4 : float = 32500.00
+var house_4 : float = 12500.00
 
 var purchased = preload("res://Scenes/Purchased.tscn")
 
@@ -36,7 +36,8 @@ func _on_Button_house_1_pressed():
 	StoreManagement.store_product_index = "res://assets/House_I.png"
 	StoreManagement.i = 4
 	StoreManagement.j = 0
-	StoreManagement.store_total = 300.00
+	StoreManagement.store_total = 500.00
+	StoreManagement.item_status = [0,0,0.5,100]
 	if(!StoreManagement.products[StoreManagement.i][StoreManagement.j]):
 		get_tree().change_scene("res://Scenes/StoreCart.tscn")
 	else:
@@ -48,6 +49,7 @@ func _on_Button_house_2_pressed():
 	StoreManagement.i = 4
 	StoreManagement.j = 1
 	StoreManagement.store_total = 1200.00
+	StoreManagement.item_status = [0,0,1,300]
 	if(!StoreManagement.products[StoreManagement.i][StoreManagement.j]):
 		get_tree().change_scene("res://Scenes/StoreCart.tscn")
 	else:
@@ -59,6 +61,7 @@ func _on_Button_house_3_pressed():
 	StoreManagement.i = 4
 	StoreManagement.j = 2
 	StoreManagement.store_total = 6000.00
+	StoreManagement.item_status = [0,0,2,600]
 	if(!StoreManagement.products[StoreManagement.i][StoreManagement.j]):
 		get_tree().change_scene("res://Scenes/StoreCart.tscn")
 	else:
@@ -69,7 +72,8 @@ func _on_Button_house_4_pressed():
 	StoreManagement.store_product_index = "res://assets/House_IV.png"
 	StoreManagement.i = 4
 	StoreManagement.j = 3
-	StoreManagement.store_total = 32500.00
+	StoreManagement.store_total = 12500.00
+	StoreManagement.item_status = [0,0,3,900]
 	if(!StoreManagement.products[StoreManagement.i][StoreManagement.j]):
 		get_tree().change_scene("res://Scenes/StoreCart.tscn")
 	else:
