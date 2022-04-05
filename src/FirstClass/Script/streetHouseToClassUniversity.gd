@@ -7,6 +7,7 @@ onready var changer = get_parent().get_node("Transition_in")
 export var path : String
 
 func _ready():
+
 	var image = Image.new()
 	image.load("res://assets/EduFin App (3).png")
 	var texture = ImageTexture.new()
@@ -15,7 +16,6 @@ func _ready():
 	get_node("Warning").position = Vector2(0,-300)
 	get_node("Warning").scale = Vector2(0.5, 0.5)
 	$Warning.visible = false
-
 
 func _on_Goalscene2_body_entered(body):
 	if body.name == "Player_certo" && !Global.school:

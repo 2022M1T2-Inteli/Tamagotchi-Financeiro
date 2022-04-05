@@ -13,7 +13,11 @@ func _process(delta):
 func _ready():
 	$Exc2.visible = false
 	$Player_certo.position = Vector2(-980,200)
-	#$"/root/Musicfx".stop()
+	##$"/root/Musicfx".stop()
+	#$setapreta7/setapreta7.play("seta7")
+	$Ex3/Ex3.play("exclama3")
+	
+	
 
 	if !Global.bank1:
 		$Player_certo.visible = false
