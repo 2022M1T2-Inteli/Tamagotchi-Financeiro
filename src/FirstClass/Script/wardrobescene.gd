@@ -38,6 +38,7 @@ func _on_ShirtBlack_pressed():
 
 
 func _on_ShirtPurple_pressed():
+	Global.purple = true
 	if StoreManagement.products[2][2]:
 		player_sprite.set_texture(w_purple)
 	else:

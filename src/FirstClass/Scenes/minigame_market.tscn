@@ -50,7 +50,7 @@ __meta__ = {
 
 [node name="Player_certo" parent="." instance=ExtResource( 3 )]
 pause_mode = 2
-position = Vector2( 129, 689 )
+position = Vector2( 165, 663 )
 
 [node name="CanvasLayer" parent="." instance=ExtResource( 4 )]
 pause_mode = 2
