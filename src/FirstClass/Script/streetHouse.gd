@@ -8,4 +8,3 @@ func _ready():
 	$Setapreta4/setapreta4.play("seta4")
 	$setapreta5/setapreta5.play("seta5")
 	$setapreta6/setapreta6.play("seta6")
-	

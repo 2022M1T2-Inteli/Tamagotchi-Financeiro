@@ -7,15 +7,29 @@ var dialogue = false
 onready var sprite : Sprite = get_node("Sprite")
 
 #textures for sprite
-var texture_male #= preload("res://assets/Tails.png")
-var texture_female #= preload("res://assets/Niko.png")
+var texture_male = preload("res://assets/spritesWolf.png")
+var texture_female = preload("res://assets/Player.png")
 
 func _ready():
-	#switch_texture()
-	#print(Global.player_name)
+	if Global.gender == false:
+		$Sprite_Bunny.visible = false
+		$SpriteWolf_Purple.visible = false
+	else:
+		$Sprite_Wolf.visible = false
+		$SpriteWolf_Purple.visible = false
+	if Global.purple == true:
+		$Sprite_Bunny.visible = false
+		$Sprite_Wolf.visible = false
+		$SpriteWolf_Purple.visible = true
 	self.position.x = Global.position.x
 	self.position.y = Global.position.y
 	Global.transition = false
+	
+#func _process(delta):
+#	if Global.purple == true:
+#		$Sprite_Bunny.visible = false
+#		$Sprite_Wolf.visible = false
+#		$SpriteWolf_Purple.visible = true
 
 
 func _physics_process(delta):
@@ -26,20 +40,46 @@ func _physics_process(delta):
 
 	if inputVectors.x > 0.0: # If input is right
 		velocity.x = 6.0 # Set velocity to right
-		$Sprite/AnimationPlayer.play("andando direita") # Play animation
+		if Global.gender == true:
+			$Sprite_Bunny/Animation_Bunny.play("andando direita") # Play animation
+		else:
+			$Sprite_Wolf/Animation_Wolf.play("dir")
+		if Global.purple == true:
+			$SpriteWolf_Purple/AnimWolf_Purple.play("pdir")
 	elif inputVectors.x < 0.0: # If input is left
 		velocity.x = -6.0 # Set velocity to left
-		$Sprite/AnimationPlayer.play("andando esquerda") # Play animation
+		if Global.gender == true:
+			$Sprite_Bunny/Animation_Bunny.play("andando esquerda") # Play animation
+		else:
+			$Sprite_Wolf/Animation_Wolf.play("esq")
+		if Global.purple == true:
+			$SpriteWolf_Purple/AnimWolf_Purple.play("pesq")
 
 	if inputVectors.y > 0.0: # If input is down
 		velocity.y = 6.0 # Set velocity to down
-		$Sprite/AnimationPlayer.play("andando baixo") # Play animation
+		if Global.gender == true:
+			$Sprite_Bunny/Animation_Bunny.play("andando baixo") # Play animation
+		else:
+			$Sprite_Wolf/Animation_Wolf.play("baixo")
+		if Global.purple == true:
+			$SpriteWolf_Purple/AnimWolf_Purple.play("pbaixo")
+	
 	elif inputVectors.y < 0.0: # If input is up
 		velocity.y = -6.0 # Set velocity to up
-		$Sprite/AnimationPlayer.play("andando cima") # Play animation
+		if Global.gender == true:
+			$Sprite_Bunny/Animation_Bunny.play("andando cima") # Play animation
+		else:
+			$Sprite_Wolf/Animation_Wolf.play("cima")
+		if Global.purple == true:
+			$SpriteWolf_Purple/AnimWolf_Purple.play("pcima")
 
 	if velocity.x == 0.0 and velocity.y == 0.0: # If no input
-		$Sprite/AnimationPlayer.play("RESET") # Play animation
+		if Global.gender == true:
+			$Sprite_Bunny/Animation_Bunny.play("RESET") # Play animation
+		else:
+			$Sprite_Wolf/Animation_Wolf.play("RESET")
+		if Global.purple == true:
+			$SpriteWolf_Purple/AnimWolf_Purple.play("RESET")
 
 	move_and_collide(velocity) # Move and collide with world
 
