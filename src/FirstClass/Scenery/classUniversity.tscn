@@ -361,7 +361,6 @@ anims/RESET = SubResource( 10 )
 anims/some = SubResource( 11 )
 
 [node name="Button" type="Button" parent="."]
-visible = false
 margin_left = 943.0
 margin_top = 108.0
 margin_right = 993.0

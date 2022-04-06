@@ -1,9 +1,12 @@
 extends Node2D
 
 # Market minigame choise system
+var milk = [3.00,4.70, 5.25]
 
 func _ready():
-	pass # Replace with function body.
+	for i in range(1,4):
+		milk[i-1] += Global.inflation
+		get_node("RichTextLabel" + str(i)).bbcode_text = str("[center]%.2f" % float(milk[i-1]))
 
 func _on_Vmilk_pressed():
 	Global.total += 5.25

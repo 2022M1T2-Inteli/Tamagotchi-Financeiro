@@ -1,8 +1,11 @@
 extends Node2D
 
+var rice = [18.00, 23.50, 12.00]
 
 func _ready():
-	pass # Replace with function body.
+	for i in range(1,4):
+		rice[i-1] += Global.inflation
+		get_node("RichTextLabel" + str(i)).bbcode_text = str("[center]%.2f" % float(rice[i-1]))
 
 
 func _on_rightRice_pressed():
