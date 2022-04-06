@@ -37,40 +37,40 @@ func _on_Area2D_body_entered(body):
 		
 		#fix income
 		Investiment.profit_savings += Investiment.invest_money_savings*0.05
-		Investiment.invest_money_savings += Investiment.invest_money_savings*0.05
+		Investiment.invest_money_savings *= 1.05
 		
 		Investiment.profit_cdb += Investiment.invest_money_cdb*0.08
-		Investiment.invest_money_cdb += Investiment.invest_money_cdb*0.08
+		Investiment.invest_money_cdb *= 1.08
 		
 		Investiment.profit_direct_treasury += Investiment.invest_money_direct_treasury*0.081
-		Investiment.invest_money_direct_treasury += Investiment.invest_money_direct_treasury*0.081
+		Investiment.invest_money_direct_treasury *= 1.081
 		
 		Investiment.profit_debenture += Investiment.invest_money_debenture*0.083
-		Investiment.invest_money_debenture += Investiment.invest_money_debenture*0.083
+		Investiment.invest_money_debenture *= 1.083
 		
 		#fund
 		Investiment.profit_real_estate_fund += Investiment.invest_money_real_estate_fund*real_estate_fund
-		Investiment.invest_money_real_estate_fund += Investiment.invest_money_real_estate_fund*real_estate_fund
+		Investiment.invest_money_real_estate_fund *= real_estate_fund
 		
 		Investiment.profit_multimarket_fund += Investiment.invest_money_multimarket_fund*multimarket_fund
-		Investiment.invest_money_multimarket_fund += Investiment.invest_money_multimarket_fund*multimarket_fund
+		Investiment.invest_money_multimarket_fund *= multimarket_fund
 		
 		Investiment.profit_stock_fund += Investiment.invest_money_stock_fund*stock_fund
-		Investiment.invest_money_stock_fund += Investiment.invest_money_stock_fund*stock_fund
+		Investiment.invest_money_stock_fund *= stock_fund
 		
 		Investiment.profit_high_risk_stock_fund += Investiment.invest_money_high_risk_stock_fund*high_risk_stock_fund
-		Investiment.invest_money_high_risk_stock_fund += Investiment.invest_money_high_risk_stock_fund*high_risk_stock_fund
+		Investiment.invest_money_high_risk_stock_fund *= high_risk_stock_fund
 		
 		#variable income 
 		
 		Investiment.profit_low_risk_stock += Investiment.invest_money_low_risk_stock*low_risk_stock
-		Investiment.invest_money_low_risk_stock += Investiment.invest_money_low_risk_stock*low_risk_stock
+		Investiment.invest_money_low_risk_stock *= low_risk_stock
 		
 		Investiment.profit_high_risk_stock += Investiment.invest_money_high_risk_stock*high_risk_stock
-		Investiment.invest_money_high_risk_stock += Investiment.invest_money_high_risk_stock*high_risk_stock
+		Investiment.invest_money_high_risk_stock *= high_risk_stock
 		
 		Investiment.profit_day_trade += Investiment.invest_money_day_trade*day_trade
-		Investiment.invest_money_day_trade += Investiment.invest_money_day_trade*day_trade
+		Investiment.invest_money_day_trade *= day_trade
 		
 		Global.inflation += rng.randf_range(0.75,1.5)
 		changer.change_scene(Global.current_scene)

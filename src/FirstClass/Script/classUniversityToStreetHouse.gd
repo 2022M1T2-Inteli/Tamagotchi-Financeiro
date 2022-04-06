@@ -12,3 +12,4 @@ func _on_Goalscene2_body_entered(body):
 		Global.current_scene = "res://Scenery/streetHouse.tscn"
 		Global.change_position(2856,546)
 		changer.change_scene(Global.current_scene)
+		$"/root/Ambient".play()
