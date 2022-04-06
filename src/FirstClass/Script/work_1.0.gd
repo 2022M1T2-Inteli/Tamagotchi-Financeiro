@@ -15,6 +15,7 @@ func _ready():
 	ValoresProdutos()
 	ValorProdutosMercado()
 	$music.play()
+	Global.excla4 = true
 
 var next = 62
 var new_node = null 
