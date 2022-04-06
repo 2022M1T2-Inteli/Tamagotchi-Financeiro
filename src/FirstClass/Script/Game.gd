@@ -53,7 +53,7 @@ func reset_game() -> void:
 	$UI/Score.number = "0".pad_zeros(ZERO_PADS)
 
 func _process(delta):
-	if score == 80:
+	if score == 100:
 		get_tree().change_scene("res://Winscnenepark.tscn")
 		
 
