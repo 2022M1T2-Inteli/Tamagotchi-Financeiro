@@ -189,22 +189,6 @@ tracks/0/keys = {
 "values": [ Vector2( -1130, 154 ), Vector2( -1101, 154 ), Vector2( -1130, 154 ) ]
 }
 
-[sub_resource type="DynamicFont" id=15]
-size = 22
-font_data = ExtResource( 20 )
-
-[sub_resource type="StyleBoxEmpty" id=16]
-
-[sub_resource type="StyleBoxEmpty" id=17]
-
-[sub_resource type="StyleBoxEmpty" id=18]
-
-[sub_resource type="StyleBoxEmpty" id=19]
-
-[sub_resource type="StyleBoxEmpty" id=20]
-
-[sub_resource type="StyleBoxEmpty" id=21]
-
 [sub_resource type="StyleBoxEmpty" id=22]
 
 [sub_resource type="StyleBoxEmpty" id=23]
@@ -214,6 +198,22 @@ font_data = ExtResource( 20 )
 [sub_resource type="StyleBoxEmpty" id=25]
 
 [sub_resource type="StyleBoxEmpty" id=26]
+
+[sub_resource type="DynamicFont" id=32]
+size = 24
+font_data = ExtResource( 20 )
+
+[sub_resource type="StyleBoxEmpty" id=33]
+
+[sub_resource type="StyleBoxEmpty" id=34]
+
+[sub_resource type="StyleBoxEmpty" id=35]
+
+[sub_resource type="StyleBoxEmpty" id=36]
+
+[sub_resource type="StyleBoxEmpty" id=37]
+
+[sub_resource type="StyleBoxEmpty" id=38]
 
 [sub_resource type="StyleBoxEmpty" id=27]
 
@@ -318,6 +318,109 @@ texture = ExtResource( 8 )
 anims/RESET = SubResource( 13 )
 anims/seta9 = SubResource( 14 )
 
+[node name="Button" type="Button" parent="."]
+margin_left = -103.0
+margin_top = -266.0
+margin_right = 66.0
+margin_bottom = -214.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Investiment" type="Sprite" parent="Button"]
+position = Vector2( 86, 36 )
+scale = Vector2( 0.246875, 0.287963 )
+texture = ExtResource( 9 )
+
+[node name="Button3" type="Button" parent="."]
+visible = false
+margin_left = -301.0
+margin_top = -404.0
+margin_right = -205.0
+margin_bottom = -322.0
+custom_styles/hover = SubResource( 22 )
+custom_styles/pressed = SubResource( 23 )
+custom_styles/focus = SubResource( 24 )
+custom_styles/disabled = SubResource( 25 )
+custom_styles/normal = SubResource( 26 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="FundoPreto" type="Sprite" parent="Button3"]
+visible = false
+position = Vector2( -239, 272 )
+scale = Vector2( 2.03437, 2.06111 )
+texture = ExtResource( 19 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Investiment2" type="Sprite" parent="Button3"]
+position = Vector2( -202, 286 )
+scale = Vector2( 0.442448, 0.54213 )
+texture = ExtResource( 18 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="ItemList" type="ItemList" parent="Button3"]
+margin_left = -408.0
+margin_top = 173.0
+margin_right = 8.0
+margin_bottom = 523.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 32 )
+custom_styles/cursor = SubResource( 33 )
+custom_styles/selected_focus = SubResource( 34 )
+custom_styles/bg_focus = SubResource( 35 )
+custom_styles/cursor_unfocused = SubResource( 36 )
+custom_styles/selected = SubResource( 37 )
+custom_styles/bg = SubResource( 38 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button2" type="Button" parent="Button3"]
+visible = false
+margin_left = 108.0
+margin_top = 39.0
+margin_right = 163.0
+margin_bottom = 82.0
+custom_styles/hover = SubResource( 27 )
+custom_styles/pressed = SubResource( 28 )
+custom_styles/focus = SubResource( 29 )
+custom_styles/disabled = SubResource( 30 )
+custom_styles/normal = SubResource( 31 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button_bank3" type="Button" parent="."]
+visible = false
+margin_left = -135.0
+margin_top = -318.0
+margin_right = -27.0
+margin_bottom = -273.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="FundoPreto" type="Sprite" parent="Button_bank3"]
+position = Vector2( -407, 188 )
+scale = Vector2( 2.01563, 2.06111 )
+texture = ExtResource( 19 )
+
+[node name="Investiment" type="Sprite" parent="Button_bank3"]
+position = Vector2( 117, 88 )
+scale = Vector2( 0.246875, 0.287963 )
+texture = ExtResource( 9 )
+
+[node name="InstructionBank" type="Sprite" parent="Button_bank3"]
+position = Vector2( -87.9999, -13 )
+scale = Vector2( 0.405078, 0.340278 )
+texture = ExtResource( 17 )
+
 [node name="Button_bank1" type="Button" parent="."]
 visible = false
 margin_left = -11.0
@@ -358,118 +461,10 @@ position = Vector2( -122, -2 )
 scale = Vector2( 0.341927, 0.338426 )
 texture = ExtResource( 13 )
 
-[node name="Button_bank3" type="Button" parent="."]
-visible = false
-margin_left = -135.0
-margin_top = -318.0
-margin_right = -27.0
-margin_bottom = -273.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="FundoPreto" type="Sprite" parent="Button_bank3"]
-position = Vector2( -407, 188 )
-scale = Vector2( 2.01563, 2.06111 )
-texture = ExtResource( 19 )
-
-[node name="Investiment" type="Sprite" parent="Button_bank3"]
-position = Vector2( 117, 88 )
-scale = Vector2( 0.246875, 0.287963 )
-texture = ExtResource( 9 )
-
-[node name="InstructionBank" type="Sprite" parent="Button_bank3"]
-position = Vector2( -87.9999, -13 )
-scale = Vector2( 0.405078, 0.340278 )
-texture = ExtResource( 17 )
-
-[node name="Button" type="Button" parent="."]
-margin_left = -103.0
-margin_top = -266.0
-margin_right = 66.0
-margin_bottom = -214.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Investiment" type="Sprite" parent="Button"]
-position = Vector2( 86, 36 )
-scale = Vector2( 0.246875, 0.287963 )
-texture = ExtResource( 9 )
-
-[node name="ItemList" type="ItemList" parent="."]
-pause_mode = 2
-visible = false
-margin_left = -829.0
-margin_top = -224.0
-margin_right = -227.0
-margin_bottom = 152.0
-focus_mode = 0
-custom_colors/guide_color = Color( 0.313726, 0.776471, 0.647059, 0 )
-custom_constants/line_separation = 15
-custom_fonts/font = SubResource( 15 )
-custom_styles/cursor = SubResource( 16 )
-custom_styles/selected_focus = SubResource( 17 )
-custom_styles/bg_focus = SubResource( 18 )
-custom_styles/cursor_unfocused = SubResource( 19 )
-custom_styles/selected = SubResource( 20 )
-custom_styles/bg = SubResource( 21 )
-max_text_lines = 2
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Button3" type="Button" parent="."]
-visible = false
-margin_left = -301.0
-margin_top = -404.0
-margin_right = -205.0
-margin_bottom = -322.0
-custom_styles/hover = SubResource( 22 )
-custom_styles/pressed = SubResource( 23 )
-custom_styles/focus = SubResource( 24 )
-custom_styles/disabled = SubResource( 25 )
-custom_styles/normal = SubResource( 26 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="FundoPreto" type="Sprite" parent="Button3"]
-visible = false
-position = Vector2( -239, 272 )
-scale = Vector2( 2.03437, 2.06111 )
-texture = ExtResource( 19 )
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="Investiment2" type="Sprite" parent="Button3"]
-position = Vector2( -202, 286 )
-scale = Vector2( 0.442448, 0.54213 )
-texture = ExtResource( 18 )
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="Button2" type="Button" parent="Button3"]
-visible = false
-margin_left = 108.0
-margin_top = 39.0
-margin_right = 163.0
-margin_bottom = 82.0
-custom_styles/hover = SubResource( 27 )
-custom_styles/pressed = SubResource( 28 )
-custom_styles/focus = SubResource( 29 )
-custom_styles/disabled = SubResource( 30 )
-custom_styles/normal = SubResource( 31 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_Area2D_body_entered"]
-[connection signal="pressed" from="Button_bank1" to="." method="_on_Button_bank1_pressed"]
-[connection signal="pressed" from="Button_bank2" to="." method="_on_Button_bank2_pressed"]
-[connection signal="pressed" from="Button_bank3" to="." method="_on_Button_bank3_pressed"]
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="Button3" to="." method="_on_Button3_pressed"]
 [connection signal="pressed" from="Button3/Button2" to="." method="_on_Button2_pressed"]
+[connection signal="pressed" from="Button_bank3" to="." method="_on_Button_bank3_pressed"]
+[connection signal="pressed" from="Button_bank1" to="." method="_on_Button_bank1_pressed"]
+[connection signal="pressed" from="Button_bank2" to="." method="_on_Button_bank2_pressed"]

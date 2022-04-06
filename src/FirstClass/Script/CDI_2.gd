@@ -14,6 +14,7 @@ func _on_Button_invest_pressed():
 		$money_digital.update()
 		$money_invest_bank.update()
 		$money_invest.text = ""
+		Global.recordsInvest.append(Investiment.invest_money_cdb)
 	else:
 		$money_invest.text = "Valor inválido"
 		$Timer.start()

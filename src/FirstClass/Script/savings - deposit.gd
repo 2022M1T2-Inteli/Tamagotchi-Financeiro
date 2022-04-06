@@ -19,6 +19,7 @@ func _on_Button_invest_pressed():
 		$Timer.start()
 		$money_invest.grab_focus()
 		pass # Replace with function body.
+	Global.recordsInvest.append(Investiment.invest_money_savings)
 
 
 func _on_Button_remove_pressed():

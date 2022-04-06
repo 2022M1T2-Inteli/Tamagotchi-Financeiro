@@ -11,6 +11,64 @@ func _process(delta):
 		$Exc2.visible = false
 
 func _ready():
+	if Global.recordsInvest.size() >= 1:
+		for i in Global.recordsInvest:
+			$Button3/ItemList.add_item("Poupança $" + str(i))
+			$Button3/ItemList.set_item_custom_fg_color($Button3/ItemList.get_item_count() - 1, Color.green)
+			$Button3/ItemList.set_item_selectable($Button3/ItemList.get_item_count() - 1, false)
+		if Global.recordsInvest.size() >= 2:
+			for i in Global.recordsInvest:
+					$Button3/ItemList.add_item("CDB $" + str(i))
+					$Button3/ItemList.set_item_custom_fg_color($Button3/ItemList.get_item_count() - 1, Color.green)
+					$Button3/ItemList.set_item_selectable($Button3/ItemList.get_item_count() - 1, false)
+			if Global.recordsInvest.size() >= 3:
+				for i in Global.recordsInvest:
+						$Button3/ItemList.add_item("Tesouro Direto $" + str(i))
+						$Button3/ItemList.set_item_custom_fg_color($Button3/ItemList.get_item_count() - 1, Color.green)
+						$Button3/ItemList.set_item_selectable($Button3/ItemList.get_item_count() - 1, false)		
+				if Global.recordsInvest.size() >= 4:
+					for i in Global.recordsInvest:
+							$Button3/ItemList.add_item("Debênture $" + str(i))
+							$Button3/ItemList.set_item_custom_fg_color($Button3/ItemList.get_item_count() - 1, Color.green)
+							$Button3/ItemList.set_item_selectable($Button3/ItemList.get_item_count() - 1, false)
+					if Global.recordsInvest.size() >= 5:
+						for i in Global.recordsInvest:
+								$Button3/ItemList.add_item("Fundos Imobiliários $" + str(i))
+								$Button3/ItemList.set_item_custom_fg_color($Button3/ItemList.get_item_count() - 1, Color.green)
+								$Button3/ItemList.set_item_selectable($Button3/ItemList.get_item_count() - 1, false)
+						if Global.recordsInvest.size() >= 6:
+							for i in Global.recordsInvest:
+									$Button3/ItemList.add_item("Fundo - Multi Mercado $" + str(i))
+									$Button3/ItemList.set_item_custom_fg_color($Button3/ItemList.get_item_count() - 1, Color.green)
+									$Button3/ItemList.set_item_selectable($Button3/ItemList.get_item_count() - 1, false)
+							if Global.recordsInvest.size() >= 7:
+								for i in Global.recordsInvest:
+										$Button3/ItemList.add_item("Fundo - Ações $" + str(i))
+										$Button3/ItemList.set_item_custom_fg_color($Button3/ItemList.get_item_count() - 1, Color.green)
+										$Button3/ItemList.set_item_selectable($Button3/ItemList.get_item_count() - 1, false)
+								if Global.recordsInvest.size() >= 8:
+									for i in Global.recordsInvest:
+											$Button3/ItemList.add_item("Fundo - Ações de alto risco $" + str(i))
+											$Button3/ItemList.set_item_custom_fg_color($Button3/ItemList.get_item_count() - 1, Color.green)
+											$Button3/ItemList.set_item_selectable($Button3/ItemList.get_item_count() - 1, false)
+									if Global.recordsInvest.size() >= 9:
+										for i in Global.recordsInvest:
+												$Button3/ItemList.add_item("Ações de baixo risco $" + str(i))
+												$Button3/ItemList.set_item_custom_fg_color($Button3/ItemList.get_item_count() - 1, Color.green)
+												$Button3/ItemList.set_item_selectable($Button3/ItemList.get_item_count() - 1, false)
+										if Global.recordsInvest.size() >= 10:
+											for i in Global.recordsInvest:
+													$Button3/ItemList.add_item("Ações de alto risco $" + str(i))
+													$Button3/ItemList.set_item_custom_fg_color($Button3/ItemList.get_item_count() - 1, Color.green)
+													$Button3/ItemList.set_item_selectable($Button3/ItemList.get_item_count() - 1, false)
+											if Global.recordsInvest.size() >= 11:
+												for i in Global.recordsInvest:
+														$Button3/ItemList.add_item("Day-trade $" + str(i))
+														$Button3/ItemList.set_item_custom_fg_color($Button3/ItemList.get_item_count() - 1, Color.green)
+														$Button3/ItemList.set_item_selectable($Button3/ItemList.get_item_count() - 1, false)
+					
+				
+				
 	$Exc2.visible = false
 	$Button3/Investiment2.visible = false
 	$Button3/Button2.visible = false
@@ -25,24 +83,6 @@ func _ready():
 	else:
 		$Player_certo.visible = true
 		$Joystick/Control/question_button/AnimationPlayer.play("aviso")
-	
-	if Global.recordsPrice.size() > 0:
-		for i in Global.recordsPrice:
-			$ItemList.add_item("Mercado $" + str(i))
-			$ItemList.set_item_custom_fg_color($ItemList.get_item_count() - 1, Color.red)
-			$ItemList.set_item_selectable($ItemList.get_item_count() - 1, false)
-			
-	if Global.recordsBank.size() > 0:
-		for i in Global.recordsBank:
-			if(i > 0):
-				$ItemList.add_item("Deposito $" + str(i))
-				$ItemList.set_item_custom_fg_color($ItemList.get_item_count() - 1, Color.green)
-				$ItemList.set_item_selectable($ItemList.get_item_count() - 1, false)
-
-			else:
-				$ItemList.add_item("Saque $" + str(i))
-				$ItemList.set_item_custom_fg_color($ItemList.get_item_count() - 1, Color.red)
-				$ItemList.set_item_selectable($ItemList.get_item_count() - 1, false)
 		
 func _on_Button_bank1_pressed():
 	$Button_bank1.visible = false
@@ -75,7 +115,7 @@ func _on_Button_pressed():
 	$Player_certo.visible = false
 	$Button3/Button2.visible = true
 	$Button3/FundoPreto.visible = true
-	$ItemList.visible = true
+	$Button3/ItemList.visible = true
 	$Button3.visible = true
 
 func _on_Button2_pressed():
@@ -88,5 +128,5 @@ func _on_Button3_pressed():
 	$Button3.visible = false
 	$Button3/FundoPreto.visible = false
 	$Button3/Investiment2.visible = false
-	$ItemList.visible = false
+	$Button3/ItemList.visible = false
 	$Player_certo.visible = true
