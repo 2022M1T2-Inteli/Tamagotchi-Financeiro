@@ -1,5 +1,12 @@
 extends Node2D
 
+var soda = [4.00, 2.00, 2.30]
+
+func _ready():
+	for i in range(1,4):
+		soda[i-1] += Global.inflation
+		get_node("RichTextLabel" + str(i)).bbcode_text = str("[center]%.2f" % float(soda[i-1]))
+
 func _on_rigthSoda_pressed():
 	Global.total += 4
 	Global.products[2] = "res://assets/sodaPurple.png"
