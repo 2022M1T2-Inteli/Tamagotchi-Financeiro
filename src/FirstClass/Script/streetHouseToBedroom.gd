@@ -1,7 +1,6 @@
 extends Area2D
 
 # Script that change from the Steet Scene to the Bedroom
-# Comment just to commit
 
 onready var changer = get_parent().get_node("Transition_in")
 
