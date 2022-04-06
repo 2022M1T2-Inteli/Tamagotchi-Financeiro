@@ -37,6 +37,7 @@ var transition = false
 var excla = false
 var excla2 = false
 var excla3 = false
+var excla4 = false
 var letter = false
 var passive_happiness = 0
 var bank1 = false
