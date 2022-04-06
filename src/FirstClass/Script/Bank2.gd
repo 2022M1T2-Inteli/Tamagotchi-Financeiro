@@ -12,11 +12,9 @@ func _process(delta):
 
 func _ready():
 	$Exc2.visible = false
-	$Investiment2.visible = false
-	$Button2.visible = false
+	$Button3/Investiment2.visible = false
+	$Button3/Button2.visible = false
 	$Player_certo.position = Vector2(-980,200)
-	##$"/root/Musicfx".stop()
-	#$setapreta7/setapreta7.play("seta7")
 	$setapreta9/setapreta9.play("seta9")
 
 	if !Global.bank1:
@@ -27,6 +25,24 @@ func _ready():
 	else:
 		$Player_certo.visible = true
 		$Joystick/Control/question_button/AnimationPlayer.play("aviso")
+	
+	if Global.recordsPrice.size() > 0:
+		for i in Global.recordsPrice:
+			$ItemList.add_item("Mercado $" + str(i))
+			$ItemList.set_item_custom_fg_color($ItemList.get_item_count() - 1, Color.red)
+			$ItemList.set_item_selectable($ItemList.get_item_count() - 1, false)
+			
+	if Global.recordsBank.size() > 0:
+		for i in Global.recordsBank:
+			if(i > 0):
+				$ItemList.add_item("Deposito $" + str(i))
+				$ItemList.set_item_custom_fg_color($ItemList.get_item_count() - 1, Color.green)
+				$ItemList.set_item_selectable($ItemList.get_item_count() - 1, false)
+
+			else:
+				$ItemList.add_item("Saque $" + str(i))
+				$ItemList.set_item_custom_fg_color($ItemList.get_item_count() - 1, Color.red)
+				$ItemList.set_item_selectable($ItemList.get_item_count() - 1, false)
 		
 func _on_Button_bank1_pressed():
 	$Button_bank1.visible = false
@@ -55,13 +71,22 @@ func _on_Button_bank3_pressed():
 	Global.bank1 = true
 
 func _on_Button_pressed():
-	$Investiment2.visible = true
+	$Button3/Investiment2.visible = true
 	$Player_certo.visible = false
-	$Button2.visible = true
-	$FundoPreto.visible = true
+	$Button3/Button2.visible = true
+	$Button3/FundoPreto.visible = true
+	$ItemList.visible = true
+	$Button3.visible = true
 
 func _on_Button2_pressed():
-	$Investiment2.visible = false
+	$Button3/Investiment2.visible = false
 	$Player_certo.visible = true
-	$Button2.visible = false
-	$FundoPreto.visible = false
+	$Button3/Button2.visible = false
+	$Button3/FundoPreto.visible = false
+
+func _on_Button3_pressed():
+	$Button3.visible = false
+	$Button3/FundoPreto.visible = false
+	$Button3/Investiment2.visible = false
+	$ItemList.visible = false
+	$Player_certo.visible = true
