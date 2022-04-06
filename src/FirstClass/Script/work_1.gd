@@ -5,6 +5,8 @@ func _ready():
 	$Excla2.visible = false
 	$"/root/Ambient".stop()
 	$Area2D/setapreta9/setapreat9.play("seta9")
+	if Global.excla4 == true:
+		$Excla.visible = false
 
 
 func _on_Button_1_pressed():
@@ -54,6 +56,7 @@ func _on_button_job1_3_pressed():
 	
 func _on_Area2D3_body_entered(body):
 	if(body.name == "Player_certo"):
+		
 		if (Global.player_job == 1 && Global.actions >= 1) || (Global.player_job == 4 && Global.actions >= 1) || (Global.player_job ==7 && Global.actions >= 1) || (Global.player_job ==10 && Global.actions >= 1) || (Global.player_job ==13 && Global.actions >= 1):
 			Global.actions -=1 
 			Global.current_scene = "res://Scenes/work_1.0.tscn"

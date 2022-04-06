@@ -3,7 +3,7 @@ extends Node2D
 # Script for the exclamation sign
 
 func _ready():
-	#$"/root/Musicfx".stop()
+	$"/root/Ambient".stop()
 	if(Global.school):
 		$Excla.visible = false
 	#pass # Replace with function body.
