@@ -43,6 +43,7 @@ var passive_happiness = 0
 var bank1 = false
 var university1 = false
 var recordsInvest : Array = []
+var purple : bool = false
 
 func _ready():
 	pass # Replace with function body.
