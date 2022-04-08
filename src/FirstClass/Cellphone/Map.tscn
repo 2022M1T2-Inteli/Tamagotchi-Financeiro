@@ -5,12 +5,14 @@
 [ext_resource path="res://assets/Here.png" type="Texture" id=3]
 
 [node name="Node2D" type="Node2D"]
-position = Vector2( 64, 35 )
 rotation = -1.5708
 script = ExtResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="CellphoneMap2" type="Sprite" parent="."]
-position = Vector2( -413.002, 575.999 )
+position = Vector2( -474.002, 660.998 )
 rotation = 1.5708
 scale = Vector2( 0.6, 0.6 )
 texture = ExtResource( 1 )
@@ -19,7 +21,7 @@ __meta__ = {
 }
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( -319.703, 804.598 )
+position = Vector2( -360.418, 920.798 )
 rotation = 1.5708
 scale = Vector2( 0.07, 0.05 )
 texture = ExtResource( 3 )
@@ -27,10 +29,10 @@ texture = ExtResource( 3 )
 [node name="Button_exit_map" type="Button" parent="."]
 pause_mode = 2
 show_behind_parent = true
-margin_left = -499.001
-margin_top = 250.998
-margin_right = -424.001
-margin_bottom = 437.998
+margin_left = -556.002
+margin_top = 333.998
+margin_right = -481.002
+margin_bottom = 520.998
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -38,10 +40,10 @@ __meta__ = {
 [node name="Button_college" type="Button" parent="."]
 pause_mode = 2
 show_behind_parent = true
-margin_left = -312.001
-margin_top = 378.999
-margin_right = -201.001
-margin_bottom = 456.999
+margin_left = -369.002
+margin_top = 461.999
+margin_right = -258.002
+margin_bottom = 539.999
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -49,10 +51,10 @@ __meta__ = {
 [node name="Button_bedroom" type="Button" parent="."]
 pause_mode = 2
 show_behind_parent = true
-margin_left = -296.001
-margin_top = 264.999
-margin_right = -217.001
-margin_bottom = 360.999
+margin_left = -353.002
+margin_top = 347.999
+margin_right = -274.002
+margin_bottom = 443.999
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -60,10 +62,10 @@ __meta__ = {
 [node name="Button_bank" type="Button" parent="."]
 pause_mode = 2
 show_behind_parent = true
-margin_left = -307.002
-margin_top = 571.999
-margin_right = -194.002
-margin_bottom = 660.999
+margin_left = -364.003
+margin_top = 654.999
+margin_right = -251.003
+margin_bottom = 743.999
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -71,10 +73,10 @@ __meta__ = {
 [node name="Button_work" type="Button" parent="."]
 pause_mode = 2
 show_behind_parent = true
-margin_left = -305.002
-margin_top = 672.999
-margin_right = -195.002
-margin_bottom = 773.999
+margin_left = -362.003
+margin_top = 755.999
+margin_right = -252.003
+margin_bottom = 856.999
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -82,10 +84,10 @@ __meta__ = {
 [node name="Button_park" type="Button" parent="."]
 pause_mode = 2
 show_behind_parent = true
-margin_left = -400.003
-margin_top = 797.999
-margin_right = -234.003
-margin_bottom = 898.999
+margin_left = -457.004
+margin_top = 880.999
+margin_right = -291.004
+margin_bottom = 981.999
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -93,10 +95,10 @@ __meta__ = {
 [node name="Button_market" type="Button" parent="."]
 pause_mode = 2
 show_behind_parent = true
-margin_left = -304.889
-margin_top = 466.969
-margin_right = -228.889
-margin_bottom = 560.969
+margin_left = -355.946
+margin_top = 559.632
+margin_right = -279.946
+margin_bottom = 653.632
 rect_scale = Vector2( 1.14922, 1.02938 )
 __meta__ = {
 "_edit_use_anchors_": false

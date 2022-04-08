@@ -33,6 +33,7 @@ Global="*res://Script/Global.gd"
 Investiment="*res://Script/Investiment.gd"
 StoreManagement="*res://Script/StoreManagement.gd"
 Ambient="*res://ambient.tscn"
+Records="*res://Script/Records.gd"
 
 [display]
 
