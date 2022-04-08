@@ -347,12 +347,6 @@ scale = Vector2( 1.01563, 1.03509 )
 texture = ExtResource( 1 )
 offset = Vector2( -340.677, 95.8695 )
 
-[node name="House" type="Sprite" parent="."]
-position = Vector2( 632.948, 346.997 )
-scale = Vector2( 0.273957, 0.275654 )
-texture = ExtResource( 11 )
-offset = Vector2( 85.9814, 58.5369 )
-
 [node name="Market" type="Sprite" parent="."]
 position = Vector2( 5772, 361.402 )
 scale = Vector2( 1.81107, 1.89741 )
@@ -367,6 +361,12 @@ texture = ExtResource( 1 )
 position = Vector2( 8302, 361.32 )
 scale = Vector2( 1.67071, 1.90303 )
 texture = ExtResource( 15 )
+
+[node name="House" type="Sprite" parent="."]
+position = Vector2( 632.948, 346.997 )
+scale = Vector2( 0.273957, 0.275654 )
+texture = ExtResource( 11 )
+offset = Vector2( 85.9814, 58.5369 )
 
 [node name="StaticBody2D" parent="." instance=ExtResource( 25 )]
 position = Vector2( 5668.28, 471.429 )
@@ -385,7 +385,7 @@ position = Vector2( 67, 314 )
 shape = SubResource( 1 )
 
 [node name="Goalscene2" parent="." instance=ExtResource( 4 )]
-position = Vector2( 314, 443 )
+position = Vector2( 320.64, 477.565 )
 path = "res://Scenery/bedroom.tscn"
 
 [node name="Joystick" parent="." instance=ExtResource( 14 )]

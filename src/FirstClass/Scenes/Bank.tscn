@@ -1,4 +1,4 @@
-[gd_scene load_steps=52 format=2]
+[gd_scene load_steps=46 format=2]
 
 [ext_resource path="res://Scenes/Player_certo.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/classUniversityToStreetHouse.tscn" type="PackedScene" id=2]
@@ -199,22 +199,6 @@ tracks/0/keys = {
 
 [sub_resource type="StyleBoxEmpty" id=26]
 
-[sub_resource type="DynamicFont" id=32]
-size = 24
-font_data = ExtResource( 20 )
-
-[sub_resource type="StyleBoxEmpty" id=33]
-
-[sub_resource type="StyleBoxEmpty" id=34]
-
-[sub_resource type="StyleBoxEmpty" id=35]
-
-[sub_resource type="StyleBoxEmpty" id=36]
-
-[sub_resource type="StyleBoxEmpty" id=37]
-
-[sub_resource type="StyleBoxEmpty" id=38]
-
 [sub_resource type="StyleBoxEmpty" id=27]
 
 [sub_resource type="StyleBoxEmpty" id=28]
@@ -224,6 +208,10 @@ font_data = ExtResource( 20 )
 [sub_resource type="StyleBoxEmpty" id=30]
 
 [sub_resource type="StyleBoxEmpty" id=31]
+
+[sub_resource type="DynamicFont" id=39]
+size = 18
+font_data = ExtResource( 20 )
 
 [node name="Node2D" type="Node2D"]
 position = Vector2( 1181, 496 )
@@ -333,7 +321,6 @@ scale = Vector2( 0.246875, 0.287963 )
 texture = ExtResource( 9 )
 
 [node name="Button3" type="Button" parent="."]
-visible = false
 margin_left = -301.0
 margin_top = -404.0
 margin_right = -205.0
@@ -362,23 +349,6 @@ scale = Vector2( 0.442448, 0.54213 )
 texture = ExtResource( 18 )
 __meta__ = {
 "_edit_lock_": true
-}
-
-[node name="ItemList" type="ItemList" parent="Button3"]
-margin_left = -408.0
-margin_top = 173.0
-margin_right = 8.0
-margin_bottom = 523.0
-custom_colors/font_color = Color( 0, 0, 0, 1 )
-custom_fonts/font = SubResource( 32 )
-custom_styles/cursor = SubResource( 33 )
-custom_styles/selected_focus = SubResource( 34 )
-custom_styles/bg_focus = SubResource( 35 )
-custom_styles/cursor_unfocused = SubResource( 36 )
-custom_styles/selected = SubResource( 37 )
-custom_styles/bg = SubResource( 38 )
-__meta__ = {
-"_edit_use_anchors_": false
 }
 
 [node name="Button2" type="Button" parent="Button3"]
@@ -460,6 +430,18 @@ texture = ExtResource( 15 )
 position = Vector2( -122, -2 )
 scale = Vector2( 0.341927, 0.338426 )
 texture = ExtResource( 13 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+visible = false
+margin_left = -730.0
+margin_top = -214.0
+margin_right = -284.0
+margin_bottom = 100.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 39 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_Area2D_body_entered"]
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
