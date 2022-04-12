@@ -4,7 +4,7 @@
 [ext_resource path="res://Script_ana/QuizTesouroDireto.gd" type="Script" id=2]
 [ext_resource path="res://assets/Buttonquiz.png" type="Texture" id=3]
 [ext_resource path="res://assets/newBackClass.png" type="Texture" id=4]
-[ext_resource path="res://Scenes/CalculatorIcon.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Script/CanvasLayer_calculadora.tscn" type="PackedScene" id=5]
 
 [sub_resource type="DynamicFont" id=1]
 size = 21
@@ -62,9 +62,6 @@ position = Vector2( 873.099, 631.765 )
 scale = Vector2( 0.748878, 0.472362 )
 texture = ExtResource( 3 )
 
-[node name="Calculatoricon" parent="." instance=ExtResource( 5 )]
-position = Vector2( 1179.62, 102.611 )
-
 [node name="RichTextLabel2" type="RichTextLabel" parent="."]
 margin_left = 784.108
 margin_top = 609.633
@@ -96,6 +93,8 @@ margin_bottom = 658.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="CanvasLayer" parent="." instance=ExtResource( 5 )]
 
 [connection signal="pressed" from="ButtonCerto" to="." method="_on_ButtonCerto_pressed"]
 [connection signal="pressed" from="ButtonErrado" to="." method="_on_ButtonErrado_pressed"]

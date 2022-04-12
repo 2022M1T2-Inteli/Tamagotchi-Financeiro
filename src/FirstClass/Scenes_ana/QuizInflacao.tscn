@@ -4,7 +4,7 @@
 [ext_resource path="res://Script_ana/QuizInflacao.gd" type="Script" id=2]
 [ext_resource path="res://assets/Buttonquiz.png" type="Texture" id=3]
 [ext_resource path="res://assets/newBackClass.png" type="Texture" id=4]
-[ext_resource path="res://Scenes/CalculatorIcon.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Script/CanvasLayer_calculadora.tscn" type="PackedScene" id=5]
 
 [sub_resource type="DynamicFont" id=1]
 size = 21
@@ -96,8 +96,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Calculatoricon" parent="." instance=ExtResource( 5 )]
-position = Vector2( 1179.62, 102.611 )
+[node name="CanvasLayer" parent="." instance=ExtResource( 5 )]
 
 [connection signal="pressed" from="Button_errado" to="." method="_on_Button_errado_pressed"]
 [connection signal="pressed" from="Button_certo" to="." method="_on_Button_certo_pressed"]
