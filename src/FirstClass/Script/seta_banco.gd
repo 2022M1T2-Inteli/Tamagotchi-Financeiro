@@ -1,6 +1,7 @@
 extends Node2D
 
 # Transition between Street and Bank
+# It allows the player to enter the bank ambience
 
 onready var changer = get_parent().get_node("Transition_in")
 

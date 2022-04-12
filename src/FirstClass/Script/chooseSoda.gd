@@ -1,5 +1,11 @@
 extends Node2D
 
+# Market minigame choise system
+# It displays on the screen products prices
+# and adds to the total fee the iten price
+# Then it checks if the choise was right or wrong
+# for then change the scenes
+
 var soda = [4.00, 2.00, 2.30]
 
 func _ready():

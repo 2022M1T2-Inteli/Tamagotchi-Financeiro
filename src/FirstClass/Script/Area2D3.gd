@@ -1,11 +1,12 @@
 extends Area2D
 
-# Transition between Street and Bank
+# Transition between Street and Workplace
+# It allows the player to enter the work ambience
 
 onready var changer = get_parent().get_node("Transition_in")
 
-export var path : String
-	
+export var path : String	
+
 
 func _on_Area2D3_body_entered(body):
 	if body.name == "Player_certo":

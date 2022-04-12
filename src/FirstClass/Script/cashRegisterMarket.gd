@@ -1,12 +1,11 @@
 extends Node2D
 
+# Code for the cash register. It subtracts from the
+# player's current money and enable the images from
+# the selected products.
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
 var image = Image.new()
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
 	$total.text = str (Global.total)
 	for i in range(0, 3):
@@ -26,9 +25,3 @@ func _ready():
 	Records.market.append(Global.total*-1)
 	Global.update_wallet[0] = true
 	Global.update_wallet[1] = Records.market.back()
-
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass

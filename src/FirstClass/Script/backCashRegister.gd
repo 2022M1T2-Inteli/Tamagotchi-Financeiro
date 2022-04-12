@@ -1,5 +1,7 @@
 extends Button
 
+# Code that makes the transition between the cash register
+# and the street house.
 
 onready var changer = get_parent().get_node("Transition_in")
 
