@@ -10,6 +10,7 @@ onready var sprite : Sprite = get_node("Sprite")
 var texture_male = preload("res://assets/spritesWolf.png")
 var texture_female = preload("res://assets/Player.png")
 
+#function to change sprite based on player choise. 
 func _ready():
 	if Global.gender == false:
 		$Sprite_Bunny.visible = false
@@ -24,13 +25,6 @@ func _ready():
 	self.position.x = Global.position.x
 	self.position.y = Global.position.y
 	Global.transition = false
-	
-#func _process(delta):
-#	if Global.purple == true:
-#		$Sprite_Bunny.visible = false
-#		$Sprite_Wolf.visible = false
-#		$SpriteWolf_Purple.visible = true
-
 
 func _physics_process(delta):
 	var velocity = Vector2.ZERO # Set default zero velocity
@@ -83,10 +77,3 @@ func _physics_process(delta):
 
 	move_and_collide(velocity) # Move and collide with world
 
-func switch_texture():
-	if  (Global.gender):
-		#sprite.set_texture(texture_female)
-		pass
-	else:
-		#sprite.set_texture(texture_male)
-		pass

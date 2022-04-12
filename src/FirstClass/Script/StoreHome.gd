@@ -1,12 +1,10 @@
 extends Node2D
 
-func _ready():
-	pass # Replace with function body.
-
+#goes to main page
 func _on_HomeRectangle_pressed():
 	pass
 
-
+#goes to product page
 func _on_BooksRectangle_pressed():
 	get_tree().change_scene("res://Scenes/StoreBooks.tscn")
 

@@ -1,12 +1,9 @@
 extends CanvasLayer
 
-
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
+#set elements visibility
 var visibility = [true, true, true, false, false, false, false, false]
 
-# Called when the node enters the scene tree for the first time.
+# function to update wallet value
 func _ready():
 	if Global.update_wallet[0]:
 		$Expense.visible = true
@@ -14,8 +11,7 @@ func _ready():
 		$Expense_Notification.start()
 	change_actions()
 	
-	 # Replace with function body.
-
+#visual part of energy, if the player expend an acation, one point of energt will dissapers
 func change_actions():
 	for i in range(visibility.size(), Global.actions, -1):
 		get_node("energy_"+ str(i)).visible = false

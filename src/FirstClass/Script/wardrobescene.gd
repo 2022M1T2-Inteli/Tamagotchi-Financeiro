@@ -1,5 +1,6 @@
 extends Node2D
 
+#pre load shirts sprites
 var w_default = preload("res://assets/wolfShirtDefault.png")
 var b_default = preload("res://assets/b_default.png")
 var w_yellow = preload("res://assets/wolfShirtYellow.png")
@@ -12,6 +13,7 @@ onready var player_sprite = get_node("WolfShirtDefault")
 onready var changer = get_parent().get_node("Transition_in")
 export var path : String
 
+#shirt color indication
 func _ready():
 	for i in range(0,5):
 		get_node("Shirt_" + str(i)).visible = StoreManagement.products[2][i]
@@ -21,9 +23,11 @@ func _ready():
 	$Shirt_3/textGreen.bbcode_text = str ("[center]VERDE")
 	$Shirt_4/textPink.bbcode_text = str ("[center]ROSA")
 
+#go back to bedroom
 func _on_sairteste_pressed():
 	get_tree().change_scene("res://Scenery/bedroom.tscn")
 
+#functions to change the shirt and check if they were bought
 
 func _on_ShirtYellow_pressed():
 	if StoreManagement.products[2][0]:
@@ -60,7 +64,7 @@ func _on_ShirtPink_pressed():
 	else:
 		pass
 
-
+#set player to deafault 
 func _on_Default_pressed():
 	if Global.gender == true:
 		player_sprite.set_texture(w_default)
