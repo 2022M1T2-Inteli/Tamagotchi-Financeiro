@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=2]
+[gd_scene load_steps=26 format=2]
 
 [ext_resource path="res://assets/fundo preto.png" type="Texture" id=1]
 [ext_resource path="res://assets/bedroomdaywin.png" type="Texture" id=2]
@@ -16,6 +16,7 @@
 [ext_resource path="res://assets/inflação (4).png" type="Texture" id=14]
 [ext_resource path="res://assets/nextButton.png" type="Texture" id=15]
 [ext_resource path="res://assets/exitButton.png" type="Texture" id=16]
+[ext_resource path="res://assets/Raio_cheio.png" type="Texture" id=17]
 
 [sub_resource type="StyleBoxEmpty" id=5]
 
@@ -174,6 +175,21 @@ position = Vector2( 114, 52 )
 scale = Vector2( 0.341691, 0.376515 )
 texture = ExtResource( 16 )
 
+[node name="Button" type="Button" parent="."]
+visible = false
+margin_left = 569.0
+margin_top = 365.0
+margin_right = 714.0
+margin_bottom = 463.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RaioCheio" type="Sprite" parent="Button"]
+position = Vector2( 141, -1.99991 )
+scale = Vector2( 0.149342, 0.116387 )
+texture = ExtResource( 17 )
+
 [node name="Button_next_book1" type="Button" parent="."]
 margin_left = 1032.0
 margin_top = 581.0
@@ -198,4 +214,5 @@ texture = ExtResource( 15 )
 [connection signal="pressed" from="Book_IV" to="." method="_on_Book_IV_pressed"]
 [connection signal="pressed" from="Book_V" to="." method="_on_Book_V_pressed"]
 [connection signal="pressed" from="Button_exit" to="." method="_on_Button_exit_pressed"]
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="Button_next_book1" to="." method="_on_Button_next_book1_pressed"]

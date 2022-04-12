@@ -11,6 +11,9 @@ func _ready():
 	$Sprite4.visible = false
 	$Sprite5.visible = false 
 	$Button_next_book1.visible = false
+	for i in range(0,5):
+		if StoreManagement.products[0][i]  && Global.actions >=1:
+			$Button.visible = true
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -20,6 +23,7 @@ func _ready():
 
 func _on_Button_exit_pressed():
 	get_tree().change_scene("res://Scenery/bedroom.tscn")
+	$Button.visible = false
 
 
 func _on_Book_I_pressed():
@@ -28,6 +32,7 @@ func _on_Book_I_pressed():
 		$Sprite.visible = true
 		book = 1
 		$Button_next_book1.visible = true
+		$Button.visible = false
 		
 func _on_Button_next_book1_pressed():
 	if book == 1:
@@ -71,3 +76,11 @@ func _on_Book_V_pressed():
 
 #func _on_Button_next_book1_pressed():
 #	pass # Replace with function body.
+
+
+func _on_Button_pressed():
+	for i in range(0,5):
+		if StoreManagement.products[0][i]  && Global.actions >=1:
+			Global.knowledge += 1
+			Global.actions -=1 
+

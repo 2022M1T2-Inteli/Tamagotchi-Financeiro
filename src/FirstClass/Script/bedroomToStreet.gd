@@ -12,5 +12,5 @@ func _on_Goalscene1_body_entered(body):
 		Global.transition = true
 		Global.current_scene = "res://Scenery/streetHouse.tscn"
 		Global.position.x = 318
-		Global.position.y = 546
+		Global.position.y = 600
 		changer.change_scene(path)
