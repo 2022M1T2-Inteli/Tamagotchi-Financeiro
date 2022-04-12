@@ -1,5 +1,6 @@
 extends Node2D
 
+#product prices
 var Bicycle : float = 300.00
 var Eletric_Bike : float = 1300.00
 var Motorcycle : float = 2100.00
@@ -8,6 +9,7 @@ var Deluxe_Car : float = 22000.00
 
 var purchased = preload("res://Scenes/Purchased.tscn")
 
+#calculate product price based on inflation
 func _ready():
 	if Global.day >= 2:
 		$RichTextLabel1.bbcode_text = (str ("[center]R$%.2f" % float(Bicycle + Bicycle * (Global.inflation/100))))
@@ -37,6 +39,7 @@ func _ready():
 	StoreManagement.item_status[1] = 0
 	StoreManagement.item_status[2] = 0
 
+#player go to the screen to buy the product he wants
 func _on_Bicycle_pressed():
 	StoreManagement.store_product_index = "res://assets/Bicycle.png"
 	StoreManagement.i = 1
@@ -100,10 +103,10 @@ func _on_Deluxe_Car_pressed():
 	else:
 		pass
 
-
+# last page
 func _on_Button_pressed():
 		get_tree().change_scene("res://Scenes/StoreBooks.tscn")
 
-
+#next oage
 func _on_Button2_pressed():
 		get_tree().change_scene("res://Scenes/store_t-shirt.tscn")

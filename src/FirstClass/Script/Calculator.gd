@@ -67,7 +67,7 @@ func _on_Button_div_pressed():
 
 func _on_Button_fechar_pressed():
 	get_tree().paused = false
-	self.queue_free()
+	Global.calc = true 
 
 
 func _on_Button_exp_pressed():

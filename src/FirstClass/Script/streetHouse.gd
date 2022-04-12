@@ -24,9 +24,9 @@ func _ready():
 	elif(StoreManagement.products[4][0]):
 		image.load("res://assets/hause 3.png")
 	else:
-		image.load("res://assets/background house.png")
+		image.load("res://assets/house1highquality.png")
 	var textura = ImageTexture.new()
 	textura.create_from_image(image, 0)
 	$House.texture = textura
 	$House.scale = Vector2 (0.75,0.75)
-	$House.position = Vector2 (632.948,306.997)
+	$House.position = Vector2 (597.000,303.997)

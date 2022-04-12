@@ -2,6 +2,7 @@ extends Node2D
 
 var book = 0
 
+#set books to visible based in which one the player bought
 func _ready():
 	for i in range(0,5):
 		get_node("Book_" + str(i)).visible = StoreManagement.products[0][i]
@@ -12,20 +13,15 @@ func _ready():
 	$Sprite5.visible = false 
 	$Button_next_book1.visible = false
 	for i in range(0,5):
-		if StoreManagement.products[0][i]  && Global.actions >=1:
+		if StoreManagement.products[0][i]  && Global.actions >=1: 
 			$Button.visible = true
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
-
-
+#go back to bedroom
 func _on_Button_exit_pressed():
 	get_tree().change_scene("res://Scenery/bedroom.tscn")
 	$Button.visible = false
 
-
+#open the book
 func _on_Book_I_pressed():
 	if (StoreManagement.products[0][0]):
 		$Button_exit.visible = false
@@ -33,7 +29,8 @@ func _on_Book_I_pressed():
 		book = 1
 		$Button_next_book1.visible = true
 		$Button.visible = false
-		
+
+#pass book pages
 func _on_Button_next_book1_pressed():
 	if book == 1:
 		$Sprite.visible = false
@@ -71,13 +68,7 @@ func _on_Book_IV_pressed():
 func _on_Book_V_pressed():
 	pass # Replace with function body.
 
-
-
-
-#func _on_Button_next_book1_pressed():
-#	pass # Replace with function body.
-
-
+#function for player study and earn knowlodge based in how many books he have
 func _on_Button_pressed():
 	for i in range(0,5):
 		if StoreManagement.products[0][i]  && Global.actions >=1:
