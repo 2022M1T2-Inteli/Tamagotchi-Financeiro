@@ -9,5 +9,6 @@ extends Node2D
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	$Setapreta/setapreta.play("seta")
+	Global.email = true
 
 

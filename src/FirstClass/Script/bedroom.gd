@@ -13,14 +13,14 @@ func _ready():
 			$Funcao_block2.visible = false
 	$Player_certo.visible = false
 	$"/root/Ambient".play()
-	
+	if Global.email == true:
+		$Joystick/Control/question_button/AnimationPlayer.play("aviso")
 	if !Global.letter:
 		$Button_Instructions1/Instructions1.visible = true
 		$Button_Instructions1.visible = true
-	elif Global.email == true:
-		$Joystick/Control/question_button/AnimationPlayer.play("aviso")
 	else:
 		$Player_certo.visible = true
+
 
 func _on_Button_Instructions1_pressed():
 	$Button_Instructions2/Instructions2.visible = true
