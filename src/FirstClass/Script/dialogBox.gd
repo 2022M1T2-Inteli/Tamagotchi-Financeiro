@@ -1,5 +1,9 @@
 extends Control
 
+# Code that is responsable for the content of a lesson.
+# It makes the logic of text pass and dialog blocks 
+# In particular, this script refers to Savings
+
 var dialog = [
 	'Bom dia! Você está pronto para aprender sobre Poupança?',
 	'POUPANÇA \n Poupança é um investimento de renda fixa simples e acessível que é isento de custos - os rendimentos não pagam Imposto de Renda, mesmo que tenham que ser declarados anualmente.',

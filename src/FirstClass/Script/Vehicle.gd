@@ -1,5 +1,8 @@
 extends Sprite
 
+# Code for changing the vehicle sprite
+# based on what the player have bought
+
 func _ready():
 	var image = Image.new()
 	if(StoreManagement.products[1][0]):

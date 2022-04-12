@@ -1,6 +1,9 @@
 extends Node2D
 
 # Script for the exclamation sign
+# This script enables the text advance and
+# the visibility of certain elements
+# based on attendancy of the daily class
 
 func _ready():
 	$"/root/Ambient".stop()

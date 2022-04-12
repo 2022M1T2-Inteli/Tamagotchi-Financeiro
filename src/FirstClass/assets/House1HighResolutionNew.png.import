@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/EduFin App (12).png-a1be4929f972be04c5be2c946874856d.stex"
+path="res://.import/House1HighResolutionNew.png-88c8303cd264533aba16449f716226f0.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/EduFin App (12).png"
-dest_files=[ "res://.import/EduFin App (12).png-a1be4929f972be04c5be2c946874856d.stex" ]
+source_file="res://assets/House1HighResolutionNew.png"
+dest_files=[ "res://.import/House1HighResolutionNew.png-88c8303cd264533aba16449f716226f0.stex" ]
 
 [params]
 

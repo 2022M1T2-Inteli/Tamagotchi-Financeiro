@@ -1,4 +1,4 @@
-[gd_scene load_steps=69 format=2]
+[gd_scene load_steps=68 format=2]
 
 [ext_resource path="res://assets/street_1.png" type="Texture" id=1]
 [ext_resource path="res://Scenes/Player_certo.tscn" type="PackedScene" id=2]
@@ -10,7 +10,7 @@
 [ext_resource path="res://Scenes/streetHouseToClassUniversity.tscn" type="PackedScene" id=8]
 [ext_resource path="res://assets/EduFin App (7).png" type="Texture" id=9]
 [ext_resource path="res://assets/setapreta.png" type="Texture" id=10]
-[ext_resource path="res://assets/EduFin App (8).png" type="Texture" id=11]
+[ext_resource path="res://assets/house1highquality.png" type="Texture" id=11]
 [ext_resource path="res://Script/Area2D3.gd" type="Script" id=12]
 [ext_resource path="res://Scenes/marketToInMarket.tscn" type="PackedScene" id=13]
 [ext_resource path="res://Scenery/joystick.tscn" type="PackedScene" id=14]
@@ -31,14 +31,11 @@
 [sub_resource type="RectangleShape2D" id=4]
 extents = Vector2( 46, 59.75 )
 
-[sub_resource type="RectangleShape2D" id=5]
-extents = Vector2( 45, 60 )
-
 [sub_resource type="RectangleShape2D" id=10]
 extents = Vector2( 39.75, 68.75 )
 
 [sub_resource type="RectangleShape2D" id=11]
-extents = Vector2( 45.375, 70.875 )
+extents = Vector2( 45.375, 66.8154 )
 
 [sub_resource type="RectangleShape2D" id=12]
 extents = Vector2( 34, 49.7465 )
@@ -47,19 +44,19 @@ extents = Vector2( 34, 49.7465 )
 extents = Vector2( 49.125, 42.75 )
 
 [sub_resource type="RectangleShape2D" id=14]
-extents = Vector2( 35, 20.5 )
+extents = Vector2( 33.8793, 20.5 )
 
 [sub_resource type="RectangleShape2D" id=15]
 extents = Vector2( 85, 62.5 )
 
 [sub_resource type="RectangleShape2D" id=16]
-extents = Vector2( 40.5, 71.25 )
+extents = Vector2( 37.5392, 59.2564 )
 
 [sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 47.75, 65.25 )
 
 [sub_resource type="RectangleShape2D" id=6]
-extents = Vector2( 48, 39 )
+extents = Vector2( 38.394, 31.7715 )
 
 [sub_resource type="RectangleShape2D" id=7]
 extents = Vector2( 30.75, 25.25 )
@@ -363,8 +360,8 @@ scale = Vector2( 1.67071, 1.90303 )
 texture = ExtResource( 15 )
 
 [node name="House" type="Sprite" parent="."]
-position = Vector2( 632.948, 346.997 )
-scale = Vector2( 0.273957, 0.275654 )
+position = Vector2( 584.563, 323.247 )
+scale = Vector2( 0.665415, 0.688376 )
 texture = ExtResource( 11 )
 offset = Vector2( 85.9814, 58.5369 )
 
@@ -376,7 +373,7 @@ position = Vector2( 5704.02, 479.61 )
 [node name="StaticBody2D2" type="StaticBody2D" parent="."]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D2"]
-position = Vector2( -18, 56 )
+position = Vector2( -24.8174, 10.2262 )
 scale = Vector2( 1.22535, 1.08542 )
 polygon = PoolVector2Array( 141, 399, 141, 54, 479, 56, 480, 395 )
 
@@ -385,7 +382,7 @@ position = Vector2( 67, 314 )
 shape = SubResource( 1 )
 
 [node name="Goalscene2" parent="." instance=ExtResource( 4 )]
-position = Vector2( 320.64, 477.565 )
+position = Vector2( 336.523, 477.565 )
 path = "res://Scenery/bedroom.tscn"
 
 [node name="Joystick" parent="." instance=ExtResource( 14 )]
@@ -478,16 +475,12 @@ __meta__ = {
 position = Vector2( 60, 89 )
 shape = SubResource( 4 )
 
-[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D3"]
-position = Vector2( 711, 87 )
-shape = SubResource( 5 )
-
 [node name="CollisionShape2D9" type="CollisionShape2D" parent="StaticBody2D3"]
-position = Vector2( 894, 229 )
+position = Vector2( 861.658, 229.067 )
 shape = SubResource( 10 )
 
 [node name="CollisionShape2D10" type="CollisionShape2D" parent="StaticBody2D3"]
-position = Vector2( 1020, 128 )
+position = Vector2( 992.694, 141.122 )
 shape = SubResource( 11 )
 
 [node name="CollisionShape2D11" type="CollisionShape2D" parent="StaticBody2D3"]
@@ -495,11 +488,11 @@ position = Vector2( 1636.95, 101.9 )
 shape = SubResource( 12 )
 
 [node name="CollisionShape2D12" type="CollisionShape2D" parent="StaticBody2D3"]
-position = Vector2( 1102, 341 )
+position = Vector2( 1078.07, 349.737 )
 shape = SubResource( 13 )
 
 [node name="CollisionShape2D13" type="CollisionShape2D" parent="StaticBody2D3"]
-position = Vector2( 1106, 412 )
+position = Vector2( 1069, 418.253 )
 shape = SubResource( 14 )
 
 [node name="CollisionShape2D14" type="CollisionShape2D" parent="StaticBody2D3"]
@@ -507,7 +500,7 @@ position = Vector2( 1187.26, 80.7872 )
 shape = SubResource( 15 )
 
 [node name="CollisionShape2D15" type="CollisionShape2D" parent="StaticBody2D3"]
-position = Vector2( 1248, 284 )
+position = Vector2( 1214.06, 284.289 )
 shape = SubResource( 16 )
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D3"]
@@ -515,16 +508,16 @@ position = Vector2( 1461, 137.75 )
 shape = SubResource( 2 )
 
 [node name="CollisionShape2D26" type="CollisionShape2D" parent="StaticBody2D3"]
-position = Vector2( 1358, 191 )
+position = Vector2( 1336.17, 207.592 )
 shape = SubResource( 6 )
 
 [node name="CollisionShape2D27" type="CollisionShape2D" parent="StaticBody2D3"]
-position = Vector2( 1364, 254 )
+position = Vector2( 1335.17, 275.085 )
 shape = SubResource( 7 )
 
 [node name="Gramado" type="Sprite" parent="StaticBody2D3/CollisionShape2D27"]
-position = Vector2( -17.5, -26.25 )
-scale = Vector2( 0.618055, 0.981675 )
+position = Vector2( 12702.8, 1.02261 )
+scale = Vector2( 0.776357, 0.981675 )
 texture = ExtResource( 24 )
 
 [node name="CollisionShape2D28" type="CollisionShape2D" parent="StaticBody2D3"]
@@ -544,11 +537,11 @@ position = Vector2( 1783, 211 )
 shape = SubResource( 11 )
 
 [node name="CollisionShape2D35" type="CollisionShape2D" parent="StaticBody2D3"]
-position = Vector2( 1917, 119 )
+position = Vector2( 1917, 123.06 )
 shape = SubResource( 11 )
 
 [node name="CollisionShape2D34" type="CollisionShape2D" parent="StaticBody2D3"]
-position = Vector2( 1993, 352 )
+position = Vector2( 1993, 361.951 )
 shape = SubResource( 16 )
 
 [node name="CollisionShape2D36" type="CollisionShape2D" parent="StaticBody2D3"]
@@ -558,10 +551,6 @@ shape = SubResource( 11 )
 [node name="CollisionShape2D37" type="CollisionShape2D" parent="StaticBody2D3"]
 position = Vector2( 2261.36, 217.819 )
 shape = SubResource( 11 )
-
-[node name="CollisionShape2D39" type="CollisionShape2D" parent="StaticBody2D3"]
-position = Vector2( 2347, 364 )
-shape = SubResource( 16 )
 
 [node name="CollisionShape2D40" type="CollisionShape2D" parent="StaticBody2D3"]
 position = Vector2( 2609, 76 )
@@ -580,7 +569,7 @@ position = Vector2( 2488.68, 366.099 )
 shape = SubResource( 16 )
 
 [node name="CollisionShape2D44" type="CollisionShape2D" parent="StaticBody2D3"]
-position = Vector2( 3228, 93 )
+position = Vector2( 3241.15, 88.9682 )
 shape = SubResource( 11 )
 
 [node name="CollisionShape2D45" type="CollisionShape2D" parent="StaticBody2D3"]
@@ -588,7 +577,7 @@ position = Vector2( 3129, 205 )
 shape = SubResource( 11 )
 
 [node name="CollisionShape2D46" type="CollisionShape2D" parent="StaticBody2D3"]
-position = Vector2( 3411, 221 )
+position = Vector2( 3428.76, 238.271 )
 shape = SubResource( 11 )
 
 [node name="CollisionShape2D47" type="CollisionShape2D" parent="StaticBody2D3"]
@@ -600,7 +589,7 @@ position = Vector2( 3742, 91 )
 shape = SubResource( 11 )
 
 [node name="CollisionShape2D49" type="CollisionShape2D" parent="StaticBody2D3"]
-position = Vector2( 3550, 133 )
+position = Vector2( 3557.81, 143.167 )
 shape = SubResource( 11 )
 
 [node name="CollisionShape2D50" type="CollisionShape2D" parent="StaticBody2D3"]
@@ -608,7 +597,7 @@ position = Vector2( 3782, 275 )
 shape = SubResource( 11 )
 
 [node name="CollisionShape2D51" type="CollisionShape2D" parent="StaticBody2D3"]
-position = Vector2( 3628, 362 )
+position = Vector2( 3646.16, 375.302 )
 shape = SubResource( 16 )
 
 [node name="CollisionShape2D54" type="CollisionShape2D" parent="StaticBody2D3"]
@@ -624,7 +613,7 @@ position = Vector2( 4254, 281 )
 shape = SubResource( 11 )
 
 [node name="CollisionShape2D57" type="CollisionShape2D" parent="StaticBody2D3"]
-position = Vector2( 4104, 366 )
+position = Vector2( 4109.75, 375.302 )
 shape = SubResource( 16 )
 
 [node name="CollisionShape2D58" type="CollisionShape2D" parent="StaticBody2D3"]
@@ -660,7 +649,7 @@ position = Vector2( 4984, 118 )
 shape = SubResource( 11 )
 
 [node name="CollisionShape2D66" type="CollisionShape2D" parent="StaticBody2D3"]
-position = Vector2( 5073, 350 )
+position = Vector2( 5068.69, 368.144 )
 shape = SubResource( 16 )
 
 [node name="CollisionShape2D67" type="CollisionShape2D" parent="StaticBody2D3"]
@@ -712,7 +701,7 @@ position = Vector2( 6781, 85 )
 shape = SubResource( 11 )
 
 [node name="CollisionShape2D79" type="CollisionShape2D" parent="StaticBody2D3"]
-position = Vector2( 7077, 114 )
+position = Vector2( 7068.97, 125.783 )
 shape = SubResource( 11 )
 
 [node name="CollisionShape2D80" type="CollisionShape2D" parent="StaticBody2D3"]
@@ -820,7 +809,7 @@ position = Vector2( 8918, 228 )
 shape = SubResource( 16 )
 
 [node name="CollisionShape2D95" type="CollisionShape2D" parent="StaticBody2D3"]
-position = Vector2( 8813, 288 )
+position = Vector2( 8824.87, 288 )
 shape = SubResource( 16 )
 
 [node name="CollisionShape2D96" type="CollisionShape2D" parent="StaticBody2D3"]
@@ -828,11 +817,11 @@ position = Vector2( 9058, 145 )
 shape = SubResource( 11 )
 
 [node name="CollisionShape2D97" type="CollisionShape2D" parent="StaticBody2D3"]
-position = Vector2( 9294, 292 )
+position = Vector2( 9280.69, 290.425 )
 shape = SubResource( 16 )
 
 [node name="CollisionShape2D98" type="CollisionShape2D" parent="StaticBody2D3"]
-position = Vector2( 9145, 361 )
+position = Vector2( 9134.77, 378.37 )
 shape = SubResource( 11 )
 
 [node name="CollisionShape2D99" type="CollisionShape2D" parent="StaticBody2D3"]
@@ -840,7 +829,7 @@ position = Vector2( 9601, 364 )
 shape = SubResource( 16 )
 
 [node name="CollisionShape2D100" type="CollisionShape2D" parent="StaticBody2D3"]
-position = Vector2( 9250, 94 )
+position = Vector2( 9236.02, 88.9682 )
 shape = SubResource( 11 )
 
 [node name="CollisionShape2D101" type="CollisionShape2D" parent="StaticBody2D3"]
@@ -848,7 +837,7 @@ position = Vector2( 9514, 126 )
 shape = SubResource( 11 )
 
 [node name="CollisionShape2D102" type="CollisionShape2D" parent="StaticBody2D3"]
-position = Vector2( 9390, 219 )
+position = Vector2( 9376.99, 222.932 )
 shape = SubResource( 16 )
 
 [node name="CollisionShape2D103" type="CollisionShape2D" parent="StaticBody2D3"]
@@ -987,10 +976,6 @@ shape = SubResource( 16 )
 position = Vector2( 13823, 137 )
 shape = SubResource( 11 )
 
-[node name="CollisionShape2D142" type="CollisionShape2D" parent="StaticBody2D3"]
-position = Vector2( 14040, 275 )
-shape = SubResource( 11 )
-
 [node name="CollisionShape2D143" type="CollisionShape2D" parent="StaticBody2D3"]
 position = Vector2( 13989, 96 )
 shape = SubResource( 16 )
@@ -1028,7 +1013,7 @@ position = Vector2( 14741, 99 )
 shape = SubResource( 11 )
 
 [node name="CollisionShape2D152" type="CollisionShape2D" parent="StaticBody2D3"]
-position = Vector2( 14985, 388 )
+position = Vector2( 701.834, 359.963 )
 shape = SubResource( 16 )
 
 [node name="CollisionShape2D153" type="CollisionShape2D" parent="StaticBody2D3"]
