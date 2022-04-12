@@ -14,13 +14,15 @@ func _ready():
 	$Player_certo.visible = false
 	$"/root/Ambient".play()
 	
+	if Global.email == true:
+		$Joystick/Control/question_button/AnimationPlayer.play("aviso")
+		
 	#call game instructions
 	if !Global.letter:
 		$Button_Instructions1/Instructions1.visible = true
 		$Button_Instructions1.visible = true
 	else:
 		$Player_certo.visible = true
-		$Joystick/Control/question_button/AnimationPlayer.play("aviso")
 
 #functions to pass from one game instruction to the next one
 func _on_Button_Instructions1_pressed():
