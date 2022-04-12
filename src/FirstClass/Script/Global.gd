@@ -38,6 +38,7 @@ var excla3 = false
 var excla4 = false
 var letter = false
 var calc = false
+var email = false
 var passive_happiness = 0
 var bank1 = false
 var university1 = false

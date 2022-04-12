@@ -23,6 +23,7 @@ func _on_question_button_pressed() -> void:
 	$Panel/AnimationPlayer.play("popup")
 	$question_button/AnimationPlayer.stop()
 	$question_button.visible = true
+	Global.email = true
 	
 	if !Global.school:
 		get_node("Panel/Any_tasks_active").text += matrix[Global.day-1][0]
@@ -38,6 +39,7 @@ func _on_question_button_pressed() -> void:
 		get_node("Panel/Any_tasks_active").text += "\n\n•Seu bem-estar está muito baixo! Cuidado, voce perdera energia!"	
 
 func _on_close_button_pressed() -> void:
+	Global.email = false
 	$Panel/AnimationPlayer.play_backwards("popup")
 	$close_button.visible = false
 	get_node("Panel/Any_tasks_active").text = ""
