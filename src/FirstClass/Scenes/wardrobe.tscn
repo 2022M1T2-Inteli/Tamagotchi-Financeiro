@@ -2,7 +2,7 @@
 
 [ext_resource path="res://assets/newwardrobe.png" type="Texture" id=1]
 [ext_resource path="res://Script/wardrobescene.gd" type="Script" id=2]
-[ext_resource path="res://assets/newbedroom.png" type="Texture" id=3]
+[ext_resource path="res://assets/bedroomdaywin.png" type="Texture" id=3]
 [ext_resource path="res://Scenes/Transition_in.tscn" type="PackedScene" id=4]
 [ext_resource path="res://assets/shirtPurple.png" type="Texture" id=5]
 [ext_resource path="res://assets/shirtGreen.png" type="Texture" id=6]

@@ -64,8 +64,10 @@ func _on_ComputerArea_body_entered(body):
 
 
 func _on_shelfBooks_body_entered(body):
-	if body.name == "Player_certo":
+	if body.name == "Player_certo" && (StoreManagement.products[0][0] || StoreManagement.products[0][1] || StoreManagement.products[0][2] || StoreManagement.products[0][3] || StoreManagement.products[0][4]):
 		get_tree().change_scene("res://Scenes/bedroomShelf.tscn")
+	else:
+		pass
 
 
 func _on_Button_Instructions7_pressed():
