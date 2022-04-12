@@ -65,3 +65,8 @@ func _on_Button_Instructions6_pressed():
 func _on_ComputerArea_body_entered(body):
 	if body.name == "Player_certo":
 		get_tree().change_scene("res://Scenes/StoreHome.tscn")
+
+
+func _on_shelfBooks_body_entered(body):
+	if body.name == "Player_certo":
+		get_tree().change_scene("res://Scenes/bedroomShelf.tscn")
