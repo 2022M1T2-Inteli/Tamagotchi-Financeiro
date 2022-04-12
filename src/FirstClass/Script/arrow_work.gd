@@ -1,13 +1,12 @@
 extends Area2D
 
-# Script that change the scene from University to Street
+# Script that change the scene 
 
 onready var changer = get_parent().get_node("Transition_in")
 
 export var path : String
 
 func _ready():
-	#$Sprite/setapreta.play("seta1")
 	Global.change_position(147,682)
 	
 func _on_Area2D_body_entered(body):

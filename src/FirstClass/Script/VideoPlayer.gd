@@ -1,7 +1,5 @@
 extends VideoPlayer
 
-func _ready():
-	pass # Replace with function body.
-
+#play menu video
 func _on_VideoPlayer_finished():
 	play()

@@ -5,7 +5,7 @@ var count = 4
 func _ready():
 	$Timer.start()
 
-
+#function to new mesages appers
 func _on_Timer_timeout():
 	if(count > 8):
 		$Timer.stop()
@@ -15,7 +15,7 @@ func _on_Timer_timeout():
 		get_node("Timer").start()
 		count += 1
 
-
+#button to change to taxi scene
 func _on_Button_pressed():
 	if($Button.visible == true):
 		get_tree().change_scene("res://Scenes/taxi.tscn")

@@ -1,11 +1,10 @@
 extends Node2D
 
-func _ready():
-	pass # Replace with function body.
-			
+#back to bank main scene
 func _on_Button_exit_pressed():
 	get_tree().change_scene("res://Scenes/Bank.tscn")
 
+#goes to the investiment sceren
 func _on_Button_renda_fixa_pressed():
 	get_tree().change_scene("res://Scenes/renda_fixa.tscn")
 

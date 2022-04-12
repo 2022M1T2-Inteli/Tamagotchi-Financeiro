@@ -1,8 +1,7 @@
 extends Area2D
 
-func _ready():
-	pass
 
+#function to show job options
 func _on_Area2D2_body_entered(body):
 	if body.name == "Player_certo":
 		$FundoPreto.visible = true
