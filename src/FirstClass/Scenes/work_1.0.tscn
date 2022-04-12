@@ -233,10 +233,10 @@ wait_time = 3.0
 
 [node name="right" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 9 )
+volume_db = -3.0
 
 [node name="wrong" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 8 )
-volume_db = 8.794
 
 [node name="music" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 10 )
