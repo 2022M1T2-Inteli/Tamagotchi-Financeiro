@@ -19,6 +19,6 @@ polygon = PoolVector2Array( -38, -38, -23, -52, 23, -52, 39, -38, 40, 41, 21, 55
 
 [node name="ErroFX" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 3 )
-volume_db = 24.0
+volume_db = 10.0
 
 [connection signal="body_entered" from="." to="." method="_on_Area2D_body_entered"]

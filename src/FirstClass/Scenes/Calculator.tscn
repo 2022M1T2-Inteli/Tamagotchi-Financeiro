@@ -44,10 +44,10 @@ __meta__ = {
 [node name="Button_1" type="Button" parent="resultado"]
 pause_mode = 2
 show_behind_parent = true
-margin_left = -10.0
-margin_top = 158.0
-margin_right = 47.0
-margin_bottom = 211.0
+margin_left = -23.0
+margin_top = 144.0
+margin_right = 60.0
+margin_bottom = 219.0
 flat = true
 __meta__ = {
 "_edit_use_anchors_": false
@@ -56,10 +56,10 @@ __meta__ = {
 [node name="Button_2" type="Button" parent="resultado"]
 pause_mode = 2
 show_behind_parent = true
-margin_left = 73.0
-margin_top = 158.0
-margin_right = 133.0
-margin_bottom = 210.0
+margin_left = 60.0
+margin_top = 146.0
+margin_right = 144.0
+margin_bottom = 222.0
 flat = true
 __meta__ = {
 "_edit_use_anchors_": false
@@ -68,10 +68,10 @@ __meta__ = {
 [node name="Button_3" type="Button" parent="resultado"]
 pause_mode = 2
 show_behind_parent = true
-margin_left = 155.0
-margin_top = 162.0
-margin_right = 212.0
-margin_bottom = 214.0
+margin_left = 145.0
+margin_top = 147.0
+margin_right = 222.0
+margin_bottom = 221.0
 flat = true
 __meta__ = {
 "_edit_use_anchors_": false
@@ -80,10 +80,10 @@ __meta__ = {
 [node name="Button_4" type="Button" parent="resultado"]
 pause_mode = 2
 show_behind_parent = true
-margin_left = -8.0
-margin_top = 239.0
-margin_right = 48.0
-margin_bottom = 296.0
+margin_left = -13.0
+margin_top = 228.0
+margin_right = 55.0
+margin_bottom = 293.0
 flat = true
 __meta__ = {
 "_edit_use_anchors_": false
@@ -92,10 +92,10 @@ __meta__ = {
 [node name="Button_5" type="Button" parent="resultado"]
 pause_mode = 2
 show_behind_parent = true
-margin_left = 72.0
-margin_top = 238.0
-margin_right = 129.0
-margin_bottom = 288.0
+margin_left = 65.0
+margin_top = 228.0
+margin_right = 136.0
+margin_bottom = 298.0
 flat = true
 __meta__ = {
 "_edit_use_anchors_": false
@@ -104,10 +104,10 @@ __meta__ = {
 [node name="Button_6" type="Button" parent="resultado"]
 pause_mode = 2
 show_behind_parent = true
-margin_left = 155.0
-margin_top = 233.0
-margin_right = 215.0
-margin_bottom = 294.0
+margin_left = 146.0
+margin_top = 225.0
+margin_right = 218.0
+margin_bottom = 302.0
 flat = true
 __meta__ = {
 "_edit_use_anchors_": false
@@ -116,10 +116,10 @@ __meta__ = {
 [node name="Button_7" type="Button" parent="resultado"]
 pause_mode = 2
 show_behind_parent = true
-margin_left = -11.0
-margin_top = 315.0
-margin_right = 51.0
-margin_bottom = 378.0
+margin_left = -18.0
+margin_top = 304.0
+margin_right = 58.0
+margin_bottom = 375.0
 flat = true
 __meta__ = {
 "_edit_use_anchors_": false
@@ -128,10 +128,10 @@ __meta__ = {
 [node name="Button_8" type="Button" parent="resultado"]
 pause_mode = 2
 show_behind_parent = true
-margin_left = 76.0
-margin_top = 314.0
-margin_right = 128.0
-margin_bottom = 376.0
+margin_left = 65.0
+margin_top = 303.0
+margin_right = 137.0
+margin_bottom = 379.0
 flat = true
 __meta__ = {
 "_edit_use_anchors_": false
@@ -140,9 +140,9 @@ __meta__ = {
 [node name="Button_9" type="Button" parent="resultado"]
 pause_mode = 2
 show_behind_parent = true
-margin_left = 150.0
-margin_top = 312.0
-margin_right = 208.0
+margin_left = 140.0
+margin_top = 304.0
+margin_right = 218.0
 margin_bottom = 375.0
 flat = true
 __meta__ = {
@@ -152,10 +152,10 @@ __meta__ = {
 [node name="Button_0" type="Button" parent="resultado"]
 pause_mode = 2
 show_behind_parent = true
-margin_left = -6.0
-margin_top = 393.0
-margin_right = 49.0
-margin_bottom = 452.0
+margin_left = -18.0
+margin_top = 381.0
+margin_right = 59.0
+margin_bottom = 456.0
 flat = true
 __meta__ = {
 "_edit_use_anchors_": false
@@ -164,10 +164,10 @@ __meta__ = {
 [node name="Button_ponto" type="Button" parent="resultado"]
 pause_mode = 2
 show_behind_parent = true
-margin_left = 71.0
-margin_top = 391.0
-margin_right = 126.0
-margin_bottom = 448.0
+margin_left = 60.0
+margin_top = 383.0
+margin_right = 137.0
+margin_bottom = 456.0
 flat = true
 __meta__ = {
 "_edit_use_anchors_": false
@@ -176,10 +176,10 @@ __meta__ = {
 [node name="Button_x" type="Button" parent="resultado"]
 pause_mode = 2
 show_behind_parent = true
-margin_left = 233.0
-margin_top = 230.0
-margin_right = 288.0
-margin_bottom = 291.0
+margin_left = 226.0
+margin_top = 227.0
+margin_right = 301.0
+margin_bottom = 296.0
 flat = true
 __meta__ = {
 "_edit_use_anchors_": false
@@ -188,10 +188,10 @@ __meta__ = {
 [node name="Button_+" type="Button" parent="resultado"]
 pause_mode = 2
 show_behind_parent = true
-margin_left = 238.0
-margin_top = 392.0
-margin_right = 293.0
-margin_bottom = 447.0
+margin_left = 228.0
+margin_top = 388.0
+margin_right = 303.0
+margin_bottom = 451.0
 flat = true
 __meta__ = {
 "_edit_use_anchors_": false
@@ -200,9 +200,9 @@ __meta__ = {
 [node name="Button_-" type="Button" parent="resultado"]
 pause_mode = 2
 show_behind_parent = true
-margin_left = 239.0
+margin_left = 229.0
 margin_top = 310.0
-margin_right = 291.0
+margin_right = 301.0
 margin_bottom = 372.0
 flat = true
 __meta__ = {
@@ -212,10 +212,10 @@ __meta__ = {
 [node name="Button_div" type="Button" parent="resultado"]
 pause_mode = 2
 show_behind_parent = true
-margin_left = 235.0
-margin_top = 153.0
-margin_right = 287.0
-margin_bottom = 212.0
+margin_left = 229.0
+margin_top = 148.0
+margin_right = 301.0
+margin_bottom = 215.0
 flat = true
 __meta__ = {
 "_edit_use_anchors_": false
@@ -224,10 +224,10 @@ __meta__ = {
 [node name="Button_fechar" type="Button" parent="resultado"]
 pause_mode = 2
 show_behind_parent = true
-margin_left = -11.0
-margin_top = 80.0
-margin_right = 48.0
-margin_bottom = 137.0
+margin_left = -14.0
+margin_top = 76.0
+margin_right = 51.0
+margin_bottom = 141.0
 custom_styles/hover = SubResource( 1 )
 custom_styles/pressed = SubResource( 2 )
 custom_styles/normal = SubResource( 3 )
@@ -238,10 +238,10 @@ __meta__ = {
 [node name="Button_exp" type="Button" parent="resultado"]
 pause_mode = 2
 show_behind_parent = true
-margin_left = 78.0
-margin_top = 80.0
-margin_right = 126.0
-margin_bottom = 132.0
+margin_left = 63.0
+margin_top = 73.0
+margin_right = 141.0
+margin_bottom = 139.0
 flat = true
 __meta__ = {
 "_edit_use_anchors_": false
@@ -250,10 +250,10 @@ __meta__ = {
 [node name="Button_AC" type="Button" parent="resultado"]
 pause_mode = 2
 show_behind_parent = true
-margin_left = 152.0
-margin_top = 80.0
-margin_right = 206.0
-margin_bottom = 132.0
+margin_left = 144.0
+margin_top = 69.0
+margin_right = 222.0
+margin_bottom = 145.0
 flat = true
 __meta__ = {
 "_edit_use_anchors_": false
@@ -262,9 +262,9 @@ __meta__ = {
 [node name="Button_=" type="Button" parent="resultado"]
 pause_mode = 2
 show_behind_parent = true
-margin_left = 156.0
+margin_left = 146.0
 margin_top = 389.0
-margin_right = 210.0
+margin_right = 218.0
 margin_bottom = 451.0
 flat = true
 __meta__ = {
@@ -274,10 +274,10 @@ __meta__ = {
 [node name="Button_CE" type="Button" parent="resultado"]
 pause_mode = 2
 show_behind_parent = true
-margin_left = 237.0
-margin_top = 79.0
-margin_right = 288.0
-margin_bottom = 128.0
+margin_left = 226.0
+margin_top = 72.0
+margin_right = 299.0
+margin_bottom = 141.0
 flat = true
 
 [connection signal="pressed" from="resultado/Button_1" to="." method="_on_Button_1_pressed"]

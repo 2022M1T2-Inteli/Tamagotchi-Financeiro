@@ -25,6 +25,7 @@ func _on_question_button_pressed() -> void:
 	$Panel/AnimationPlayer.play("popup")
 	$question_button/AnimationPlayer.stop()
 	$question_button.visible = true
+	Global.email = true
 	
 	#cheks if player went to university and change the task
 	if !Global.school:
@@ -43,6 +44,7 @@ func _on_question_button_pressed() -> void:
 
 #function for close the pop-up
 func _on_close_button_pressed() -> void:
+	Global.email = false
 	$Panel/AnimationPlayer.play_backwards("popup")
 	$close_button.visible = false
 	get_node("Panel/Any_tasks_active").text = ""
