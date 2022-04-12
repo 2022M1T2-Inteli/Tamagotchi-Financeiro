@@ -42,6 +42,7 @@ var bank1 = false
 var university1 = false
 var recordsInvest : Array = []
 var purple : bool = false
+var last_scene = null
 
 func _ready():
 	pass # Replace with function body.
