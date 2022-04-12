@@ -13,30 +13,29 @@ func _ready():
 	$BemestarTaxi.text = str ("- %.2f" % float(bemTaxval), " de Bem-estar")
 
 func _on_Button_bus_pressed():
+	Global.change_position(177, 674)
+	Global.current_scene = "res://Scenery/classUniversity.tscn"
+	get_tree().change_scene("res://Scenery/classUniversity.tscn")
 	if Global.digital_money <= valorBus:
 		Global.money -= valorBus
 	else: 
 		Global.digital_money -= valorBus
 	get_tree().paused = false
-	if(!Global.school):
-		Global.change_position(177, 674)
-		Global.current_scene = "res://Scenery/classUniversity.tscn"
-		get_tree().change_scene("res://Scenery/classUniversity.tscn")
 	Global.happiness -= 3
 
 
 func _on_Button_taxi_pressed():
+	Global.change_position(177, 674)
+	Global.current_scene = "res://Scenery/classUniversity.tscn"
+	get_tree().change_scene("res://Scenery/classUniversity.tscn")
 	if Global.digital_money <= valorTaxi:
 		Global.money -= valorTaxi
 	else: 
 		Global.digital_money -= valorTaxi
 	get_tree().paused = false
-	if(!Global.school):
-		Global.change_position(177, 674)
-		Global.current_scene = "res://Scenery/classUniversity.tscn"
-		get_tree().change_scene("res://Scenery/classUniversity.tscn")
 	Global.happiness -=2
 
 
 func _on_exit_pressed():
+	print("saindo")
 	self.queue_free()

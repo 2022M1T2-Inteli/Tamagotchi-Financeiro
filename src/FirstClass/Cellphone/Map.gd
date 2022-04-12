@@ -22,7 +22,7 @@ func _ready():
 		$Sprite.position = Vector2(-330,900)
 	elif Global.current_scene == "res://Scenery/streetHouse.tscn":
 		$Sprite.position = Vector2(-380,950)
-	pass # Replace with function body.
+
 
 func _on_Button_exit_map_pressed():
 	Global.button = true
@@ -32,13 +32,15 @@ func _on_Button_exit_map_pressed():
 func _on_Button_college_pressed():
 	busTaxi = preload("res://Scenes/busUniversity.tscn")
 	newNode = busTaxi.instance()
-	newNode.position = Vector2.ZERO
-	add_child(newNode)
-	newNode.position = Vector2(0, 0)
+	newNode.global_position = Vector2.ZERO
+	get_parent().add_child(newNode)
+	newNode.global_position = Vector2(0, 0)
+
 
 
 
 func _on_Button_bedroom_pressed():
+	print("button 2")
 	get_tree().paused = false
 	Global.change_position(150, 705)
 	Global.current_scene = "res://Scenery/bedroom.tscn"
@@ -46,32 +48,35 @@ func _on_Button_bedroom_pressed():
 
 
 func _on_Button_bank_pressed():
+	print("button 3")
 	busTaxi = preload("res://Scenes/busBank.tscn")
 	newNode = busTaxi.instance()
 	newNode.global_position = Vector2.ZERO
-	add_child(newNode)
+	get_parent().add_child(newNode)
 	newNode.global_position = Vector2(0, 0)
 
 func _on_Button_work_pressed():
+	print("button 4")
 	busTaxi = preload("res://Scenes/buswork.tscn")
 	newNode = busTaxi.instance()
 	newNode.global_position = Vector2.ZERO
-	add_child(newNode)
+	get_parent().add_child(newNode)
 	newNode.global_position = Vector2(0, 0)
 
 func _on_Button_park_pressed():
+	print("button 5")
 	busTaxi = preload("res://Scenes/busPark.tscn")
 	newNode = busTaxi.instance()
 	newNode.global_position = Vector2.ZERO
-	add_child(newNode)
+	get_parent().add_child(newNode)
 	newNode.global_position = Vector2(0, 0)
 
 
 func _on_Button_market_pressed():
-	print("button 5")
+	print("button 6")
 	busTaxi = preload("res://Scenes/busMarket.tscn")
 	newNode = busTaxi.instance()
 	newNode.global_position = Vector2.ZERO
-	add_child(newNode)
+	get_parent().add_child(newNode)
 	newNode.global_position = Vector2(0, 0)
 

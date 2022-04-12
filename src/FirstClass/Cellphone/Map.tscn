@@ -7,18 +7,12 @@
 [node name="Node2D" type="Node2D"]
 rotation = -1.5708
 script = ExtResource( 2 )
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="CellphoneMap2" type="Sprite" parent="."]
 position = Vector2( -474.002, 660.998 )
 rotation = 1.5708
 scale = Vector2( 0.6, 0.6 )
 texture = ExtResource( 1 )
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( -360.418, 920.798 )
