@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://assets/background house.png" type="Texture" id=1]
+[ext_resource path="res://assets/house1highquality.png" type="Texture" id=1]
 [ext_resource path="res://assets/taxi.png" type="Texture" id=2]
 [ext_resource path="res://Script/storyhouse.gd" type="Script" id=3]
 

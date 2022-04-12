@@ -1,5 +1,7 @@
 extends Button
 
+# Exit button from the Market Minigame
+
 onready var changer = get_parent().get_node("Transition_in")
 
 export var path : String

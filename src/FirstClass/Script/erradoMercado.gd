@@ -1,5 +1,7 @@
 extends Node2D
 
+# Code to change to the explanation of the right choise
+
 func _ready():
 	$lossfx.play()
 

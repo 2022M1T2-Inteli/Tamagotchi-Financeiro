@@ -1,16 +1,17 @@
 extends Node2D
 
+#product prices
 var Book_I : float = 500.00
 var Book_II : float = 900.00
 var Book_III : float = 1400.00
-var Book_IV : float = 2700.00
-var Book_V : float = 4200.00
+var Book_IV : float = 2100.00
+var Book_V : float = 3200.00
 
 var purchased = preload("res://Scenes/Purchased.tscn")
 
 func _ready():
-	pass
 
+	#calculate product price based on inflation
 	if Global.day >= 2:
 		$RichTextLabel1.bbcode_text = (str ("[center]R$%.2f" % float(Book_I + Book_I * (Global.inflation/100))))
 		$RichTextLabel2.bbcode_text= (str ("[center]R$%.2f" % float(Book_II + Book_II * (Global.inflation/100))))
@@ -38,7 +39,7 @@ func _ready():
 	StoreManagement.item_status[0] = 3
 
 
-
+#player go to the screen to buy the product he wants
 func _on_Book_I_pressed():
 	StoreManagement.store_product_index = "res://assets/Book_I.png"
 	StoreManagement.i = 0
@@ -76,7 +77,7 @@ func _on_Book_IV_pressed():
 	StoreManagement.store_product_index = "res://assets/Book_IV.png"
 	StoreManagement.i = 0
 	StoreManagement.j = 3
-	StoreManagement.store_total = 2700.00
+	StoreManagement.store_total = 2100.00
 	if(!StoreManagement.products[StoreManagement.i][StoreManagement.j]):
 		get_tree().change_scene("res://Scenes/StoreCart.tscn")
 	else:
@@ -87,13 +88,13 @@ func _on_Book_V_pressed():
 	StoreManagement.store_product_index = "res://assets/Book_V.png"
 	StoreManagement.i = 0
 	StoreManagement.j = 4
-	StoreManagement.store_total = 4200.00
+	StoreManagement.store_total = 3200.00
 	if(!StoreManagement.products[StoreManagement.i][StoreManagement.j]):
 		get_tree().change_scene("res://Scenes/StoreCart.tscn")
 	else:
 		pass
 
-
+#goes back to store main page
 func _on_Button_pressed():
 	get_tree().change_scene("res://Scenes/StoreHome.tscn")
 

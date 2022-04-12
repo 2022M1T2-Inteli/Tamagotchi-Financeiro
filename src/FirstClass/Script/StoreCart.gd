@@ -2,6 +2,7 @@ extends Node2D
 
 var paymentType = null
 
+# identify and load the product that the player bought
 func _ready():
 	$RichTextLabel.bbcode_text = str("[center]R$%.2f" % float(StoreManagement.store_total))
 	var image = Image.new()
@@ -12,6 +13,7 @@ func _ready():
 	get_node("Selected_Product").position = Vector2(775,450)
 	get_node("Selected_Product").scale = Vector2(0.5, 0.5)
 
+#functions to change scene to product scene
 func _on_HomeRectangle_pressed():
 	get_tree().change_scene("res://Scenes/StoreHome.tscn")
 
@@ -35,12 +37,14 @@ func _on_PetsRectangle_pressed():
 func _on_HousesRectangle_pressed():
 	get_tree().change_scene("res://Scenes/store_residence.tscn")
 
+#chose if will use digital or normal money
 func _on_Button_money_pressed():
 	paymentType = 0
 
 func _on_Button_digital_pressed():
 	paymentType = 1
 
+#function to buy the product if player have money, receiving the product possession and all it status
 func _on_finish_pressed():
 	StoreManagement.store_total += float (get_node("RichTextLabel").text)
 	
@@ -66,12 +70,13 @@ func _on_finish_pressed():
 		Records.store.append(StoreManagement.store_total*-1)
 		StoreManagement.products[StoreManagement.i][StoreManagement.j] = true
 		get_tree().change_scene("res://Scenes/StoreEndshop.tscn")
-	else:
-		$Sprite.visible = true
+	#mesage if player does now have money
+	else: 
+		$Sprite.visible = true 
 		$Sprite2.visible = true
 		$Timer.start()
 		get_tree().paused = true
-
+#disapear the mesage
 func _on_Timer_timeout():
 	$Sprite.visible = false
 	$Sprite2.visible = false

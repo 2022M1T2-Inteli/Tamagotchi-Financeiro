@@ -3,9 +3,7 @@ extends MenuButton
 var celltest = preload ("res://Cellphone/Cellphone.tscn")
 var new_node 
 
-func _ready():
-	pass # Replace with function body.
-
+#function to change player to cellphone scene 
 func _on_Button_cellphone_pressed():
 	if(!Global.transition):
 		get_tree().paused = true

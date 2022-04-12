@@ -1,5 +1,9 @@
 extends Control
 
+# Code that is responsable for the content of a lesson.
+# It makes the logic of text pass and dialog blocks 
+# In particular, this script refers to Inflation
+
 var dialog = [
 	'Bom dia! Você está pronto para aprender sobre Inflação?',
 	'É importante compreender que não investir o seu dinheiro também é um risco, pois ao longo do tempo o valor do dinheiro tende a diminuir, e isso se dá por causa da famosa “inflação”. \n Basicamente, quanto mais o tempo passa e mais a inflação sobe, menos uma nota de 100 consegue comprar.',

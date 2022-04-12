@@ -1,6 +1,9 @@
 extends Area2D
 
 # Script that change from the Steet Scene to the University
+# It allows the player to enter the University only if they
+# Didn't visit it in that day. A Warning is also sent to the
+# Player's mail in case they already got the daily class
 
 onready var changer = get_parent().get_node("Transition_in")
 

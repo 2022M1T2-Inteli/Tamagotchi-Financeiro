@@ -8,6 +8,7 @@ var counter = 0
 var past_timer = 0
 var current_timer = 0
 
+# esteira animation and labels for product price and interaction button
 func _ready():
 	$Esteiraa/AnimationPlayer.play("esteira")
 	$RichTextLabel.bbcode_text = "[center]ACEITAR"
@@ -24,6 +25,7 @@ onready var windowSize = get_viewport().size
 var produtos_trabalho
 var rng1
 
+#itens sprites
 var mochila = preload("res://assets/mochila.png")
 var impressora = preload("res://assets/impressora.png")
 var televisao = preload("res://assets/televisão.png")
@@ -39,6 +41,7 @@ var bola = preload("res://assets/bola.png")
 	
 var produtos = [mochila,impressora,televisao,computador,cadeira,abajur,lixeira,ferro,ventilador,balde,panela,bola]
 
+#confirms if player got the right options
 func _process(delta):
 	if(!start):
 		print(current_timer - past_timer)
@@ -63,6 +66,7 @@ func _process(delta):
 		if new_node.position.x >= -100:
 			new_node.position.x -= 14
 
+#function to generate a randon object
 func _on_Timer_timeout():
 	var rng = RandomNumberGenerator.new()
 	rng.randomize()
@@ -79,18 +83,21 @@ func _on_Timer_timeout():
 	ValoresProdutos()
 	ValorProdutosMercado()
 
+#randomize product value
 func ValoresProdutos():
 	var rng2 = RandomNumberGenerator.new()
 	rng2.randomize()
 	var produtos_trabalho_mercado = rng2.randi_range(100,150)
 	$RichTextLabel5.bbcode_text = str ("[center]", produtos_trabalho_mercado)
-	
+
+#randomize market value
 func ValorProdutosMercado():
 	rng1 = RandomNumberGenerator.new()
 	rng1.randomize()
 	produtos_trabalho = rng1.randi_range(100,150)
 	$RichTextLabel2.bbcode_text = str ("[center]", produtos_trabalho)
 	
+#score count if player got the right or wrong option
 func contagem_score():
 	score += 1
 	$HUD/Score.text = "Score: " + str(score)
@@ -101,7 +108,8 @@ func errado():
 	erro += 1
 	$HUD/Score.text = "Score: " + str(score)
 	$wrong.play()
-	
+
+#fucntion to verify if player win or lose the game
 func verificar():
 	if (erro == 5):
 		get_tree().change_scene("res://Scenes/losswork.tscn")
@@ -113,8 +121,6 @@ func verificar():
 	
 
 func _on_Button_yes_pressed():
-	#new_node.queue_free()
-	#new_node = null
 	if new_node:
 		new_node.visible = false
 		next = true
@@ -124,7 +130,7 @@ func _on_Button_yes_pressed():
 			errado()
 		verificar()
 
-
+#function to change product value, when a new one appers
 func _on_Boom_timeout():
 	new_node.queue_free()
 	new_node = null
@@ -132,7 +138,7 @@ func _on_Boom_timeout():
 	ValoresProdutos()
 	ValorProdutosMercado()
 
-
+#starts timer
 func _on_Touch_pressed():
 	if(!start):
 		if(current_timer - past_timer > 1):

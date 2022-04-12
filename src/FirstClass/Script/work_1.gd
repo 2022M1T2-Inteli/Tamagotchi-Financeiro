@@ -1,5 +1,6 @@
 extends Node2D
 
+#exclamation to give the player an orientation
 func _ready():
 	$Excla/AnimationPlayer.play("RESET")
 	$Excla2.visible = false
@@ -8,7 +9,7 @@ func _ready():
 	if Global.excla4 == true:
 		$Excla.visible = false
 
-
+#functions to navegate into job options
 func _on_Button_1_pressed():
 	$Excla.visible = false
 	$Excla2.visible = true
@@ -53,7 +54,7 @@ func _on_button_job1_3_pressed():
 	$Area2D2/button_job1_2.visible = false
 	$Area2D2/button_job1_3.visible = false
 
-	
+	#functions to player enter into his job, speding his energy
 func _on_Area2D3_body_entered(body):
 	if(body.name == "Player_certo"):
 		

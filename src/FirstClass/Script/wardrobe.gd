@@ -1,6 +1,6 @@
 extends Area2D
 
-var wardrobe = preload ("res://Scenes/wardrobe.tscn")
+#var wardrobe = preload ("res://Scenes/wardrobe.tscn")
 var new_node
 
 func _ready():
