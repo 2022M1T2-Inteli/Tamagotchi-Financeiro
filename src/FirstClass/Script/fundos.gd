@@ -1,12 +1,6 @@
 extends Node2D
 
-
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-
-
-# Called when the node enters the scene tree for the first time.
+# unlock investiments
 func _ready():
 	if Global.knowledge >= 30:
 		$FundoPreto3.visible = false
@@ -15,7 +9,7 @@ func _ready():
 		$FundoPreto.visible = false
 		$FundoPreto2.visible = false
 
-
+# direct player to the investiment he wants
 func _on_Button_pressed():
 	if Global.knowledge >= 15:
 		get_tree().change_scene("res://Scenes/imobiliario.tscn")

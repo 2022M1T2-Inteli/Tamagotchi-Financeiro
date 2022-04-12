@@ -1,6 +1,8 @@
 extends Area2D
 
-# onready var dialog = get_node("Control2/dialogBox") # FIXME: Node not found
+# This code stores the paths for the classes and contents.
+# Depending on the day, the index changes and the path
+# Taken is different
 
 var contents = ["res://Scenes_ana/dialogBoxInflacao.tscn","res://Scenes_ana/dialogBoxTest.tscn","res://Scenes_ana/dialogBoxTestCDB.tscn",
 		"res://Scenes_ana/dialogBoxTestIndicadores.tscn", "res://Scenes_ana/dialogBoxTestRendaF.tscn",

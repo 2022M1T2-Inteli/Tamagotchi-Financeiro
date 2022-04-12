@@ -1,6 +1,8 @@
 extends Control
 
-
+# Code that is responsable for the content of a lesson.
+# It makes the logic of text pass and dialog blocks 
+# In particular, this script refers to Fix Income
 
 var dialog = [
 	'Bom dia! Você está pronto para aprender sobre Renda Fixa?',

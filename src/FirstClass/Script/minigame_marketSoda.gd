@@ -1,5 +1,11 @@
 extends Node2D
 
+# Code to the soda minigame. It generates random numbers
+# that are products index. Based on the choosen number,
+# a different product will appear at the top of the screen
+# and will fall off. Different products have different properties
+# that triggers once it collides with the Player.
+
 var score = 0
 var erro = 0
 var right_milk = preload("res://Scenes/sodaPurple.tscn")

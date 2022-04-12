@@ -1,5 +1,9 @@
 extends Control
 
+# Code that is responsable for the content of a lesson.
+# It makes the logic of text pass and dialog blocks 
+# In particular, this script refers to Direct Treasury
+
 var dialog = [
 	'Bom dia! Você está pronto para aprender sobre investimentos de Renda Fixa?',
 	'Além da Poupança e CDBs, existem outros investimentos de renda fixa, como o Tesouro Direto, Debêntures, LCI e LCA, CRI e CRA.',

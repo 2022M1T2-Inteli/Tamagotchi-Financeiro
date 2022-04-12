@@ -1,5 +1,6 @@
 extends Node2D
 
+#unlock investiments
 func _ready():
 	if Global.knowledge >= 10:
 		$FundoPreto2.visible = false
@@ -7,6 +8,7 @@ func _ready():
 	if Global.knowledge >= 5:
 		$FundoPreto.visible = false
 
+# direct player to the investiment he wants
 func _on_Button1_pressed():
 	get_tree().change_scene("res://Scenes/savings - deposit.tscn")
 

@@ -13,5 +13,6 @@ func _on_LineEdit_text_entered(new_text):
 	print(Global.player_name)
 	get_tree().change_scene(reference_path)
 
+#redirect player to storytelling
 func _on_ContinueButton_pressed(): # On continue button pressed
 	get_tree().change_scene("res://Scenes/instructions1.tscn")

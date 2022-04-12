@@ -1,4 +1,9 @@
 extends Control
+
+# Code that is responsable for the content of a lesson.
+# It makes the logic of text pass and dialog blocks 
+# In particular, this script refers to Indicators
+
 var dialog = [
 	'Bom dia! Você está pronto para aprender sobre Indicadores do Mercado Financeiro?',
 	'INDICADORES DO MERCADO \n Quando se trata de Renda Fixa, a remuneração desses investimentos varia de acordo com alguns indicadores, que possibilitam um norteamento do investidor desde o momento da aplicação.',

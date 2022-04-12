@@ -1,5 +1,6 @@
 extends Node2D
 
+#exclamation indicator
 func _process(delta):
 	$Exc/AnimationPlayer.play("excla2")
 	$Exc2/AnimationPlayer.play("excla2")
@@ -10,6 +11,7 @@ func _process(delta):
 	if Global.excla3 == true:
 		$Exc2.visible = false
 
+#brings player investiments into a list
 func _ready():
 	$RichTextLabel.text = ("poupança = %.2f"  % Investiment.invest_money_savings + "\ncdb = %.2f" % Investiment.invest_money_cdb + "\ntesouro direto = %.2f" % Investiment.invest_money_direct_treasury + "\ndebentures = %.2f" % Investiment.invest_money_debenture + "\nfundo imobiliário = %.2f" % Investiment.invest_money_real_estate_fund + "\nfundo multimercado = %.2f" % Investiment.invest_money_multimarket_fund + "\nfundo de ações = %.2f" % Investiment.invest_money_stock_fund + "\nfundoações de alto risco = %.2f" % Investiment.invest_money_high_risk_stock_fund + "\nações de baixo risco = %.2f" % Investiment.invest_money_low_risk_stock + "\nações de alto risco = %.2f" % Investiment.invest_money_high_risk_stock + "\nday trade = %.2f" % Investiment.invest_money_day_trade )
 	$Exc2.visible = false
@@ -26,7 +28,8 @@ func _ready():
 	else:
 		$Player_certo.visible = true
 		$Joystick/Control/question_button/AnimationPlayer.play("aviso")
-		
+
+#banks instructions
 func _on_Button_bank1_pressed():
 	$Button_bank1.visible = false
 	$Button_bank1/InstructionsBank2.visible = false
@@ -53,6 +56,7 @@ func _on_Button_bank3_pressed():
 	$Player_certo.visible = true
 	Global.bank1 = true
 
+#shows player investiments
 func _on_Button_pressed():
 	$Button3/Investiment2.visible = true
 	$Player_certo.visible = false

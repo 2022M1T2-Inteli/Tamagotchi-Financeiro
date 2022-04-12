@@ -1,5 +1,7 @@
 extends Node2D
 
+# Soundeffect is played and it returns to the market ambienece
+
 func _ready():
 	$winfx.play()
 

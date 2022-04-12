@@ -4,7 +4,7 @@
 [ext_resource path="res://assets/newBackClass.png" type="Texture" id=2]
 [ext_resource path="res://Fonts/Minecraftia-Regular.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://Script/CalculatorIcon.gd" type="Script" id=4]
-[ext_resource path="res://Scenes/CalculatorIcon.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Script/CanvasLayer_calculadora.tscn" type="PackedScene" id=6]
 
 [sub_resource type="DynamicFont" id=1]
 size = 65
@@ -19,7 +19,7 @@ font_data = ExtResource( 3 )
 size = 25
 font_data = ExtResource( 3 )
 
-[node name="Node2D" type="Node2D"]
+[node name="Node2D2" type="Node2D"]
 script = ExtResource( 4 )
 
 [node name="NewFundoSchool" type="Sprite" parent="."]
@@ -105,8 +105,7 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="Node2D" parent="." instance=ExtResource( 5 )]
-position = Vector2( 215, -96 )
+[node name="CanvasLayer" parent="." instance=ExtResource( 6 )]
 
 [connection signal="tween_completed" from="Tween" to="." method="_on_Tween_tween_completed"]
 [connection signal="pressed" from="errado" to="." method="_on_errado_pressed"]

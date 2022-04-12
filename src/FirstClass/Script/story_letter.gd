@@ -1,9 +1,9 @@
 extends Node2D
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
 	$Exc/AnimationPlayer.play("excla2")
 
+#iniciate storry
 func _on_Area2D_body_entered(body):
 	$Exc.visible = false
 	$Story2.visible = true
@@ -11,9 +11,9 @@ func _on_Area2D_body_entered(body):
 	$Player_certo.visible = false
 	$Timer.start()
 
+#button to change the scene
 func _on_Timer_timeout():
 	$Button.visible = true
-	#get_tree().change_scene("res://Scenes/cellphone_story.tscn")
 
 
 func _on_Button_pressed():

@@ -1,5 +1,9 @@
 extends Control
 
+# Code that is responsable for the content of a lesson.
+# It makes the logic of text pass and dialog blocks 
+# In particular, this script refers to CDB
+
 var dialog = [
 	'Bom dia! Você está pronto para aprender sobre CDBs',
 	'CDBs - Certificados de Depósitos Bancários\n \n -São investimentos de renda fixa emitidos por bancos; \n -Na maioria dos casos, quanto maior o valor mínimo do investimento, maior o rendimento.',

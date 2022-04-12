@@ -1,9 +1,10 @@
 extends Area2D
 
+# Code for milk area. When entered, it will
+# change the scene to a three products (milk) selection
+
 func _ready():
-	pass # Replace with function body.
-	
-	
+	pass
 
 
 func _on_Area2D2_body_entered(body):
