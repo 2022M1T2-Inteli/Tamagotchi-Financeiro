@@ -55,11 +55,8 @@ func _on_Button_Instructions5_pressed():
 func _on_Button_Instructions6_pressed():
 	$Button_Instructions6/Instructions6.visible = false
 	$Button_Instructions6.visible = false
-#	$Excla/AnimationPlayer.play("RESET")
-#	$Excla2/AnimationPlayer.play("RESET")
-	$Joystick/Control/question_button/AnimationPlayer.play("aviso")
-	$Player_certo.visible = true
-	Global.letter = true 
+	$Button_Instructions7/Instructions7.visible = true
+	$Button_Instructions7.visible = true
 	
 func _on_ComputerArea_body_entered(body):
 	if body.name == "Player_certo":
@@ -69,3 +66,11 @@ func _on_ComputerArea_body_entered(body):
 func _on_shelfBooks_body_entered(body):
 	if body.name == "Player_certo":
 		get_tree().change_scene("res://Scenes/bedroomShelf.tscn")
+
+
+func _on_Button_Instructions7_pressed():
+	$Button_Instructions7/Instructions7.visible = false
+	$Button_Instructions7.visible = false
+	$Joystick/Control/question_button/AnimationPlayer.play("aviso")
+	$Player_certo.visible = true
+	Global.letter = true 
