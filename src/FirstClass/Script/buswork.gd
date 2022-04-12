@@ -13,6 +13,7 @@ func _ready():
 
 
 func _on_Button_bus_pressed():
+	print("teste")
 	if Global.digital_money <= valorBus:
 		Global.money -= valorBus
 	else: 
@@ -28,6 +29,7 @@ func _on_Button_bus_pressed():
 
 
 func _on_Button_taxi_pressed():
+	print("teste 1")
 	if Global.digital_money <= valorTaxi:
 		Global.money -= valorTaxi
 	else: 

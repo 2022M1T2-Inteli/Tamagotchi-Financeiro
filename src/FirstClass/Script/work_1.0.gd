@@ -108,7 +108,8 @@ func verificar():
 		Global.money += (Global.player_job*100) * 0.8
 	elif (score == 10):
 		get_tree().change_scene("res://Scenes/WinWork.tscn")
-		Global.money += (Global.player_job*100) 
+		Global.money += (Global.player_job*100)
+		Records.work.append(100)
 	
 
 func _on_Button_yes_pressed():

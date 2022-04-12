@@ -52,9 +52,9 @@ func _on_finish_pressed():
 		Global.happiness += StoreManagement.item_status[1] 
 		Global.passive_happiness += StoreManagement.item_status[2] 
 		Global.monthly_expenses += StoreManagement.item_status[3]
-		Global.recordsPrice.append(StoreManagement.store_total*-1)
+		Records.store.append(StoreManagement.store_total*-1)
 		Global.update_wallet[0] = true
-		Global.update_wallet[1] = Global.recordsPrice.back() 
+		Global.update_wallet[1] = Records.store.back() 
 		get_tree().change_scene("res://Scenes/StoreEndshop.tscn")
 	elif (StoreManagement.store_total >= 0) and (Global.digital_money - StoreManagement.store_total >= 0) and (paymentType == 1):
 		Global.digital_money -= StoreManagement.store_total
@@ -63,6 +63,7 @@ func _on_finish_pressed():
 		Global.happiness += StoreManagement.item_status[1] 
 		Global.passive_happiness += StoreManagement.item_status[2] 
 		Global.monthly_expenses += StoreManagement.item_status[3]
+		Records.store.append(StoreManagement.store_total*-1)
 		StoreManagement.products[StoreManagement.i][StoreManagement.j] = true
 		get_tree().change_scene("res://Scenes/StoreEndshop.tscn")
 	else:
