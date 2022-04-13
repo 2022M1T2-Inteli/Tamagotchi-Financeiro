@@ -16,6 +16,7 @@ func _process(delta):
 		$Button_Bank.disabled = false
 		$Button_Map.disabled = false
 		$Button_Exit.disabled = false
+		$Cellphone.visible = true 
 
 func _on_Button_Map_pressed():
 	get_tree().paused = false
@@ -24,6 +25,8 @@ func _on_Button_Map_pressed():
 	$Button_Bank.disabled = true
 	$Button_Map.disabled = true
 	$Button_Exit.disabled = true
+	$Cellphone.visible = false
+	Global.button = false
 	celltest = preload("res://Cellphone/Map.tscn")
 	new_node = celltest.instance()
 	new_node.global_position = Vector2.ZERO

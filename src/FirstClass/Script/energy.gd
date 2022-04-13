@@ -12,6 +12,7 @@ func _ready():
 		$Expense.bbcode_text = (str ("[center]R$%.2f" % float(Global.update_wallet[1])))
 		$Expense_Notification.start()
 	change_actions()
+	$RichTextLabel.text = (str (Global.day) + "ª semana")
 
 
 func change_actions():
@@ -23,3 +24,4 @@ func _on_Expense_Notification_timeout():
 	get_node("Expense").visible = false
 	Global.update_wallet[0] = false
 	$Expense_Notification.stop()
+	
