@@ -45,6 +45,7 @@ var university1 = false
 var recordsInvest : Array = []
 var purple : bool = false
 var last_scene = null
+var joystickk : bool = false
 
 func _ready():
 	pass # Replace with function body.
