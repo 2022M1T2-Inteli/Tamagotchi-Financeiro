@@ -63,6 +63,7 @@ func _process(delta):
 			$Timer.start()
 	var windowSizeLocal = get_viewport().size
 	if new_node && start:
+		current_timer += delta
 		if new_node.position.x >= -100:
 			new_node.position.x -= 14
 
@@ -121,13 +122,15 @@ func verificar():
 	
 
 func _on_Button_yes_pressed():
-	if new_node:
+	print(current_timer - past_timer)
+	if new_node && current_timer - past_timer > 2:
 		new_node.visible = false
 		next = true
 		if int ($RichTextLabel5.text) <=  int($RichTextLabel2.text):
 			contagem_score()
 		else:
 			errado()
+		past_timer = current_timer
 		verificar()
 
 #function to change product value, when a new one appers
