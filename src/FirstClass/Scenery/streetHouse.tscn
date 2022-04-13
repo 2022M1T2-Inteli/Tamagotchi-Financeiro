@@ -1,4 +1,4 @@
-[gd_scene load_steps=68 format=2]
+[gd_scene load_steps=67 format=2]
 
 [ext_resource path="res://assets/street_1.png" type="Texture" id=1]
 [ext_resource path="res://Scenes/Player_certo.tscn" type="PackedScene" id=2]
@@ -70,9 +70,6 @@ extents = Vector2( 27.25, 27.75 )
 [sub_resource type="RectangleShape2D" id=17]
 extents = Vector2( 16, 70 )
 
-[sub_resource type="RectangleShape2D" id=18]
-extents = Vector2( 17, 65.5 )
-
 [sub_resource type="RectangleShape2D" id=21]
 extents = Vector2( 14.5, 70 )
 
@@ -143,7 +140,7 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 1, 2 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ Vector2( 346.314, 483.396 ), Vector2( 346.314, 501.264 ), Vector2( 346.314, 483.396 ) ]
+"values": [ Vector2( 322.327, 487.699 ), Vector2( 322.327, 504.575 ), Vector2( 322.327, 487.699 ) ]
 }
 
 [sub_resource type="Animation" id=46]
@@ -382,7 +379,7 @@ position = Vector2( 67, 314 )
 shape = SubResource( 1 )
 
 [node name="Goalscene2" parent="." instance=ExtResource( 4 )]
-position = Vector2( 336.523, 477.565 )
+position = Vector2( 336.523, 478.587 )
 path = "res://Scenery/bedroom.tscn"
 
 [node name="Joystick" parent="." instance=ExtResource( 14 )]
@@ -764,10 +761,6 @@ shape = SubResource( 16 )
 position = Vector2( 1000, 424 )
 shape = SubResource( 17 )
 
-[node name="CollisionShape2D17" type="CollisionShape2D" parent="StaticBody2D3"]
-position = Vector2( 555, 425.5 )
-shape = SubResource( 18 )
-
 [node name="CollisionShape2D20" type="CollisionShape2D" parent="StaticBody2D3"]
 position = Vector2( 104.5, 428 )
 shape = SubResource( 21 )
@@ -1130,9 +1123,6 @@ position = Vector2( 1.95227, 8.3887 )
 rotation = -1.5708
 scale = Vector2( 0.249191, 0.415992 )
 texture = ExtResource( 10 )
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="setapreta" type="AnimationPlayer" parent="Setapreta"]
 anims/RESET = SubResource( 34 )

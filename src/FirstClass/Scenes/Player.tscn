@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Script/Player.gd" type="Script" id=1]
 [ext_resource path="res://assets/playeralan.png" type="Texture" id=2]
+[ext_resource path="res://assets/achoquecerto.png" type="Texture" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 35, 23.625 )
@@ -11,7 +12,7 @@ resource_name = "run"
 length = 0.6
 loop = true
 tracks/0/type = "value"
-tracks/0/path = NodePath("player:frame")
+tracks/0/path = NodePath("playerWolf:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
@@ -28,7 +29,7 @@ resource_name = "slide"
 length = 0.3
 loop = true
 tracks/0/type = "value"
-tracks/0/path = NodePath("player:frame")
+tracks/0/path = NodePath("playerWolf:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
@@ -38,6 +39,77 @@ tracks/0/keys = {
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 1,
 "values": [ 6, 7, 8 ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "Bunny"
+length = 0.6
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:hframes")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.6, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 9, 9 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 4, 5, 6 ]
+}
+
+[sub_resource type="Animation" id=5]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:hframes")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 9 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0 ]
+}
+
+[sub_resource type="Animation" id=6]
+resource_name = "slide"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 7, 8, 8, 8 ]
 }
 
 [node name="Player" type="KinematicBody2D"]
@@ -56,13 +128,27 @@ shape = SubResource( 1 )
 position = Vector2( 47, 26 )
 shape = SubResource( 1 )
 
-[node name="player" type="Sprite" parent="."]
+[node name="playerWolf" type="Sprite" parent="."]
 position = Vector2( 46, -2.99999 )
 scale = Vector2( 1.88695, 1.86999 )
-texture = ExtResource( 2 )
+texture = ExtResource( 3 )
 hframes = 9
+frame = 8
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+[node name="AnimationWolf" type="AnimationPlayer" parent="playerWolf"]
+root_node = NodePath("../..")
 autoplay = "slide"
 anims/run = SubResource( 2 )
 anims/slide = SubResource( 3 )
+
+[node name="playerBunny" type="Sprite" parent="."]
+visible = false
+position = Vector2( 44.5, -1.75 )
+scale = Vector2( 1.89706, 1.83333 )
+texture = ExtResource( 2 )
+hframes = 9
+
+[node name="AnimationBunny" type="AnimationPlayer" parent="playerBunny"]
+anims/Bunny = SubResource( 4 )
+anims/RESET = SubResource( 5 )
+anims/slide = SubResource( 6 )
