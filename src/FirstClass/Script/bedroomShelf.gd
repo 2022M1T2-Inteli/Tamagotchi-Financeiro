@@ -12,9 +12,9 @@ func _ready():
 	$Sprite4.visible = false
 	$Sprite5.visible = false 
 	$Button_next_book1.visible = false
-#	for i in range(0,5):
-#		if StoreManagement.products[0][i] && Global.actions >=1: 
-#			$Button.visible = true
+	for i in range(0,5):
+		if StoreManagement.products[0][i] && Global.actions >=1: 
+			$Button.visible = true
 
 #go back to bedroom
 func _on_Button_exit_pressed():
@@ -70,9 +70,9 @@ func _on_Book_V_pressed():
 
 #function for player study and earn knowlodge based in how many books he have
 func _on_Button_pressed():
-#	for i in range(0,5):
-#		if StoreManagement.products[0][i]  && Global.actions >=1:
-#			Global.knowledge += 1
-#			Global.actions -=1 
+	for i in range(0,5):
+		if StoreManagement.products[0][i]  && Global.actions >=1:
+			Global.knowledge += 1
+			Global.actions -=1 
 	pass
 
