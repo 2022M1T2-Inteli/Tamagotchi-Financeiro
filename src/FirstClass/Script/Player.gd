@@ -10,8 +10,8 @@ var animation: String = "run"
 func _physics_process(delta) -> void:
 	motion.y += GRAVITY
 	
-	if animation != $AnimationPlayer.current_animation:
-		$AnimationPlayer.play(animation)
+	if animation != $playerWolf/AnimationWolf.current_animation:
+		$playerWolf/AnimationWolf.play(animation)
 	
 	if Input.is_action_just_pressed("ui_up") and is_on_floor():
 		motion.y = JUMP_FORCE
