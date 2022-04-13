@@ -127,23 +127,23 @@ position = Vector2( 460, 476.5 )
 shape = SubResource( 1 )
 
 [node name="1" type="Sprite" parent="."]
-position = Vector2( 260, 497 )
-scale = Vector2( 0.2, 0.2 )
+position = Vector2( 250, 481 )
+scale = Vector2( 0.242187, 0.270833 )
 texture = ExtResource( 11 )
 
 [node name="2" type="Sprite" parent="."]
-position = Vector2( 1023, 262 )
-scale = Vector2( 0.15, 0.15 )
+position = Vector2( 1056.25, 229.25 )
+scale = Vector2( 0.235547, 0.272917 )
 texture = ExtResource( 12 )
 
 [node name="3" type="Sprite" parent="."]
-position = Vector2( 622, 447 )
-scale = Vector2( 0.1, 0.1 )
+position = Vector2( 611.25, 418.25 )
+scale = Vector2( 0.197266, 0.225694 )
 texture = ExtResource( 16 )
 
 [node name="4" type="Sprite" parent="."]
-position = Vector2( 676, 80 )
-scale = Vector2( 0.21875, 0.275694 )
+position = Vector2( 247, 167 )
+scale = Vector2( 0.375, 0.403125 )
 texture = ExtResource( 5 )
 
 [node name="Player_certo" parent="." instance=ExtResource( 2 )]

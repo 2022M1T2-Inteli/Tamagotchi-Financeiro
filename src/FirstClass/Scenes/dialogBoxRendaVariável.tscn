@@ -1,10 +1,9 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://assets/dialog-background.png" type="Texture" id=1]
 [ext_resource path="res://Script/dialogBoxRendaVariável.gd" type="Script" id=2]
 [ext_resource path="res://assets/Button.png" type="Texture" id=3]
 [ext_resource path="res://Fonts/Minecraftia-Regular.ttf" type="DynamicFontData" id=4]
-[ext_resource path="res://assets/fundoUniversity.png" type="Texture" id=5]
 [ext_resource path="res://assets/newBackClass.png" type="Texture" id=6]
 [ext_resource path="res://Scenes/CanvasLayer_action_button.tscn" type="PackedScene" id=7]
 
@@ -79,7 +78,6 @@ anims/RESET = SubResource( 3 )
 visible = false
 position = Vector2( 647.5, 366.5 )
 scale = Vector2( 1.00859, 1.00417 )
-texture = ExtResource( 5 )
 
 [node name="Tween" type="Tween" parent="dialogBox"]
 
