@@ -15,7 +15,7 @@
 <p align="justify"> 📜 O jogo terá como objetivo promover uma conscientização sobre educação financeira, contribuindo para a inserção de pessoas antes analfabetas financeiramente na sociedade. Esse objetivo será atingido através de um jogo que equilibra o didatismo e a diversão, em que o foco estará mais na aprendizagem prática, mesmo que contenha situações de aprendizagem mais teórica. Nesse sentido, conceitos de finanças reais serão abordados através da representação de situações cotidianas, focadas na evolução do personagem ao cuidar de sua saúde financeira. Portanto, esse é um projeto de faculdade que visa gerar um produto final eficiente e jogável para a empresa parceira, BTG Pactual, impactando o nível de educação financeira da sociedade.
 <br><br>
 <p align="center">
-<img src="https://img.itch.zone/aW1nLzgyNTIxNzUucG5n/original/m4Ozoz.png" alt="EduFin App" border="0">
+<img src="https://img.itch.zone/aW1nLzg2NjE0ODUucG5n/original/564Wxu.png" alt="EduFin App" border="0">
   Game by <a href="https://edufin-dev-team.itch.io/edufin-app">EduFin Dev Team</a> 
 </p>
 
@@ -120,6 +120,27 @@ A cada atualização os detalhes devem ser lançados aqui.
   
 * 0.1.0 - 04/03/2022
     * Lançamento da segunda versão do jogo.
+  
+* 0.1.0 - 04/03/2022
+    * Lançamento da segunda versão do jogo.
+ 
+* 0.1.1 - 11/03/2022
+    * Lançamento da terceira versão do jogo.
+ 
+* 0.1.2 - 18/03/2022
+    * Lançamento da quarta versão do jogo.
+  
+* 0.1.3 - 25/03/2022
+    * Lançamento da quinta versão do jogo.
+  
+* 0.1.4 - 01/04/2022
+    * Lançamento da sexta versão do jogo.
+  
+* 0.1.5 - 08/04/2022
+    * Lançamento da sétima versão do jogo.
+  
+* 0.2.0 - 14/04/2022
+    * Lançamento da versão final do jogo.
 
 ## 📋 Licença/License
 
@@ -129,7 +150,8 @@ A cada atualização os detalhes devem ser lançados aqui.
 
 Aqui estão as referências usadas no projeto.
 
-(As referências foram utilizadas somente como inspiração, não utilizando links diretos no projeto)
+(As referências foram utilizadas somente como inspiração no projeto)
 
 1. <https://atlus.com/p5r/lang/en/>
 2. <https://www.greenheartgames.com/app/game-dev-tycoon/> 
+3. <https://www.artstation.com/bizarrebeasties>
