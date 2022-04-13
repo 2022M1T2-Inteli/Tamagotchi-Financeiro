@@ -27,7 +27,7 @@ func _ready():
 		$Button_bank1/InstructionsBank2.visible = true
 	else:
 		$Player_certo.visible = true
-		$Joystick/Control/question_button/AnimationPlayer.play("aviso")
+
 
 #banks instructions
 func _on_Button_bank1_pressed():
