@@ -75,6 +75,7 @@ func _on_Area2D_body_entered(body):
 		Investiment.invest_money_day_trade *= day_trade
 		
 		#defines inflations
+		Global.money += 1000
 		Global.inflation += rng.randf_range(0.75,1.5)
 		changer.change_scene(Global.current_scene)
 		

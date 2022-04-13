@@ -44,7 +44,7 @@ func _on_Bicycle_pressed():
 	StoreManagement.store_product_index = "res://assets/Bicycle.png"
 	StoreManagement.i = 1
 	StoreManagement.j = 0
-	StoreManagement.store_total = 300.00
+	StoreManagement.store_total = 300.00 + Bicycle * (Global.inflation/100)
 	StoreManagement.item_status[0] = 3
 	if(!StoreManagement.products[StoreManagement.i][StoreManagement.j]):
 		get_tree().change_scene("res://Scenes/StoreCart.tscn")
@@ -56,7 +56,7 @@ func _on_Eletric_Bike_pressed():
 	StoreManagement.store_product_index = "res://assets/Eletric_Bike.png"
 	StoreManagement.i = 1
 	StoreManagement.j = 1
-	StoreManagement.store_total = 1300.00
+	StoreManagement.store_total = 1300.00 + Eletric_Bike * (Global.inflation/100)
 	StoreManagement.item_status[0] = 4
 	StoreManagement.item_status[3] = 10
 	if(!StoreManagement.products[StoreManagement.i][StoreManagement.j]):
@@ -69,7 +69,7 @@ func _on_Motorcycle_pressed():
 	StoreManagement.store_product_index = "res://assets/Motorcycle.png"
 	StoreManagement.i = 1
 	StoreManagement.j = 2
-	StoreManagement.store_total = 1300.00
+	StoreManagement.store_total = 2100.00 + Motorcycle * (Global.inflation/100)
 	StoreManagement.item_status[0] = 5
 	StoreManagement.item_status[3] = 25
 	if(!StoreManagement.products[StoreManagement.i][StoreManagement.j]):
@@ -82,7 +82,7 @@ func _on_Standard_Car_pressed():
 	StoreManagement.store_product_index = "res://assets/Standard_Car.png"
 	StoreManagement.i = 1
 	StoreManagement.j = 3
-	StoreManagement.store_total = 8000.00
+	StoreManagement.store_total = 8000.00 + Standard_Car * (Global.inflation/100)
 	StoreManagement.item_status[0] = 6
 	StoreManagement.item_status[3] = 50
 	if(!StoreManagement.products[StoreManagement.i][StoreManagement.j]):
@@ -95,7 +95,7 @@ func _on_Deluxe_Car_pressed():
 	StoreManagement.store_product_index = "res://assets/Deluxe_Car.png"
 	StoreManagement.i = 1
 	StoreManagement.j = 4
-	StoreManagement.store_total = 22000.00
+	StoreManagement.store_total = 22000.00 + Deluxe_Car * (Global.inflation/100)
 	StoreManagement.item_status[0] = 7
 	StoreManagement.item_status[3] = 500
 	if(!StoreManagement.products[StoreManagement.i][StoreManagement.j]):

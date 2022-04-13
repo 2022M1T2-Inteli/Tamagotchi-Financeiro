@@ -38,7 +38,7 @@ func _on_Button_dog_pressed():
 	StoreManagement.store_product_index = "res://assets/Pets_Dog.png"
 	StoreManagement.i = 3
 	StoreManagement.j = 0
-	StoreManagement.store_total = 2100.00
+	StoreManagement.store_total = 2100.00 + dog * (Global.inflation/100)
 	StoreManagement.item_status = [0,0,1,100]
 	if(!StoreManagement.products[StoreManagement.i][StoreManagement.j]):
 		get_tree().change_scene("res://Scenes/StoreCart.tscn")
@@ -50,7 +50,7 @@ func _on_Button_cat_pressed():
 	StoreManagement.store_product_index = "res://assets/Pets_Cat.png"
 	StoreManagement.i = 3
 	StoreManagement.j = 1
-	StoreManagement.store_total = 1400.00
+	StoreManagement.store_total = 1400.00 + cat * (Global.inflation/100)
 	StoreManagement.item_status = [0,0,1,80]
 	if(!StoreManagement.products[StoreManagement.i][StoreManagement.j]):
 		get_tree().change_scene("res://Scenes/StoreCart.tscn")
@@ -62,7 +62,7 @@ func _on_Button_pet_3_pressed():
 	StoreManagement.store_product_index = "res://assets/Pets_Hamster.png"
 	StoreManagement.i = 3
 	StoreManagement.j = 2
-	StoreManagement.store_total = 500.00
+	StoreManagement.store_total = 500.00 + pet_3 * (Global.inflation/100)
 	StoreManagement.item_status = [0,0,0.5,50]
 	if(!StoreManagement.products[StoreManagement.i][StoreManagement.j]):
 		get_tree().change_scene("res://Scenes/StoreCart.tscn")
@@ -74,7 +74,7 @@ func _on_Button_pet_4_pressed():
 	StoreManagement.store_product_index = "res://assets/Pets_Cockatiel.png"
 	StoreManagement.i = 3
 	StoreManagement.j = 3
-	StoreManagement.store_total = 700.00
+	StoreManagement.store_total = 700.00 + pet_4 * (Global.inflation/100)
 	StoreManagement.item_status = [0,0,0.5,50]
 	if(!StoreManagement.products[StoreManagement.i][StoreManagement.j]):
 		get_tree().change_scene("res://Scenes/StoreCart.tscn")
