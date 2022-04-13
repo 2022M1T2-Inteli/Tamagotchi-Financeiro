@@ -29,21 +29,69 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id=4]
 length = 0.001
-
-[sub_resource type="Animation" id=5]
-resource_name = "aviso"
-loop = true
 tracks/0/type = "value"
-tracks/0/path = NodePath(".:visible")
+tracks/0/path = NodePath("Newemailteste:visible")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 1 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
-"update": 1,
-"values": [ true, false, true, false, true, false ]
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Newemailteste:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Newemailteste:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1.5241, 1.42029 ) ]
+}
+
+[sub_resource type="Animation" id=5]
+resource_name = "aviso"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Newemailteste:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 0.647059, 0.647059, 0.647059, 1 ), Color( 0.490196, 0.490196, 0.490196, 1 ), Color( 0.278431, 0.278431, 0.278431, 1 ), Color( 0.462745, 0.462745, 0.462745, 1 ), Color( 0.666667, 0.666667, 0.666667, 1 ), Color( 1, 1, 1, 1 ), Color( 0.717647, 0.717647, 0.717647, 1 ), Color( 0.572549, 0.572549, 0.572549, 1 ), Color( 0.403922, 0.403922, 0.403922, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Newemailteste:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1.5241, 1.42029 ), Vector2( 1.324, 1.22 ), Vector2( 1.146, 1.042 ), Vector2( 0.993, 0.889 ), Vector2( 1.146, 1.042 ), Vector2( 1.20902, 1.10505 ), Vector2( 1.27203, 1.1681 ) ]
 }
 
 [node name="Control" type="Control"]
@@ -111,7 +159,7 @@ anims/RESET = SubResource( 4 )
 anims/aviso = SubResource( 5 )
 
 [node name="Newemailteste" type="Sprite" parent="question_button"]
-position = Vector2( 53, 41 )
+position = Vector2( 54, 41 )
 scale = Vector2( 1.5241, 1.42029 )
 texture = ExtResource( 2 )
 
