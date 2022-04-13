@@ -120,9 +120,6 @@ A cada atualização os detalhes devem ser lançados aqui.
   
 * 0.1.0 - 04/03/2022
     * Lançamento da segunda versão do jogo.
-  
-* 0.1.0 - 04/03/2022
-    * Lançamento da segunda versão do jogo.
  
 * 0.1.1 - 11/03/2022
     * Lançamento da terceira versão do jogo.
