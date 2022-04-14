@@ -45,7 +45,7 @@ func _on_Button_tshirt_yellow_pressed():
 	StoreManagement.store_product_index = "res://assets/Yellow_Shirt.png"
 	StoreManagement.i = 2
 	StoreManagement.j = 0
-	StoreManagement.store_total = 300.00
+	StoreManagement.store_total = 300.00 + t_shirt_1 * (Global.inflation/100)
 	StoreManagement.item_status = [0,1,0,0]
 	if(!StoreManagement.products[StoreManagement.i][StoreManagement.j]):
 		get_tree().change_scene("res://Scenes/StoreCart.tscn")
@@ -57,7 +57,7 @@ func _on_Button_tshirt_black_pressed():
 	StoreManagement.store_product_index = "res://assets/Black_Shirt.png"
 	StoreManagement.i = 2
 	StoreManagement.j = 1
-	StoreManagement.store_total = 300.00
+	StoreManagement.store_total = 300.00 + t_shirt_1 * (Global.inflation/100)
 	StoreManagement.item_status = [0,1,0,0]
 	if(!StoreManagement.products[StoreManagement.i][StoreManagement.j]):
 		get_tree().change_scene("res://Scenes/StoreCart.tscn")
@@ -68,7 +68,7 @@ func _on_Button_tshirt_purple_pressed():
 	StoreManagement.store_product_index = "res://assets/Purple_Shirt.png"
 	StoreManagement.i = 2
 	StoreManagement.j = 2
-	StoreManagement.store_total = 300.00
+	StoreManagement.store_total = 300.00 + t_shirt_1 * (Global.inflation/100)
 	StoreManagement.item_status = [0,1,0,0]
 	if(!StoreManagement.products[StoreManagement.i][StoreManagement.j]):
 		get_tree().change_scene("res://Scenes/StoreCart.tscn")
@@ -80,7 +80,7 @@ func _on_Button_tshirt_green_pressed():
 	StoreManagement.store_product_index = "res://assets/Green_Shirt.png"
 	StoreManagement.i = 2
 	StoreManagement.j = 3
-	StoreManagement.store_total = 300.00
+	StoreManagement.store_total = 300.00 + t_shirt_1 * (Global.inflation/100)
 	StoreManagement.item_status = [0,1,0,0]
 	get_tree().change_scene("res://Scenes/StoreCart.tscn")
 
@@ -89,7 +89,7 @@ func _on_Button_tshirt_pink_pressed():
 	StoreManagement.store_product_index = "res://assets/Pink_Shirt.png"
 	StoreManagement.i = 2
 	StoreManagement.j = 4
-	StoreManagement.store_total = 300.00
+	StoreManagement.store_total = 300.00 + t_shirt_1 * (Global.inflation/100)
 	StoreManagement.item_status = [0,1,0,0]
 	if(!StoreManagement.products[StoreManagement.i][StoreManagement.j]):
 		get_tree().change_scene("res://Scenes/StoreCart.tscn")

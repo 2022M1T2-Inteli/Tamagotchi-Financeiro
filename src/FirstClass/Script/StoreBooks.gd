@@ -44,7 +44,7 @@ func _on_Book_I_pressed():
 	StoreManagement.store_product_index = "res://assets/Book_I.png"
 	StoreManagement.i = 0
 	StoreManagement.j = 0
-	StoreManagement.store_total = 500.00
+	StoreManagement.store_total = Book_I + Book_I * (Global.inflation/100)
 	if(!StoreManagement.products[StoreManagement.i][StoreManagement.j]):
 		get_tree().change_scene("res://Scenes/StoreCart.tscn")
 	else:
@@ -55,7 +55,7 @@ func _on_Book_II_pressed():
 	StoreManagement.store_product_index = "res://assets/Book_II.png"
 	StoreManagement.i = 0
 	StoreManagement.j = 1
-	StoreManagement.store_total = 900.00
+	StoreManagement.store_total = Book_II + Book_II * (Global.inflation/100)
 	if(!StoreManagement.products[StoreManagement.i][StoreManagement.j]):
 		get_tree().change_scene("res://Scenes/StoreCart.tscn")
 	else:
@@ -66,7 +66,7 @@ func _on_Book_III_pressed():
 	StoreManagement.store_product_index = "res://assets/Book_III.png"
 	StoreManagement.i = 0
 	StoreManagement.j = 2
-	StoreManagement.store_total = 1400.00
+	StoreManagement.store_total = Book_III + Book_III * (Global.inflation/100)
 	if(!StoreManagement.products[StoreManagement.i][StoreManagement.j]):
 		get_tree().change_scene("res://Scenes/StoreCart.tscn")
 	else:
@@ -77,7 +77,7 @@ func _on_Book_IV_pressed():
 	StoreManagement.store_product_index = "res://assets/Book_IV.png"
 	StoreManagement.i = 0
 	StoreManagement.j = 3
-	StoreManagement.store_total = 2100.00
+	StoreManagement.store_total = Book_IV + Book_IV * (Global.inflation/100)
 	if(!StoreManagement.products[StoreManagement.i][StoreManagement.j]):
 		get_tree().change_scene("res://Scenes/StoreCart.tscn")
 	else:
@@ -88,7 +88,7 @@ func _on_Book_V_pressed():
 	StoreManagement.store_product_index = "res://assets/Book_V.png"
 	StoreManagement.i = 0
 	StoreManagement.j = 4
-	StoreManagement.store_total = 3200.00
+	StoreManagement.store_total = Book_V + Book_V * (Global.inflation/100)
 	if(!StoreManagement.products[StoreManagement.i][StoreManagement.j]):
 		get_tree().change_scene("res://Scenes/StoreCart.tscn")
 	else:

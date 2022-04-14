@@ -38,7 +38,7 @@ func errado():
 func verificar():
 	if (erro == 3):
 		get_tree().change_scene("res://Scenes/endMinigameLose.tscn")
-	elif (score == 5):
+	elif (score == 20):
 		get_tree().change_scene("res://Scenes/endMinigameMarket.tscn")
 		Global.knowledge +=1
 		

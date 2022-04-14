@@ -33,7 +33,7 @@ func errado():
 func verificar():
 	if (error == 3):
 		get_tree().change_scene("res://Scenes/loseMinigameMilk.tscn")
-	elif(score == 5):
+	elif(score == 20):
 		get_tree().change_scene("res://Scenes/winMilkMinigame.tscn")
 		Global.happiness +=1
 
