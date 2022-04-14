@@ -25,6 +25,7 @@ func _on_question_button_pressed() -> void:
 	$Panel/AnimationPlayer.play("popup")
 	$question_button/AnimationPlayer.stop()
 	$question_button.visible = true
+	$question_button/AnimationPlayer.play("RESET")
 	Global.email = true
 	
 	#cheks if player went to university and change the task
