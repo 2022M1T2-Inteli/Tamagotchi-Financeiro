@@ -8,7 +8,14 @@
 
 ## EduFin Dev Team
 
-## Integrantes: <a href="https://www.linkedin.com/in/alan-rozensztajn-schipper-0563701ba/">Alan Schipper</a>, <a href="https://www.linkedin.com/in/ana-clara-l-m-zaidan-254376232/">Ana Clara Zaidan</a>, <a href="https://www.linkedin.com/in/bruno-meira-75419918b/">Bruno Meira</a>, <a href="https://www.linkedin.com/in/filipi-enzo-siqueira-kikuchi-1811a9213/">Filipi Kikuchi</a>, <a href="https://www.linkedin.com/in/giovanna-furlan-torres-378316182/">Giovanna Torres</a>, <a href="https://www.linkedin.com/in/patrick-miranda-7ab911231/">Patrick Miranda</a> e <a href="https://www.linkedin.com/in/lucas-pereira-3410b1233">Lucas Pereira</a>.
+## Integrantes:
+- <a href="https://www.linkedin.com/in/alan-rozensztajn-schipper-0563701ba/">Alan Schipper</a>;
+- <a href="https://www.linkedin.com/in/ana-clara-l-m-zaidan-254376232/">Ana Clara Zaidan</a>;
+- <a href="https://www.linkedin.com/in/bruno-meira-75419918b/">Bruno Meira</a>;
+- <a href="https://www.linkedin.com/in/filipi-enzo-siqueira-kikuchi-1811a9213/">Filipi Kikuchi</a>;
+- <a href="https://www.linkedin.com/in/giovanna-furlan-torres-378316182/">Giovanna Torres</a>;
+- <a href="https://www.linkedin.com/in/patrick-miranda-7ab911231/">Patrick Miranda</a>; e
+- <a href="https://www.linkedin.com/in/lucas-pereira-3410b1233">Lucas Pereira</a>.
 
 ## Descrição
 
@@ -24,43 +31,35 @@
 
 
 ## 🛠 Estrutura de pastas
-
--Raiz<br>
-|<br>
-|-->documentos<br>
-  &emsp;|-->antigos<br>
-  &emsp;|GDD.docx ou Documentação.docx<br>
-|-->executáveis<br>
-  &emsp;|-->windows<br>
-  &emsp;|-->android<br>
-  &emsp;|-->HTML<br>
-|-->imagens<br>
-|-->src<br>
-|readme.md<br>
+&emsp;📦Projeto 1
+<br>
+    📎 Documentos<br>
+&emsp;&emsp;|-->antigos<br>
+&emsp;&emsp;GDD EDUFIN DEV.pdf<br>
+💻executáveis<br>
+&emsp;&emsp;📁|-->windows<br>
+&emsp;&emsp;📁|-->HTML<br>
+📷imagens<br>
+💾src<br>
+&emsp;📎 FirstClass<br>
+📄readme.md<br>
+📜licença.txt <br>
 
 A pasta raiz contém um arquivo principal:
 
 <b>README.MD</b>: Consiste em um guia geral sobre todos os aspectos do projeto.
 
-Há também 4 pastas que seguem da seguinte forma:
+Há também 2 pastas que seguem da seguinte forma:
 
 <b>documentos</b>: Onde encontra-se todos os documentos relacionados ao projeto, mas principalmente o <b>GDD (Game Design Document)/Documentação do Sistema</b>. Há uma subpasta denominada <b>antigos</b> onde estarão todas as versões antigas da documentação.
 
-<b>executáveis</b>: Onde encontra-se todos os executáveis do jogo, prontos para rodar, com, no mínimo, 3 pastas: Uma para binários <b>Windows</b>, uma para binários <b>android</b> e uma para a <b>Web/HTML</b>.
+<b>executáveis</b>: Onde encontra-se todos os executáveis do jogo, prontos para rodar, com, no mínimo, 2 pastas: Uma para binários <b>Windows</b> e uma para a <b>Web/HTML</b>.
 
 <b>imagens</b>: Onde encontra-se imagens relacionadas ao jogo/sistema e logos prontos para serem utilizados e visualizados.
 
 <b>src</b>: Onde encontra-se todo o código fonte do jogo/sistema, pronto para para ser baixado e modificado.
 
 ## 🛠 Instalação
-
-<b>Android (Não disponível):</b>
-
-Faça o Download do arquivo EduFin.apk no seu celular, execute o arquivo "APK" e siga as instruções do seu telefone.
-
-```sh
-Assim que disponível, os binários serão disponibilizados nesse mesmo repositório.
-```
 
 <b>Windows:</b>
 
@@ -77,16 +76,6 @@ Não há instalação! Baixe os arquivos disponíveis em <a href="https://github
   ```sh
 Dependendo de suas configurações de firewall, talvez seja necessário instaurar um web service como xampp ou wampp para que o jogo rode localmente.
 ```
-  
-## 📈 Exemplo de uso
-
-Alguns exemplos interessantes e úteis sobre como seu projeto pode ser utilizado.
-
-Adicione blocos de códigos e, se necessário, screenshots.
-
-Este modelo pode ser copiado e utilizado à vontade.
-
-Através da cópia/clone/ download do repositório, altere os dados do readme.md e carregue os arquivos de seu projeto.
 
 ## 💻 Configuração para Desenvolvimento
 
